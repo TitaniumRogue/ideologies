@@ -1,0 +1,294 @@
+﻿capital = 766
+
+oob = "ERC_1936"
+
+set_research_slots = 3
+set_country_flag = monroe_doctrine
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_cosmetic_tag = ERC_ENG
+
+add_ideas = safehaven
+add_ideas = czech_friend
+
+
+add_opinion_modifier = { target = POL modifier = backed_by } 
+add_opinion_modifier = { target = SOV modifier = erc_anti_soviet } 
+add_opinion_modifier = { target = GER modifier = surrounded } 
+#add_opinion_modifier = { target = CZE modifier =  friends_with } 
+
+1939.1.1 = {
+	add_political_power = 20
+
+	add_ideas = {
+		#laws
+		volunteer_only
+		low_economic_mobilisation
+	}
+
+	
+	oob = "ERC_1936"
+	set_technology = {
+		fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+
+		#doctrines
+		#Air
+		force_rotation = 1
+		fighter_baiting = 1
+
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+}
+
+set_politics = {
+
+	parties = {
+		social_liberal = { 
+			popularity = 44
+		}
+		national_socialism = {
+			popularity = 7
+		}		
+		stalinism = {
+			popularity = 1
+		}
+		social_democracy = { 
+			popularity = 2
+		}
+		market_liberal = { 
+			popularity = 33
+		}
+		conservative = { 
+			popularity = 12
+		}
+		progressive = { 
+			popularity = 1
+		}
+		democratic_socialism = { 
+			popularity = 0
+		}
+		reactionary = { 
+			popularity = 0
+		}
+		authoritarian_democracy = { 
+			popularity = 0
+		}
+		leninism = { 
+			popularity = 0
+		}
+		fascism = { 
+			popularity = 0
+		}
+		nationalism = { 
+			popularity = 0
+		}
+		imperialism = { 
+			popularity = 0
+		}
+		militarism = { 
+			popularity = 0
+		}
+		imperialism = { 
+			popularity = 0
+		}
+		authoritarian = { 
+			popularity = 0
+		}
+		absolute_monarchy = { 
+			popularity = 0
+		}
+		religious = { 
+			popularity = 0
+		}
+		anarchism = { 
+			popularity = 0
+		}
+	}
+	
+	ruling_party = social_liberal
+	last_election = "1933.11.25"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Aidan Connors"
+	desc = "POLITICS_MACKENZIE_KING_DESC"
+	picture = "AidanConnors.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		stout_defender
+		dislikes_germany
+	}
+}
+
+create_country_leader = {
+	name = "Ashton Mullins"
+	desc = "POLITICS_ADRIEN_ARCAND_DESC"
+	picture = "AshtonMullins.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Jack Mugridge"
+	desc = "POLITICS_TIM_BUCK_DESC"
+	picture = "JackMugridge.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		stalins_puppet
+	}
+}
+
+create_country_leader = {
+	name = "Nicole Kelly"
+	desc = "POLITICS_JS_WOODSWORTH_DESC"
+	picture = "NicoleKelly.dds"
+	expire = "1965.1.1"
+	ideology = green
+	traits = {
+		cornered_fox
+	}
+}
+
+set_convoys = 100
+set_national_unity = 0.65
+
+create_corps_commander = {
+	name = "Caelin Allen"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { trickster commando }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Boyd Pelley"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { logistics_wizard inspirational_leader }
+	skill = 8
+}
+
+create_field_marshal = {
+	name = "Julianne Barter"
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	traits = { defensive_doctrine thorough_planner }
+	skill = 6
+}
+
+create_field_marshal = {
+	name = "Rose MacLeod"
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	traits = { fast_planner organisational_leader }
+	skill = 6
+}
+
+create_corps_commander = {
+	name = "Annalise Robinson"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { winter_specialist }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Thomas Jacobs"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { hill_fighter trait_engineer }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Boyd Pelley"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { superior_tactician }
+	skill = 8
+}
+
+create_navy_leader = {
+	name = "Jacob MacIntyre"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { spotter }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Matthew Urquhart-Macneil"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { blockade_runner }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Erin Heffernan"
+	gfx = "GFX_CAN_harry_dewolf"
+	traits = { superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Lila MacLeod"
+	gfx = "GFX_CAN_harry_dewolf"
+	traits = { superior_tactician }
+	skill = 6
+}
