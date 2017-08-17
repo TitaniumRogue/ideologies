@@ -1,0 +1,122 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = TT_democratic_form_of_government
+		OR = {
+			has_government = reactionary
+			has_government = conservative
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_democrat
+			has_government = progressive
+			has_government = democratic_socialist
+		}
+	}
+}
+
+has_fascist_government = {
+	OR = {
+		has_government = fascism
+		has_government = imperialism
+		has_government = nationalism
+		has_government = national_socialism
+	}
+}
+
+has_communist_government = {
+	OR = {
+		has_government = leninism
+		has_government = stalinism
+	}
+}
+
+has_neutral_government = {
+	OR = {
+		has_government = absolute_monarchy
+		has_government = anarchism
+		has_government = militarism
+		has_government = imperialism
+		has_government = authoritarian
+		has_government = religious
+	}
+}
+
+has_totalitarian_government = {
+	OR = {
+		has_government = absolute_monarchy
+		has_government = militarism
+		has_government = imperialism
+		has_government = authoritarian
+		has_government = religious		
+		has_government = fascism
+		has_government = imperialism
+		has_government = national_socialism
+	}
+}
+
+has_autocratic_government = {
+	OR = {
+		has_government = absolute_monarchy
+		has_government = militarism
+		has_government = imperialism
+		has_government = authoritarian	
+		has_government = imperialism
+	}
+}
+
+is_left_wing_democratic = {
+	OR = {
+		has_government = social_democracy
+		has_government = progressive
+		has_government = democratic_socialism
+	}
+}
+
+is_centrist_democratic = {
+	OR = {
+		has_government = market_liberal
+		has_government = social_liberal
+	}
+}
+
+is_right_wing_democratic = {
+	OR = {
+		has_government = conservative
+		has_government = reactionary
+	}
+}
+
+has_similar_form_of_government = {
+	OR = {
+		AND = {
+			THIS = { has_democratic_government = yes }
+			ROOT = { has_democratic_government = yes }
+		}
+		AND = {
+			THIS = { has_fascist_government = yes }
+			ROOT = { has_fascist_government = yes }
+		}
+		AND = {
+			THIS = { has_neutral_government = yes }
+			ROOT = { has_neutral_government = yes }
+		}
+		AND = {
+			THIS = { has_communist_government = yes }
+			ROOT = { has_communist_government = yes }
+		}
+	}
+}

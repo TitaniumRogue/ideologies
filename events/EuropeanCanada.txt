@@ -1,0 +1,299 @@
+﻿###########################
+# European Canadian Evebts
+###########################
+
+add_namespace = eurocanada
+
+#German ERC puppetry event
+country_event = {
+	id = eurocanada.1
+	title = eurocanada.1.t
+	desc = eurocanada.1.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GER
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.1.a		#puppet ERC
+		ai_chance = { 
+		base = 99 
+		}
+		puppet = ERC
+		set_autonomy = {
+				target = ERC
+				autonomy_state = autonomy_integrated_puppet }
+		ERC = { set_cosmetic_tag = ERC_GER }
+		ENG = { end_puppet = ERC }
+
+	}
+	
+	#option = {
+		#name = eurocanada.1.b		#annex ERC
+		#ai_chance = { 
+		#base = 1 
+		#}
+		#annex_country = { target = ERC }
+		#ENG = { end_puppet = ERC }
+		#ERC = { drop_cosmetic_tag = yes }
+	#}
+}
+
+#ERC gets word of oncoming puppetry
+country_event = {
+	id = eurocanada.2
+	title = eurocanada.2.t
+	desc = eurocanada.2.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ERC
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.2.a		#submit
+		ai_chance = { 
+		base = 80 
+		}
+		GER = {
+		country_event = eurocanada.1
+		}	
+
+	}
+	
+	option = {
+		name = eurocanada.2.b		#try to make a deal
+		ai_chance = { 
+		base = 20
+		}
+			trigger = {
+		CZE = { exists = yes } 
+		POL = { exists = yes }
+	}
+		custom_effect_tooltip = erc_deal
+		GER = {
+		country_event =  eurocanada.3             
+	}
+}
+}
+#Germany recieves notice of a potential deal to be made
+country_event = {
+	id = eurocanada.3
+	title = eurocanada.3.t
+	desc = eurocanada.3.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GER
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.3.a		#deny
+		ai_chance = { 
+		base = 80 
+		}
+		ERC = {
+		country_event = eurocanada.4
+		}	
+		puppet = ERC
+		set_autonomy = {
+				target = ERC
+				autonomy_state = autonomy_integrated_puppet }
+		ERC = { set_cosmetic_tag = ERC_GER }
+		ENG = { end_puppet = ERC }
+
+	}
+	
+	option = {
+		name = eurocanada.3.b		#accept
+		ai_chance = { 
+		base = 20
+		}
+		ERC = { 
+add_popularity = { ideology = fascism popularity = 0.43 } 
+}
+		ERC = { 
+set_politics = { ruling_party = neutrality elections_allowed = yes } 
+}
+		ENG = { end_puppet = ERC }
+		
+		ERC = {
+		country_event =  eurocanada.5             
+	}
+}
+}
+#ERC finally gets puppeted
+country_event = {
+	id = eurocanada.4
+	title = eurocanada.4.t
+	desc = eurocanada.4.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ERC
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.4.a		
+	}
+}
+#ERC tells Poland and Czechia
+country_event = {
+	id = eurocanada.5
+	title = eurocanada.5.t
+	desc = eurocanada.5.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ERC
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.5.a		#accept
+		ai_chance = { 
+		base = 20
+		}
+		POL = {
+		country_event =  eurocanada.6             
+	}
+		CZE = {
+		country_event =  eurocanada.9            
+	}
+}
+}
+#POL and CZE are asked to join Axis
+country_event = {
+	id = eurocanada.6
+	title = eurocanada.6.t
+	desc = eurocanada.6.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.6.b		#try to make a deal
+		ai_chance = { 
+		base = 90
+		}
+		GER = { add_to_faction = POL }
+		ERC = {
+		country_event =  eurocanada.8             
+	}
+}
+	option = {
+		name = eurocanada.6.c		#no
+		ai_chance = { 
+		base = 10
+		}
+	declare_war_on = { target = GER type = annex_everything } 
+		ERC = {
+		country_event =  eurocanada.7             
+	}
+}
+}
+#Poland and/or Czechia refused
+country_event = {
+	id = eurocanada.7
+	title = eurocanada.7.t
+	desc = eurocanada.7.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ERC
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.7.a		#those fools!
+}
+}
+#Poland and/or Czechia accepted
+country_event = {
+	id = eurocanada.8
+	title = eurocanada.8.t
+	desc = eurocanada.8.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ERC
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.8.a		#good for them
+}
+}
+#CZE AXIS
+country_event = {
+	id = eurocanada.9
+	title = eurocanada.9.t
+	desc = eurocanada.9.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ERC = { exists = yes } 
+		GER = { exists = yes }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = eurocanada.9.b		#try to make a deal
+		ai_chance = { 
+		base = 90
+		}
+		GER = { add_to_faction = CZE }
+		ERC = {
+		country_event =  eurocanada.8             
+	}
+}

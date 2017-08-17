@@ -1,0 +1,120 @@
+ideas = {
+	country = {
+	FRI_collectivist_ethos_focus = {
+			
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+		
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				autonomy_gain = 1
+				democratic_drift = -0.01
+				fascism_drift = 0.01
+				communism_drift = 0.01
+			}
+		}
+}
+	army_chief = {
+		voong_huu_trieu = {
+			
+			
+			allowed = {
+				original_tag = FRI
+			}
+			
+
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	air_chief = {
+		lai_de = {
+			
+			
+			allowed = {
+				original_tag = FRI
+			}
+			
+
+			
+			traits = { air_chief_all_weather_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	navy_chief = {
+		hang_dinh_xuan = {
+			
+			
+			allowed = {
+				original_tag = FRI
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	high_command = {
+		voong_van_dao = {
+			allowed = {
+				original_tag = FRI
+			}
+			
+
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		tuan_ngoc_minh = {
+			allowed = {
+				original_tag = FRI
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		lai_thao = {
+			allowed = {
+				original_tag = FRI
+			}
+			
+
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}		
+}

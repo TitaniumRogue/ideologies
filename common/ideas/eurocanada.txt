@@ -1,0 +1,208 @@
+ideas = {
+
+	country = {
+		safehaven = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.05
+			}
+		}
+		
+		czech_friend = {
+			
+			allowed = {
+				original_tag = ERC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+	   		on_add = {
+		add_opinion_modifier = { target = CZE modifier =  friends_with } 
+		}  
+	}
+}
+
+	political_advisor = {
+		jacob_macintyre = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { fortification_engineer }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		caelin = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { armaments_organizer }
+		}
+		
+		luca_virick = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		brandon_clarke = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+
+		mugridge = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
+		rose = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		cameron_macd = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		lila = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { silent_workhorse }
+		}
+		
+		ashton = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { prince_of_terror }
+		}
+		
+		matthew_macd = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		bellefontaine = {
+
+			
+			allowed = {
+				original_tag = ERC
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+}
+

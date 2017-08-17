@@ -1,0 +1,339 @@
+ideas = {
+
+	political_advisor = {
+
+		NFL_john_charles_puddestere = {
+
+			picture = ian_a_mackenzie
+			
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		NFL_lewis_edward_emerson = {
+
+			picture = idea_generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { quartermaster_general }
+		}
+
+		NFL_william_ewen_stavart = {
+
+			picture = idea_generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { ideological_crusader }
+		}
+
+		NFL_fred_vavasour = {
+
+			picture = generic
+				
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { fascist_demagogue }
+		}
+		
+		NFL_james_winter = {
+
+			picture = idea_generic_political_advisor_europe_3
+				
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { democratic_reformer }
+		}
+		
+		NFL_john_barbour = {
+
+			picture = john_barbour
+				
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { communist_revolutionary }
+		}
+	}
+
+	theorist = {
+
+		NFL_pierre_edouard_leclerc = {
+					
+			picture = pierre_edouard_leclerc
+
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+
+		NFL_francis_roche = {
+					
+			picture = idea_generic_political_advisor_europe_2
+					
+			allowed = {
+				original_tag = NFL
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+	# MILITARY
+	army_chief = {
+		
+		NFL_basil_hallingham = {
+			picture = idea_generic_political_advisor_europe_1
+			
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NFL_robert_forsynth = {
+			picture = idea_generic_political_advisor_europe_3
+			
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NFL_alfred_howell = {
+			picture = idea_generic_political_advisor_europe_1
+			
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		NFL_james_thomas = {
+			picture = idea_generic_political_advisor_europe_2
+			
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NFL_maxwell_coles = {
+			picture = idea_generic_political_advisor_europe_1
+			
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+		
+		NFL_humphrey_walwyn = {
+			picture = lloyd_samuel_breadner
+			
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NFL_vincent_wakeham = {
+			picture = idea_generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+	
+	
+		NFL_david_coffey = {
+			
+			picture = idea_generic_political_advisor_europe_3
+
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NFL_cyril_roswell = {
+			
+			picture = idea_generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = NFL
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NFL_harold_lake = {
+			
+			picture = idea_generic_political_advisor_europe_2
+
+			allowed = {
+				OR = {
+					original_tag = CAN
+					
+				}
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NFL_william_mills = {
+			
+			picture = william_mills
+
+			allowed = {
+				OR = {
+					original_tag = NFL
+					
+				}
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	# TECHNOLOGY
+	
+	industrial_concern = {
+				
+		NFLD = {
+			
+			allowed = {
+				original_TAG = NFL
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		

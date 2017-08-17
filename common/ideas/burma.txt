@@ -1,0 +1,519 @@
+ideas = {
+	political_advisor = {
+
+		BUR_u_nu = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { democratic_reformer }
+
+			on_add = {
+				country_event = political.13
+			}
+			
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
+		BUR_than_tun = {
+
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { communist_revolutionary }	
+			
+			on_add = {
+				country_event = political.1
+			}		
+			
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+		}
+
+		BUR_tun_aung = {
+			
+			allowed = {
+				original_tag = BUR				
+			}
+
+			picture = generic_political_advisor_asia_1		
+			
+			traits = { fascist_demagogue }
+			
+			on_add = {
+				country_event = political.7
+			}
+				
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
+
+		BUR_u_razak = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		BUR_thankin_mya = {
+				
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { popular_figurehead }
+		
+		}
+
+		BUR_mahn_ba_khaing = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		BUR_aung_zan_wai = {
+				
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { popular_figurehead }
+			
+			}
+
+		BUR_tin_tut = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		BUR_ba_cho = {
+
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { ideological_crusader }
+
+			}
+
+		BUR_thein_pe_myint = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		
+		BUR_bo_mu_aung = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { quartermaster_general }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		
+		BUR_ohn_maung = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { armaments_organizer }
+
+			}
+		}
+	
+	theorist = {
+
+		BUR_kenneth_mcleod = {
+
+			allowed = {
+				original_tag = BUR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+
+		BUR_jack_baldwin = {
+				
+			allowed = {
+				original_tag = BUR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		BUR_john_henry_godfrey = {
+					
+			allowed = {
+				original_tag = BUR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+	
+	high_command = {
+
+		BUR_kenneth_mcleod_h = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUR_jack_baldwin_h = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { air_close_air_support_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUR_john_henry_godfrey_h = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { navy_anti_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		BUR_bo_let_ya = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BUR_kenneth_mcleod_a = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+
+			
+			traits = { army_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUR_ne_win = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+					
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUR_kyaw_zaw = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+						
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUR_tin_mya = {
+		
+		picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		BUR_jack_baldwin_a = {
+		
+			allowed = {
+				original_tag = BUR
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	navy_chief = {
+
+		BUR_louis_mountbatten = {
+			
+			picture = louis_mountbatten
+			
+			allowed = {
+				original_tag = BUR
+			}
+						
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUR_john_henry_godfrey_n = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+						
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		irrawaddy_flottila_company = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+			picture = irrawaddy_flottila_company
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		hawker_BUR = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+			
+			picture = hawker
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { CAS_manufacturer } 
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}				
+	}
+	
+	industrial_concern = {
+		
+		burmah_oil_company = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			picture = burmah_oil_company
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		umfcci = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			picture = umfcci
+			
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			
+			traits = { industrial_concern }	
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+		
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		rangoon_arsenal = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+
+			picture = rangoon_arsenal
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+				artillery = 0.05
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+		
+	tank_manufacturer = {
+		vickers_armstrong_BUR = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+			
+			picture = vickers_armstrong_eng
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+			factor = 1
+			}
+		}
+	}
+}
