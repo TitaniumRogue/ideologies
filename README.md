@@ -129,4 +129,4 @@ For anybody who would like to modify the localization files copy the text below 
 		anarchism = { 
 			popularity = 0
 		}
-     ----------
+ ----------
