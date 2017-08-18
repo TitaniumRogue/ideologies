@@ -915,4 +915,3 @@ ideologies = {
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
 }
-

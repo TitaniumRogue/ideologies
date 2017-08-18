@@ -41,6 +41,16 @@ has_communist_government = {
 	OR = {
 		has_government = leninism
 		has_government = stalinism
+		has_government = revolutionary_socialism
+	}
+}
+
+has_far_left_government = {
+	OR = {
+		has_government = leninism
+		has_government = stalinism
+		has_government = anarchism
+		has_government = revolutionary_socialism
 	}
 }
 
@@ -63,18 +73,7 @@ has_totalitarian_government = {
 		has_government = authoritarian
 		has_government = religious		
 		has_government = fascism
-		has_government = imperialism
 		has_government = national_socialism
-	}
-}
-
-has_autocratic_government = {
-	OR = {
-		has_government = absolute_monarchy
-		has_government = militarism
-		has_government = imperialism
-		has_government = authoritarian	
-		has_government = imperialism
 	}
 }
 
@@ -83,6 +82,18 @@ is_left_wing_democratic = {
 		has_government = social_democracy
 		has_government = progressive
 		has_government = democratic_socialism
+	}
+}
+
+is_left_wing = {
+	OR = {
+		has_government = social_democracy
+		has_government = progressive
+		has_government = democratic_socialism
+		has_government = leninism
+		has_government = stalinism
+		has_government = anarchism
+		has_government = revolutionary_socialism
 	}
 }
 
@@ -99,6 +110,21 @@ is_right_wing_democratic = {
 		has_government = reactionary
 	}
 }
+
+is_monarchy = {
+	OR = {
+		has_government = imperialism
+		has_government = absolute_monarchy
+	}
+}
+
+is_authoritarian = {
+	OR = {
+		has_government = authoritarian_democracy
+		has_government = authoritarian
+	}
+}
+
 
 has_similar_form_of_government = {
 	OR = {
