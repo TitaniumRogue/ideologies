@@ -117,21 +117,33 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 80
-		}
-
-		fascism = {
-			popularity = 10
+		conservative = { #Christian Democratic Union + Christian Social Union
+			popularity = 39
 		}
 		
-		communism = {
-			popularity = 10
+		social_democracy = { #Social Democratic Party
+			popularity = 34
+		}
+		
+		market_liberal = { #Free Democratic Party
+			popularity = 14
+		}
+		
+		reactionary = { #Bavaria Party
+			popularity = 5
+		}
+
+		nationalism = { #Economic Reconstruction League
+			popularity = 3
+		}
+		
+		stalinism = { #Communist Party of Germany
+			popularity = 5
 			banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -148,6 +160,26 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
 	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kurt Schumacher"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Franz Blücher"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = libertarian
 	traits = {
 	}
 }
