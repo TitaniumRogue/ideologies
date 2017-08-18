@@ -1,5 +1,7 @@
 # Hearts of Ideologies
-A HOI4 mod that adds in new ideologies
+A HOI4 mod that adds in 20 new ideologies
+
+
 
 Priorities (In order of highest to lowest):
 
