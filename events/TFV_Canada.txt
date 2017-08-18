@@ -284,20 +284,12 @@ country_event = {
 			random_other_country = {
 				limit = {
 					original_tag = MEX
-									OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_government = neutrality
 				}
 				set_equipment_fraction = 0.3
 				set_national_unity = 0.9
 				add_popularity = {
-					ideology = social_liberal
+					ideology = social_conservative
 					popularity = 0.35
 				}
 			}

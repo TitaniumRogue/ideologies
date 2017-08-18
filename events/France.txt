@@ -519,18 +519,18 @@ country_event = {
 			ROOT = { puppet = PREV }
 			set_capital = 26
 			set_politics = {
-				ruling_party = fascism
+				ruling_party = paternal_autocrat
 				elections_allowed = no
 				parties = {
-					social_liberal = { 
+					social_conservative = { 
 						popularity = 22
 					}
 
-					national_socialism = {
+					paternal_autocrat = {
 						popularity = 76
 					}
 					
-					leninism = {
+					communism = {
 						popularity = 2
 					}
 				}
@@ -791,15 +791,10 @@ country_event = {
 	trigger = {
 		tag = FRA
 		SOV = { has_government = communism }
-				OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+		has_government = social_conservative
+	    has_government = social_liberal
+	    has_government = market_liberal
+		has_government = social_democracy
 		communism < 0.5
 		has_global_flag = sov_yes_pact
 	}
@@ -1087,15 +1082,10 @@ country_event = {
 			random_other_country = {
 				limit = {
 					original_tag = FRA
-				OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+							has_government = social_conservative
+	                        has_government = social_liberal
+	                        has_government = market_liberal
+		                    has_government = social_democracy
 				}
 				if = {
 					limit = { ROOT = { owns_state = 554 } }
@@ -1170,7 +1160,10 @@ country_event = {
  
     trigger = {
         original_tag = FRA
-        has_government = social_liberal
+		has_government = social_conservative
+	    has_government = social_liberal
+	    has_government = market_liberal
+		has_government = social_democracy
         has_global_flag = fall_of_france
         NOT = { has_country_flag = france_de_gaulle }
     } 
@@ -1187,7 +1180,7 @@ country_event = {
         	desc = "POLITICS_PAUL_REYNAUD_DESC"
         	picture = "Portrait_France_Paul_Reynaud.dds"
         	expire = "1965.1.1"
-        	ideology = centre_right
+        	ideology = liberalism
         	traits = {
         	      }
             }

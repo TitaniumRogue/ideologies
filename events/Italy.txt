@@ -15,29 +15,8 @@ country_event = {
 	
 	option = {
 		name = italy.1.a
-		set_autonomy = {
-				target = ALB
-				autonomy_state = autonomy_integrated_puppet 
-				freedom_level = 0.15 }
-		ALB = { set_cosmetic_tag = ALB_ITA }
-		ALB = { add_popularity = {
-			ideology = fascism
-			popularity = 0.80
-		}
-	}
+		annex_country = { target = ALB }
 		add_named_threat = { threat = 2 name = ITA_albania_war_goal }
-		ALB = { create_country_leader = {
-			name = "Francesco Jacomoni"
-			desc = "POLITICS_PETER_II_DESC"
-			picture = "FrancescoJacomoni.dds"
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-			traits = {
-				#
-				}
-			}
-		}
-		ALB = { set_politics = { ruling_party = fascism elections_allowed = no } }
 		hidden_effect = {
 			country_event = { days = 1 id = news.22 }
 		}

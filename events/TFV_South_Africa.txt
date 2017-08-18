@@ -1,4 +1,4 @@
-﻿ ###########################
+﻿###########################
 # South-African TFV events Events
 ###########################
 
@@ -66,17 +66,10 @@ country_event = {
 				factor = 0 #don't do this if we are historical!
 			}
 			modifier = {
-				SAF = { NOT = { 				
-				OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+				SAF = { NOT = { has_government = social_democracy
+				                has_government = social_liberal
+								has_government = market_liberal
+								has_government = social_conservative} }
 				factor = 4
 			}
 		}

@@ -110,7 +110,7 @@ country_event = {
 		name = yugoslavia.2.b
 		ai_chance = { factor = 0 }
 		start_civil_war = {
-			ideology = authoritarian_democracy
+			ideology = social_conservative
 			size = 0.4
 		}
 	}
