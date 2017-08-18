@@ -58,44 +58,12 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 15
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		social_liberal = { 
+			popularity = 98
 		}
 
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 75
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 10
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		nationalism = {
+			popularity = 2
 		}
 	}
 	
@@ -116,57 +84,34 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Otilio Ulate"
-	desc = "POLITICS_OTILIO_ULATE_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+1939.1.1 = {
+	set_politics = {
 
-create_country_leader = {
-	name = "Otto Cortes Fernandez"
-	desc = "POLITICS_OTTO_CORTES_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
+		parties = {
+			social_liberal = { 
+				popularity = 95
+			}
+			
+			leninism = {
+				popularity = 5
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = social_liberal
+		last_election = "1936.2.9"
+		election_frequency = 48
+		elections_allowed = yes
 	}
-}
 
-create_country_leader = {
-	name = "Romualdo Pino Roja"
-	desc = "POLITICS_ROMUALDO_PINO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Manuel Mora Valverde"
-	desc = "POLITICS_MANUEL_MORA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Isalino de Silva Londres"
-	desc = "POLITICS_ISALINO_SILVA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-	expire = "1965.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		#
+	create_country_leader = {
+		name = "León Cortés Castro"
+		desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			#
+		}
 	}
 }

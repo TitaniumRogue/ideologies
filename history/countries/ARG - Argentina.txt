@@ -79,48 +79,24 @@ set_convoys = 120
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		social_democracy = { 
+			popularity = 5
 		}
 
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 100
-		}
-		
 		fascism = {
-			popularity = 0
+			popularity = 5
 		}
 		
-		national_socialism = { 
-			popularity = 0
+		leninism = {
+			popularity = 12
+		}
+		
+		authoritarian = { 
+			popularity = 78
 		}
 	}
 	
-	ruling_party = paternal_autocrat
+	ruling_party = authoritarian
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes
@@ -137,62 +113,32 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Luis Podesta Costa"
-	desc = "POLITICS_LUIS_PODESTA_COSTA_DESC"
-	picture = "Portrait_Argentina_Luis_Podesta_Costa.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+		democratic = { 
+			popularity = 5
+		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 12
+		}
+		
+		neutrality = { 
+			popularity = 78
+		}
 	}
-}
-
-create_country_leader = {
-	name = "Marcelo T. Alvear"
-	desc = "POLITICS_MARCELO_T_ALVEAR_DESC"
-	picture = "Portrait_Argentina_Marcelo_T_Alvear.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
+	
+	ruling_party = neutrality
+		last_election = "1937.9.5"
+		election_frequency = 108
+		elections_allowed = yes
 	}
-}
-
-create_country_leader = {
-	name = "Baldassare Baldí Jímenez"
-	desc = "POLITICS_BALDASSARE_BALDI_JIMENEZ_DESC"
-	picture = "Portrait_Argentina_Baldassare_Baldi_Jimenez.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Carlos Alberto Pueyrredon"
-	desc = "POLITICS_Carlos_Alberto_Pueyrredon_DESC"
-	picture = "Portrait_Argentina_Carlos_Alberto_Pueyrredon.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Juan Domingo Perón"
-	desc = "POLITICS_Juan_Domingo_Perón_DESC"
-	picture = "Portrait_Argentina_Juan_Domingo_Perón.dds"
-	expire = "1965.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		#
-	}
-}
-
-
 
 	create_country_leader = {
 		name = "Roberto María Ortiz"

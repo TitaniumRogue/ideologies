@@ -51,50 +51,14 @@ set_technology = {
 
 set_politics = {
 
-	parties = {
-		communism = { 
-			popularity = 0
-		}
+		parties = {
 		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
+		absolute_monarchy = { 
 			popularity = 100
 		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
-		}
-
 	}
 	
-	ruling_party = paternal_autocrat
+	ruling_party = absolute_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -105,8 +69,25 @@ create_country_leader = {
 	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = absolutism
 	traits = {
 		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+		
+		absolute_monarchy = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = absolute_monarchy
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
 	}
 }

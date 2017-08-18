@@ -55,48 +55,162 @@ create_import = {
 		exporter = SWE
 }
 
+1939.1.1 = {
+	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
+
+	add_political_power = 1197
+	
+	#adding ministers
+	add_ideas = {
+		henschel
+		ig_faben
+		heinrich_himmler
+		rudolf_hess
+		ludwig_beck
+		gerd_von_rundstedt
+
+		#laws
+		war_economy
+		extensive_conscription
+	}
+	
+	oob = "GER_1939"
+	
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_puppet
+	}
+	
+	give_military_access = SLO
+	create_wargoal = {
+		type = take_state_focus
+		target = POL
+		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
+	}
+
+#Trade
+	create_import = {
+			resource = oil
+			factories = 2
+			exporter = SOV
+	}
+
+	#MR pact effect, Also has a part scripted in soviet history file
+	unlock_national_focus = GER_mol_rib_pact
+	every_other_country = {
+		limit = {
+			has_fascist_government = yes
+		}
+		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
+	}
+	diplomatic_relation = { country = SOV relation = non_aggression_pact }
+	add_opinion_modifier = { target = SOV modifier = MR_pact }
+	#MR pact end
+
+	#Soviet treaty
+	unlock_national_focus = GER_soviet_treaty
+	add_tech_bonus = {
+		bonus = 0.5
+		uses = 2
+		category = armor
+	}
+	SOV = {
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
+	}
+	#Soviet treaty end
+	
+	unlock_national_focus = GER_rhineland
+	unlock_national_focus = GER_anschluss
+	unlock_national_focus = GER_demand_sudetenland
+	unlock_national_focus = GER_first_vienna_award
+	unlock_national_focus = GER_end_of_czechoslovakia
+	unlock_national_focus = GER_demand_memel
+
+	set_global_flag = end_of_czechoslovakia
+	set_global_flag = olympics_1936
+	complete_national_focus = GER_autobahn
+	complete_national_focus = GER_west_wall
+	complete_national_focus = GER_army_innovation
+	complete_national_focus = GER_industrial_effort
+
+	#BUILDINGS
+	
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		basic_heavy_cruiser = 1
+		improved_heavy_cruiser = 1
+		basic_battleship = 1
+		improved_battleship = 1
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+
+	}
+}
 
 set_politics = {
 
 	parties = {
-		communism = { 
+		conservative = { 
 			popularity = 20
 		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
 
-		social_democracy = {
-			popularity = 10
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 10
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
+		national_socialism = {
 			popularity = 60
+		}
+		
+		stalinism = {
+			popularity = 20
+			banned = yes #default is no
 		}
 	}
 	
@@ -131,27 +245,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Oskar von Hindenburg"
-	desc = "POLITICS_OSKAR_HINDENBURG_DESC"
-	picture = "Portrait_Germany_Oskar_Hindenburg.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm II von Hohenzollern"
-	desc = "POLITICS_WILHELM_II_DESC"
-	picture = "Portrait_Germany_Wilhelm_II.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
-
-
-create_country_leader = {
 	name = "Konrad Adenauer"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
@@ -166,24 +259,24 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = stalinism_ideology
 	traits = {
 		stalins_puppet
 		exiled
 	}
 }
 
- create_country_leader = {
-	name = "Otto Wels"
-	desc = "POLITICS_OTTO_WELS_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
-	expire = "1939.1.16"
-	ideology = socialism
-	traits = {
-		exiled
-		union_man
-	}
-}
+#create_country_leader = {
+#	name = "Otto Wels"
+#	desc = "POLITICS_OTTO_WELS_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	expire = "1939.1.16"
+#	ideology = socialism
+#	traits = {
+#		exiled
+#		union_man
+#	}
+#}
 #
 #create_country_leader = {
 #	name = "Ernst Thälmann"
@@ -230,7 +323,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erwin Rommel"
 	picture = "Portrait_Germany_Erwin_Rommel.dds"
-	traits = { trickster panzer_leader maj_general }
+	traits = { trickster panzer_leader }
 	skill = 4
 	id = 4
 }

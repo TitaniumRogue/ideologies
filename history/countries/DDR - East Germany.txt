@@ -117,21 +117,21 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 30
 		}
 
-		fascism = {
+		national_socialism = {
 			popularity = 10
 		}
 		
-		communism = {
+		stalinism = {
 			popularity = 60
 			banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = stalinism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -141,7 +141,6 @@ set_politics = {
 
 add_ideas = {
 }
-
 
 #create_country_leader = {
 #	name = "Dennis Fredauer"
@@ -158,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_PIECK_DESC"	 
 	picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = stalinism_ideology
 	traits = {
 		stalins_puppet
 		exiled

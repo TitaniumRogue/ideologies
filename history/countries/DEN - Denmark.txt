@@ -76,48 +76,42 @@ set_technology = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ICE
+		autonomous_state = autonomy_dominion
+	}
+}
 
 set_politics = {
 
 	parties = {
-		communism = { 
+		
+		social_democracy = { 
+			popularity = 48
+		}
+		
+		conservative = { 
+			popularity = 37
+		}		
+		
+		social_liberal = { 
+			popularity = 9
+		}
+
+		national_socialism = {
+			popularity = 1
+		}
+		
+		progressive = {
 			popularity = 3
 		}
 		
-		leninist = { 
+		leninism = {
 			popularity = 2
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 55
-		}
-	
-		social_liberal = {
-			popularity = 10
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 25
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 3
 		}
 	}
 	
@@ -127,6 +121,41 @@ set_politics = {
 	elections_allowed = yes
 }
 
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+		social_democracy = { 
+			popularity = 45
+		}
+		
+		conservative = { 
+			popularity = 39
+		}		
+		
+		social_liberal = { 
+			popularity = 9
+		}
+
+		national_socialism = {
+			popularity = 2
+		}
+		
+		progressive = {
+			popularity = 3
+		}
+		
+		leninism = {
+			popularity = 2
+		}
+		}
+		
+		ruling_party = social_democracy
+		last_election = "1939.4.3"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
 
 set_convoys = 40
 
@@ -135,40 +164,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
 	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Erik Scavenius"
-	desc = "POLITICS_ERIK_SCAVENIUS_DESC"
-	picture = "Portrait_Denmark_Erik_Scavenius.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Christmas Møller"
-	desc = "POLITICS_ERIK_SCAVENIUS_DESC"
-	picture = "Portrait_Denmark_Erik_Scavenius.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Knud Kristensen"
-	desc = "POLITICS_KNUD_KRISTENSEN_DESC"
-	picture = "Portrait_Denmark_Knud_Kristensen.dds"
-	expire = "1965.1.1"
-	ideology = market_liberalism
+	ideology = social_democrat
 	traits = {
 		#
 	}
@@ -190,12 +186,22 @@ create_country_leader = {
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism_ideology
 	traits = {
 		#
 	}
 }
 
+create_country_leader = {
+	name = "Peter Rochegune Munch"
+	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
 
 
 create_corps_commander = {
@@ -204,4 +210,3 @@ create_corps_commander = {
 	traits = { trickster }
 	skill = 3
 }
-

@@ -101,48 +101,12 @@ set_convoys = 40
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
+		nationalism = { 
 			popularity = 100
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
 		}
 	}
 	
-	ruling_party = paternal_autocrat
+	ruling_party = nationalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -153,30 +117,18 @@ create_country_leader = {
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
 	picture = "Portrait_China_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = nationalism_ideology
 	traits = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Soong Tse-ven"
-	desc = "POLITICS_SOONG_DESC"
-	picture = "Portrait_China_Soong_Tseven.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
 
 create_country_leader = {
 	name = "Zhang Guotao"
 	desc = "POLITICS_ZHANG_GUOTAO_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = leninism_ideology
 	traits = {
 		cornered_fox
 	}
@@ -187,7 +139,7 @@ create_country_leader = {
 	desc = "POLITICS_WANG_JINGWEI_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = imperialism_ideology
 	traits = {
 		#
 	}
@@ -198,7 +150,7 @@ create_country_leader = {
 	desc = "POLITICS_ZHANG_LAN_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat
 	traits = {
 		#
 	}
@@ -206,6 +158,21 @@ create_country_leader = {
 
 add_opinion_modifier = { target = PRC modifier = hostile_status }
 
+1939.1.1 = {
+set_politics = {
+
+	parties = {
+		nationalism = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = nationalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+}
 
 create_field_marshal = {
 	name = "Tu Yu-ming"

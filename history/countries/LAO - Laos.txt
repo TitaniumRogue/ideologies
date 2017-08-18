@@ -43,45 +43,21 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		democratic = { 
+			popularity = 25
 		}
 
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
+#		fascism = {
+#		
+#		}
 		
-		market_liberal = {
-			popularity = 0
+		communism = {
+			popularity = 35
 		}
-		
-		social_conservative = {
-			popularity = 0
+		neutrality = {
+			popularity = 40
 		}
-
-		paternal_autocrat = {
-			popularity = 100
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
-		}
+	}
 }
 
 create_country_leader = {

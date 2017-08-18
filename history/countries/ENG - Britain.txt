@@ -86,6 +86,7 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+
 	else = {
 		puppet = MAL
 		puppet = RAJ
@@ -100,51 +101,151 @@ if = {
 }
 
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#adding ministers
+	add_ideas = {
+		ENG_ernest_bevin
+		bernard_montgomery
+		rsaf_enfield
+		archibald_wavell
+		charles_portal
+		english_electric		
+
+		#laws
+		partial_economic_mobilisation
+		limited_conscription
+
+		ENG_george_vi
+	}
+
+	
+create_country_leader = {
+	name = "Neville Chamberlain"
+	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+	remove_ideas = george_v #Dead
+
+	complete_national_focus = limited_rearmament_focus
+	complete_national_focus = air_defense_focus
+	complete_national_focus = radar_focus
+	complete_national_focus = shadow_scheme_focus
+	complete_national_focus = uk_empire_focus
+	complete_national_focus = uk_service_focus
+	complete_national_focus = uk_colonial_focus
+	complete_national_focus = uk_mediterranean_focus
+	complete_national_focus = uk_asia_focus
+	complete_national_focus = uk_commonwealth_focus
+
+	give_guarantee = POL
+	
+	set_national_unity = 0.8
+	oob = "ENG_1939"
+	set_technology = {
+		fighter1 = 1
+		fighter2 = 1
+		heavy_fighter1 = 1
+		heavy_fighter2 = 1
+		CAS2 = 1
+		naval_bomber2 = 1
+		tactical_bomber1 = 1
+		tactical_bomber2 = 1
+		strategic_bomber1 = 1
+		cv_CAS1 = 1
+		cv_fighter1 = 1
+		improved_light_tank = 1
+		basic_medium_tank = 1
+		basic_heavy_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		basic_submarine = 1
+		improved_submarine = 1
+		improved_destroyer = 1
+		basic_light_cruiser = 1
+		improved_light_cruiser = 1
+		basic_battleship = 1
+		basic_carrier = 1
+		improved_carrier = 1
+
+		#doctrines
+		#Air
+		air_superiority = 1
+		home_defence = 1
+		naval_strike_tactics = 1
+
+			grand_battle_plan = 1
+
+		prepared_defense = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+		convoy_escorts = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+
+	set_convoys = 200
+}
+
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
+		conservative = { 
+			popularity = 52
 		}
 		
-		leninist = { 
-			popularity = 3
+		social_democracy = { 
+			popularity = 39
 		}
 		
-		leftwingradical = { 
-			popularity = 0
+		social_liberal = { 
+			popularity = 7
 		}
 
-		social_democracy = {
-			popularity = 35
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 60
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
 		fascism = {
-			popularity = 2
+			popularity = 1
 		}
 		
-		national_socialism = { 
-			popularity = 0
+		democratic_socialism = {
+			popularity = 1
 		}
 	}
 	
-	ruling_party = social_conservative
+	ruling_party = conservative
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
@@ -158,7 +259,7 @@ add_to_faction = ENG
 add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
-add_to_faction = SAF
+
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
@@ -169,37 +270,38 @@ add_to_faction = MAL
 # Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
+	name = "Winston Churchill"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_Britain_Winston_Churchill.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+	}
+}
+
+
+create_country_leader = {
 	name = "Stanley Baldwin"
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
 	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
 	expire = "1938.1.1"
-	ideology = conservatism
+	ideology = right_wing_conservative
 	traits = {
 		
 	}
 }
 
-create_country_leader = {
-	name = "Aneurin Bevan"
-	desc = "POLITICS_ANEURIN_BEVAN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1964.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Clement Attlee"
-	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1964.1.1"
-	ideology = socialism
-	traits = {
-		
-	}
-}
+#create_country_leader = {
+#	name = "Neville Chamberlain"
+#	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+#	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+#	expire = "1965.1.1"
+#	ideology = liberalism
+#	traits = {
+#		
+#	}
+#}
 
 create_country_leader = {
 	name = "Oswald Mosley"
@@ -217,7 +319,7 @@ create_country_leader = {
 	desc = "POLITICS_PALME_DUTT_DESC"
 	picture = "Portrait_Britain_Palme_Dutt.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = leninism_ideology
 	traits = {
 		
 	}

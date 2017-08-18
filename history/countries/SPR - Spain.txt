@@ -28,48 +28,37 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 7
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 0
-		}
 	
-		social_liberal = {
-			popularity = 47
+		democratic_socialism = { #Popular Front
+			popularity = 45
 		}
 		
-		market_liberal = {
+		social_liberal = { #Radical Republican Party
+			popularity = 4
+		}
+		
+		market_liberal = { #Republicans of the Right
+			popularity = 2
+		}
+		
+		conservative = { #Spanish Confederation of the Autonomous Right
+			popularity = 43
+		}
+		
+		progressive = { #Spanish Agrarian Party
 			popularity = 0
 		}
 		
-		social_conservative = {
-			popularity = 0
+		absolute_monarchy = { #Monarchist parties of the Right
+			popularity = 3
 		}
 
-		paternal_autocrat = {
-			popularity = 46
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		fascism = { #Spanish Falange
+			popularity = 3
 		}
 	}
 	
-	ruling_party = social_liberal
+	ruling_party = conservative
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -78,11 +67,133 @@ set_politics = {
 set_convoys = 150
 set_national_unity = 0.5
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "SPA_1939"
+	load_oob = "unlock_tanks"
+	set_technology = {
+		fighter1 = 1
+		CAS1 = 1
+		tactical_bomber1 = 1
+		gwtank = 1
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antiair = 1
+		interwar_antitank = 1
+		motorised_infantry = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+
+	set_politics = {
+
+		parties = {
+			fascism = {
+				popularity = 100
+			}
+		}
+		
+		ruling_party = fascism
+		last_election = "1934.3.26"
+		election_frequency = 60
+		elections_allowed = no
+	}
+
+	set_global_flag = scw_over
+	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
+}
 
 create_country_leader = {
 	name = "Manuel Azana"
 	desc = "POLITICS_MANUEL_AZANA_DESC"
 	picture = "Portrait_Spain_Manuel_Azana.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Manuel Azana"
+	desc = "POLITICS_MANUEL_AZANA_DESC"
+	picture = "Portrait_Spain_Manuel_Azana.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Díaz"
+	desc = "POLITICS_JOSE_DIAZ_DESC"
+	picture = "Portrait_Spain_Jose_Diaz.dds"
+	expire = "1965.1.1"
+	ideology = stalinism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "Portrait_Spain_Francisco_Franco.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alejandro Lerroux"
+	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -92,82 +203,14 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Niceto Alcalá-Zamora"
-	desc = "POLITICS_NICETO_ALCALA_DESC"
-	picture = "Portrait_Spain_Niceto_Alcala.dds"
+	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Francisco Largo Caballero"
-	desc = "POLITICS_FRANCISCO_LARGO_DESC"
-	picture = "Portrait_Spain_Francisco_Largo.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Joaquín Ascaso Budriá"
-	desc = "POLITICS_JOAQUIN_ASCASO_DESC"
-	picture = "Portrait_Spain_Joaquin_Ascaso.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Julián Besteiro Fernández"
-	desc = "POLITICS_JULIAN_FERNANDEZ_DESC"
-	picture = "Portrait_Spain_Julian_Fernandez.dds"
-	expire = "1965.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		#
-	}
-}
-
-
-create_country_leader = {
-	name = "José Díaz Ramos"
-	desc = "POLITICS_JOSE_DIAZ_DESC"
-	picture = "Portrait_Spain_Jose_Diaz.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Francisco Franco Bahamonde"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "Portrait_Spain_Francisco_Franco.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Emilio Mola Vidal"
-	desc = "POLITICS_EMILIO_MOLA_DESC"
-	picture = "Portrait_Spain_Emilio_mola.dds"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-		#
-	}
-}
-
 
 create_field_marshal = {
 	name = "José Asensio Torrado"

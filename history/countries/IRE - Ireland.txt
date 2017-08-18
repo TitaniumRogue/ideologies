@@ -11,83 +11,113 @@ set_technology = {
 
 set_convoys = 10
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "IRE_1939"
+	set_technology = {
+		gw_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 
 set_politics = {
 
-	parties = {
-		communism = { 
-			popularity = 5
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
+		parties = {
+			conservative = { 
+				popularity = 88
+			}
+			
+			social_democracy = { 
+				popularity = 6
+			}
 
-		social_democracy = {
-			popularity = 35
+			fascism = {
+				popularity = 3
+			}
+			
+			leninism = {
+				popularity = 3
+			}
 		}
 	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 55
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 5
-		}
-		
-		national_socialism = { 
-			popularity = 0
-		}
-	}
-	
-	ruling_party = market_liberal
+	ruling_party = conservative
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			conservative = { 
+				popularity = 89
+			}
+			
+			social_democracy = { 
+				popularity = 5
+			}
+
+			fascism = {
+				popularity = 3
+			}
+			
+			leninism = {
+				popularity = 3
+			}
+		}
+		
+		ruling_party = conservative
+		last_election = "1938.6.17"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
 create_country_leader = {
 	name = "Éamon de Valera"
 	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
 	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
-	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alasdair McCabe"
-	desc = "POLITICS_ALASDAIR_MCCABE_DESC"
-	picture = "Portrait_Ireland_Alasdair_McCabe.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Eoin MacNeill"
-	desc = "POLITICS_EOIN_MACNEILL_DESC"
-	picture = "Portrait_Ireland_Eoin_MacNeill.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -96,19 +126,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jim Larkin Sr."
-	desc = "POLITICS_JIM_LARKIN_DESC"
-	picture = "Portrait_Ireland_Jim_Larkin.dds"
-	expire = "1965.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Patrick Sweeney"
-	desc = "POLITICS_PATRICK_SWEENEY_DESC"
+	name = "Eoin O'Duffy"
+	desc = "POLITICS_EOIN_ODUFFY_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
@@ -117,6 +136,27 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "James Larkin"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Norton"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+		#
+	}
+}
 
 create_corps_commander = {
 	name = "Michael Costello"

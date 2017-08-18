@@ -12,59 +12,73 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 5
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "GUA_1939"
+	set_technology = {
+		infantry_weapons1 = 1
+
+		#doctrines
+		air_superiority = 1
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		social_liberal = { 
+			popularity = 30
 		}
 
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 100
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		authoritarian = {
+			popularity = 70
 		}
 	}
 	
-	ruling_party = paternal_autocrat
+	ruling_party = authoritarian
 	last_election = "1931.2.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Jorge Ubico Castaneda"
+	name = "Jorge Ubico"
 	desc = "POLITICS_JORGE_UBICO_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
 	expire = "1965.1.1"
@@ -74,49 +88,22 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Jacobo Arbenz Guzman"
-	desc = "POLITICS_JACOBO_ARBENZ_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
-	expire = "1965.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		#
+1939.1.1 = {
+	set_politics = {
+
+	parties = {
+		social_liberal = { 
+			popularity = 30
+		}
+
+		authoritarian = {
+			popularity = 70
+		}
+	}
+		
+		ruling_party = authoritarian
+		last_election = "1931.2.8"
+		election_frequency = 48
+		elections_allowed = no
 	}
 }
-
-create_country_leader = {
-	name = "Juan Arevalo Bermejo"
-	desc = "POLITICS_JUAN_AREVALO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Jorge Torriello Garrido"
-	desc = "POLITICS_JORGE_TORRIELLO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Manuel Orellana"
-	desc = "POLITICS_MANUEL_ORELLANA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-
-

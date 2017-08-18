@@ -78,105 +78,66 @@ set_convoys = 5
 
 set_politics = {
 
-	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
+		parties = {
+			social_liberal = { 
+				popularity = 20
+			}
 
-		social_democracy = {
-			popularity = 0
+			national_socialism = {
+				popularity = 15
+			}
+			
+			stalinism = {
+				popularity = 5
+				#banned = no #default is no
+			}
+			
+			authoritarian_democracy = { 
+				popularity = 60
+			}
 		}
 	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 30
-		}
-
-		paternal_autocrat = {
-			popularity = 70
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
-		}
-	}
-	
-	ruling_party = paternal_autocrat
+	ruling_party = authoritarian_democracy
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			social_liberal = { 
+				popularity = 20
+			}
+
+			national_socialism = {
+				popularity = 15
+			}
+			
+			stalinism = {
+				popularity = 5
+				#banned = no #default is no
+			}
+			
+			authoritarian_democracy = { 
+				popularity = 60
+			}
+		}
+		
+		ruling_party = authoritarian_democracy
+		last_election = "1938.2.25"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
 
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "August Rei"
-	desc = "POLITICS_AUGUST_REI_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Hjalmar Mäe"
-	desc = "POLITICS_HJALMAR_MAE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Karl Sigismund Litzmann"
-	desc = "POLITICS_KARL_LITZMANN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Johannes Vares-Barbaruse"
-	desc = "POLITICS_JOHANNES_VARES_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = authoritarian_democracy_ideology
 	traits = {
 		#
 	}

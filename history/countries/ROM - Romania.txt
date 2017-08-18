@@ -24,55 +24,121 @@ set_technology = {
  add_ideas = neutrality_idea
 
 set_convoys = 10
+1939.1.1 = {
+	
+	remove_ideas = neutrality_idea
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "ROM_1939"
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		tech_recon = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		basic_submarine = 1
+
+		#doctrines
+		#Air
+		force_rotation = 1
+		fighter_baiting = 1
+		
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		fascism = { 
+			popularity = 20
 		}
 
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 15
+		nationalism = {
+			popularity = 18
 		}
 		
-		market_liberal = {
-			popularity = 0
+		leninism = {
+			popularity = 2
 		}
 		
-		social_conservative = {
+		conservative = { 
 			popularity = 60
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 25
-		}
-		
-		national_socialism = { 
-			popularity = 0
 		}
 	}
 	
-	ruling_party = social_conservative
+	ruling_party = conservative
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			absolute_monarchy = { 
+				popularity = 48
+			}
+
+			fascism = {
+				popularity = 30
+			}
+			
+			leninism = {
+				popularity = 2
+			}
+			
+			conservative = { 
+				popularity = 20
+			}
+		}
+		
+		ruling_party = absolute_monarchy
+		last_election = "1939.7.15"
+		election_frequency = 48
+		elections_allowed = no
+	}
 }
 
 create_country_leader = {
@@ -91,19 +157,29 @@ create_country_leader = {
 	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
 	picture = "Portrait_Romania_Constantin_Parhon.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism_ideology
 	traits = {
 		#
 	}
 }
 
+create_country_leader = {
+	name = "Armand Calinescu"
+	desc = "POLITICS_ARMAND_CALINESCU_DESC"
+	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
 
 create_country_leader = {
 	name = "Octavian Goga"
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "Portrait_Romania_Octavian_Goga.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
@@ -115,17 +191,6 @@ create_country_leader = {
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Corneliu Codreanu"
-	desc = "POLITICS_CORNELIU_CORDREANU_DESC"
-	picture = "Portrait_Romania_Corneliu_Codreanu.dds"
-	expire = "1965.1.1"
-	ideology = nazism_ideology
 	traits = {
 		#
 	}

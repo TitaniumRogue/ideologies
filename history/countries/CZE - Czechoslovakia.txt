@@ -23,48 +23,36 @@ set_research_slots = 3
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 10
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		conservative = { 
+			popularity = 43
 		}
 
+		national_socialism = {
+			popularity = 16
+		}
+		
+		nationalism = {
+			popularity = 6
+		}
+		
 		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
+			popularity = 18
 		}
 		
-		market_liberal = {
-			popularity = 65
-		}
-		
-		social_conservative = {
-			popularity = 10
-		}
-
-		paternal_autocrat = {
-			popularity = 0
+		leninism = {
+			popularity = 11
 		}
 		
 		fascism = {
-			popularity = 0
+			popularity = 3
 		}
 		
-		national_socialism = { 
-			popularity = 15
+		progressive = {
+			popularity = 3
 		}
 	}
 	
-	ruling_party = market_liberal
+	ruling_party = conservative
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
@@ -75,17 +63,6 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Jan Syrovy"
-	desc = "POLITICS_JAN_SYROVY_DESC"
-	picture = "Portrait_Czech_Jan_Syrovy.dds"
-	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
 		#
@@ -93,22 +70,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Konrad Henlein"
-	desc = "POLITICS_KONRAD_HENLEIN_DESC"
-	picture = "Portrait_Czech_Konrad_Henlein.dds"
+	name = "Jaroslav Krejčí"
+	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
+	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
 	expire = "1965.1.1"
 	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rudolf Beran"
-	desc = "POLITICS_RUDOLF_BERAN_DESC"
-	picture = "Portrait_Czech_Rudolf_Beran.dds"
-	expire = "1965.1.1"
-	ideology = despotism
 	traits = {
 		#
 	}
@@ -119,7 +85,7 @@ create_country_leader = {
 	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
 	picture = "Portrait_Czech_Klement_Gottwald.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = stalinism_ideology
 	traits = {
 		#
 	}

@@ -11,49 +11,17 @@ set_technology = {
 set_politics = {
 
 	parties = {
-	
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
 
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 100
-		}
-		
 		fascism = {
 			popularity = 0
 		}
 		
-		national_socialism = { 
-			popularity = 0
+		absolute_monarchy = { 
+			popularity = 100
 		}
 	}
 	
-	ruling_party = paternal_autocrat
+	ruling_party = absolute_monarchy
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -61,24 +29,13 @@ set_politics = {
 
 set_convoys = 5
 
-
+#Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Zog I"
+	name = "King Zog"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_King_Zog.dds"
 	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shefqet Vërlaci"
-	desc = "POLITICS_SHEFQET_VERLACI_DESC"
-	picture = "Portrait_Albania_Shefqet_Verlaci.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = constitutional_monarchy
 	traits = {
 		#
 	}

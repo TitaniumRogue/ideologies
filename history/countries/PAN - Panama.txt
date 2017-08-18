@@ -10,72 +10,82 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 10
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "PAN_1939"
+	set_technology = {
+		infantry_weapons1 = 1
+
+		#doctrines
+		air_superiority = 1
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1		
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		fleet_in_being = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
 		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		social_liberal = { #All liberal parties (seriously, there are a TON!)
+			popularity = 82
 		}
 
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
+		conservative = { #Conservative Party
+			popularity = 15
 		}
 		
-		market_liberal = {
-			popularity = 60
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 40
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		progressive = { #Agrarian Party
+			popularity = 3
+			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = market_liberal
+	ruling_party = social_liberal
 	last_election = "1932.6.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Harmodio Arias de la Madrid"
+	name = "Harmodio Arias Madrid"
 	desc = "POLITICS_HARMODIO_ARIAS_MADRID_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Juan Remón"
-	desc = "POLITICS_JUAN_REMON_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -83,35 +93,41 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "José Augustin Arango"
-	desc = "POLITICS_JOSE_AUGUSTIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+1939.1.1 = {
+	set_politics = {
 
-create_country_leader = {
-	name = "Floyd N. Britton sr."
-	desc = "POLITICS_FLOYD_BRITTON_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
+		parties = { #Coundn't find much info about any of the political parties; It seems that basically all parties liberals, but I may be wrong
+			social_liberal = { 
+				popularity = 100
+			}
+			}
+		}
+		
+		ruling_party = social_liberal
+		last_election = "1936.6.7"
+		election_frequency = 48
+		elections_allowed = yes
 	}
-}
 
-create_country_leader = {
-	name = "Juan Demosthenes Arosemana"
-	desc = "POLITICS_JUAN_DEMOSTHENES_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
+	create_country_leader = {
+		name = "Juan Demóstenes Arosemena"
+		desc = "POLITICS_JUAN_DEMOSTENES_AROSEMENA_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			#
+		}
+	}
+
+	create_country_leader = {
+		name = "July Portocarrero"
+		desc = "POLITICS_JULY_PORTOCARRERO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+			#
+		}
 	}
 }

@@ -78,44 +78,26 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 4
+		market_liberal = { 
+			popularity = 1
 		}
-		
-		leninist = { 
-			popularity = 0
+		democratic_socialism = { 
+			popularity = 27
 		}
-		
-		leftwingradical = { 
-			popularity = 0
+		social_liberal = { 
+			popularity = 38
 		}
-
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 56
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 22
+		conservative = { 
+			popularity = 32
 		}
 
-		paternal_autocrat = {
-			popularity = 15
-		}
-		
 		fascism = {
 			popularity = 0
 		}
 		
-		national_socialism = { 
-			popularity = 3
+		leninism = {
+			popularity = 2
+			#banned = no #default is no
 		}
 	}
 	
@@ -126,7 +108,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Arturo Alessandri Palma"
+	name = "Arturo Alessandri"
 	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
@@ -136,25 +118,33 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Pedro Aguirre Cerda"
-	desc = "POLITICS_PEDRO_CERDA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+1939.1.1 = {
+	set_politics = {
 
-create_country_leader = {
-	name = "Salvador Allende"
-	desc = "POLITICS_SALVADOR_ALLENDE_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		#
+	parties = {
+		market_liberal = { 
+			popularity = 49.5
+		}
+		social_liberal = { 
+			popularity = 50.5
+		}
+	}
+		
+		ruling_party = social_liberal
+		last_election = "1938.10.25"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	create_country_leader = {
+		name = "Pedro Aguirre Cerda"
+		desc = "POLITICS_PEDRO_AGUIRRE_CERDA_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			#
+		}
 	}
 }
 
@@ -174,18 +164,7 @@ create_country_leader = {
 	desc = "POLITICS_CARLOS_CONTRERAS_LABARCA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Marmaduke Grove"
-	desc = "POLITICS_MARMADUKE_GROVEDESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	expire = "1965.1.1"
-	ideology = leninism
+	ideology = marxism
 	traits = {
 		#
 	}

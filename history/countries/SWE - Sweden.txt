@@ -32,47 +32,84 @@ set_technology = {
 	transport = 1
 }
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "SWE_1939"
+	set_technology = {
+		early_bomber = 1
+		tactical_bomber1 = 1
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		basic_submarine = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
+		social_democracy = { #Social Democratic Party
+			popularity = 42
 		}
 		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+		market_liberal = { #General Electoral League/Moderate + Liberal Party
+			popularity = 35
 		}
 
-		social_democracy = {
-			popularity = 60
-		}
-	
-		social_liberal = {
-			popularity = 20
+		progressive = { #Farmers' League
+			popularity = 14
 		}
 		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 20
+		revolutionary_socialism = { #Both Communist Parties
+			popularity = 8
 		}
 
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		national_socialism = { #Swedish National Socialist Party
+			popularity = 1
 		}
 		
 	}
@@ -81,6 +118,39 @@ set_politics = {
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+		social_democracy = { #Social Democratic Party
+			popularity = 46
+		}
+		
+		market_liberal = { #General Electoral League/Moderate + Liberal Party
+			popularity = 31
+		}
+
+		progressive = { #Farmers' League
+			popularity = 14
+		}
+		
+		revolutionary_socialism = { #Both Communist Parties
+			popularity = 8
+		}
+
+		national_socialism = { #Swedish National Socialist Party + National Socialist Workers' Party
+			popularity = 1
+		}
+			
+		}
+		
+		ruling_party = social_democracy
+		last_election = "1936.9.20"
+		election_frequency = 48
+		elections_allowed = yes
+	}
 }
 
 set_convoys = 25
@@ -94,18 +164,7 @@ create_country_leader = {
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
 	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Axel Pehrsson-Bramstorp"
-	desc = "POLITICS_AXEL_PEHRSSON_DESC"
-	picture = "Portrait_Sweden_Axel_Pehrsson.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_democrat
 	traits = {
 		#
 	}
@@ -123,27 +182,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Konrad Hallgren"
-	desc = "POLITICS_KONRAD_HALLGREN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Sven Linderot"
+	desc = "POLITICS_SVEN_LINDEROT_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = marxism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Sven Linderot"
-	desc = "POLITICS_SVEN_LINDEROT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	name = "Axel Pehrsson-Bramstorp"
+	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = progressive_ideology
 	traits = {
 		#
 	}
 }
-
 
 create_corps_commander = {
 	name = "Folke Högberg"

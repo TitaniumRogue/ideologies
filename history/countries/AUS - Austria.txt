@@ -17,48 +17,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
+		naionalism = { 
+			popularity = 48
 		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
+
+		national_socialism = {
+			popularity = 50
 		}
 
 		social_democracy = {
-			popularity = 10
-		}
-	
-		social_liberal = {
-			popularity = 0
+			popularity = 1
 		}
 		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 48
-		}
-		
-		national_socialism = { 
-			popularity = 42
+		leninism = {
+			popularity = 1
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = nationalism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -71,7 +47,7 @@ create_country_leader = {
 	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
 	picture = "Portrait_Austria_Kurt_Schuschnigg.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = austrofascism
 	traits = {
 		#
 	}
@@ -82,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_KARL_RENNER_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat
 	traits = {
 		#
 	}
@@ -104,40 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_ALFRED_KLAHR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Josef Teufl"
-	desc = "POLITICS_JOSEF_TEUFL_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Leopold Figl"
-	desc = "POLITICS_LEOPOLD_FIGL_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Otto I von Habsburg"
-	desc = "POLITICS_OTTO_I_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = despotism
+	ideology = marxism
 	traits = {
 		#
 	}

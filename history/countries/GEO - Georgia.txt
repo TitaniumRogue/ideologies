@@ -40,44 +40,12 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 10
+		social_liberal = { 
+			popularity = 25
 		}
 		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 30
-		}
-
-		paternal_autocrat = {
-			popularity = 50
-		}
-		
-		fascism = {
-			popularity = 10
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		stalinism = {
+			popularity = 75
 		}
 	}
 }
@@ -98,7 +66,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = stalinism_ideology
 	traits = {
 		
 	}

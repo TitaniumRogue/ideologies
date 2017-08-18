@@ -87,49 +87,33 @@ add_ideas = {
 
 set_politics = {
 
-	parties = {
-		communism = { 
-			popularity = 10
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
+		parties = {
+			social_liberal = { 
+				popularity = 47
+			}
+			
+			social_democracy = { 
+				popularity = 32
+			}
+			
+			conservative = { 
+				popularity = 11
+			}
 
-		social_democracy = {
-			popularity = 0
+			fascism = {
+				popularity = 8
+			}
+			
+			stalinism = {
+				popularity = 1
+			}
+
+			authoritarian = {
+				popularity = 1
+			}
 		}
 	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 30
-		}
-		
-		social_conservative = {
-			popularity = 60
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
-		}
-	}
-	
-	ruling_party = social_conservative
+	ruling_party = social_liberal
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
@@ -139,76 +123,58 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 10
+			social_liberal = { 
+				popularity = 60
+			}
+			
+			conservative = { 
+				popularity = 30
 			}
 
 			fascism = {
-				popularity = 10
+				popularity = 8
 			}
 			
 			communism = {
 				popularity = 1
 			}
 
-			neutrality = {
-				popularity = 79
+			authoritarian = {
+				popularity = 1
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = social_liberal
 		last_election = "1939.7.1"
 		election_frequency = 36
 		elections_allowed = yes
 	}
 }
 create_country_leader = {
-	name = "Pehr E. Svinhufvud"
-	desc = "POLITICS_PEHR_SVINHUFVUD_DESC"
-	picture = "Portrait_Finland_Pehr_Svinhufvud.dds"
+	name = "Charles Louis Constantine"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Risto Ryti"
-	desc = "POLITICS_Risto_Ryti_DESC"
-	picture = "Portrait_Finland_Risto_Ryti.dds"
-	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Juho K. Paasikivi"
-	desc = "POLITICS_JUHO_PAASIKIVI_DESC"
-	picture = "Portrait_Finland_Juho_Paasikivi.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Otto Ville Kuusinen"
-	desc = "POLITICS_OTTO_VILLE_DESC"
+	name = "Aimo Aaltonen"
+	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = marxism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Vihtori Kosola"
-	desc = "POLITICS_VIHTORI_KOSOLA_DESC"
+	name = "Vilho Annala"
+	desc = "POLITICS_VILHO_ANNALA_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
@@ -217,8 +183,16 @@ create_country_leader = {
 	}
 }
 
-
-
+create_country_leader = {
+	name = "Kyösti Kallio"
+	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
 
 add_ideas = {
 	sisu

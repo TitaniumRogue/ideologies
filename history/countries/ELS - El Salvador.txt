@@ -59,48 +59,12 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
+	nationalism = {
 			popularity = 100
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
 		}
 	}
 	
-	ruling_party = paternal_autocrat
+	ruling_party = nationalism
 	last_election = "1935.1.15"
 	election_frequency = 48
 	elections_allowed = yes
@@ -111,52 +75,24 @@ create_country_leader = {
 	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = nationalism_ideology
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Augustín Farabundo Martí"
-	desc = "POLITICS_AUGUSTIN_MARTI_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+1939.1.1 = {
+	set_politics = {
 
-create_country_leader = {
-	name = "Andrés Ignacio Menéndez"
-	desc = "POLITICS_ANDRES_MENENDEZ_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
+	parties = {
+	nationalism = {
+			popularity = 100
+		}
 	}
-}
-
-create_country_leader = {
-	name = "Salvador Castañeda Castro"
-	desc = "POLITICS_SALVADOR_CASTRO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Jose Maria Cuellar"
-	desc = "POLITICS_JOSE_MARIA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		#
+		
+		ruling_party = nationalism
+		last_election = "1939.1.3"
+		election_frequency = 48
+		elections_allowed = yes
 	}
 }

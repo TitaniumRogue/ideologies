@@ -19,57 +19,93 @@ set_technology = {
 	transport = 1
 }
 
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "POR_1939"
+	set_technology = {
+		interwar_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
 set_convoys = 50
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
 		
-		leninist = { 
+		leninism = {
 			popularity = 5
 		}
 		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 5
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 85
-		}
-		
-		fascism = {
-			popularity = 5
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		nationalism = {
+			popularity = 95
 		}
 	}
 	
-	ruling_party = paternal_autocrat
+	ruling_party = nationalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			
+			nationalism = {
+				popularity = 100
+			}
+		}
+		
+		ruling_party = nationalism
+		last_election = "1938.10.30"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
 
 set_convoys = 100
 set_national_unity = 0.8
@@ -80,30 +116,18 @@ create_country_leader = {
 	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
 	picture = "Portrait_Portugal_Antonio_de_Oliveira_Salazar.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = corporatism
 	traits = {
 		#
 	}
 }
-
 
 create_country_leader = {
 	name = "Bento Gonçalves"
 	desc = "POLITICS_BENTO_GONCALVES_DESC"
-	picture = "Portrait_Portugal_Bento_Goncalves.dds"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Jaime Cortesão"
-	desc = "POLITICS_JAIME_CORTESAO_DESC"
-	picture = "Portrait_Portugal_Jaime_Cortesao.dds"
-	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism
 	traits = {
 		#
 	}

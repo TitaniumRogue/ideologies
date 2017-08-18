@@ -68,48 +68,12 @@ set_country_flag = monroe_doctrine
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 0
-		}
-		
-		leninist = { 
-			popularity = 0
-		}
-		
-		leftwingradical = { 
-			popularity = 0
-		}
-
-		social_democracy = {
-			popularity = 0
-		}
-	
-		social_liberal = {
-			popularity = 50
-		}
-		
-		market_liberal = {
-			popularity = 0
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 50
-		}
-		
-		fascism = {
-			popularity = 0
-		}
-		
-		national_socialism = { 
-			popularity = 0
+		militarism = { 
+			popularity = 100
 		}
 	}
 	
-	ruling_party = social_liberal
+	ruling_party = militarism
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
@@ -120,78 +84,11 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
 	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = millitary_junta # liberalism, personally, but puppet for military
 	traits = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Enrique Finto"
-	desc = "POLITICS_ENRIQUE_FINTO_DESC"
-	picture = "Portrait_Bolivia_Enrique_Finto.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Abadon Saavedra Mallea"
-	desc = "POLITICS_ABADON_MALLEA_DESC"
-	picture = "Portrait_Bolivia_Abadon_Saavedra_Mallea.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Eusebio Ayala"
-	desc = "POLITICS_EUSEBIO_AYALA_DESC"
-	picture = "Portrait_Bolivia_Eusebio_Ayala.dds"
-	expire = "1965.1.1"
-	ideology = leftwingradical_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Guillermo Lora"
-	desc = "POLITICS_GUILLERMO_LORA_DESC"
-	picture = "Portrait_Bolivia_Guillermo_Lora.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Daniel Sanchez Bustamante"
-	desc = "POLITICS_DANIEL_SANCHEZ_DESC"
-	picture = "Portrait_Bolivia_Daniel_Sanchez.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Enrique Penaranda Castillo"
-	desc = "POLITICS_ENRIQUE_CASTILLO_DESC"
-	picture = "Portrait_Bolivia_Enrique_Castillo.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
 
 create_country_leader = {
 	name = "Óscar Únzaga de la Vega"
@@ -204,12 +101,27 @@ create_country_leader = {
 	}
 }
 
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+		militarism = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = militarism
+		last_election = "1934.11.11"
+		election_frequency = 72
+		elections_allowed = yes
+	}
+
 	create_country_leader = {
 		name = "Carlos Quintanilla"
 		desc = "POLITICS_CARLOS_QUINTANILLA_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 		expire = "1965.1.1"
-		ideology = oligarchism
+		ideology = millitary_junta
 		traits = {
 			#
 		}

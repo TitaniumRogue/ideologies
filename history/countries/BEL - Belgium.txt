@@ -78,78 +78,78 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		communism = { 
-			popularity = 13
+		conservative = { 
+			popularity = 34
 		}
 		
-		leninist = { 
-			popularity = 0
+		democratic_socialism = { 
+			popularity = 32
 		}
 		
-		leftwingradical = { 
-			popularity = 0
+		social_liberal = { 
+			popularity = 17
 		}
 
-		social_democracy = {
-			popularity = 33
-		}
-	
-		social_liberal = {
-			popularity = 0
-		}
-		
-		market_liberal = {
-			popularity = 39
-		}
-		
-		social_conservative = {
-			popularity = 0
-		}
-
-		paternal_autocrat = {
-			popularity = 0
-		}
-		
 		fascism = {
-			popularity = 0
+			popularity = 10
 		}
 		
-		national_socialism = { 
-			popularity = 15
+		nationalism = {
+			popularity = 2
 		}
+		
+		leninism = {
+			popularity = 5
+		}
+		
 	}
 	
-	ruling_party = market_liberal
+	ruling_party = conservative
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+1939.1.1 = {
+	set_politics = {
+
+	parties = {
+	
+		conservative = { 
+			popularity = 34
+		}
+		
+		democratic_socialism = { 
+			popularity = 32
+		}
+		
+		social_liberal = { 
+			popularity = 17
+		}
+
+		fascism = {
+			popularity = 10
+		}
+		
+		nationalism = {
+			popularity = 2
+		}
+		
+		leninism = {
+			popularity = 5
+		}
+		
+	}
+		
+		ruling_party = conservative
+		last_election = "1939.4.2"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
 
 set_convoys = 80
 set_national_unity = 0.75
-
-create_country_leader = {
-	name = "Paul van Zeeland"
-	desc = "POLITICS_PAUL_ZEELAND_DESC"
-	picture = "Portrait_Belgium_Paul_Zeeland.dds"
-	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Paul-Henri Spaak"
-	desc = "POLITICS_PAULHENRI_SPAAK_DESC"
-	picture = "Portrait_Belgium_Paul_Henri_Spaak.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Hubert Pierlot"
@@ -167,18 +167,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Julien Lahaut"
-	desc = "POLITICS_JULIEN_LAHAUT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = anarchist_communism
 	traits = {
 		#
 	}
@@ -189,18 +178,7 @@ create_country_leader = {
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Joris Van Severen"
-	desc = "POLITICS_JORIS_VAN_SEVEREN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = rexism
 	traits = {
 		#
 	}
