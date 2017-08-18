@@ -150,33 +150,41 @@ set_national_unity = 0.4
 set_politics = {
 
 	parties = {
-		social_liberal = { 
-			popularity = 25
+		social_liberal = { #Republican, Radical and Radical-Socialist Party + Popular Democrats
+			popularity = 23
+		}
+		
+		market_liberal = { #Democratic Alliance + Independant Radicals
+			popularity = 22
 		}
 
-		fascism = {
+		nationalism = { #Independents
+			popularity = 5
+		}
+		
+		leninism = { #Communist Party
+			popularity = 8
+		}
+		
+		democratic_socialism = { Miscellaneous Left
 			popularity = 1
 		}
 		
-		stalinism = {
-			popularity = 15
+		revolutionary_socialism = { #French Section of the Workers' International
+			popularity = 23
 		}
 		
-		democratic_socialism = { 
-			popularity = 20
+		social_democracy = { #Republican-Socialist Party
+			popularity = 5
 		}
 		
-		social_democracy = { 
-			popularity = 22
-		}
-		
-		conservative = { 
-			popularity = 17
+		conservative = { #Republican Federation
+			popularity = 13
 		}
 		
 	}
 	
-	ruling_party = social_liberal
+	ruling_party = revolutionary_socialism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -204,6 +212,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Louis Marin"
+	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	picture = "Portrait_France_Louis_Marin.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Édouard Daladier"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
@@ -220,6 +239,17 @@ create_country_leader = {
 	picture = "Portrait_France_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = 	stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Léon Blum"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = 	marxism
 	traits = {
 		
 	}
