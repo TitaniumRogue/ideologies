@@ -166,11 +166,11 @@ set_politics = {
 			popularity = 8
 		}
 		
-		democratic_socialism = { Miscellaneous Left
+		revolutionary_socialism = { Miscellaneous Left
 			popularity = 1
 		}
 		
-		revolutionary_socialism = { #French Section of the Workers' International
+		democratic_socialism = { #French Section of the Workers' International
 			popularity = 23
 		}
 		
@@ -184,7 +184,7 @@ set_politics = {
 		
 	}
 	
-	ruling_party = revolutionary_socialism
+	ruling_party = democratic_socialism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
