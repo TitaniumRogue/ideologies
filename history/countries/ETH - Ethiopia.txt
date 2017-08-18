@@ -9,53 +9,51 @@ set_technology = {
 }
 
 set_convoys = 5
-
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 set_politics = {
 
 	parties = {
+		communism = { 
+			popularity = 0
+		}
 		
-		imperialism = { 
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
 			popularity = 100
+		}
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = imperialism
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -66,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = absolutism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -77,28 +75,9 @@ create_country_leader = {
 	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = social_democrat
+	ideology = socialism
 	traits = {
 		#
-	}
-}
-
-
-#Now a colony of Italy  However, if independent it would have
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-
-		imperialism = { 
-			popularity = 100
-		}
-	}
-		
-		ruling_party = imperialism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
 	}
 }
 

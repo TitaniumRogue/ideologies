@@ -48,13 +48,48 @@ set_convoys = 5
 }
 set_politics = {
 
-	parties = {
-		authoritarian = { 
-			popularity = 100
+		communism = { 
+			popularity = 15
+		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
+			popularity = 75
+		}
+		
+		fascism = {
+			popularity = 15
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = authoritarian
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -90,23 +125,5 @@ create_country_leader = {
 	traits = {
 		
 	}
-}
-
-
-#Now a colony of Italy  However, if independent it would have
-1939.1.1 = {
-set_politics = {
-
-	parties = {
-		authoritarian = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = authoritarian
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
 }
 

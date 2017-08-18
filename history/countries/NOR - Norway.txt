@@ -21,57 +21,6 @@ set_technology = {
 	tech_recon = 1
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "NOR_1939"
-	set_technology = {
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 
 set_convoys = 80		# biggest merchant marine in the world
 set_national_unity = 0.7
@@ -79,32 +28,44 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		social_democracy = { #Labour Party
-			popularity = 40
+		communism = { 
+			popularity = 0
 		}
 		
-		market_liberal = { #Conservative Party/Free-minded People's Party (Coalition)
-			popularity = 22
+		leninist = { 
+			popularity = 0
 		}
 		
-		social_liberal = { #Venstre
-			popularity = 19
-		}
-		
-		progressive = { #Farmers' Party
-			popularity = 14
+		leftwingradical = { 
+			popularity = 0
 		}
 
-		national_socialism = { #Nasjonal Samling
-			popularity = 2
+		social_democracy = {
+			popularity = 60
+		}
+	
+		social_liberal = {
+			popularity = 0
 		}
 		
-		stalinism = { #Communist Party
-			popularity = 2
+		market_liberal = {
+			popularity = 30
 		}
 		
-		conservative = { #Christian Democratic/People's Party
-			popularity = 1
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
+			popularity = 0
+		}
+		
+		fascism = {
+			popularity = 10
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
@@ -114,56 +75,13 @@ set_politics = {
 	elections_allowed = yes
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		social_democracy = { #Labour Party
-			popularity = 42.5
-		}
-		
-		market_liberal = { #Conservative Party/Free-minded People's Party (Coalition)
-			popularity = 22
-		}
-		
-		social_liberal = { #Venstre
-			popularity = 17
-		}
-		
-		progressive = { #Farmers' Party
-			popularity = 12.5
-		}
-
-		national_socialism = { #Nasjonal Samling
-			popularity = 2.5
-		}
-		
-		stalinism = { #Communist Party
-			popularity = 0.5
-		}
-		
-		conservative = { #Christian Democratic/People's Party
-			popularity = 1.5
-		}
-		
-		nationalism = { #Fatherland League
-			popularity = 1.5
-		}
-		}
-		
-		ruling_party = social_democracy
-		last_election = "1936.10.19"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-}
 
 create_country_leader = {
 	name = "Johan Nygaardsvold"
 	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
 	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
 	expire = "1965.1.1"
-	ideology = social_democrat
+	ideology = socialism
 	traits = {
 		#
 	}
@@ -180,10 +98,22 @@ create_country_leader = {
 	}
 }
 
+
 create_country_leader = {
-	name = "Johan Ludwig Mowinckel"
-	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	name = "Adam Egede-Nissen"
+	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jacob Stenersen Worm-Müller"
+	desc = "POLITICS_JACOB_STENERSEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -192,11 +122,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Adam Egede-Nissen"
-	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
+	name = "Carl Joachim Hambro"
+	desc = "POLITICS_CJ_HAMBRO_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = stalinism_ideology
+	ideology = market_liberalism
 	traits = {
 		#
 	}

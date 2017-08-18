@@ -62,55 +62,78 @@ set_convoys = 20
 set_politics = {
 
 	parties = {
-		reactionary = { 
-			popularity = 25
+		communism = { 
+			popularity = 0
+		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
 		}
 
-		religious = {
-			popularity = 20
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
 		}
 		
-		leninism = {
-			popularity = 5
-			#banned = no #default is no
+		market_liberal = {
+			popularity = 0
 		}
 		
-		absolute_monarchy = { 
-			popularity = 50
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
+			popularity = 100
+		}
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = absolute_monarchy
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Muhammad Naguib"
+	name = "Fuad I"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
-	ideology = liberalism
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Ahmed Husayn"
+	name = "Ali Mahir Pasha"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = islamism
+	ideology = conservatism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Farouk Muhammad Ali"
+	name = "Muhammad Mahmoud Pasha"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
-	ideology = constitutional_monarchy
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = market_liberalism
 	traits = {
 		#
 	}
@@ -120,8 +143,40 @@ create_country_leader = {
 	name = "Hosni al-Arabi"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = leninism_ideology
+	ideology = leninism
 	traits = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Gamal Abdel Nasser"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = leftwingradical_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Abdelhamid Badawi Pashar"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aly Chamsy Pasha"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+

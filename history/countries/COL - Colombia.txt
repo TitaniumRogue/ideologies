@@ -70,17 +70,48 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		social_democracy = { 
-			popularity = 99
+		communism = { 
+			popularity = 5
 		}
 		
-		leninism = {
-			popularity = 1
-			#banned = no #default is no
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 30
+		}
+	
+		social_liberal = {
+			popularity = 30
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 30
+		}
+
+		paternal_autocrat = {
+			popularity = 0
+		}
+		
+		fascism = {
+			popularity = 5
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
@@ -91,16 +122,27 @@ create_country_leader = {
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = social_democrat
+	ideology = socialism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Mariano Ospina Pérez"
-	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	name = "Eduardo Santos Montejo"
+	desc = "POLITICS_EDUARDO_SANTOS_MONTEJO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Joaquin Fernandez"
+	desc = "POLITICS_JOAQUIN_FERNANDEZ_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -108,31 +150,57 @@ create_country_leader = {
 	}
 }
 
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			social_democracy = { 
-				popularity = 100
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1938.5.1"
-		election_frequency = 48  
-		elections_allowed = yes
+create_country_leader = {
+	name = "Mariano Ospina Pérez"
+	desc = "POLITICS_MARIANO_PEREZ_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal
+	traits = {
+		#
 	}
+}
 
-	create_country_leader = {
-		name = "Eduardo Santos"
-		desc = "POLITICS_EDUARDO_SANTOS_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-		expire = "1965.1.1"
-		ideology = social_democrat
-		traits = {
-			#
-		}
+create_country_leader = {
+	name = "Julio Valdez"
+	desc = "POLITICS_JULIO_VALDEZ_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gustavo Rojas Pinilla"
+	desc = "POLITICS_GUSTAVO_ROJAS_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gustavo Rojas Pinilla"
+	desc = "POLITICS_GUSTAVO_ROJAS_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Querista Sellor"
+	desc = "POLITICS_QUERISTA_SELLOR_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
 	}
 }
 

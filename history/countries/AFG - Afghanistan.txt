@@ -62,22 +62,48 @@ set_technology = {
 set_politics = {
 
 	parties = {
+		communism = { 
+			popularity = 15
+		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
 
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
+			popularity = 75
+		}
+		
 		fascism = {
 			popularity = 15
 		}
 		
-		leninism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-		
-		absolute_monarchy = { 
-			popularity = 75
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = absolute_monarchy
+	ruling_party = paternal_autocrat 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -89,40 +115,23 @@ create_country_leader = {
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
 	expire = "1965.1.1"
-	ideology = constitutional_monarchy
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-			}
-
-			fascism = {
-				popularity = 20
-			}
-			
-			leninism = {
-				popularity = 10
-				#banned = no #default is no
-			}
-		
-			absolute_monarchy = { 
-				popularity = 75
-			}
-		}
-	
-		ruling_party = absolute_monarchy
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
+create_country_leader = {
+	name = "Amanullah Khan"
+	desc = "POLITICS_AMANULLAH_KHAN_DESC"
+	picture = "Portrait_Afghanistan_Amanullah_Khan.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
 	}
 }
+ 
 
 create_corps_commander = {
 	name = "Sardar Shah Wali Khan"

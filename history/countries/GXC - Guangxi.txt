@@ -13,11 +13,47 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		militarism = { 
+		communism = { 
+			popularity = 0
+		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
 			popularity = 100
 		}
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		national_socialism = { 
+			popularity = 0
+		}
 	}
-	ruling_party = militarism
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_LI_ZONGREN_DESC"
 	picture = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
 	expire = "1965.1.1"
-	ideology = warlord
+	ideology = despotism
 	traits = {
 		#
 	}

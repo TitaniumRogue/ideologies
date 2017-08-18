@@ -40,16 +40,44 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		conservative = { 
-			popularity = 30
+		communism = { 
+			popularity = 15
 		}
 		
-		stalinism = {
-			popularity = 40
+		leninist = { 
+			popularity = 0
 		}
 		
-		religious = {
-			popularity = 30
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
+			popularity = 75
+		}
+		
+		fascism = {
+			popularity = 15
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}		
 	}
 }
@@ -81,7 +109,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = islamism
+	ideology = market_liberalism
 	traits = {
 		
 	}

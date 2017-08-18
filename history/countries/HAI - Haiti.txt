@@ -10,64 +10,52 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 5
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "HAI_1939"
-	set_technology = {
-		infantry_weapons1 = 1
-
-		#doctrines
-		air_superiority = 1
-		
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 
 set_politics = {
 
 	parties = {
-		conservative = { 
+		communism = { 
+			popularity = 0
+		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
 			popularity = 100
+		}
+
+		paternal_autocrat = {
+			popularity = 0
+		}
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = conservative
+	ruling_party = social_conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -85,28 +73,45 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jacques Roumain"
-	desc = "POLITICS_JACQUES_ROUMAIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	name = "Dumarsais Estimé"
+	desc = "POLITICS_DUMARSAIS_ESTIME_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = liberalism
 	traits = {
 		#
 	}
 }
 
-1939.1.1 = {
-	set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 100
-		}
+create_country_leader = {
+	name = "Franck Lavaud"
+	desc = "POLITICS_FRANCK_LAVAUD_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
 	}
-		
-		ruling_party = conservative
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Felix d'Orleans Juste Constant"
+	desc = "POLITICS_FELIX_CONSTANT_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = leftwingradical_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jacques Roumain"
+	desc = "POLITICS_JACQUES_ROUMAIN_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
 	}
 }

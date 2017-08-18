@@ -79,54 +79,71 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		social_democracy = { 
+		communism = { 
+			popularity = 0
+		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
 			popularity = 5
 		}
 
-		national_socialism = {
-			popularity = 35
+		paternal_autocrat = {
+			popularity = 65
 		}
 		
-		absolute_monarchy = { 
-			popularity = 60
+		fascism = {
+			popularity = 30
 		}
+		
+		national_socialism = { 
+			popularity = 0
+		}
+
 	}
 	
-	ruling_party = absolute_monarchy
+	ruling_party = paternal_autocrat
 	last_election = "1931.6.21"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-1939.1.1 = {
-	set_politics = {
-
-	parties = {
-		social_democracy = { 
-			popularity = 5
-		}
-
-		national_socialism = {
-			popularity = 35
-		}
-		absolute_monarchy = { 
-			popularity = 60
-		}
-	}
-	
-	ruling_party = absolute_monarchy
-	last_election = "1938.3.27"
-	election_frequency = 48
-	elections_allowed = no
-}
-}
-
 create_country_leader = {
-	name = "Boris III"
+	name = "Boris III Saxe-Coburg and Gotha-Koháry"
 	desc = "POLITICS_BORIS_III_DESC"
 	picture = "Portrait_Bulgaria_Boris_III.dds"
 	expire = "1965.1.1"
-	ideology = constitutional_monarchy
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandur Tsankov"
+	desc = "POLITICS_ALEKSANDUR_TSANKOV_DESC"
+	picture = "Portrait_Bulgaria_Aleksandur_Tsankov.dds"
+	expire = "1965.1.1"
+	ideology = nazism
 	traits = {
 		#
 	}
@@ -137,7 +154,7 @@ create_country_leader = {
 	desc = "POLITICS_GEORGI_DIMITROV_DESC"
 	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = stalinism
 	traits = {
 		#
 	}
@@ -148,18 +165,40 @@ create_country_leader = {
 	desc = "POLITICS_ZIVCO_TOPALOVIC_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = social_democrat
+	ideology = socialism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Hristo Lukov"
-	desc = "POLITICS_HRISTO_LUKOV_DESC"
+	name = "Nikola Petkov"
+	desc = "POLITICS_Nikola_Petkov_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nikola Petkov"
+	desc = "POLITICS_Nikola_Petkov_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kimon Georgiev"
+	desc = "POLITICS_KIMON_GEORGIEV_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = leftwingradical_ideology
 	traits = {
 		#
 	}

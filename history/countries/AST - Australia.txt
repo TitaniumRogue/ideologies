@@ -120,81 +120,92 @@ if = {
 set_politics = {
 
 	parties = {
+		communism = { 
+			popularity = 5
+		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 35
+		}
 	
-		social_liberal = { 
+		social_liberal = {
 			popularity = 0
 		}
-		national_socialism = {
-			popularity = 0
-		}		
-		stalinism = {
-			popularity = 3
-		}
-		social_democracy = { #Labor Party + Social Credit Party
-			popularity = 39
-		}
-		market_liberal = { #Unnited Australia Party
-			popularity = 38
-		}
-		conservative = { #Country Party
-			popularity = 20
-		}
-		progressive = { 
+		
+		market_liberal = {
 			popularity = 0
 		}
-		democratic_socialism = { 
+		
+		social_conservative = {
+			popularity = 55
+		}
+
+		paternal_autocrat = {
 			popularity = 0
 		}
-		reactionary = { 
-			popularity = 0
+		
+		fascism = {
+			popularity = 5
 		}
-		authoritarian_democracy = { 
-			popularity = 0
-		}
-		leninism = { 
-			popularity = 0
-		}
-		fascism = { 
-			popularity = 0
-		}
-		nationalism = { 
-			popularity = 0
-		}
-		imperialism = { 
-			popularity = 0
-		}
-		militarism = { 
-			popularity = 0
-		}
-		imperialism = { 
-			popularity = 0
-		}
-		authoritarian = { 
-			popularity = 0
-		}
-		absolute_monarchy = { 
-			popularity = 0
-		}
-		religious = { 
-			popularity = 0
-		}
-		anarchism = { 
+		
+		national_socialism = { 
 			popularity = 0
 		}
 	}
 	
-	ruling_party = market_liberal
+	ruling_party = social_conservative
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "John Curtin"
+	name = "Joseph A. Lyons"
+	desc = "POLITICS_JOE_LYONS_DESC"
+	picture = "Portrait_Australia_Joseph_P_Lyonsdds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Joseph A. Lyons"
+	desc = "POLITICS_JOE_LYONS_DESC"
+	picture = "Portrait_Australia_Joseph_Lyons.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lance Sharkey"
+	desc = "POLITICS_LANCE_SHARKEY_DESC"
+	picture = "Portrait_Australia_Lance_Sharkey.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "John J. Curtin"
 	desc = "POLITICS_JOHN_CURTIN_DESC"
 	picture = "Portrait_Australia_John_Curtin.dds"
 	expire = "1965.1.1"
-	ideology = social_democrat
+	ideology = socialism
 	traits = {
 		#
 	}
@@ -216,7 +227,18 @@ create_country_leader = {
 	desc = "POLITICS_RICHARD_DIXON_DESC"
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
-	ideology = stalinism_ideology
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Earle Page"
+	desc = "POLITICS_EARLE_PAGE_DESC"
+	picture = "GFX_AST_earle_page"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -227,110 +249,15 @@ create_country_leader = {
 	desc = "POLITICS_ARTHUR_FADDEN_DESC"
 	picture = "GFX_AST_Arthur_Fadden"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = market_liberal
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Earle Page"
-	desc = "POLITICS_EARLE_PAGE_DESC"
-	picture = "GFX_AST_earle_page"
-	expire = "1939.9.13"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Joseph A. Lyons"
-	desc = "POLITICS_JOE_LYONS_DESC"
-	picture = "Portrait_Australia_Joseph_Lyons.dds"
-	expire = "1939.4.7"
-	ideology = libertarian
-	traits = {
-		#
-	}
-}
 
 set_convoys = 100
 
-1939.1.1 = {
-	set_politics = {
-
-parties = {
-	
-		social_liberal = { 
-			popularity = 0
-		}
-		national_socialism = {
-			popularity = 0
-		}		
-		stalinism = {
-			popularity = 1
-		}
-		social_democracy = { #Labor Party + Social Credit Party
-			popularity = 32
-		}
-		market_liberal = { #Unnited Australia Party
-			popularity = 34
-		}
-		conservative = { #Country Party
-			popularity = 18
-		}
-		progressive = { 
-			popularity = 0
-		}
-		democratic_socialism = { 
-			popularity = 15
-		}
-		reactionary = { 
-			popularity = 0
-		}
-		authoritarian_democracy = { 
-			popularity = 0
-		}
-		leninism = { 
-			popularity = 0
-		}
-		fascism = { 
-			popularity = 0
-		}
-		nationalism = { 
-			popularity = 0
-		}
-		imperialism = { 
-			popularity = 0
-		}
-		militarism = { 
-			popularity = 0
-		}
-		imperialism = { 
-			popularity = 0
-		}
-		authoritarian = { 
-			popularity = 0
-		}
-		absolute_monarchy = { 
-			popularity = 0
-		}
-		religious = { 
-			popularity = 0
-		}
-		anarchism = { 
-			popularity = 0
-		}
-	}
-		
-		ruling_party = market_liberal
-		last_election = "1937.10.23"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_convoys = 100
-}
 
 create_corps_commander = {
 	name = "Leslie Morshead"

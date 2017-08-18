@@ -67,19 +67,47 @@ set_convoys = 5
 }
 set_politics = {
 
-		parties = {
-			social_liberal = { 
-				popularity = 15
-			}
-
-			fascism = {
-				popularity = 75
-			}
-			
-			stalinism = {
-				popularity = 10
-			}
+	parties = {
+		communism = { 
+			popularity = 15
 		}
+		
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 10
+		}
+
+		paternal_autocrat = {
+			popularity = 0
+		}
+		
+		fascism = {
+			popularity = 75
+		}
+		
+		national_socialism = { 
+			popularity = 0
+		}
+	}
 	
 	ruling_party = fascism
 	last_election = "1935.6.9"
@@ -87,29 +115,6 @@ set_politics = {
 	elections_allowed = no # none after offset 1
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			social_liberal = { 
-				popularity = 15
-			}
-
-			fascism = {
-				popularity = 75
-			}
-			
-			stalinism = {
-				popularity = 10
-			}
-		}
-		
-		ruling_party = fascism
-		last_election = "1935.6.9"
-		election_frequency = 12
-		elections_allowed = no # none after offset 1
-	}
-}
 
 create_country_leader = {
 	name = "Ante Pavelic"
@@ -117,6 +122,39 @@ create_country_leader = {
 	picture = "Portrait_Croatia_Ante_Pavelic.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alojzije Stepinac"
+	desc = "ALOJIZIJE_STEPINAC_DESC"
+	picture = "Portrait_Croatia_Alojzije_Stepinac.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vladko Macek"
+	desc = "VLADKO_MACEK_DESC"
+	picture = "Portrait_Croatia_Vladko_Macek.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = Ivan Subasic"
+	desc = "IVAN_SUBASIC_DESC"
+	picture = "Portrait_Croatia_Ivan_Subasic.dds"
+	expire = "1965.1.1"
+	ideology = socialism
 	traits = {
 		#
 	}

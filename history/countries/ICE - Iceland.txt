@@ -79,52 +79,53 @@ set_national_unity = 0.85
 set_politics = {
 
 	parties = {
-		authoritarian_democracy = { 
-			popularity = 96
-		}
-
-		fascism = {
-			popularity = 2
+		communism = { 
+			popularity = 0
 		}
 		
-		leninism = {
-			popularity = 2
+		leninist = { 
+			popularity = 0
+		}
+		
+		leftwingradical = { 
+			popularity = 0
+		}
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
+			popularity = 100
+		}
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = authoritarian_democracy
+	ruling_party = social_conservatism
 	last_election = "1933.10.16"
 	election_frequency = 36
-	elections_allowed = no
+	elections_allowed = yes
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			authoritarian_democracy = { 
-				popularity = 84
-			}
-
-			fascism = {
-				popularity = 2
-			}
-			
-			leninism = {
-				popularity = 2
-			}
-
-			absolute_monarchy = {
-				popularity = 12
-			}
-		}
-		
-		ruling_party = authoritarian_democracy
-		last_election = "1936.10.19"
-		election_frequency = 36
-		elections_allowed = no
-	}
-}
 
 create_country_leader = {
 	name = "Sveinn Björnsson"
@@ -132,17 +133,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Sveinn Björnsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = authoritarian_democracy_ideology
 	traits = {
 		#
 	}
@@ -159,23 +149,13 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Haraldur Gudmunsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Einar Olgeirsson"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = stalinism
 	traits = {
 		#
 	}

@@ -43,19 +43,51 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		conservative = { 
-			popularity = 20
+		communism = { 
+			popularity = 0
 		}
-		social_liberal = { 
-			popularity = 20
+		
+		leninist = { 
+			popularity = 0
 		}
-		stalinism = {
-			popularity = 25
+		
+		leftwingradical = { 
+			popularity = 0
 		}
-		authoritarian = {
-			popularity = 35
+
+		social_democracy = {
+			popularity = 0
+		}
+	
+		social_liberal = {
+			popularity = 0
+		}
+		
+		market_liberal = {
+			popularity = 0
+		}
+		
+		social_conservative = {
+			popularity = 0
+		}
+
+		paternal_autocrat = {
+			popularity = 100
+		}
+		
+		fascism = {
+			popularity = 0
+		}
+		
+		national_socialism = { 
+			popularity = 0
 		}
 	}
+
+	ruling_party = paternal_autocrat
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
 }
 
 create_country_leader = {
