@@ -49,6 +49,9 @@ ideologies = {
 			stalinism_ideology = {
 			}
 			
+			maoism = {
+			}
+			
 		}
 		
 		dynamic_faction_names = {
@@ -92,13 +95,7 @@ ideologies = {
 			trotskyism = {
 			}
 			
-			maoism = {
-			}
-			
 			anti_revisionism = {
-			}
-			
-			anarchist_communism = {
 			}
 		}
 		
@@ -141,6 +138,9 @@ ideologies = {
 			}
 			
 			luxemburgism = {
+			}
+			
+			anarchist_communism = {
 			}
 		}
 		
