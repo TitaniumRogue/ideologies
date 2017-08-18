@@ -1,6 +1,14 @@
 # Hearts of Ideologies
 A HOI4 mod that adds in new ideologies
 
+Priorities (In order of highest to lowest):
+
+History Files
+Event/National Focus Files
+Localisation
+Flags
+Advisors
+
 For anybody who would like to modify the localization files copy the text below to make things easier. Just replace "XXX" with the country's tag, and "Example" with its name
 
 ----------
