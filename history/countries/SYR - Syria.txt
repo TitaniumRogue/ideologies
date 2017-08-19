@@ -64,25 +64,25 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 50
+		market_liberal = { #National Party
+			popularity = 36
+		}
+		
+		social_liberal = { 
+			popularity = 33
 		}
 
 		fascism = {
-			popularity = 10
+			popularity = 25
 		}
 		
-		communism = {
-			popularity = 10
+		revolutionary_socialism = {
+			popularity = 25
 			#banned = no #default is no
-		}
-		
-		authoritarian = { 
-			popularity = 30
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -93,6 +93,16 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
 	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shukri al-Quwatli"
+	desc = ""
+	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
+	ideology = libertarian
 	traits = {
 		#
 	}

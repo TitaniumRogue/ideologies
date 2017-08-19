@@ -26,23 +26,70 @@ set_convoys = 25
 set_politics = {
 
 	parties = {
-		authoritarian_democracy = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 10
-		}
-		
-		leninism = {
-			popularity = 30
-		}
-		authoritarian = {
-			popularity = 20
-		}
-		democratic_socialist = {
-			popularity = 30
-		}
+	
+	authoritarian = { 
+		popularity = 70
+	}	
+	social_liberal = { 
+		popularity = 0
+	}
+	national_socialism = {
+		popularity = 0
+	}		
+	stalinism = {
+		popularity = 0
+	}
+	social_democracy = { 
+		popularity = 0
+	}
+	market_liberal = { 
+		popularity = 0
+	}
+	conservative = { 
+		popularity = 5
+	}
+	progressive = { 
+		popularity = 0
+	}
+	democratic_socialism = { 
+		popularity = 0
+	}
+	reactionary = { 
+		popularity = 0
+	}
+	authoritarian_democracy = { 
+		popularity = 0
+	}
+	leninism = { 
+		popularity = 0
+	}
+	fascism = { 
+		popularity = 0
+	}
+	nationalism = { 
+		popularity = 0
+	}
+	revolutionary_socialism = { 
+		popularity = 0
+	}
+	militarism = { 
+		popularity = 0
+	}
+	imperialism = { 
+		popularity = 0
+	}
+	absolute_monarchy = { 
+		popularity = 0
+	}
+	religious = { 
+		popularity = 0
+	}
+	anarchism = { 
+		popularity = 0
+	}
+	democratic_socialist = {
+		popularity = 30
+	}
 	}
 }
 
@@ -62,7 +109,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = authoritarian_democracy_ideology
+	ideology = despotism
 	traits = {
 		
 	}
@@ -73,7 +120,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = marxism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -95,7 +142,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = luxemburgism
 	traits = {
 		
 	}

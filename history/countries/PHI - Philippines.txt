@@ -70,6 +70,7 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
+		
 		social_liberal = {
 			popularity = 0
 		}

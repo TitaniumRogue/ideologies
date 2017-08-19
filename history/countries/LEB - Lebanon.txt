@@ -66,25 +66,29 @@ set_cosmetic_tag = LEB_FRA
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 50
+		market_liberal = { #National Bloc + Ramgavar Party
+			popularity = 35
+		}
+		
+		social_liberal = { #Constitutional Bloc
+			popularity = 24
+		}
+		
+		revolutionary_socialism = { #Dashnaktsutyun
+			popularity = 15
 		}
 
-		fascism = {
-			popularity = 10
+		nationalism = {
+			popularity = 13
 		}
 		
-		communism = {
-			popularity = 10
+		leninism = {
+			popularity = 13
 			#banned = no #default is no
-		}
-		
-		authoritarian = { 
-			popularity = 30
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -95,6 +99,16 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
 	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Riad Al Solh"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+	ideology = libertarian
 	traits = {
 		#
 	}

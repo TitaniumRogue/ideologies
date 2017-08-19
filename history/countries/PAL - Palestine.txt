@@ -8,8 +8,6 @@ set_technology = {
 
 oob = "PAL_1936"
 
-set_cosmetic_tag = PAL_ENG
-
 set_convoys = 5
 
 1939.1.1 = {
@@ -66,21 +64,21 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		authoritarian_democracy = { 
 			popularity = 40
 		}
 
-		fascism = {
+		nationalism = {
 			popularity = 30
 		}
 		
-		communism = {
+		leninism = {
 			popularity = 30
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = authoritarian_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -90,7 +88,7 @@ create_country_leader = {
 	name = "Ahmed Hilmi Pasha"
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_navy_1.dds"
-	ideology = liberalism
+	ideology = authoritarian_democracy_ideology
 	traits = {
 		#
 	}
@@ -101,16 +99,6 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_land_2.dds"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Prince Henry"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Britain_George_VI.dds"
-	ideology = despotism
 	traits = {
 		#
 	}
