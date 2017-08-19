@@ -249,7 +249,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = 	marxism
+	ideology = 	democratic_socialist
 	traits = {
 		
 	}

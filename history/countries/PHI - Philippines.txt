@@ -70,7 +70,7 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		social_liberal = { 
+		social_liberal = {
 			popularity = 0
 		}
 		national_socialism = {
@@ -127,7 +127,7 @@ set_politics = {
 		religious = { 
 			popularity = 0
 		}
-		anarchism = { 
+		anarchism = {
 			popularity = 0
 		}
 	}

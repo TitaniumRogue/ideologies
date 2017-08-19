@@ -82,7 +82,7 @@ set_politics = {
 			#banned = no #default is no
 		}
 
-		nationalism_ideology = {
+		nationalism = {
 			popularity = 70
 		}
 	}

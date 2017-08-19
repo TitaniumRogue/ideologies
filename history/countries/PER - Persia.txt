@@ -69,12 +69,12 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		imperialism = { 
+		absolute_monarchy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = imperialism
+	ruling_party = absolute_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -118,12 +118,12 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		imperialism = { 
+		absolute_monarchy = { 
 			popularity = 100
 		}
 	}
 	
-		ruling_party = imperialism
+		ruling_party = absolute_monarchy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

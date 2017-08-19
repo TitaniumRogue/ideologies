@@ -58,7 +58,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = conservative
+	ruling_party = democratic_socialism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes

@@ -52,6 +52,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
+	
 	social_liberal = { 
 		popularity = 0
 	}
