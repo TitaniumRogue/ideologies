@@ -97,6 +97,9 @@ ideologies = {
 			
 			anti_revisionism = {
 			}
+			
+			titoism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -520,6 +523,9 @@ ideologies = {
 		types = {
 			authoritarian_democracy_ideology = {
 			}
+			
+			oligarchism  = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -567,12 +573,6 @@ ideologies = {
 		types = {
 		
 			despotism  = {
-			}
-			
-			oligarchism  = {
-			}
-			
-			moderatism = {
 			}
 		}
 
