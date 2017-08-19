@@ -118,9 +118,66 @@ set_cosmetic_tag = RAJ_UK # British Raj
 set_politics = {
 
 	parties = {
-		authoritarian = {
-			popularity = 100
-		}
+	social_liberal = { 
+		popularity = 0
+	}
+	national_socialism = {
+		popularity = 0
+	}		
+	stalinism = {
+		popularity = 0
+	}
+	social_democracy = { 
+		popularity = 0
+	}
+	market_liberal = { 
+		popularity = 0
+	}
+	conservative = { 
+		popularity = 0
+	}
+	progressive = { 
+		popularity = 0
+	}
+	democratic_socialism = { 
+		popularity = 0
+	}
+	reactionary = { 
+		popularity = 0
+	}
+	authoritarian_democracy = { 
+		popularity = 0
+	}
+	leninism = { 
+		popularity = 0
+	}
+	fascism = { 
+		popularity = 0
+	}
+	nationalism = { 
+		popularity = 0
+	}
+	revolutionary_socialism = { 
+		popularity = 0
+	}
+	militarism = { 
+		popularity = 0
+	}
+	imperialism = { 
+		popularity = 0
+	}
+	authoritarian = {
+		popularity = 100
+	}
+	absolute_monarchy = { 
+		popularity = 0
+	}
+	religious = { 
+		popularity = 0
+	}
+	anarchism = { 
+		popularity = 0
+	}
 	}
 	
 	ruling_party = authoritarian
