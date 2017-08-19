@@ -62,36 +62,32 @@ set_country_flag = monroe_doctrine
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_liberal = { 
 			popularity = 25
 		}
-
-		fascism = {
-			popularity = 0
-		}
 		
-		communism = {
+		revolutionary_socialism = {
 			popularity = 75
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = revolutionary_socialism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-#create_country_leader = {
-#	name = "Eusebio Ayala"
-#	desc = "POLITICS_EUSEBIO_AYALA_DESC"
-#	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = liberalism
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	name = "Eusebio Ayala"
+	desc = "POLITICS_EUSEBIO_AYALA_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
 
 # Rafael Franco technically comes to and loses power slightly after/before the bookmarks, but is the go-to choice for a socialist leader
 create_country_leader = {
@@ -109,25 +105,21 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			social_liberal = { 
 				popularity = 20
 			}
-
-			fascism = {
-				popularity = 0
-			}
 			
-			communism = {
+			revolutionary_socialism = {
 				popularity = 30
 				#banned = no #default is no
 			}
 
-			neutrality = {
+			militarism = {
 				popularity = 50
 			}
 		}
 
-		ruling_party = neutrality
+		ruling_party = militarism
 		last_election = "1938.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -139,7 +131,7 @@ create_country_leader = {
 		desc = "POLITICS_HIGINIO_MORINIGO_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
 		expire = "1965.1.1"
-		ideology = despotism
+		ideology = military_junta
 		traits = {
 			#
 		}

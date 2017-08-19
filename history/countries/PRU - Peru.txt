@@ -70,21 +70,13 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 49
-		}
 
-		fascism = {
-			popularity = 51
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
+		nationalism = {
+			popularity = 100
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = nationalism
 	last_election = "1931.10.11"
 	election_frequency = 96
 	elections_allowed = yes
@@ -95,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nationalism_ideology
 	traits = {
 		#
 	}
@@ -105,21 +97,14 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 49
-			}
-
-			fascism = {
-				popularity = 51
-			}
-			
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
+		
+		nationalism = {
+			popularity = 100
 		}
 		
-		ruling_party = fascism
+		}
+		
+		ruling_party = nationalism
 		last_election = "1931.10.11"
 		election_frequency = 96
 		elections_allowed = yes
@@ -130,7 +115,7 @@ create_country_leader = {
 		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 		expire = "1965.1.1"
-		ideology = fascism_ideology
+		ideology = nationalism_ideology
 		traits = {
 			#
 		}

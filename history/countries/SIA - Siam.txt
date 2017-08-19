@@ -71,25 +71,15 @@ set_convoys = 15
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
+		nationalism = {
 			popularity = 20
 		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		neutrality = {
+		fascism = {
 			popularity = 80
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -100,7 +90,18 @@ create_country_leader = {
 	desc = "POLITICS_PHRAYA_PHAHON_DESC"
 	picture = "Portrait_Siam_Phraya_Phahon.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Phraya Phahon"
+	desc = "POLITICS_PHRAYA_PHAHON_DESC"
+	picture = "Portrait_Siam_Phraya_Phahon.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
 	traits = {
 		#
 	}
@@ -110,18 +111,10 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-			}
-
 			fascism = {
 				popularity = 100
 			}
-			
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
+
 		}
 		
 		ruling_party = fascism
@@ -136,6 +129,17 @@ create_country_leader = {
 		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
 		expire = "1965.1.1"
 		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+		name = "Plaek Phibunsongkhram"
+		desc = "POLITICS_PLAEK_PHIBUNSONGKHRAM_DESC"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+		expire = "1965.1.1"
+		ideology = nationalism_ideology
 		traits = {
 			#
 		}

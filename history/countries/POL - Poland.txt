@@ -244,7 +244,7 @@ create_country_leader = {
 	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
 	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
 	expire = "1965.1.1"
-	ideology = authoritarian_democracy_ideology
+	ideology = oligarchism
 	traits = {
 		#
 	}

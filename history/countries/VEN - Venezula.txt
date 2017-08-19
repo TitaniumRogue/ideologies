@@ -64,21 +64,13 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 5
-		}
 
-		fascism = {
-			popularity = 80
-		}
-		
-		communism = {
-			popularity = 15
-			#banned = no #default is no
+		nationalism = {
+			popularity = 100
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = nationalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -89,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
 	picture = "Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nationalism_ideology
 	traits = {
 		#
 	}
@@ -110,21 +102,12 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 5
-			}
-
-			fascism = {
-				popularity = 80
-			}
-			
-			communism = {
-				popularity = 15
-				#banned = no #default is no
-			}
+		nationalism = {
+			popularity = 100
+		}
 		}
 		
-		ruling_party = fascism
+		ruling_party = nationalism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
