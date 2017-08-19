@@ -87,12 +87,13 @@ set_politics = {
 			leninism = {
 				popularity = 5
 			}
-	
+	}
 	ruling_party = conservative
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
+
 
 1939.1.1 = {
 	set_politics = {
