@@ -65,25 +65,29 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 15
+		social_liberal = { 
+			popularity = 7.5
+		}
+		
+		conservative = { 
+			popularity = 7.5
 		}
 
 		fascism = {
 			popularity = 5
 		}
 		
-		communism = {
+		stalinism = {
 			popularity = 10
 			#banned = no #default is no
 		}
 
-		neutrality = {
+		nationalism_ideology = {
 			popularity = 70
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = nationalism
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -104,25 +108,29 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 15
-			}
-
-			fascism = {
-				popularity = 5
-			}
-			
-			communism = {
-				popularity = 10
-				#banned = no #default is no
-			}
-
-			neutrality = {
-				popularity = 70
-			}
+		social_liberal = { 
+			popularity = 7.5
 		}
 		
-		ruling_party = neutrality
+		conservative = { 
+			popularity = 7.5
+		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		stalinism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+
+		nationalism = {
+			popularity = 70
+		}
+}
+		
+		ruling_party = nationalism
 		last_election = "1936.12.8"
 		election_frequency = 48
 		elections_allowed = no
@@ -134,7 +142,7 @@ create_country_leader = {
 		desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 		expire = "1965.1.1"
-		ideology = despotism
+		ideology = nationalism_ideology
 		traits = {
 			#
 		}

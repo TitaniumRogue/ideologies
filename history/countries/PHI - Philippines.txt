@@ -70,21 +70,69 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 82
+		social_liberal = { 
+			popularity = 0
 		}
-
-		fascism = {
-			popularity = 9
+		national_socialism = {
+			popularity = 0
+		}		
+		stalinism = {
+			popularity = 14
 		}
-		
-		communism = {
-			popularity = 9
-			#banned = no #default is no
+		social_democracy = { 
+			popularity = 18
+		}
+		market_liberal = { 
+			popularity = 0
+		}
+		conservative = { 
+			popularity = 68
+		}
+		progressive = { 
+			popularity = 0
+		}
+		democratic_socialism = { 
+			popularity = 0
+		}
+		reactionary = { 
+			popularity = 0
+		}
+		authoritarian_democracy = { 
+			popularity = 0
+		}
+		leninism = { 
+			popularity = 0
+		}
+		fascism = { 
+			popularity = 0
+		}
+		nationalism = { 
+			popularity = 0
+		}
+		revolutionary_socialism = { 
+			popularity = 0
+		}
+		militarism = { 
+			popularity = 0
+		}
+		imperialism = { 
+			popularity = 0
+		}
+		authoritarian = { 
+			popularity = 0
+		}
+		absolute_monarchy = { 
+			popularity = 0
+		}
+		religious = { 
+			popularity = 0
+		}
+		anarchism = { 
+			popularity = 0
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1935.9.15"
 	election_frequency = 72
 	elections_allowed = yes
@@ -116,21 +164,70 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 82
-			}
-
-			fascism = {
-				popularity = 9
-			}
-			
-			communism = {
-				popularity = 9
-				#banned = no #default is no
-			}
-		}
 		
-		ruling_party = democratic
+		social_liberal = { 
+			popularity = 0
+		}
+		national_socialism = {
+			popularity = 0
+		}		
+		stalinism = {
+			popularity = 14
+		}
+		social_democracy = { 
+			popularity = 18
+		}
+		market_liberal = { 
+			popularity = 0
+		}
+		conservative = { 
+			popularity = 68
+		}
+		progressive = { 
+			popularity = 0
+		}
+		democratic_socialism = { 
+			popularity = 0
+		}
+		reactionary = { 
+			popularity = 0
+		}
+		authoritarian_democracy = { 
+			popularity = 0
+		}
+		leninism = { 
+			popularity = 0
+		}
+		fascism = { 
+			popularity = 0
+		}
+		nationalism = { 
+			popularity = 0
+		}
+		revolutionary_socialism = { 
+			popularity = 0
+		}
+		militarism = { 
+			popularity = 0
+		}
+		imperialism = { 
+			popularity = 0
+		}
+		authoritarian = { 
+			popularity = 0
+		}
+		absolute_monarchy = { 
+			popularity = 0
+		}
+		religious = { 
+			popularity = 0
+		}
+		anarchism = { 
+			popularity = 0
+		}
+	}
+		
+		ruling_party = conservative
 		last_election = "1935.9.15"
 		election_frequency = 72
 		elections_allowed = yes

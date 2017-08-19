@@ -114,7 +114,7 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			conservative = { 
 				popularity = 20
 			}
 
@@ -122,17 +122,22 @@ set_politics = {
 				popularity = 30
 			}
 			
-			communism = {
-				popularity = 20
+			leninism = {
+				popularity = 10
 				#banned = no #default is no
 			}
 			
-			neutrality = { 
+			stalinism = {
+				popularity = 10
+				#banned = no #default is no
+			}
+			
+			absolute_monarchy = { 
 				popularity = 30
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = absolute_monarchy
 		last_election = "1938.1.1"
 		election_frequency = 36
 		elections_allowed = yes
@@ -145,7 +150,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = imperialism
 	traits = {
 		#
 	}
@@ -167,7 +172,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = Despotism
+	ideology = absolutism
 	traits = {
 		#
 	}

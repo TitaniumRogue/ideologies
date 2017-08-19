@@ -23,15 +23,15 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		fascism = { 
-			popularity = 33
-		}
-		neutrality = { 
-			popularity = 33
-		}		
-		communism = {
+		absolute_monarchy = { 
+			popularity = 34
+		}	
+		stalinism = {
 			popularity = 34
 		}
+		fascism = { 
+			popularity = 32
+		}	
 	}
 }
 
@@ -51,7 +51,18 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = oligarchism
+	ideology = nationalism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Prince Michael"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = absolutism
 	traits = {
 		
 	}

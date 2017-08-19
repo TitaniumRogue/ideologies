@@ -94,24 +94,24 @@ set_convoys = 20
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 17
+		social_democracy = { 
+			popularity = 58
 		}
 
-		fascism = {
+		nationalism = {
 			popularity = 2
 		}
 		
-		communism = {
+		stalinism = {
 			popularity = 1
 		}
 
-		neutrality = {
-			popularity = 80
+		conservative = {
+			popularity = 39
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = social_democracy
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -123,7 +123,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
-	ideology = centrism
+	ideology = conservatism
 	traits = {
 		
 	}
@@ -134,7 +134,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
-	ideology = liberalism
+	ideology = social_democrat
 	traits = {
 		
 	}
@@ -146,6 +146,17 @@ create_country_leader = {
 	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
 	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "H.H. Muhammed Shuja Ul-Mulk"
+	
+	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_4.dds"
+	expire = "1960.1.1"
+	ideology = absolutism
 	traits = {
 		
 	}
