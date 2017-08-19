@@ -132,20 +132,65 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		conservative = { 
-			popularity = 18
-		}
-
-		national_socialism = {
-			popularity = 15
-		}
-		
-		leninism = {
-			popularity = 2
-		}
-		
-		authoritarian_democracy = { 
-			popularity = 65
+		social_liberal = { 
+		popularity = 0
+	        }
+	        national_socialism = {
+		popularity = 0
+	        }		
+	        stalinism = {
+		popularity = 2
+	        }
+	        social_democracy = { 
+		popularity = 1
+	        }
+	        market_liberal = { 
+		popularity = 0
+	        }
+	        conservative = { 
+		popularity = 20
+	        }
+	        progressive = { 
+		popularity = 0
+	        }
+	        democratic_socialism = { 
+		popularity = 4
+	        }
+	        reactionary = { 
+		popularity = 0
+	        }
+	        authoritarian_democracy = { 
+		popularity = 60
+	        }
+	        leninism = { 
+		popularity = 0
+	        }
+	        fascism = { 
+		popularity = 10
+	        }
+	        nationalism = { 
+		popularity = 3
+	        }
+	        revolutionary_socialism = { 
+		popularity = 0
+	        }
+	        militarism = { 
+		popularity = 0
+	        }
+	        imperialism = { 
+		popularity = 0
+	        }
+	        authoritarian = { 
+		popularity = 0
+	        }
+	        absolute_monarchy = { 
+		popularity = 0
+	        }
+	        religious = { 
+		popularity = 0
+	        }
+	        anarchism = { 
+		popularity = 0
 		}
 	}
 	
