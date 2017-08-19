@@ -80,7 +80,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
@@ -118,7 +118,7 @@ create_country_leader = {
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = social_democracy
 		last_election = "1938.5.1"
 		election_frequency = 48  
 		elections_allowed = yes

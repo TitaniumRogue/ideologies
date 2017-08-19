@@ -93,7 +93,49 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Vojtěch Luža"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
+	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
+	traits = { fast_planner offensive_doctrine }
 	skill = 3
+}
+
+create_field_marshal = {
+	name = "Josef Šnejdárek"
+	gfx = "GFX_Portrait_czechoslovakia_josef_snejdarek"
+	traits = { thorough_planner defensive_doctrine }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Richard Tesařík"
+	gfx = "GFX_Portrait_czechoslovakia_richard_tesarik"
+	traits = { panzer_leader }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Sergej Vojcechovský"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	traits = { winter_specialist }
+	skill = 3
+}
+
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		CZE_skoda_works
+		CZE_divided_nation
+}
+	give_guarantee = YUG
+	give_guarantee = ROM
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "Death or Dishonor" }
+	}
+	add_ideas = {
+		CZE_fortification_focus
+	}
 }

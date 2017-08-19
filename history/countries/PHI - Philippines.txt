@@ -67,11 +67,12 @@ set_convoys = 5
 	}
 }
 
-set_politics = {
+	1936.1.1 = {
+	set_politics = {
 
-	parties = {
+		parties = {
 		
-		social_liberal = {
+		social_liberal = { 
 			popularity = 0
 		}
 		national_socialism = {
@@ -128,16 +129,17 @@ set_politics = {
 		religious = { 
 			popularity = 0
 		}
-		anarchism = {
+		anarchism = { 
 			popularity = 0
 		}
 	}
-	
-	ruling_party = conservative
-	last_election = "1935.9.15"
-	election_frequency = 72
-	elections_allowed = yes
-}
+		
+		ruling_party = conservative
+		last_election = "1935.9.15"
+		election_frequency = 72
+		elections_allowed = yes
+	}
+	}
 
 create_country_leader = {
 	name = "Manuel Luis Quezón"

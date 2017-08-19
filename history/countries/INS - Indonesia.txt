@@ -91,7 +91,11 @@ set_politics = {
 		popularity = 30
 	}
 	}
-}
+	ruling_party = authoritarian
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+	}
 
 create_country_leader = {
 	name = "Sukarno"
