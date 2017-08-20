@@ -86,7 +86,7 @@ set_convoys = 0
 set_politics = {
 
 	parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 20
 		}
 

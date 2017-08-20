@@ -49,7 +49,7 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 0
 		}
 
@@ -57,17 +57,17 @@ set_politics = {
 			popularity = 0
 		}
 		
-		communism = {
+		stalinist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		authoritarian = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -94,7 +94,7 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 0
 		}
 
@@ -102,12 +102,12 @@ create_country_leader = {
 			popularity = 0
 		}
 		
-		communism = {
+		stalinist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		authoritarian = { 
 			popularity = 100
 		}
 	}

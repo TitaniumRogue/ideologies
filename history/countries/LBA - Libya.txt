@@ -64,7 +64,7 @@ set_convoys = 20
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 25
 		}
 
@@ -72,7 +72,7 @@ set_politics = {
 			popularity = 20
 		}
 		
-		communism = {
+		stalinist = {
 			popularity = 5
 			#banned = no #default is no
 		}
@@ -122,7 +122,7 @@ create_country_leader = {
 	name = "Hassan as-Senussi"
 	desc = ""
 	picture = "Portrait_Arabia_Generic_communism1.dds"
-	ideology = leninism
+	ideology = stalinist_ideology
 	traits = {
 		#
 	}
