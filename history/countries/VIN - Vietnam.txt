@@ -43,7 +43,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 35
 		}
 
@@ -51,15 +51,15 @@ set_politics = {
 			popularity = 15
 		}
 		
-		communism = {
+		revolutionary_socialist = {
 			popularity = 15
 		}
-		neutrality = {
+		authoritarian_democracy = {
 			popularity = 35
 		}
 	}
 
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
