@@ -48,7 +48,7 @@ set_politics = {
 			popularity = 0
 		}
 		
-		leftwingradical = { 
+		revolutionary_socialism = { 
 			popularity = 0
 		}
 

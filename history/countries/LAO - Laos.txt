@@ -43,7 +43,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 25
 		}
 
@@ -51,10 +51,10 @@ set_politics = {
 #		
 #		}
 		
-		communism = {
+		revolutionary_socialism = {
 			popularity = 35
 		}
-		neutrality = {
+		authoritarian = {
 			popularity = 40
 		}
 	}
