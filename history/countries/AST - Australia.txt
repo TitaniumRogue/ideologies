@@ -181,6 +181,15 @@ set_politics = {
 		anarchism = { 
 			popularity = 0
 		}
+		revolutionary_socialism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		national_bolshevism = { 
+			popularity = 0
+		}
 	}
 	
 	ruling_party = market_liberal
@@ -320,6 +329,15 @@ parties = {
 			popularity = 0
 		}
 		anarchism = { 
+			popularity = 0
+		}
+		revolutionary_socialism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		national_bolshevism = { 
 			popularity = 0
 		}
 	}
