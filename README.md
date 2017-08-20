@@ -72,6 +72,8 @@ For anybody who would like to modify the localization files copy the text below 
 	XXX_militarism_DEF:0 "Example"
 	XXX_imperialism_DEF:0 "Example"
 	XXX_authoritarian_DEF:0 "Example"
+	XXX_christian_democracy_DEF:0 "Example"
+	XXX_national_bolshevism_DEF:0 "Example"
  ----------
  
  For anbody who would like to modify the starting politics in the history files copy the text below to make things easier. Just replace "popularity = 0" with whatever percentage you want
@@ -135,6 +137,12 @@ For anybody who would like to modify the localization files copy the text below 
 			popularity = 0
 		}
 		anarchism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		national_bolshevism = { 
 			popularity = 0
 		}
  ----------
