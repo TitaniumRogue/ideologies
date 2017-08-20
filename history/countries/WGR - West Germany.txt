@@ -117,8 +117,8 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		conservative = { #Christian Democratic Union + Christian Social Union
-			popularity = 39
+		christian_democracy = { #Christian Democratic Union + Christian Social Union
+			popularity = 35
 		}
 		
 		social_democracy = { #Social Democratic Party
@@ -141,9 +141,15 @@ set_politics = {
 			popularity = 5
 			banned = no #default is no
 		}
+		
+		conservative = { #German Party
+			popularity = 5
+			banned = no #default is no
+		}
+		
 	}
 	
-	ruling_party = conservative
+	ruling_party = christian_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
