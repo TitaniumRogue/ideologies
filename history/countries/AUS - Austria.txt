@@ -17,20 +17,21 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		naionalism = { 
-			popularity = 48
-		}
-
-		national_socialism = {
-			popularity = 50
-		}
-
-		social_democracy = {
-			popularity = 1
+		nationalism = { #VF
+			popularity = 36
 		}
 		
-		leninism = {
-			popularity = 1
+		national_socialism = { #NSDAP
+			popularity = 21
+		}
+
+		social_democracy = { #SDP
+			popularity = 41
+			banned = yes
+		}
+		
+		leninism = { #KPOE
+			popularity = 2
 		}
 	}
 	
@@ -80,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_ALFRED_KLAHR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = leninism_ideology
 	traits = {
 		#
 	}
