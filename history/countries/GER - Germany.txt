@@ -200,15 +200,15 @@ create_import = {
 set_politics = {
 
 	parties = {
-		conservative = { 
+		christian_democracy = { #Zentrum
 			popularity = 20
 		}
 
-		national_socialism = {
+		national_socialism = { #NSDAP
 			popularity = 60
 		}
 		
-		stalinism = {
+		stalinism = { #KPD
 			popularity = 20
 			banned = yes #default is no
 		}

@@ -173,6 +173,15 @@ set_politics = {
 		anarchism = { 
 			popularity = 0
 		}
+		revolutionary_socialism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		national_bolshevism = { 
+			popularity = 0
+		}
 	}
 	
 	ruling_party = social_democracy
@@ -290,6 +299,12 @@ set_convoys = 70
 			popularity = 0
 		}
 		anarchism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		national_bolshevism = { 
 			popularity = 0
 		}
 		}

@@ -175,6 +175,12 @@ set_politics = {
 			anarchism = { 
 				popularity = 0
 			}
+			christian_democracy = { 
+				popularity = 0
+			}
+			national_bolshevism = { 
+				popularity = 0
+			}
 	}
 	
 	ruling_party = conservative
@@ -269,6 +275,12 @@ create_country_leader = {
 				popularity = 0
 			}
 			anarchism = { 
+				popularity = 0
+			}
+			christian_democracy = { 
+				popularity = 0
+			}
+			national_bolshevism = { 
 				popularity = 0
 			}
 		}
