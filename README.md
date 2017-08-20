@@ -3,11 +3,10 @@ A HOI4 mod that adds in 20 new ideologies
 
 Priorities (In order of highest to lowest):
 
-	History Files
-	Event/National Focus Files
+	History Files (Done!)
 	Localisation
-	Flags
-	Advisors
+	Flags	
+	Event/National Focus Files
 
 For anybody who would like to modify the localization files copy the text below to make things easier. Just replace "XXX" with the country's tag, and "Example" with its name
 
