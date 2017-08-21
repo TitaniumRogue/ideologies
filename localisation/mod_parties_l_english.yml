@@ -1,7 +1,8 @@
 ﻿l_english:
 
 #This file deletes all of the vanilla party names. If you want to see them, go look in the vanilla game files
-
+ GER_anarchist_party:0 "FAUD"
+ GER_anarchist_party_long:0 "Freie Arbeiter Union Deutschlands
  GER_stalinist_party:0 "KPD"
  GER_stalinist_party_long:0 "Kommunistische Partei Deutschlands"
  GER_conservative_party:0 "Zentrum"
