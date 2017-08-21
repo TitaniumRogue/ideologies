@@ -3,11 +3,10 @@ A HOI4 mod that adds in 20 new ideologies
 
 Priorities (In order of highest to lowest):
 
-	History Files
-	Event/National Focus Files
+	History Files (Done!)
 	Localisation
-	Flags
-	Advisors
+	Flags	
+	Event/National Focus Files
 
 For anybody who would like to modify the localization files copy the text below to make things easier. Just replace "XXX" with the country's tag, and "Example" with its name
 
@@ -19,6 +18,7 @@ For anybody who would like to modify the localization files copy the text below 
 	XXX_social_democracy:0 "Example"
 	XXX_reactionary:0 "Example"
 	XXX_democratic_socialism:0 "Example"
+	XXX_christian_democracy:0 "Example"	
 	XXX_authoritarian_democracy:0 "Example"
 	XXX_national_socialism:0 "Example"
 	XXX_fascism:0 "Example"
@@ -26,6 +26,7 @@ For anybody who would like to modify the localization files copy the text below 
 	XXX_revolutionary_socialism:0 "Example"
 	XXX_leninsm:0 "Example"
 	XXX_stalinism:0 "Example"
+	XXX_national_bolshevism:0 "Example"
 	XXX_absolute_monarchy:0 "Example"
 	XXX_religious:0 "Example"
 	XXX_anarchism:0 "Example"
@@ -39,6 +40,7 @@ For anybody who would like to modify the localization files copy the text below 
 	XXX_social_democracy_ADJ:0 "Example"
 	XXX_reactionary_ADJ:0 "Example"
 	XXX_democratic_socialism_ADJ:0 "Example"
+	XXX_christian_democracy_ADJ:0 "Example"
 	XXX_authoritarian_democracy_ADJ:0 "Example"
 	XXX_national_socialism_ADJ:0 "Example"
 	XXX_fascism_ADJ:0 "Example"
@@ -46,6 +48,7 @@ For anybody who would like to modify the localization files copy the text below 
 	XXX_revolutionary_socialism_ADJ:0 "Example"
 	XXX_leninsm_ADJ:0 "Example"
 	XXX_stalinism_ADJ:0 "Example"
+	XXX_national_bolshevism_ADJ:0 "Example"
 	XXX_absolute_monarchy_ADJ:0 "Example"
 	XXX_religious_ADJ:0 "Example"
 	XXX_anarchism_ADJ:0 "Example"
@@ -60,12 +63,14 @@ For anybody who would like to modify the localization files copy the text below 
 	XXX_reactionary_DEF:0 "Example"
 	XXX_democratic_socialism_DEF:0 "Example"
 	XXX_authoritarian_democracy_DEF:0 "Example"
+	XXX_christian_democracy_DEF:0 "Example"
 	XXX_national_socialism_DEF:0 "Example"
 	XXX_fascism_DEF:0 "Example"
 	XXX_nationalism_DEF:0 "Example"
 	XXX_revolutionary_socialism_DEF:0 "Example"
 	XXX_leninsm_DEF:0 "Example"
 	XXX_stalinism_DEF:0 "Example"
+	XXX_national_bolshevism_DEF:0 "Example"
 	XXX_absolute_monarchy_DEF:0 "Example"
 	XXX_religious_DEF:0 "Example"
 	XXX_anarchism_DEF:0 "Example"
@@ -135,6 +140,12 @@ For anybody who would like to modify the localization files copy the text below 
 			popularity = 0
 		}
 		anarchism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		national_bolshevism = { 
 			popularity = 0
 		}
  ----------

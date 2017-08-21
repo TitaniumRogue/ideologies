@@ -51,9 +51,6 @@ set_politics = {
 	progressive = { 
 		popularity = 0
 	}
-	democratic_socialism = { 
-		popularity = 0
-	}
 	reactionary = { 
 		popularity = 0
 	}
@@ -87,8 +84,14 @@ set_politics = {
 	anarchism = { 
 		popularity = 0
 	}
-	democratic_socialist = {
+	democratic_socialism = {
 		popularity = 30
+	}
+	christian_democracy = { 
+		popularity = 0
+	}
+	national_bolshevism = { 
+		popularity = 0
 	}
 	}
 	ruling_party = authoritarian

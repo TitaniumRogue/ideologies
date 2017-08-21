@@ -51,8 +51,7 @@ set_technology = {
 
 set_politics = {
 
-		parties = {
-		
+	parties = {	
 		absolute_monarchy = { 
 			popularity = 100
 		}

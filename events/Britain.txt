@@ -233,7 +233,7 @@ country_event = {
 	trigger = {
 		tag = ENG
 		has_war = yes
-		has_government = social_conservative
+		has_government = conservative
 		NOT = {
 			has_completed_focus = uk_scandinavian_focus
 		}
@@ -282,7 +282,7 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		has_government = social_conservative
+		has_government = conservative
 		date > 1940.9.11
 		NOT = { has_country_flag = chamberlain_resigned }
 	}	
@@ -341,10 +341,15 @@ country_event = {
 				limit = {
 					NOT = { has_war_with = ENG }
 					is_in_faction = no
-					has_government = social_conservative
-					has_government = social_liberal
-					has_government = social_democracy
-					has_government = market_liberal
+									OR = {		
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 					is_puppet = no
 					OR = {
 						capital_scope = {
@@ -765,7 +770,7 @@ country_event = {
  
     trigger = {
         original_tag = ENG
-        has_government = social_conservative
+        has_government = conservative
         date > 1937.5.27
         has_start_date < 1936.01.02
         NOT = { has_country_flag = baldwin_resigned }

@@ -174,7 +174,7 @@ if = {
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
-			ideology = fascism_ideology
+			ideology = imperialism_ideology
 		}
 	}
 }
