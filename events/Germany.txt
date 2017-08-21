@@ -2033,12 +2033,15 @@ country_event = {
 		if = { #you're not getting around that, comrade
 			limit = {
 				has_idea = FRA_disjointed_government
-				has_government = communism
+				OR = {
+				has_government = leninism
+				has_government = stalinism
+				}
 			}
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = social_conservative
+					ideology = social_liberal
 					size = 0.3
 				}
 			}
@@ -2184,7 +2187,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = social_conservative
+					ideology = social_liberal
 					size = 0.3
 				}
 			}
@@ -2231,7 +2234,7 @@ country_event = {
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
-					ideology = social_conservative
+					ideology = social_liberal
 					size = 0.3
 				}
 			}
@@ -2287,7 +2290,7 @@ country_event = {
 					has_government = communism
 				}
 				start_civil_war = {
-					ideology = social_conservative
+					ideology = social_liberal
 					size = 0.3
 				}
 			}
@@ -2371,7 +2374,7 @@ country_event = {
 					has_government = communism
 				}
 				start_civil_war = {
-					ideology = social_conservative
+					ideology = social_liberal
 					size = 0.3
 				}
 			}
@@ -2572,7 +2575,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ruling_party = social_conservative
+				ruling_party = social_liberal
 				ideology = national_socialism
 				size = 0.5
 			}
@@ -2585,7 +2588,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ruling_party = social_conservative
+				ruling_party = social_liberal
 				ideology = national_socialism
 				size = 0.7
 			}
@@ -2615,7 +2618,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = social_conservative
+				ideology = social_liberal
 				size = 0.5
 			}
 		}
@@ -2627,7 +2630,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = social_conservative
+				ideology = social_liberal
 				size = 0.3
 			}
 		}
@@ -2656,7 +2659,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = social_conservative
+				ideology = social_liberal
 				size = 0.5
 			}
 		}
@@ -2668,7 +2671,7 @@ country_event = {
 				}
 			}
 			start_civil_war = {
-				ideology = social_conservative
+				ideology = social_liberal
 				size = 0.3
 			}
 		}
@@ -3268,12 +3271,21 @@ country_event = {
 				OR = {
 					AND = {
 						NOT = { tag = GER }
+						OR = {
 						has_government = fascism 
+						has_government = national_socialism
+						has_government = nationalism
+						}
 					}
-					has_government = social_conservative
-                    has_government = social_liberal
-					has_government = market_liberal
-                    has_government = social_democracy
+									OR = {		
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 				}
 			}
 			add_opinion_modifier = { target = SOV modifier = unholy_alliance }
@@ -3298,16 +3310,20 @@ country_event = {
 			every_other_country = {
 				limit = {
 					has_government = fascism 
-					has_government = national_socialism
 				}
 				add_opinion_modifier = { target = GER modifier = communist_collaborators }
 			}
 			every_other_country = {
 				limit = {
-					has_government = social_conservative
-                    has_government = social_liberal
-					has_government = market_liberal
-                    has_government = social_democracy
+									OR = {		
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 				}
 				add_opinion_modifier = { target = GER modifier = unholy_alliance }
 			}
@@ -4442,10 +4458,15 @@ country_event = {
 				is_in_faction_with = ROOT
 			}
 		}
-		has_government = social_democracy
-		has_government = social_conservative
-		has_government = social_liberal
-        has_government = market_liberal
+						OR = {		
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 		NOT = {
 			tag = SOV
 		}
@@ -5102,13 +5123,15 @@ country_event = {
 			modifier = {
 				add = 1
 				OR = {
-					has_government = communism
-					has_government = leftwingradical
-					has_government = leninist
-					has_government = social_democracy
-				    has_government = social_liberal
-					has_government = social_conservative
-					has_government = market_liberal
+				has_government = leninsim
+				has_government = stalinism
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
 				}
 			}
 		}

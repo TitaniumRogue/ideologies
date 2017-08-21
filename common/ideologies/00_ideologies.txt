@@ -4,7 +4,7 @@ ideologies = {
 	
 		types = {
 		
-			anarchism_ideology  = {
+			anarchist_communism = {
 			}
 		}
 
@@ -187,8 +187,6 @@ ideologies = {
 			luxemburgism = {
 			}
 			
-			anarchist_communism = {
-			}
 		}
 		
 		dynamic_faction_names = {
