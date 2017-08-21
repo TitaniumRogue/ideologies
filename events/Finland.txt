@@ -123,15 +123,25 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 5							
-				has_government = social_conservative
+								OR = {		
 				has_government = social_liberal
-			    has_government = market_liberal
-			    has_government = social_democracy
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 				FIN = {
-				has_government = social_conservative
+								OR = {		
 				has_government = social_liberal
-			    has_government = market_liberal
-			    has_government = social_democracy
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 				}
 			}
 		}
@@ -188,19 +198,29 @@ country_event = {
 			modifier = {
 				factor = 100
 				has_war = no
-				has_government = social_conservative
-				has_government = social_democracy
+								OR = {		
 				has_government = social_liberal
 				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 				strength_ratio = {
 					tag = SOV
 					ratio > 0.2
 				}
 				FIN = {
-				has_government = social_conservative
-				has_government = social_democracy
+									OR = {		
 				has_government = social_liberal
-				has_government = market_liberals
+				has_government = market_liberal
+				has_government = conservative
+				has_government = progressive
+				has_government = social_democracy
+				has_government = reactionary
+				has_government = democratic_socialism 
+		}
 					strength_ratio = {
 						tag = SOV 
 						ratio > 0.3
