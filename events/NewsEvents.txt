@@ -81,6 +81,7 @@ news_event = {
 			NOT = {
 				TAG = JAP
 				TAG = FRA
+				TAG = FRI
 				is_in_faction_with = JAP
 			}
 		}
@@ -91,7 +92,12 @@ news_event = {
 	}
 	option = {
 		name = news.5.c
-		trigger = { TAG = FRA }
+		trigger = { 
+		OR = {
+			TAG = FRA
+			TAG = FRI 
+			}
+		}
 	}
 	option = {
 		name = news.5.e
@@ -99,6 +105,7 @@ news_event = {
 			NOT = {
 				TAG = JAP
 				TAG = FRA
+				TAG = FRI
 			}
 			is_in_faction_with = JAP
 		}
@@ -122,6 +129,7 @@ news_event = {
 			NOT = {
 				TAG = JAP
 				TAG = FRA
+				TAG = FRI
 				is_in_faction_with = JAP
 			}
 		}
@@ -132,7 +140,12 @@ news_event = {
 	}
 	option = {
 		name = news.6.c
-		trigger = { TAG = FRA }
+		trigger = { 
+		OR = {
+			TAG = FRA
+			TAG = FRI 
+			}
+		}
 	}
 	option = {
 		name = news.6.e
@@ -140,6 +153,7 @@ news_event = {
 			NOT = {
 				TAG = JAP
 				TAG = FRA
+				TAG = FRI
 			}
 			is_in_faction_with = JAP
 		}
@@ -1176,10 +1190,7 @@ news_event = {
 				NOT = { original_tag = FRA }
 				AND = {
 					original_tag = FRA
-					NOT = { has_government = social_conservative
-                            has_government = social_liberal
-                            has_government = market_liberal
-                            has_government = social_democracy }
+					NOT = { has_government = democratic }
 				}
 			}
 			NOT = { TAG = GER	}
@@ -1199,11 +1210,7 @@ news_event = {
 		name = news.34.c
 		trigger = {
 			original_tag = FRA 
-			OR = {
-			{ has_government = social_conservative }
-		    { has_government = social_democracy }
-	       	{ has_government = social_liberal }
-		    { has_government = market_liberal }
+			has_government = democratic
 		}
 	}
 }
@@ -1306,12 +1313,7 @@ news_event = {
 	
 	option = {
 		name = news.37.a
-		trigger = { 
-			NOT = { 
-				TAG = SOV 
-				is_in_faction_with = SOV
-			} 
-		}
+		trigger = { NOT = { TAG = SOV } }
 	}
 	option = {
 		name = news.37.b
@@ -5127,39 +5129,19 @@ news_event = {
 	title = news.159.t
 	desc = {
 		text = news.159.d_01
-		trigger = { FROM = { has_government = paternal_autocrat } }
+		trigger = { FROM = { has_government = neutrality } }
 	}
 	desc = {
 		text = news.159.d_02
-		trigger = { FROM = { has_government = social_conservative } }
-	}
-	desc = {
-		text = news.159.d_02
-		trigger = { FROM = { has_government = social_liberal } }
-	}
-	desc = {
-		text = news.159.d_02
-		trigger = { FROM = { has_government = market_liberal } }
-	}
-	desc = {
-		text = news.159.d_02
-		trigger = { FROM = { has_government = social_democracy } }
+		trigger = { FROM = { has_government = democratic } }
 	}
 	desc = {
 		text = news.159.d_03
 		trigger = { FROM = { has_government = fascism } }
-	} 
-	desc = {
-		text = news.159.d_03
-		trigger = { FROM = { has_government = national_socialism } }
 	}
 	desc = {
 		text = news.159.d_04
 		trigger = { FROM = { has_government = communism } }
-	}
-	desc = {
-		text = news.159.d_04
-		trigger = { FROM = { has_government = leftwingradical } }
 	}
 
 	picture = GFX_news_event_009
@@ -5499,11 +5481,11 @@ news_event = {
 		trigger = { TAG = GER }
 	}
 	option = {
-		name = news.167.e
+		name = news.167.c
 		trigger = { TAG = ITA }
 	}
 	option = {
-		name = news.167.c
+		name = news.167.e
 		trigger = { TAG = YUG }
 	}
 }
@@ -6271,11 +6253,7 @@ news_event = {
 	option = {
 		name = news.178.c
 		trigger = {
-			has_government = social_conservative 
-		    has_government = social_democracy 
-	       	has_government = social_liberal 
-		    has_government = market_liberal 
-		}
+			has_government = democratic
 		}
 	}
 
@@ -6283,7 +6261,7 @@ news_event = {
 	option = {
 		name = news.178.e
 		trigger = {
-			has_government = paternal_autocrat
+			has_government = neutrality
 		}
 	}
 }
@@ -6307,8 +6285,6 @@ news_event = {
 		name = news.179.a
 		trigger = {
 			has_government = communism
-		    has_government = leninist
-	      	has_government = leftwingradical
 		}
 	}
 
@@ -6317,8 +6293,6 @@ news_event = {
 		name = news.179.b
 		trigger = {
 			has_government = fascism
-			has_government = national_socialism
-			
 		}
 	}
 
@@ -6326,10 +6300,7 @@ news_event = {
 	option = {
 		name = news.179.c
 		trigger = {
-			has_government = social_conservative 
-		    has_government = social_democracy 
-	       	has_government = social_liberal 
-		    has_government = market_liberal 
+			has_government = democratic
 		}
 	}
 
@@ -6337,7 +6308,7 @@ news_event = {
 	option = {
 		name = news.179.e
 		trigger = {
-			has_government = paternal_autocrat
+			has_government = neutrality
 		}
 	}
 }
@@ -10864,129 +10835,4 @@ news_event = {
 	}
 	
 
-}
-
-# Australia severs ties and breaks free
-news_event = {
-	id = news.286
-	title = news.286.t
-	desc = news.286.desc
-	picture = GFX_news_event_ast_parliament_house
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.286.a
-		trigger = {
-			NOT = {
-				TAG = AST
-				TAG = ENG
-				is_in_faction_with = ENG
-			}
-		}
-	}
-	option = {
-		name = news.286.b
-		trigger = { TAG = AST }
-	}
-
-	option = {
-		name = news.286.c
-		trigger = { 
-			OR = {
-				TAG = ENG 
-				is_in_faction_with = ENG
-			}
-		}
-	}
-}
-
-# Soviet honors MR pact
-news_event = {
-	id = news.287
-	title = news.287.t
-	desc = news.287.desc
-	picture = GFX_news_event_006
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.287.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = SOV
-				is_in_faction_with = GER
-				is_in_faction_with = SOV
-			}
-		}
-	}
-	option = { 
-		name = news.287.b
-		trigger = { 
-			NOT = { TAG = SOV } #fix for unholy alliance
-			OR = {
-				TAG = GER
-				is_in_faction_with = GER
-			}
-		}
-	}
-	option = {
-		name = news.287.c
-		trigger = { 
-			NOT = { TAG = GER } # fix for unholy alliance
-			OR = {
-				TAG = SOV
-				is_in_faction_with = SOV
-			}
-		}
-	}
-}
-#chinese united front forms
-news_event = {
-	id = news.288
-	title = news.288.t
-	desc = news.288.desc
-	picture = GFX_news_event_chinese_soldiers_march
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.288.a
-		trigger = {
-			TAG = CHI
-			TAG = PRC
-		}
-	}
-	option = { 
-		name = news.288.b
-		trigger = { 
-			NOT = {
-				TAG = CHI
-				TAG = PRC
-			}
-			OR = {
-				TAG = JAP
-				is_in_faction_with = JAP
-			}
-		}
-	}
-	option = {
-		name = news.288.c
-		trigger = { 
-			NOT = { 
-				TAG = PRC 
-				TAG = CHI
-				TAG = JAP
-				is_in_faction_with = JAP
-			}
-			
-		}
-	}
 }

@@ -19,13 +19,14 @@ country_event = {
 	mean_time_to_happen = { days = 2 }
 
 	immediate = {
-		set_province_name = { id = 3529 name="LOL_TEST" }
+		SOV = {
+			save_event_target_as = yalta_partner
+		}
 	}
 	
 	option = {
 		name = test.1.a
-		
-		reset_province_name = 3529
+			country_event = { id = test.2 }
 	}
 }
 
@@ -73,3 +74,135 @@ country_event = {
 		}
 	}
 }
+
+# German ERC puppetry event
+country_event = {
+	id = test.8
+	title = test.8.t
+	desc = test.8.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV	
+	}
+	
+	option = {
+		name = test.8.a		#puppet ERC
+		ai_chance = { 
+		base = 99 
+		}
+		SOV = { puppet = ERC }
+			}
+}
+
+# German ERC puppetry event
+country_event = {
+	id = test.9
+	title = test.9.t
+	desc = test.9.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = test.9.a		#puppet ERC
+			set_politics = {
+			elections_allowed = yes
+		}
+	}
+}
+
+# German ERC puppetry event
+country_event = {
+	id = test.10
+	title = test.10.t
+	desc = test.10.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = test.10.a		#puppet ERC
+		drop_cosmetic_tag = yes
+		}
+	}
+	
+	# German ERC puppetry event
+	country_event = {
+	id = test.11
+	title = test.11.t
+	desc = test.11.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = test.11.a		#puppet ERC
+		set_politics = { ruling_party = fascism } 
+		}
+	}
+
+	# German ERC puppetry event
+	country_event = {
+	id = test.12
+	title = test.12.t
+	desc = test.12.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = test.12.a		#puppet ERC
+		set_politics = { ruling_party = communism } 
+		}
+	}
+	
+		# German ERC puppetry event
+	country_event = {
+	id = test.13
+	title = test.13.t
+	desc = test.13.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = test.13.a		#puppet ERC
+		set_politics = { ruling_party = democratic } 
+		}
+	}
+	
+	# German ERC puppetry event
+	country_event = {
+	id = test.14
+	title = test.14.t
+	desc = test.14.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = test.14.a		#puppet ERC
+		set_politics = { ruling_party = neutrality } 
+		}
+	}
