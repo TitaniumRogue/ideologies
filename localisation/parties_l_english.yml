@@ -234,3 +234,12 @@
  CAN_democratic_nationalism_party_long:0 "Union Nationale - National Union"
  CAN_national_socialism_party:0 "NUP-NS"
  CAN_national_socialism_party_long:0 "National Unity Party - National Socialists"
+ DEN_social_democracy_party:0 "Socialdemokraterne"
+ DEN_social_democracy_party_long:0 "Socialdemokraterne"
+ DEN_national_socialism_party:0 "DNSAP"
+ DEN_national_socialism_party_long:0 "Danmarks Nationalsocialistiske Arbejderparti"
+ DEN_market_liberal_party:0 "Venstre"
+ DEN_market_liberal_party_long:0 "Venstre, Danmarks Liberale Parti"
+ DEN_stalinism_party_long:0 "Danmarks Kommunistiske Parti - Hardliners"
+ DEN_stalinism_party:0 "DKP"
+ 
