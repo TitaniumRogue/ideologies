@@ -31,7 +31,7 @@ For anybody who would like to modify the localization files copy the text below 
 	 XXX_religious:0 "Example"
 	 XXX_anarchism:0 "Example"
 	 XXX_militarism:0 "Example"
-	 XXX_clerical_fascism:0 "Example"
+	 XXX_fascist_monarchy:0 "Example"
 	 XXX_authoritarian:0 "Example"
 	 XXX_social_liberal_ADJ:0 "Example"
 	 XXX_market_liberal_ADJ:0 "Example"
@@ -53,7 +53,7 @@ For anybody who would like to modify the localization files copy the text below 
 	 XXX_religious_ADJ:0 "Example"
 	 XXX_anarchism_ADJ:0 "Example"
 	 XXX_militarism_ADJ:0 "Example"
-	 XXX_clerical_fascism_ADJ:0 "Example"
+	 XXX_fascist_monarchy_ADJ:0 "Example"
 	 XXX_authoritarian_ADJ:0 "Example"
 	 XXX_social_liberal_DEF:0 "Example"
 	 XXX_market_liberal_DEF:0 "Example"
@@ -75,7 +75,7 @@ For anybody who would like to modify the localization files copy the text below 
 	 XXX_religious_DEF:0 "Example"
 	 XXX_anarchism_DEF:0 "Example"
 	 XXX_militarism_DEF:0 "Example"
-	 XXX_clerical_fascism_DEF:0 "Example"
+	 XXX_fascist_monarchy_DEF:0 "Example"
  ----------
  
  For anbody who would like to modify the starting politics in the history files copy the text below to make things easier. Just replace "popularity = 0" with whatever percentage you want
@@ -126,7 +126,7 @@ For anybody who would like to modify the localization files copy the text below 
 		militarism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		authoritarian = { 
