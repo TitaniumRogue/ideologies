@@ -81,7 +81,13 @@
  austrofascism:0 "Austro-Fascism"
  
  #Political Parties
-
+ 
+ GER_leninism_party:0 "MLPD"
+ GER_leninism_party_long:0 "Marxistisch Leninistische Partei Deutschlands"
+ GER_democratic_nationalist_party:0 "DVLP"
+ GER_democratic_nationalist_party_long:0 "Deutsche Vaterlandspartei"
+ GER_market_liberal_party:0 "FDP"
+ GER_market_liberal_party_long:0 "Freie Demokratische Partei"
  GER_social_liberal_party:0 "DStP"
  GER_social_liberal_party_long:0 "Deutsche Staatspartei"
  GER_militarism_party:0 "KSWR"
