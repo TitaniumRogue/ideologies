@@ -82,6 +82,12 @@
  
  #Political Parties
 
+ GER_social_libertarian_party:0 "DStP"
+ GER_social_libertarian_party_long:0 "Deutsche Staatspartei"
+ GER_militarist_party:0 "KSWR"
+ GER_militarist_party_long:0 "Kampffront Schwarz-Weiß-Rot"
+ GER_christian_democratic_party:0 "CSVD"
+ GER_christan_democratic_party_long:0 "Christlich Sozialer Volksdienst"
  GER_anarchist_party:0 "FAUD"
  GER_anarchist_party_long:0 "Freie Arbeiter Union Deutschlands
  GER_stalinist_party:0 "KPD"
