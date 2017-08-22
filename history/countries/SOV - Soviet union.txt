@@ -214,7 +214,7 @@ set_politics = {
 			popularity = 1
 		}
 		
-		imperialism = {
+		fascist_monarchy = {
 			popularity = 1
 		}
 		

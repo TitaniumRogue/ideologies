@@ -21,7 +21,7 @@ set_politics = {
 			popularity = 5
 		}
 
-		imperialism = {
+		fascist_monarchy = {
 			popularity = 10
 		}
 
@@ -78,7 +78,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = imperialism_ideology
+	ideology = fascist_monarchy_ideology
 	traits = {
 		#
 	}

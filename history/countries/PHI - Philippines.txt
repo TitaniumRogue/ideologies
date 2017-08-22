@@ -111,13 +111,13 @@ set_convoys = 5
 		nationalism = { 
 			popularity = 0
 		}
-		revolutionary_socialism = { 
+		revisionism = { 
 			popularity = 0
 		}
 		militarism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		authoritarian = { 
@@ -135,7 +135,7 @@ set_convoys = 5
 		christian_democracy = { 
 			popularity = 0
 		}
-		national_bolshevism = { 
+		democratic_nationalism = { 
 			popularity = 0
 		}
 	}
@@ -213,13 +213,13 @@ create_country_leader = {
 		nationalism = { 
 			popularity = 0
 		}
-		revolutionary_socialism = { 
+		revisionism = { 
 			popularity = 0
 		}
 		militarism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		authoritarian = { 
@@ -237,7 +237,7 @@ create_country_leader = {
 		christian_democracy = { 
 			popularity = 0
 		}
-		national_bolshevism = { 
+		democratic_nationalism = { 
 			popularity = 0
 		}
 	}

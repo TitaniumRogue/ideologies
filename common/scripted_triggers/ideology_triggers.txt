@@ -14,8 +14,6 @@
 #
 
 has_democratic_government = {
-	custom_trigger_tooltip = {
-		tooltip = TT_democratic_form_of_government
 		OR = {
 			has_government = reactionary
 			has_government = conservative
@@ -24,14 +22,15 @@ has_democratic_government = {
 			has_government = social_democrat
 			has_government = progressive
 			has_government = democratic_socialist
+			has_government = christian_democracy
+			has_government = democratic_nationalism
 		}
-	}
 }
 
 has_fascist_government = {
 	OR = {
 		has_government = fascism
-		has_government = imperialism
+		has_government = fascist_monarchy
 		has_government = nationalism
 		has_government = national_socialism
 	}
@@ -41,25 +40,25 @@ has_communist_government = {
 	OR = {
 		has_government = leninism
 		has_government = stalinism
-		has_government = revolutionary_socialism
+		has_government = revisionism
+		has_government = anarchism
 	}
 }
 
-has_far_left_government = {
+is_socialist = {
 	OR = {
 		has_government = leninism
 		has_government = stalinism
 		has_government = anarchism
-		has_government = revolutionary_socialism
+		has_government = revisionism
+		has_government = democratic_socialism
 	}
 }
 
 has_neutral_government = {
 	OR = {
 		has_government = absolute_monarchy
-		has_government = anarchism
 		has_government = militarism
-		has_government = imperialism
 		has_government = authoritarian
 		has_government = religious
 	}
@@ -69,7 +68,7 @@ has_totalitarian_government = {
 	OR = {
 		has_government = absolute_monarchy
 		has_government = militarism
-		has_government = imperialism
+		has_government = fascist_monarchy
 		has_government = authoritarian
 		has_government = religious		
 		has_government = fascism
@@ -93,7 +92,7 @@ is_left_wing = {
 		has_government = leninism
 		has_government = stalinism
 		has_government = anarchism
-		has_government = revolutionary_socialism
+		has_government = revisionism
 	}
 }
 
@@ -108,12 +107,14 @@ is_right_wing_democratic = {
 	OR = {
 		has_government = conservative
 		has_government = reactionary
+		has_government = christian_democracy
+		has_government = democratic_nationalism
 	}
 }
 
 is_monarchy = {
 	OR = {
-		has_government = imperialism
+		has_government = fascist_monarchy
 		has_government = absolute_monarchy
 	}
 }
@@ -141,8 +142,12 @@ has_similar_form_of_government = {
 			ROOT = { has_neutral_government = yes }
 		}
 		AND = {
-			THIS = { has_communist_government = yes }
-			ROOT = { has_communist_government = yes }
+			THIS = { is_monarchy = yes }
+			ROOT = { is_monarchy = yes }
+		}
+		AND = {
+			THIS = { is_monarchy = yes }
+			ROOT = { is_monarchy = yes }
 		}
 	}
 }

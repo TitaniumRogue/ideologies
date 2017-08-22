@@ -161,13 +161,13 @@ set_politics = {
 		nationalism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		militarism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		authoritarian = { 
@@ -182,13 +182,13 @@ set_politics = {
 		anarchism = { 
 			popularity = 0
 		}
-		revolutionary_socialism = { 
+		revisionism = { 
 			popularity = 0
 		}
 		christian_democracy = { 
 			popularity = 0
 		}
-		national_bolshevism = { 
+		democratic_nationalism = { 
 			popularity = 0
 		}
 	}
@@ -300,13 +300,13 @@ set_national_unity = 0.9
 		nationalism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		militarism = { 
 			popularity = 0
 		}
-		revolutionary_socialism = { 
+		revisionism = { 
 			popularity = 0
 		}
 		authoritarian = { 
@@ -324,7 +324,7 @@ set_national_unity = 0.9
 		christian_democracy = { 
 			popularity = 0
 		}
-		national_bolshevism = { 
+		democratic_nationalism = { 
 			popularity = 0
 		}
 		
