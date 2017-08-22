@@ -94,13 +94,13 @@ set_politics = {
 	nationalism = { 
 		popularity = 0
 	}
-	revolutionary_socialism = { 
+	revisionism = { 
 		popularity = 0
 	}
 	militarism = { 
 		popularity = 0
 	}
-	imperialism = {
+	fascist_monarchy = {
 		popularity = 100
 	}
 	authoritarian = { 
@@ -118,12 +118,12 @@ set_politics = {
 	christian_democracy = { 
 		popularity = 0
 	}
-	national_bolshevism = { 
+	democratic_nationalism = { 
 		popularity = 0
 	}
 	}
 	
-	ruling_party = imperialism
+	ruling_party = fascist_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -134,7 +134,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
-	ideology = imperialism_ideology
+	ideology = fascist_monarchy_ideology
 	traits = {
 		warrior_code
 	}

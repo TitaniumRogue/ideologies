@@ -23,36 +23,44 @@ set_research_slots = 3
 set_politics = {
 
 	parties = {
-		conservative = { 
-			popularity = 43
-		}
-
-		national_socialism = {
-			popularity = 16
-		}
-		
-		nationalism = {
-			popularity = 6
-		}
-		
-		social_democracy = {
+		social_liberal = { #Czechoslovak National Social Party
 			popularity = 18
 		}
 		
-		leninism = {
-			popularity = 11
+		market_liberal = { #Czechoslovak Traders' Party
+			popularity = 7
 		}
 		
-		fascism = {
-			popularity = 3
+		christian_democracy = { #Czechoslovak People's Party
+			popularity = 12
 		}
 		
-		progressive = {
-			popularity = 3
+		conservative = { #Republican Party of Farmers and Peasants
+			popularity = 7 
+		}
+
+		national_socialism = { #Sudeten German Party
+			popularity = 17
+		}
+		
+		fascism = { #National Fascist Community
+			popularity = 4
+		}
+		
+		social_democracy = { #Czechoslovak Social Democratic Workers' Party
+			popularity = 18
+		}
+		
+		stalinism = { #Communist Party of Czechoslovakia
+			popularity = 13
+		}
+		
+		reactionary = { #National Unification
+			popularity = 4 
 		}
 	}
 	
-	ruling_party = conservative
+	ruling_party = social_liberal
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
@@ -63,7 +71,7 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = liberalism
 	traits = {
 		#
 	}
@@ -86,6 +94,17 @@ create_country_leader = {
 	picture = "Portrait_Czech_Klement_Gottwald.dds"
 	expire = "1965.1.1"
 	ideology = stalinism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Karel Kašpar"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = catholicism
 	traits = {
 		#
 	}

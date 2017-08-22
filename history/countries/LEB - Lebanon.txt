@@ -74,7 +74,7 @@ set_politics = {
 			popularity = 24
 		}
 		
-		revolutionary_socialism = { #Dashnaktsutyun
+		revisionism = { #Dashnaktsutyun
 			popularity = 15
 		}
 

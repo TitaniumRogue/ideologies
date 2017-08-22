@@ -98,7 +98,7 @@ ideologies = {
 			anti_revisionism = {
 			}
 			
-			titoism = {
+			marxism = {
 			}
 		}
 		
@@ -133,14 +133,14 @@ ideologies = {
 
 	}
 	
-	revolutionary_socialism = {
+	revisionism = {
 		
 		types = {
-		
-			marxism = {
+			
+			revisionism_ideology = {
 			}
 			
-			luxemburgism = {
+			titoism = {
 			}
 			
 		}
@@ -938,11 +938,11 @@ ideologies = {
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
 	
-	imperialism = {
+	fascist_monarchy = {
 	
 		types = {
 			
-			imperialism_ideology = {
+			fascist_monarchy_ideology = {
 			}
 			
 			japanese_fascism = {

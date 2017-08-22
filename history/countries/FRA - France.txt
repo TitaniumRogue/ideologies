@@ -166,7 +166,7 @@ set_politics = {
 			popularity = 8
 		}
 		
-		revolutionary_socialism = { Miscellaneous Left
+		revisionism = { Miscellaneous Left
 			popularity = 1
 		}
 		

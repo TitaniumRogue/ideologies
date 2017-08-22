@@ -171,13 +171,13 @@ set_politics = {
 	        nationalism = { 
 		popularity = 3
 	        }
-	        revolutionary_socialism = { 
+	        revisionism = { 
 		popularity = 0
 	        }
 	        militarism = { 
 		popularity = 0
 	        }
-	        imperialism = { 
+	        fascist_monarchy = { 
 		popularity = 0
 	        }
 	        authoritarian = { 
