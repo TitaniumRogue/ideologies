@@ -89,7 +89,7 @@
  GER_conservative_party:0 "Zentrum"
  GER_conservative_party_long:0 "Deutsche Zentrumspartei"
  GER_progressive_party:0 "FVP"
- GER_progressive_party_long "Fortschrittliche Volkspartei"
+ GER_progressive_party_long:0 "Fortschrittliche Volkspartei"
  GER_social_democracy_party:0 "SDAP"
  GER_social_democracy_party_long:0 "Sozialdemokratische Arbeiterpartei Deutschlands"
  GER_reactionary_party:0 "RPD"
@@ -107,7 +107,7 @@
  GER_fascism_party:0 "AV"
  GER_fascism_party_long:0 "Alldeutscher Verband"
  GER_nationalism_party:0 "NPD"
- GER_nationalism_party_long "Nationaldemokratische Partei Deutschlands" 
+ GER_nationalism_party_long:0 "Nationaldemokratische Partei Deutschlands" 
  GER_revisionism_party:0 "SED"
  GER_revisionism_party_long:0 "Sozialistische Einheitspartei Deutschlands"
  GER_leninsm_party:0 "MLPD"
@@ -266,4 +266,3 @@
  DEN_market_liberal_party_long:0 "Venstre, Danmarks Liberale Parti"
  DEN_stalinism_party_long:0 "Danmarks Kommunistiske Parti - Hardliners"
  DEN_stalinism_party:0 "DKP"
- 
