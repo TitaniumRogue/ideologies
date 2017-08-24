@@ -170,30 +170,74 @@ set_national_unity = 0.6
 set_politics = {
 
 	parties = {
-		conservative = {
-			popularity = 46.5
-		}
-		
-		social_liberal = {
-			popularity = 47.5
-		}
+	
+	social_liberal = { 
+		popularity = 50
+	}
+	national_socialism = {
+		popularity = 0
+	}		
+	stalinism = {
+		popularity = 0
+	}
+	social_democracy = { 
+		popularity = 0
+	}
+	market_liberal = { 
+		popularity = 10
+	}
+	conservative = { 
+		popularity = 25
+	}
+	progressive = { 
+		popularity = 0
+	}
+	democratic_socialism = { 
+		popularity = 1
+	}
+	reactionary = { 
+		popularity = 7
+	}
+	authoritarian_democracy = { 
+		popularity = 2
+	}
+	leninism = { 
+		popularity = 1
+	}
+	fascism = { 
+		popularity = 0
+	}
+	nationalism = { 
+		popularity = 0
+	}
+	democratic_nationalism = { 
+		popularity = 0
+	}
+	militarism = { 
+		popularity = 0
+	}
+	fascist_monarchy = { 
+		popularity = 0
+	}
+	authoritarian = { 
+		popularity = 0
+	}
+	absolute_monarchy = { 
+		popularity = 0
+	}
+	religious = { 
+		popularity = 0
+	}
+	anarchism = { 
+		popularity = 0
+	}
+	christian_democracy = { 
+		popularity = 4
+	}
+	revisionism = { 
+		popularity = 0
+	}
 
-		reactionary = {
-			popularity = 2
-		}
-		
-		democratic_socialism = {
-			popularity = 2
-		}
-			
-		leninism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-		
-		stalinism = {
-			popularity = 1
-			#banned = no #default is no
 		}
 	}
 	
@@ -225,30 +269,73 @@ set_autonomy = {
 
 		parties = {
 		
-		conservative = {
-			popularity = 46.5
-		}
-		
-		social_liberal = {
-			popularity = 47.5
-		}
+	social_liberal = { 
+		popularity = 48
+	}
+	national_socialism = {
+		popularity = 0
+	}		
+	stalinism = {
+		popularity = 0
+	}
+	social_democracy = { 
+		popularity = 0
+	}
+	market_liberal = { 
+		popularity = 5
+	}
+	conservative = { 
+		popularity = 34
+	}
+	progressive = { 
+		popularity = 0
+	}
+	democratic_socialism = { 
+		popularity = 1
+	}
+	reactionary = { 
+		popularity = 8
+	}
+	authoritarian_democracy = { 
+		popularity = 0
+	}
+	leninism = { 
+		popularity = 0
+	}
+	fascism = { 
+		popularity = 0
+	}
+	nationalism = { 
+		popularity = 0
+	}
+	democratic_nationalism = { 
+		popularity = 0
+	}
+	militarism = { 
+		popularity = 0
+	}
+	fascist_monarchy = { 
+		popularity = 0
+	}
+	authoritarian = { 
+		popularity = 0
+	}
+	absolute_monarchy = { 
+		popularity = 0
+	}
+	religious = { 
+		popularity = 0
+	}
+	anarchism = { 
+		popularity = 0
+	}
+	christian_democracy = { 
+		popularity = 4
+	}
+	revisionism = { 
+		popularity = 0
+	}
 
-		reactionary = {
-			popularity = 2
-		}
-		
-		democratic_socialism = {
-			popularity = 2
-		}
-			
-		leninism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-		
-		stalinism = {
-			popularity = 1
-			#banned = no #default is no
 		}
 		}
 		
