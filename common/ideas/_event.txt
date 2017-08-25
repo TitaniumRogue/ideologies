@@ -12,7 +12,8 @@ ideas = {
 			modifier = {
 				unity_factor = -0.05
 				conscription = 0.002
-				fascism_drift = 0.05
+				fascism_drift = 0.025
+				national_socialism_drift = 0.025
 			}
 	
 			ai_will_do = {
@@ -30,7 +31,9 @@ ideas = {
 			
 			modifier = {
 				conscription = -0.002
-				communism_drift = 0.05
+				stalinism_drift = 0.025
+				leninism_drift = 0.025
+				revisionism_drift = 0.025
 			}
 	
 			ai_will_do = {
@@ -48,7 +51,16 @@ ideas = {
 			
 			modifier = {
 				political_power_factor = -0.5
-				democratic_drift = 0.05
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.02
+				conservative_drift = 0.02
+				progressive_drift = 0.02
+				social_democracy_drift = 0.02
+				reactionary_drift = 0.02
+				democratic_socialism_drift = 0.02 
+				authoritarian_democracy_drift = 0.02
+				democratic_nationalism_drift = 0.02
+				christian_democracy_drift = 0.02
 			}
 	
 			ai_will_do = {
@@ -173,7 +185,9 @@ ideas = {
 
 			modifier = {
 				unity_factor = -0.07
-				communism_drift = 0.05
+				stalinism_drift = 0.025
+				leninism_drift = 0.025
+				revisionism_drift = 0.025
 			}
 		}
 
@@ -188,6 +202,7 @@ ideas = {
 			
 			modifier = {
 				fascism_acceptance = -50
+				national_socialism_acceptance = -50
 			}
 		}
 		

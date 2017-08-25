@@ -91,7 +91,7 @@ set_technology = {
 				popularity = 5
 			}
 			
-			nationalism = { #National Front --- Other Party Names Listed in 1939 history.
+			democratic_nationalism = { #National Front --- Other Party Names Listed in 1939 history.
 				popularity = 2
 			}
 			
@@ -135,7 +135,7 @@ set_technology = {
 				popularity = 10
 			}
 			
-			naionalism = { 
+			democratic_nationalism = { 
 				popularity = 1
 			}
 		
@@ -165,6 +165,28 @@ create_country_leader = {
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "Portrait_Switzerland_Federal_council.dds"
+	expire = "1965.1.1"
+	ideology = christian_democrat
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "Portrait_Switzerland_Federal_council.dds"
+	expire = "1965.1.1"
+	ideology = democratic_nationalism_ideology
 	traits = {
 		#
 	}

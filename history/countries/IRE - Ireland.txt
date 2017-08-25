@@ -64,20 +64,16 @@ set_convoys = 10
 set_politics = {
 
 		parties = {
-			conservative = { 
-				popularity = 88
+			conservative = { #Fianna Fáil
+				popularity = 52
 			}
 			
-			social_democracy = { 
+			social_democracy = { #Labour Party
 				popularity = 6
 			}
-
-			fascism = {
-				popularity = 3
-			}
 			
-			leninism = {
-				popularity = 3
+			christian_democracy = { #National Centre Party ( Predecessor to Fine Gael )
+				popularity = 42
 			}
 		}
 	
@@ -91,20 +87,20 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			conservative = { 
-				popularity = 89
+			conservative = { #Fianna Fáil
+				popularity = 48
 			}
 			
-			social_democracy = { 
-				popularity = 5
+			christian_democracy = { #Fine Gael
+				popularity = 38
+			}
+			
+			social_democracy = { #Labour Party
+				popularity = 13
 			}
 
 			fascism = {
-				popularity = 3
-			}
-			
-			leninism = {
-				popularity = 3
+				popularity = 1
 			}
 		}
 		
@@ -120,6 +116,17 @@ create_country_leader = {
 	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "W.T. Cosgrave"
+	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = christian_democrat
 	traits = {
 		#
 	}

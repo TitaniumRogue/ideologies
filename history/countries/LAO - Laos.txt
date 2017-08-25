@@ -51,7 +51,7 @@ set_politics = {
 #		
 #		}
 		
-		revolutionary_socialism = {
+		revisionism = {
 			popularity = 35
 		}
 		authoritarian = {

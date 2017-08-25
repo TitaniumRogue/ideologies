@@ -51,7 +51,7 @@ set_politics = {
 
 	parties = {
 
-		imperialism = {
+		fascist_monarchy = {
 			popularity = 20
 		}
 		
@@ -82,7 +82,7 @@ set_politics = {
 
 	parties = {
 
-		imperialism = {
+		fascist_monarchy = {
 			popularity = 20
 		}
 		

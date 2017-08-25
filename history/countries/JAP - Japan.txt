@@ -185,12 +185,12 @@ set_politics = {
 
 	parties = {
 
-		imperialism = {
+		fascist_monarchy = {
 			popularity = 100
 		}
 	}
 	
-	ruling_party = imperialism
+	ruling_party = fascist_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -201,12 +201,12 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-		imperialism = {
+		fascist_monarchy = {
 			popularity = 100
 		}
 		}
 		
-		ruling_party = imperialism
+		ruling_party = fascist_monarchy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

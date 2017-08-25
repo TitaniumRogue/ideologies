@@ -152,13 +152,13 @@ set_politics = {
 		nationalism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		militarism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		authoritarian = { 
@@ -171,6 +171,15 @@ set_politics = {
 			popularity = 3
 		}
 		anarchism = { 
+			popularity = 0
+		}
+		revisionism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		democratic_nationalism = { 
 			popularity = 0
 		}
 	}
@@ -271,13 +280,13 @@ set_convoys = 70
 		nationalism = { 
 			popularity = 0
 		}
-		imperialism = { 
+		fascist_monarchy = { 
 			popularity = 0
 		}
 		militarism = { 
 			popularity = 0
 		}
-		revolutionary_socialism = { 
+		revisionism = { 
 			popularity = 0
 		}
 		authoritarian = { 
@@ -290,6 +299,12 @@ set_convoys = 70
 			popularity = 0
 		}
 		anarchism = { 
+			popularity = 0
+		}
+		christian_democracy = { 
+			popularity = 0
+		}
+		democratic_nationalism = { 
 			popularity = 0
 		}
 		}
