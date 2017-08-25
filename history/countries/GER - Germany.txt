@@ -266,6 +266,186 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Helmut Rüdiger"
+	desc = "POLITICS_HELMUT_RUEDIGER_DESC"
+	picture = "Portrait_Germany_Helmut_Rüdiger.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Artur Mahraun"
+	desc = "POLITICS_ARTUR_MAHRAUN_DESC"
+	picture = "Portrait_Germany_Artur_Mahraun.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Theodor Heuss"
+	desc = "POLITICS_THEODOR_HEUSS_DESC"
+	picture = "Portrait_Germany_Theodor_Heuss.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Paul Löbe"
+	desc = "POLITICS_PAUL_LOEBE_DESC"
+	picture = "Portrait_Germany_Paul_Löbe.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Friedrich Sommer"
+	desc = "POLITICS_FRIEDRICH_SOMMER_DESC"
+	picture = "Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Dittmann"
+	desc = "POLITICS_WILHELM_DITTMANN_DESC"
+	picture = "Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hans-Joachim von Merkatz"
+	desc = "POLITICS_JOACHIM_MERKATZ_DESC"
+	picture = "Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = christian_democracy_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Lattmann"
+	desc = "POLITICS_WILHELM_LATTMAN_DESC"
+	picture = "Portrait_Wilhelm_Lattman.dds"
+	expire = "1965.1.1"
+	ideology = democratic_nationalism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Axel von Freytagh-Loringhoven"
+	desc = "POLITICS_AXEL_FREYTAGH_DESC"
+	picture = "Portrait_Axel_Freytagh.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democracy_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Georg Escherich"
+	desc = "POLITICS_GEORG_ESCHERICH_DESC"
+	picture = "Portrait_Georg_Escherich.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Friedrich Strasser"
+	desc = "POLITICS_FRIEDRICH_STRASSER_DESC"
+	picture = "Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Walter Ulbricht"
+	desc = "POLITICS_WALTER_ULBRICHT_DESC"
+	picture = "Portrait_Walter_Ulbricht.dds"
+	expire = "1965.1.1"
+	ideology = revisionism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Paul von Letzenberg"
+	desc = "POLITICS_PAUL_LETZENBERG_DESC"
+	picture = "Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = leninsm_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kaiser Wilhelm II"
+	desc = "POLITICS_KAISER_WILHELM_DESC"
+	picture = "Portrait_Kaiser_Wilhelm.dds"
+	expire = "1965.1.1"
+	ideology = absolute_monarchy_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Walther Lambach"
+	desc = "POLITICS_WALTHER_LAMBACH_DESC"
+	picture = "Portrait_Walther_Lambach.dds"
+	expire = "1965.1.1"
+	ideology = religious_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Hugenberg"
+	desc = "POLITICS_ALFRED_HUGENBERG_DESC"
+	picture = "Portrait_Alfred_Hugenberg.dds"
+	expire = "1965.1.1"
+	ideology = militarism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kaiser Wilhelm II"
+	desc = "POLITICS_KAISER_WILHELM_DESC"
+	picture = "Portrait_Kaiser_Wilhelm.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Meinberg"
+	desc = "POLITICS_WILHELM_MEINBERG_DESC"
+	picture = "Portrait_Wilhelm_Meinberg.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_ideology
+	traits = {
+	}
+}
+
 #create_country_leader = {
 #	name = "Otto Wels"
 #	desc = "POLITICS_OTTO_WELS_DESC"
