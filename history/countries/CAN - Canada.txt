@@ -119,7 +119,10 @@ if = {
 	}
 }
 
+1936.1.1 = {
 set_politics = {
+
+	parties = {
 	
 	social_liberal = { 
 		popularity = 35
@@ -187,12 +190,14 @@ set_politics = {
 	revisionism = { 
 		popularity = 0
 	}
+	}
 
 	
 	ruling_party = social_liberal
 	last_election = "1935.10.14"
 	election_frequency = 48
 	elections_allowed = yes
+}
 }
 
 create_country_leader = {
@@ -255,6 +260,8 @@ set_national_unity = 0.9
 
 1939.1.1 = {
 	set_politics = {
+	
+	parties = {
 
 	social_liberal = { 
 		popularity = 53
@@ -321,6 +328,7 @@ set_national_unity = 0.9
 	}
 	revisionism = { 
 		popularity = 0
+	}
 	}
 		
 		ruling_party = social_liberal

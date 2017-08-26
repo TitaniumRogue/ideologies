@@ -239,7 +239,6 @@ set_politics = {
 	}
 
 		}
-	}
 	
 	ruling_party = social_liberal
 	last_election = "1932.11.8"
@@ -336,7 +335,6 @@ set_autonomy = {
 		popularity = 0
 	}
 
-		}
 		}
 		
 		ruling_party = social_liberal

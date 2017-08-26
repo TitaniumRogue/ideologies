@@ -46,8 +46,8 @@
  absolute_monarchy_noun:0 "Monarchism"
  religious:0 "Theocratic"
  religious_noun:0 "Theocracy"
- militarism:0 "Militarist"
- militarism_noun:0 "Militarism"
+ militarism:0 "Stratocratic"
+ militarism_noun:0 "Stratocracy"
 
 #Ideology Descriptions
  
@@ -306,8 +306,8 @@
  USA_stalinist_party_long:0 "Communist Party of The United States of America - Hardliners"
  USA_leninism_party:0 "CPUSA-M"
  USA_leninism_party_long:0 "Communist Party of The United States of America - Moderates"
- USA_revisionism _party:0 "SLPA"
- USA_revisionism _party_long:0 "The Socialist Labour Party of America"
+ USA_revisionism_party:0 "SLPA"
+ USA_revisionism_party_long:0 "The Socialist Labour Party of America"
  USA_anarchism_party:0 "IWW"
  USA_anarchism_party_long:0 "International Workers of the World"
  USA_democratic_socialism_party:0 "SPA"
