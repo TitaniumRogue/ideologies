@@ -19,11 +19,12 @@ has_democratic_government = {
 			has_government = conservative
 			has_government = market_liberal
 			has_government = social_liberal
-			has_government = social_democrat
+			has_government = social_democracy
 			has_government = progressive
-			has_government = democratic_socialist
+			has_government = democratic_socialism
 			has_government = christian_democracy
 			has_government = democratic_nationalism
+			has_government = authoritarian_democracy
 		}
 }
 
@@ -124,6 +125,20 @@ is_authoritarian = {
 		has_government = authoritarian_democracy
 		has_government = authoritarian
 	}
+}
+
+polish_democracy_idea_trigger = { #for Polish ideas
+		OR = {
+			has_government = reactionary
+			has_government = conservative
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_democracy
+			has_government = progressive
+			has_government = democratic_socialism
+			has_government = christian_democracy
+			has_government = democratic_nationalism
+		}
 }
 
 

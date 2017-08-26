@@ -52,7 +52,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				fascism_drift = 0.05
+				fascism_drift = 0.1
+				national_socialism_drift = 0.1
+				nationalism_drift = 0.1
 			}
 		}
 
@@ -129,8 +131,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_communist_government = yes
+						has_fascist_government = yes
 					}
 				}
 			}
@@ -176,8 +178,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_communist_government = yes
+						has_fascist_government = yes
 					}
 				}
 			}
@@ -200,8 +202,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_communist_government = yes
+						has_fascist_government = yes
 					}
 				}
 			}
@@ -224,8 +226,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_communist_government = yes
+						has_fascist_government =
 					}
 				}
 			}
@@ -249,8 +251,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_communist_government = yes
+						has_fascist_government = yes
 					}
 				}
 			}
@@ -275,8 +277,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_communist_government = yes
+						has_fascist_government =
 					}
 				}
 			}
@@ -299,16 +301,26 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					has_government = communism
-					has_government = fascism
+					has_communist_government = yes
+					has_fascist_government =
 				}
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				democratic_drift = -0.02
-				neutrality_drift = -0.02
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				authoritarian_drift = -0.02
+				absolute_monarchy_drift = -0.02
+				militarism_drift = -0.02
 			}
 		}
 
@@ -321,15 +333,27 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				democratic_drift = -0.02
-				neutrality_drift = -0.02
-				fascism_drift = 0.03
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				authoritarian_drift = -0.02
+				absolute_monarchy_drift = -0.02
+				militarism_drift = -0.02
+				fascism_drift = 0.1
+				national_socialism_drift = 0.1
+				nationalism_drift = 0.1
 				autonomy_gain = 0.5
 			}
 		}
@@ -343,15 +367,27 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				democratic_drift = -0.02
-				neutrality_drift = -0.02
-				communism_drift = 0.03
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				authoritarian_drift = -0.02
+				absolute_monarchy_drift = -0.02
+				militarism_drift = -0.02
+				stalinism_drift = 0.2
+				leninism_drift = 0.2
+				revisionism_drift = 0.2
 				autonomy_gain = 0.5
 			}
 		}
@@ -386,8 +422,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = fascism
+						has_communist_government = yes
+						has_fascist_government = yes
 					}
 				}
 			}
@@ -418,19 +454,11 @@ ideas = {
 			
 			picture = generic_political_advisor_india_1
 			
-			traits = { democratic_reformer }
+			traits = { progressive_politician }
 		
 			do_effect = {
 				NOT = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_government = progressive
 				}
 			}
 		
@@ -459,7 +487,7 @@ ideas = {
 			
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 			
@@ -488,7 +516,7 @@ ideas = {
 				
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 		

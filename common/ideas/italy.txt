@@ -9,14 +9,12 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					OR = {
-					has_government = stalinism
-					has_government = leninism
+					has_communist_government = yes
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ITA
-						has_government = fascism
+						has_fascist_government = yes
 					}
 				}
 			}
@@ -35,26 +33,31 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				has_government = leninism
-				has_government = stalinism
-		}
+					OR = {
+						has_communist_government = yes
+						has_democratic_government = yes
+					}
 				}
 			}
 			
 			removal_cost = -1
 			
 			modifier = {
-				communism_acceptance = -10
-				democratic_acceptance = -10
+				democratic_socialism_acceptance = -10
+				social_democracy_acceptance = -10
+				social_liberal_acceptance = -10
+				market_liberal_acceptance = -10
+				christian_democracy_acceptance = -10
+				conservative_acceptance = -10
+				reactionary_acceptance = -10
+				democratic_nationalism_acceptance = -10
+				authoritarian_democracy_acceptance = -10
 				fascism_acceptance = 10
+				fascist_monarchy_acceptance = 10
+				national_socialism_acceptance = 10
+				stalinism_acceptance = -10
+				leninism_acceptance = -10
+				revisionism_acceptance = -10
 				ai_focus_aggressive_factor = 0.5
 				justify_war_goal_time = -0.05
 			}
@@ -71,37 +74,21 @@ ideas = {
 			allowed_civil_war = {
 				OR = {
 					AND = {
-						has_government = fascism
+						has_fascist_government = yes
 						GER = {
-							has_government = fascism
+							has_fascist_government = yes
 						}
 					}
 					AND = {
-						has_government = communsim
+						has_communist_government = yes
 						GER = {
-							has_government = communsim
+							has_communist_government = yes
 						}
 					}
 					AND = {
-										OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+						has_democratic_government = yes
 						GER = {
-							OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+							has_democratic_government = yes
 						}
 					}
 				}
@@ -128,7 +115,7 @@ ideas = {
 			
 
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 	
 			on_add = {
 				country_event = political.1
@@ -136,7 +123,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 			
@@ -154,7 +141,7 @@ ideas = {
 			
 
 			
-			traits = { democratic_reformer }
+			traits = { social_democratic_politician }
 	
 			on_add = {
 				country_event = political.13
@@ -162,15 +149,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_government = social_democracy
 				}
 			}
 			
@@ -188,7 +167,7 @@ ideas = {
 			
 
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_politician }
 	
 			on_add = {
 				country_event = political.7
@@ -196,7 +175,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			

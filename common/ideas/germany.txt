@@ -47,7 +47,7 @@ ideas = {
 			removal_cost = -1
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 			modifier = {
@@ -107,7 +107,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -183,7 +183,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 	
 			on_add = {
 				country_event = political.1
@@ -191,7 +191,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_government = stalinism
 				}
 			}
 			
@@ -207,7 +207,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { democratic_reformer }
+			traits = { social_democratic_politician }
 	
 			on_add = {
 				country_event = political.13
@@ -215,15 +215,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_government = social_democracy
 				}
 			}
 			
@@ -239,7 +231,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { fascist_demagogue }
+			traits = { national_socialist_politician }
 	
 			on_add = {
 				country_event = political.7
@@ -247,7 +239,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = national_socialism
 				}
 			}
 			

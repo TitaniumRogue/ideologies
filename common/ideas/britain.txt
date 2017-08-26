@@ -9,20 +9,12 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
-					has_government = communism
+					has_communist_government = yes
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+						has_democratic_government = yes
 						NOT = {
 							tag = ROOT
 						}
@@ -45,20 +37,12 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
-					has_government = communism
+					has_communist_government = yes
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+						has_democratic_government = yes
 						NOT = {
 							tag = ROOT
 						}
@@ -88,7 +72,7 @@ ideas = {
 			removal_cost = -1
 			
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 
@@ -108,20 +92,12 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
-					has_government = communism
+					has_communist_government = yes
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+						has_democratic_government = yes
 						NOT = {
 							tag = ROOT
 						}
@@ -146,7 +122,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			
@@ -208,7 +184,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 
@@ -250,7 +226,7 @@ ideas = {
 			
 			allowed_civil_war = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 
@@ -296,15 +272,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			picture = generic_morale_bonus
@@ -355,7 +323,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 			
@@ -372,7 +340,7 @@ ideas = {
 			
 
 			
-			traits = { democratic_reformer }
+			traits = { conservative_politician }
 	
 			on_add = {
 				country_event = political.13
@@ -380,15 +348,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_government = conservative
 				}
 			}
 			
@@ -413,7 +373,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			
@@ -453,6 +413,10 @@ ideas = {
 			}
 			
 			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 2
+			}
 		}
 
 		ENG_leslie_hore_belisha = {
@@ -475,6 +439,10 @@ ideas = {
 			}
 			
 			traits = { quartermaster_general }
+
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 		
@@ -490,7 +458,7 @@ ideas = {
 			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 		
@@ -505,7 +473,7 @@ ideas = {
 			traits = { army_chief_defensive_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 		
@@ -568,7 +536,7 @@ ideas = {
 			traits = { navy_chief_naval_aviation_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.5
 			}
 		}
 	}
@@ -649,7 +617,7 @@ ideas = {
 			traits = { army_logistics_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 		
@@ -664,7 +632,7 @@ ideas = {
 			traits = { army_infantry_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 	
@@ -739,7 +707,7 @@ ideas = {
 			traits = { navy_screen_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.7
 			}
 		}
 		
@@ -754,9 +722,10 @@ ideas = {
 			traits = { navy_submarine_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
-	}		}
+		}		
+	}
 	
 	
 	naval_manufacturer = {
