@@ -683,7 +683,7 @@ country_event = {
 	picture = GFX_report_event_worker_protests
 	
 	trigger = {
-		NOT = { has_government = communism }
+		NOT = { has_government = stalinism }
 		tag = FRA
 		date > 1936.4.1
 		date < 1938.1.1
@@ -714,7 +714,7 @@ country_event = {
 			days = 365
 		}
 		add_popularity = {
-			ideology = communism
+			ideology = stalinism
 			popularity = 0.07
 		}		
 	}
@@ -727,7 +727,7 @@ country_event = {
 	picture = GFX_report_event_airplane_factory
 	
 	trigger = {
-		NOT = { has_government = communism }
+		NOT = { has_government = stalinism }
 		has_idea = FRA_matignon_agreements
 		date > 1936.7.1
 	}
@@ -748,12 +748,12 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 0
-				communism > 0.4
+				leninism > 0.4
 			}
 		}
 		remove_ideas =  FRA_matignon_agreements
 		add_popularity = {
-			ideology = communism
+			ideology = stalinism
 			popularity = 0.05
 		}
 	}	
@@ -790,7 +790,7 @@ country_event = {
 
 	trigger = {
 		tag = FRA
-		SOV = { has_government = communism }
+		SOV = { has_government = stalinism }
 				OR = {		
 				has_government = social_liberal
 				has_government = market_liberal
@@ -800,7 +800,7 @@ country_event = {
 				has_government = reactionary
 				has_government = democratic_socialism 
 		}
-		communism < 0.5
+		leninism < 0.5
 		has_global_flag = sov_yes_pact
 	}
 
@@ -813,7 +813,7 @@ country_event = {
 		add_political_power = -20
 		name = france.24.a
 		add_popularity = {
-			ideology = communism
+			ideology = stalinism
 			popularity = -0.3
 		}
 		add_ideas = FRA_communism_banned
@@ -825,7 +825,7 @@ country_event = {
 		
 		every_other_country = {
 			limit = { 
-				has_government = communism
+				has_government = stalinism
 			}
 			add_opinion_modifier = {
 				target = FRA
