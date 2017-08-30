@@ -648,7 +648,7 @@ ideas = {
 				production_speed_buildings_factor = 0.35
 				global_building_slots_factor = 0.10
 				drift_defence_factor = 0.50
-                }
+                        }
 		}
 		
 		economic_anarchy = {
@@ -669,6 +669,28 @@ ideas = {
 				consumer_goods_factor = -0.15
 				research_time_factor = 0.10
 			}
+                 
+                generic_gulags = {
+                       
+                       Picture = officers_purged
+                       
+                       allowed = {
+                               always = no
+                       }
+                       
+                       allowed_civil-war = {
+			 has_goverment = stalinism
+			}
+		
+			modifier = {
+			     unity_factor = -0.10
+                             conscription_factor = -0.2
+				production_speed_buildings_factor = 0.25
+				global_building_slots_factor = 0.10
+                             
+			}
+                       
+                       
 	}
 	}
 	
