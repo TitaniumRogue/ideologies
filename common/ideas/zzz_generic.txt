@@ -616,7 +616,6 @@ ideas = {
 			}
 
 			modifier = {
-				stalinism_drift = 0.05
 				unity_factor = -0.10
 				conscription_factor = -0.3
 				production_speed_buildings_factor = 0.35
@@ -624,6 +623,26 @@ ideas = {
 				drift_defence_factor = 0.50
                         }
 		}
+		
+		economic_anarchy = {
+		        
+			Picture = generic_communism_dift_bonus
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil-war = {
+			                has_goverment = anarchism
+				}
+			}
+			
+			modifier = {
+			        political_power_factor = -0.2
+			        unity_factor = 0.10
+				consumer_goods_factor = -0.15
+				research_time_factor = 0.10
+			}
 	}
 	
 	
