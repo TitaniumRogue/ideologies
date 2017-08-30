@@ -179,7 +179,6 @@ ideas = {
 			}
 			
 			modifier = {
-				
 			}
 		}
 

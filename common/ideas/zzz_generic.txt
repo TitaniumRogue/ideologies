@@ -154,7 +154,13 @@ ideas = {
 			
 			modifier = {
 				fascism_drift = 0.1
+				national_socialism_drift = 0.1
+				nationalism_drift = 0.1
+				fascist_monarchy_drift = 0.1
 				fascism_acceptance = 85
+				national_socialism_acceptance = 85
+				nationalism_acceptance = 85
+				fascist_monarchy_acceptance = 85
 			}
 		}
 		
@@ -174,8 +180,12 @@ ideas = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				communism_drift = 0.1
-				communism_acceptance = 85
+				stalinism_drift = 0.1
+				leninism_drift = 0.1
+				revisionism_drift = 0.1
+				stalinism_acceptance = 85
+				leninism_acceptance = 85
+				revisionism_acceptance = 85
 			}
 		}
 		democratic_influence = {
@@ -194,8 +204,26 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 			
 			modifier = {
-				democratic_drift = 0.1
-				democratic_acceptance = 85
+				democratic_socialism_drift = 0.1
+				social_democracy_drift = 0.1
+				social_liberal_drift = 0.1
+				market_liberal_drift = 0.1
+				christian_democracy_drift = 0.1
+				conservative_drift = 0.1
+				reactionary_drift = 0.1
+				democratic_nationalism_drift = 0.1
+				authoritarian_democracy_drift = 0.1
+				social_democracy_drift = 0.1
+				democratic_socialism_acceptance = 85
+				social_democracy_acceptance = 85
+				social_liberal_acceptance = 85
+				market_liberal_acceptance = 85
+				christian_democracy_acceptance = 85
+				conservative_acceptance = 85
+				reactionary_acceptance = 85
+				democratic_nationalism_acceptance = 85
+				authoritarian_democracy_acceptance = 85
+				social_democracy_acceptance = 85
 			}
 		}
 		
@@ -599,10 +627,9 @@ ideas = {
 			modifier = {
 				fascism_drift = -0.05
 			}
-	             
 		}
 		
-		socialism_in_one_country= {
+				socialism_in_one_country = {
 
 			picture = generic_communism_drift_bonus
 
@@ -612,8 +639,8 @@ ideas = {
 
 			allowed_civil_war = {
 					has_government = stalinism
-				}
 			}
+
 
 			modifier = {
 				unity_factor = -0.10
@@ -621,7 +648,7 @@ ideas = {
 				production_speed_buildings_factor = 0.35
 				global_building_slots_factor = 0.10
 				drift_defence_factor = 0.50
-                        }
+                }
 		}
 		
 		economic_anarchy = {
@@ -633,18 +660,17 @@ ideas = {
 		        }
 			
 			allowed_civil-war = {
-			                has_goverment = anarchism
-				}
+			 has_goverment = anarchism
 			}
-			
+		
 			modifier = {
-			        political_power_factor = -0.2
-			        unity_factor = 0.10
+			     political_power_factor = -0.2
+			     unity_factor = 0.10
 				consumer_goods_factor = -0.15
 				research_time_factor = 0.10
 			}
 	}
-	
+	}
 	
 	political_advisor = {
 		# POLITICAL	

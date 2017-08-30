@@ -2213,7 +2213,7 @@ focus_tree = {
 							if = {
 									limit = {
 											GER = {
-													has_communst_government = yes
+													has_communist_government = yes
 												}
 										}
 									add_ideas = communist_influence

@@ -377,6 +377,7 @@ ideas = {
 				reactionary_drift = -0.1
 				democratic_nationalism_drift = -0.1
 				authoritarian_democracy_drift = -0.1
+				social_democracy_drift = -0.1
 				stalinism_drift = 0.2
 				leninism_drift = 0.2
 				revisionism_drift = 0.2

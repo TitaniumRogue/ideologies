@@ -179,8 +179,12 @@ set_politics = {
 			popularity = 2
 		}
 		
+		absolute_monarchy = { 
+			popularity = 35
+		}
+		
 		conservative = { 
-			popularity = 60
+			popularity = 25
 		}
 	}
 	
