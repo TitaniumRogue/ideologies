@@ -132,6 +132,7 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
+	parties = {
 		social_liberal = { 
 		popularity = 4
 	        }
@@ -239,7 +240,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1" #1939.9.30
-	ideology = authoritarian_democracy_ideology
+	ideology = millitary_junta
 	traits = {
 		#
 	}
@@ -268,8 +269,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wincenty Witos"
-	desc = "POLITICS_WINCENTY_WITOS_DESC"
+	name = "Michał Grażyński"
+	desc = "POLITICS_MICHAL_GRAZYNSKI_DESC"
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
 	ideology = green
@@ -286,6 +287,116 @@ create_country_leader = {
 	ideology = falangism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+        name = "Bolesław Bierut"
+	desc = "POLITICS_BOLESLAW_BIERUT_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = stalinism_ideology
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Artur Śliwiński"
+	desc = "POLITICS_ARTUR_SLIWINSKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1953.1.16"
+	ideology = democratic_socialist
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Kazimierz Bartel"
+	desc = "POLITICS_KAZIMIERZ_BARTEL_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Henryk Rossman"
+	desc = "POLITICS_HENRYK_ROSSMAN_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Walery Sławek"
+	desc = "POLITICS_WALERY_SLAWEK_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Janusz Radziwiłł"
+	desc = "POLITICS_JANUSZ_RADZIWILL_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "August Zaleski"
+	desc = "POLITICS_AUGUST_ZALESKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = libertarian
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Edward Rydz-Śmigły"
+	desc = "POLITICS_EDWARD_RYDZ_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = christian_democrat
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Rada Regencyjna"
+	desc = "POLITICS_RADA_REGENCYJNA_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy_ideology
+	traits = {
+	        #
+	}
+}
+
+create_country_leader = {
+        name = "Rada Biskupów"
+	desc = "POLITICS_RADA_BISKUPOW_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = catholicism
+	traits = {
+	        #
 	}
 }
 
