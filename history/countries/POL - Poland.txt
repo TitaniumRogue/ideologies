@@ -132,7 +132,6 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-	parties = {
 		social_liberal = { 
 		popularity = 4
 	        }
@@ -291,7 +290,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Bolesław Bierut"
+	name = "Bolesław Bierut"
 	desc = "POLITICS_BOLESLAW_BIERUT_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -302,7 +301,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Artur Śliwiński"
+    name = "Artur Śliwiński"
 	desc = "POLITICS_ARTUR_SLIWINSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1953.1.16"
@@ -313,7 +312,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Kazimierz Bartel"
+    name = "Kazimierz Bartel"
 	desc = "POLITICS_KAZIMIERZ_BARTEL_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -324,7 +323,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Henryk Rossman"
+    name = "Henryk Rossman"
 	desc = "POLITICS_HENRYK_ROSSMAN_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -335,7 +334,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Walery Sławek"
+    name = "Walery Sławek"
 	desc = "POLITICS_WALERY_SLAWEK_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -346,7 +345,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Janusz Radziwiłł"
+    name = "Janusz Radziwiłł"
 	desc = "POLITICS_JANUSZ_RADZIWILL_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -357,7 +356,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "August Zaleski"
+    name = "August Zaleski"
 	desc = "POLITICS_AUGUST_ZALESKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -368,7 +367,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Edward Rydz-Śmigły"
+    name = "Edward Rydz-Śmigły"
 	desc = "POLITICS_EDWARD_RYDZ_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -379,7 +378,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Rada Regencyjna"
+    name = "Rada Regencyjna"
 	desc = "POLITICS_RADA_REGENCYJNA_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -390,7 +389,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-        name = "Rada Biskupów"
+    name = "Rada Biskupów"
 	desc = "POLITICS_RADA_BISKUPOW_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
