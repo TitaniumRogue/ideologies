@@ -6,6 +6,9 @@ ideologies = {
 		
 			anarchist_communism = {
 			}
+			
+			anarchism_ideology = {
+			}
 		}
 
 		dynamic_faction_names = {

@@ -659,7 +659,7 @@ ideas = {
 			        always = no
 		        }
 			
-			allowed_civil-war = {
+			allowed_civil_war = {
 			 has_goverment = anarchism
 			}
 		
@@ -668,6 +668,7 @@ ideas = {
 			     unity_factor = 0.10
 				consumer_goods_factor = -0.15
 				research_time_factor = 0.10
+			}
 			}
                  
                 generic_gulags = {
@@ -678,7 +679,7 @@ ideas = {
                                always = no
                        }
                        
-                       allowed_civil-war = {
+                       allowed_civil_war = {
 			 has_goverment = stalinism
 			}
 		
@@ -689,6 +690,7 @@ ideas = {
 				global_building_slots_factor = 0.10
                              
 			}
+			}
 			
 		labour_unions = {
 		        
@@ -698,7 +700,7 @@ ideas = {
 			        always = no
 		        }
 			
-			allowed_civil-war = {
+			allowed_civil_war = {
 			 has_goverment = anarchism
 			}
 		
@@ -708,16 +710,17 @@ ideas = {
 				consumer_goods_factor = -0.10
 				research_time_factor = 0.5
 			}
+			}
 			
 		one_big_union = {
 		        
-			Picture = fourth_international
+			picture = fourth_international
 			
 			allowed = {
 			        always = no
 		        }
 			
-			allowed_civil-war = {
+			allowed_civil_war = {
 			 has_goverment = anarchism
 			}
 		
@@ -728,6 +731,7 @@ ideas = {
 				research_time_factor = 0.5
 				
 			}
+			}
 			
 	nazi_economy = {
 		        
@@ -737,7 +741,7 @@ ideas = {
 			        always = no
 		        }
 			
-			allowed_civil-war = {
+			allowed_civil_war = {
 			 has_goverment = national_socialism
 			}
 		
@@ -747,64 +751,65 @@ ideas = {
 				research_time_factor = -0.5
 				 conscription_factor = -0.2
 			}
+			}
 			
-	nazi_warfare = {
- +		        
- +			Picture = idea_saf_ossewabrandwag_2
- +			
- +			allowed = {
- +			        always = no
- +		        }
- +			
- +			allowed_civil-war = {
- +			 has_goverment = national_socialism
- +			}
- +		
- +			modifier = {
- +			 
- +				consumer_goods_factor = -0.15
- +				 conscription = -0.02
- +			}
- +			
- +		nazi_autarky = {
- +		        
- +			Picture = idea_saf_ossewabrandwag_2
- +			
- +			allowed = {
- +			        always = no
- +		        }
- +			
- +			allowed_civil-war = {
- +			 has_goverment = national_socialism
- +			}
- +		
- +			modifier = {
- +			 
- +				consumer_goods_factor = -0.10
- +				 local_resources_factor = 3.0
- +				 conscription = -0.01
- +			}
- +			
- +		military_economy = {
- +		        
- +			Picture = triumphant_will
- +			
- +			allowed = {
- +			        always = no
- +		        }
- +			
- +			allowed_civil-war = {
- +			 has_goverment = militarism
- +			}
- +		
- +			modifier = {
- +			 
- +				consumer_goods_factor = -0.15
- +				 production_factory_max_efficiency_factor = 0.20
- +				 conscription = 0.03
+	nazi_warfare = {        
+ 			Picture = idea_saf_ossewabrandwag_2
+ 			
+ 			allowed = {
+ 			        always = no
+ 		        }
+ 			
+ 			allowed_civil_war = {
+ 			 has_goverment = national_socialism
+ 			}
+ 		
+ 			modifier = {
+ 			 
+ 				consumer_goods_factor = -0.15
+ 				 conscription = -0.02
+ 			}
+			}
+ 			
+ 		nazi_autarky = {
+ 		        
+ 			Picture = idea_saf_ossewabrandwag_2
+ 			
+ 			allowed = {
+ 			        always = no
+ 		        }
+ 			
+ 			allowed_civil_war = {
+ 			 has_goverment = national_socialism
+ 			}
+ 		
+ 			modifier = {
+ 			 
+ 				consumer_goods_factor = -0.10
+ 				 local_resources_factor = 3.0
+ 				 conscription = -0.01
+ 			}
+			}
+ 			
+ 		military_economy = {
+ 		        
+ 			Picture = triumphant_will
+ 			
+ 			allowed = {
+ 			        always = no
+ 		        }
+ 			
+ 			allowed_civil_war = {
+ 			 has_goverment = militarism
+ 			}
+ 		
+ 			modifier = {
+ 			 
+ 				consumer_goods_factor = -0.15
+ 				 production_factory_max_efficiency_factor = 0.20
+ 				 conscription = 0.03
                        }
                        
-	}
 	}
 	
 	political_advisor = {

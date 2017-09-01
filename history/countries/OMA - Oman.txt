@@ -79,6 +79,7 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
+			parties = {
 			absolute_monarchy = { 
 				popularity = 100
 			}

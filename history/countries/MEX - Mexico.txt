@@ -170,7 +170,6 @@ create_country_leader = {
 			popularity = 0
 		}
 	}
-	}
 	
 	ruling_party = social_democracy
 		last_election = "1934.7.1"

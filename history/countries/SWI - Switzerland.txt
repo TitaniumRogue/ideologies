@@ -110,7 +110,7 @@ set_technology = {
 		elections_allowed = yes
 	}
 
-1939.1.1 = {#next election october 39
+1939.1.1 = { #next election october 39
 	set_politics = {
 
 		parties = {
@@ -153,7 +153,7 @@ set_technology = {
 }
 
 add_ideas = {
-	authoritarian_idea	
+	#authoritarian_idea	
 	limited_conscription
 }
 
@@ -186,7 +186,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = democratic_nationalism_ideology
+	ideology = democratic_nationalist
 	traits = {
 		#
 	}
