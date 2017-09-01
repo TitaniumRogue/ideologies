@@ -198,6 +198,7 @@ set_politics = {
 	        revisionism = { 
 		popularity = 5
 	        }
+			}
 	
 	ruling_party = authoritarian_democracy
 	last_election = "1935.9.8"
