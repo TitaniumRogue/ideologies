@@ -133,55 +133,55 @@ set_politics = {
 
 	parties = {
 		social_liberal = { 
-		popularity = 0
+		popularity = 4
 	        }
 	        national_socialism = {
 		popularity = 0
 	        }		
 	        stalinism = {
-		popularity = 2
-	        }
-	        social_democracy = { 
-		popularity = 1
-	        }
-	        market_liberal = { 
-		popularity = 0
-	        }
-	        conservative = { 
-		popularity = 20
-	        }
-	        progressive = { 
-		popularity = 0
-	        }
-	        democratic_socialism = { 
 		popularity = 4
 	        }
+	        social_democracy = { 
+		popularity = 4
+	        }
+	        market_liberal = { 
+		popularity = 4
+	        }
+	        conservative = { 
+	 	popularity = 4
+	        }
+	        progressive = { 
+		popularity = 4
+	        }
+	        democratic_socialism = { 
+		popularity = 5
+	        }
 	        reactionary = { 
-		popularity = 0
+		popularity = 4
 	        }
 	        authoritarian_democracy = { 
-		popularity = 60
+		popularity = 40
 	        }
 	        leninism = { 
-		popularity = 0
-	        }
-	        fascism = { 
-		popularity = 10
-	        }
-	        nationalism = { 
 		popularity = 3
 	        }
-	        revisionism = { 
-		popularity = 0
+	        fascism = { 
+		popularity = 1
+	        }
+	        nationalism = { 
+		popularity = 1
+	        }
+	        democratic_nationalism = { 
+		popularity = 2
 	        }
 	        militarism = { 
-		popularity = 0
+		popularity = 4
 	        }
 	        fascist_monarchy = { 
 		popularity = 0
 	        }
 	        authoritarian = { 
-		popularity = 0
+		popularity = 4
 	        }
 	        absolute_monarchy = { 
 		popularity = 0
@@ -190,9 +190,14 @@ set_politics = {
 		popularity = 0
 	        }
 	        anarchism = { 
-		popularity = 0
-		}
-	}
+		popularity = 3
+	        }
+	        christian_democracy = { 
+		popularity = 4
+	        }
+	        revisionism = { 
+		popularity = 5
+	        }
 	
 	ruling_party = authoritarian_democracy
 	last_election = "1935.9.8"
