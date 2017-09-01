@@ -13,7 +13,11 @@
 #	}
 #
 
+#Search for: (communism)|(fascism)|(democratic)|(neutrality) in notepad
+
 has_democratic_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_democratic_form_of_government
 		OR = {
 			has_government = reactionary
 			has_government = conservative
@@ -26,27 +30,36 @@ has_democratic_government = {
 			has_government = democratic_nationalism
 			has_government = authoritarian_democracy
 		}
+		}
 }
 
 has_fascist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_fascist_form_of_government
 	OR = {
 		has_government = fascism
 		has_government = fascist_monarchy
 		has_government = nationalism
 		has_government = national_socialism
 	}
+	}
 }
 
 has_communist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_communist_form_of_government
 	OR = {
 		has_government = leninism
 		has_government = stalinism
 		has_government = revisionism
 		has_government = anarchism
 	}
+	}
 }
 
 is_socialist = {
+	custom_trigger_tooltip = {
+	tooltip = TT_socialist_form_of_government
 	OR = {
 		has_government = leninism
 		has_government = stalinism
@@ -54,14 +67,18 @@ is_socialist = {
 		has_government = revisionism
 		has_government = democratic_socialism
 	}
+	}
 }
 
 has_neutral_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_communist_form_of_government
 	OR = {
 		has_government = absolute_monarchy
 		has_government = militarism
 		has_government = authoritarian
 		has_government = religious
+	}
 	}
 }
 
@@ -114,9 +131,12 @@ is_right_wing_democratic = {
 }
 
 is_monarchy = {
+	custom_trigger_tooltip = {
+	tooltip = TT_monarchist_form_of_government
 	OR = {
 		has_government = fascist_monarchy
 		has_government = absolute_monarchy
+	}
 	}
 }
 
@@ -157,11 +177,36 @@ has_similar_form_of_government = {
 			ROOT = { has_neutral_government = yes }
 		}
 		AND = {
-			THIS = { is_monarchy = yes }
-			ROOT = { is_monarchy = yes }
+			THIS = { has_communist_government = yes }
+			ROOT = { has_communist_government = yes }
 		}
 		AND = {
 			THIS = { is_monarchy = yes }
+			ROOT = { is_monarchy = yes }
+		}
+	}
+}
+
+has_similar_form_of_government2 = {
+	OR = {
+		AND = {
+			PREV = { has_democratic_government = yes }
+			ROOT = { has_democratic_government = yes }
+		}
+		AND = {
+			PREV = { has_fascist_government = yes }
+			ROOT = { has_fascist_government = yes }
+		}
+		AND = {
+			PREV = { has_neutral_government = yes }
+			ROOT = { has_neutral_government = yes }
+		}
+		AND = {
+			PREV = { has_communist_government = yes }
+			ROOT = { has_communist_government = yes }
+		}
+		AND = {
+			PREV = { is_monarchy = yes }
 			ROOT = { is_monarchy = yes }
 		}
 	}

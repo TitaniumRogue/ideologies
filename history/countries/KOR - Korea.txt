@@ -30,7 +30,7 @@ set_politics = {
 			#banned = no #default is no
 		}
 		
-		monarchism = { 
+		absolute_monarchy = { 
 			popularity = 10
 		}
 	}

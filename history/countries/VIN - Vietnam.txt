@@ -51,7 +51,7 @@ set_politics = {
 			popularity = 15
 		}
 		
-		revolutionary_socialist = {
+		revisionism = {
 			popularity = 15
 		}
 		authoritarian_democracy = {
@@ -105,7 +105,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = despotism
 	traits = {
 		
 	}

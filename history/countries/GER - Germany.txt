@@ -281,7 +281,7 @@ create_country_leader = {
 	desc = "POLITICS_ARTUR_MAHRAUN_DESC"
 	picture = "Portrait_Germany_Artur_Mahraun.dds"
 	expire = "1965.1.1"
-	ideology = social_liberal_ideology
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -291,7 +291,7 @@ create_country_leader = {
 	desc = "POLITICS_THEODOR_HEUSS_DESC"
 	picture = "Portrait_Germany_Theodor_Heuss.dds"
 	expire = "1965.1.1"
-	ideology = market_liberal_ideology
+	ideology = libertarian
 	traits = {
 	}
 }
@@ -301,7 +301,7 @@ create_country_leader = {
 	desc = "POLITICS_PAUL_LOEBE_DESC"
 	picture = "Portrait_Germany_Paul_Lobe.dds"
 	expire = "1965.1.1"
-	ideology = social_democracy_ideology
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -321,7 +321,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_DITTMANN_DESC"
 	picture = "Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = democratic_socialism_ideology
+	ideology = democratic_socialist
 	traits = {
 	}
 }
@@ -331,7 +331,7 @@ create_country_leader = {
 	desc = "POLITICS_JOACHIM_MERKATZ_DESC"
 	picture = "Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = christian_democracy_ideology
+	ideology = christian_democrat
 	traits = {
 	}
 }
@@ -341,7 +341,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_LATTMAN_DESC"
 	picture = "Portrait_Germany_Wilhelm_Lattman.dds"
 	expire = "1965.1.1"
-	ideology = democratic_nationalism_ideology
+	ideology = democratic_nationalist
 	traits = {
 	}
 }
@@ -391,7 +391,7 @@ create_country_leader = {
 	desc = "POLITICS_PAUL_LETZENBERG_DESC"
 	picture = "Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = leninsm_ideology
+	ideology = leninism_ideology
 	traits = {
 	}
 }
@@ -401,7 +401,7 @@ create_country_leader = {
 	desc = "POLITICS_KAISER_WILHELM_DESC"
 	picture = "Portrait_Germany_Kaiser_Wilhelm.dds"
 	expire = "1965.1.1"
-	ideology = absolute_monarchy_ideology
+	ideology = absolutism
 	traits = {
 	}
 }
@@ -411,7 +411,7 @@ create_country_leader = {
 	desc = "POLITICS_WALTHER_LAMBACH_DESC"
 	picture = "Portrait_Germany_Walther_Lambach.dds"
 	expire = "1965.1.1"
-	ideology = religious_ideology
+	ideology = catholicism
 	traits = {
 	}
 }
@@ -421,7 +421,7 @@ create_country_leader = {
 	desc = "POLITICS_ALFRED_HUGENBERG_DESC"
 	picture = "Portrait_Germany_Alfred_Hugenberg.dds"
 	expire = "1965.1.1"
-	ideology = militarism_ideology
+	ideology = millitary_junta
 	traits = {
 	}
 }
@@ -441,7 +441,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_MEINBERG_DESC"
 	picture = "Portrait_Germany_Wilhelm_Meinberg.dds"
 	expire = "1965.1.1"
-	ideology = authoritarian_ideology
+	ideology = despotism
 	traits = {
 	}
 }

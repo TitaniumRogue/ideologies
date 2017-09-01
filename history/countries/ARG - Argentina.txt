@@ -117,7 +117,7 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		social_democracy = { 
 			popularity = 5
 		}
 
@@ -125,16 +125,16 @@ create_country_leader = {
 			popularity = 5
 		}
 		
-		communism = {
+		leninism = {
 			popularity = 12
 		}
 		
-		neutrality = { 
+		authoritarian = { 
 			popularity = 78
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian
 		last_election = "1937.9.5"
 		election_frequency = 108
 		elections_allowed = yes
@@ -169,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_MARCELO_ALVEAR_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat
 	traits = {
 		#
 	}
