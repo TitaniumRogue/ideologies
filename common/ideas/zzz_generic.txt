@@ -689,7 +689,120 @@ ideas = {
 				global_building_slots_factor = 0.10
                              
 			}
-                       
+			
+		labour_unions = {
+		        
+			Picture = idea_saf_soviet_advisers
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil-war = {
+			 has_goverment = anarchism
+			}
+		
+			modifier = {
+			     political_power_factor = -0.3
+			     unity_factor = 0.5
+				consumer_goods_factor = -0.10
+				research_time_factor = 0.5
+			}
+			
+		one_big_union = {
+		        
+			Picture = fourth_international
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil-war = {
+			 has_goverment = anarchism
+			}
+		
+			modifier = {
+			     political_power_factor = -0.3
+			     unity_factor = 0.15
+				consumer_goods_factor = -0.10
+				research_time_factor = 0.5
+				
+			}
+			
+	nazi_economy = {
+		        
+			Picture = idea_saf_ossewabrandwag_2
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil-war = {
+			 has_goverment = national_socialism
+			}
+		
+			modifier = {
+			 local_resources_factor = 2.5
+				industrial_capacity_factory = 2.50 
+				research_time_factor = -0.5
+				 conscription_factor = -0.2
+			}
+			
+	nazi_warfare = {
+ +		        
+ +			Picture = idea_saf_ossewabrandwag_2
+ +			
+ +			allowed = {
+ +			        always = no
+ +		        }
+ +			
+ +			allowed_civil-war = {
+ +			 has_goverment = national_socialism
+ +			}
+ +		
+ +			modifier = {
+ +			 
+ +				consumer_goods_factor = -0.15
+ +				 conscription = -0.02
+ +			}
+ +			
+ +		nazi_autarky = {
+ +		        
+ +			Picture = idea_saf_ossewabrandwag_2
+ +			
+ +			allowed = {
+ +			        always = no
+ +		        }
+ +			
+ +			allowed_civil-war = {
+ +			 has_goverment = national_socialism
+ +			}
+ +		
+ +			modifier = {
+ +			 
+ +				consumer_goods_factor = -0.10
+ +				 local_resources_factor = 3.0
+ +				 conscription = -0.01
+ +			}
+ +			
+ +		military_economy = {
+ +		        
+ +			Picture = triumphant_will
+ +			
+ +			allowed = {
+ +			        always = no
+ +		        }
+ +			
+ +			allowed_civil-war = {
+ +			 has_goverment = militarism
+ +			}
+ +		
+ +			modifier = {
+ +			 
+ +				consumer_goods_factor = -0.15
+ +				 production_factory_max_efficiency_factor = 0.20
+ +				 conscription = 0.03
+                       }
                        
 	}
 	}
