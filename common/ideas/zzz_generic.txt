@@ -134,7 +134,10 @@ ideas = {
 			
 			modifier = {
 				#justify_war_goal_time = -0.25
-				communism_drift = 0.1
+				stalinism_drift = 0.1
+				leninism_drift = 0.1
+				anarchism_drift = 0.1
+				revisionism_drift = 0.1
 			}
 		}
 
@@ -606,7 +609,10 @@ ideas = {
 			}
 
 			modifier = {
-				communism_drift = -0.05
+				anarchism_drift = -0.05
+				leninism_drift = -0.05
+				stalinism_drift = -0.05
+				revisionism_drift = -0.05
 			}
 		}
 
@@ -626,191 +632,12 @@ ideas = {
 
 			modifier = {
 				fascism_drift = -0.05
+				fascist_monarchy_drift = -0.05
+				national_socialism_drift = -0.05
+				nationalism_drift = -0.05
 			}
 		}
-		
-				socialism_in_one_country = {
-
-			picture = generic_communism_drift_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-					has_government = stalinism
-			}
-
-
-			modifier = {
-				unity_factor = -0.10
-				conscription_factor = -0.3
-				production_speed_buildings_factor = 0.35
-				global_building_slots_factor = 0.10
-				drift_defence_factor = 0.50
-                        }
 		}
-		
-		economic_anarchy = {
-		        
-			Picture = generic_communism_dift_bonus
-			
-			allowed = {
-			        always = no
-		        }
-			
-			allowed_civil_war = {
-			 has_goverment = anarchism
-			}
-		
-			modifier = {
-			     political_power_factor = -0.2
-			     unity_factor = 0.10
-				consumer_goods_factor = -0.15
-				research_time_factor = 0.10
-			}
-			}
-                 
-                generic_gulags = {
-                       
-                       Picture = officers_purged
-                       
-                       allowed = {
-                               always = no
-                       }
-                       
-                       allowed_civil_war = {
-			 has_goverment = stalinism
-			}
-		
-			modifier = {
-			     unity_factor = -0.10
-                             conscription_factor = -0.2
-				production_speed_buildings_factor = 0.25
-				global_building_slots_factor = 0.10
-                             
-			}
-			}
-			
-		labour_unions = {
-		        
-			Picture = idea_saf_soviet_advisers
-			
-			allowed = {
-			        always = no
-		        }
-			
-			allowed_civil_war = {
-			 has_goverment = anarchism
-			}
-		
-			modifier = {
-			     political_power_factor = -0.3
-			     unity_factor = 0.5
-				consumer_goods_factor = -0.10
-				research_time_factor = 0.5
-			}
-			}
-			
-		one_big_union = {
-		        
-			picture = fourth_international
-			
-			allowed = {
-			        always = no
-		        }
-			
-			allowed_civil_war = {
-			 has_goverment = anarchism
-			}
-		
-			modifier = {
-			     political_power_factor = -0.3
-			     unity_factor = 0.15
-				consumer_goods_factor = -0.10
-				research_time_factor = 0.5
-				
-			}
-			}
-			
-	nazi_economy = {
-		        
-			Picture = idea_saf_ossewabrandwag_2
-			
-			allowed = {
-			        always = no
-		        }
-			
-			allowed_civil_war = {
-			 has_goverment = national_socialism
-			}
-		
-			modifier = {
-			 local_resources_factor = 2.5
-				industrial_capacity_factory = 2.50 
-				research_time_factor = -0.5
-				 conscription_factor = -0.2
-			}
-			}
-			
-	nazi_warfare = {        
- 			Picture = idea_saf_ossewabrandwag_2
- 			
- 			allowed = {
- 			        always = no
- 		        }
- 			
- 			allowed_civil_war = {
- 			 has_goverment = national_socialism
- 			}
- 		
- 			modifier = {
- 			 
- 				consumer_goods_factor = -0.15
- 				 conscription = -0.02
- 			}
-			}
- 			
- 		nazi_autarky = {
- 		        
- 			Picture = idea_saf_ossewabrandwag_2
- 			
- 			allowed = {
- 			        always = no
- 		        }
- 			
- 			allowed_civil_war = {
- 			 has_goverment = national_socialism
- 			}
- 		
- 			modifier = {
- 			 
- 				consumer_goods_factor = -0.10
- 				 local_resources_factor = 3.0
- 				 conscription = -0.01
- 			}
-			}
- 			
- 		military_economy = {
- 		        
- 			Picture = triumphant_will
- 			
- 			allowed = {
- 			        always = no
- 		        }
- 			
- 			allowed_civil_war = {
- 			 has_goverment = militarism
- 			}
- 		
- 			modifier = {
- 			 
- 				consumer_goods_factor = -0.15
- 				 production_factory_max_efficiency_factor = 0.20
- 				 conscription = 0.03
-                       }
-                       
-	}
 	
 	political_advisor = {
 		# POLITICAL	

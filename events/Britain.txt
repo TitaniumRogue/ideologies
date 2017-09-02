@@ -811,7 +811,7 @@ country_event = {
 		}
 		name = britain.23.a
 		start_civil_war = {
-				ideology = fascism
+				ideology = national_socialism
 				size = 0.5
 		}
 	}
@@ -819,7 +819,7 @@ country_event = {
 	option = {
 		name = britain.23.b
 		start_civil_war = {
-				ruling_party = fascism
+				ruling_party = national_socialism
 				ideology = authoritarian
 				size = 0.5
 		}

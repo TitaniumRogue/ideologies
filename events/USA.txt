@@ -305,11 +305,11 @@ country_event = {
 	option = {
 		name = usa.7.a
 		ai_chance = {
-			factor = 75
+			factor = 7
+			}
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = yes
-		}
 		}
 		add_political_power = 40
 		add_national_unity = -0.15

@@ -2215,7 +2215,7 @@ country_event = {
 	
 	option = { # This means war!
 		name = germany.60.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 1 
 			modifier = {
 				factor = 20
@@ -2320,6 +2320,7 @@ country_event = {
 				}
 			}
 		}
+	}
 	}
 
 	option = { # Diplomatic response

@@ -147,13 +147,14 @@ country_event = {
 			POR = { country_event = { id = spain.4 days = 1 } }
 		}
 	}
+	}
 
 	option = {
 		name = spain.2.b
 		add_political_power = 40
 		ai_chance = { factor = 0 }
 	}
-}
+	}
 
 # Republicans: Seek Support
 country_event = {
