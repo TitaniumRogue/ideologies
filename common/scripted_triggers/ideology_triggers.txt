@@ -13,7 +13,7 @@
 #	}
 #
 
-#Search for: (communism)|(fascism)|(democratic)|(neutrality) in notepad
+#Search for: (communism)|(fascism)|(democratic)|(neutrality) in notepad to fine the base game's ideologies in files
 
 has_democratic_government = {
 	custom_trigger_tooltip = {
