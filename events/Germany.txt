@@ -2473,7 +2473,7 @@ country_event = {
 		if = {
 			limit = { 
 				has_idea = FRA_disjointed_government 
-				has_government = has_communist_government = yes
+				has_communist_government = yes
 				}
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
@@ -2792,7 +2792,7 @@ country_event = {
 	
 	option = {
 		name = germany.65.a
-		ENG = { 
+		ENG = {
 			country_event = germany.68 
 			if = {
 				limit = {
@@ -2894,6 +2894,7 @@ country_event = {
 		hidden_effect = {
 			news_event = { hours = 6 id = news.27 }
 		}
+	}
 	}
 
 	option = {

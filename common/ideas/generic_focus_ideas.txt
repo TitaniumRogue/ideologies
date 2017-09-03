@@ -32,7 +32,7 @@ ideas = {
 		        }
 			
 			allowed_civil_war = {
-			 has_goverment = anarchism
+			 has_government = anarchism
 			}
 		
 				modifier = {
@@ -52,7 +52,7 @@ ideas = {
                   }
                        
 			allowed_civil_war = {
-			has_goverment = stalinism
+			has_government = stalinism
 			}
 		
 			modifier = {
@@ -73,7 +73,7 @@ ideas = {
 		        }
 			
 			allowed_civil_war = {
-			 has_goverment = anarchism
+			 has_government = anarchism
 			}
 		
 			modifier = {
@@ -93,7 +93,7 @@ ideas = {
 		        }
 			
 			allowed_civil_war = {
-			 has_goverment = anarchism
+			 has_government = anarchism
 			}
 		
 			modifier = {
@@ -114,7 +114,7 @@ ideas = {
 		        }
 			
 			allowed_civil_war = {
-			 has_goverment = national_socialism
+			 has_government = national_socialism
 			}
 		
 			modifier = {
@@ -133,7 +133,7 @@ ideas = {
  		        }
  			
  			allowed_civil_war = {
- 			 has_goverment = national_socialism
+ 			 has_government = national_socialism
  			}
  		
  			modifier = {
@@ -152,7 +152,7 @@ ideas = {
  		        }
  			
  			allowed_civil_war = {
- 			 has_goverment = national_socialism
+ 			 has_government = national_socialism
  			}
  		
  			modifier = {
@@ -172,7 +172,7 @@ ideas = {
  		        }
  			
  			allowed_civil_war = {
- 			 has_goverment = militarism
+ 			 has_government = militarism
  			}
  		
  			modifier = {
