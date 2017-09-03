@@ -150,41 +150,76 @@ set_national_unity = 0.4
 set_politics = {
 
 	parties = {
-		social_liberal = { #Republican, Radical and Radical-Socialist Party + Popular Democrats
-			popularity = 23
-		}
-		
-		market_liberal = { #Democratic Alliance + Independant Radicals
-			popularity = 22
-		}
-
-		nationalism = { #Independents
-			popularity = 5
-		}
-		
-		leninism = { #Communist Party
-			popularity = 8
-		}
-		
-		revisionism = { #Miscellaneous Left
-			popularity = 1
-		}
-		
-		democratic_socialism = { #French Section of the Workers' International
-			popularity = 23
-		}
-		
-		social_democracy = { #Republican-Socialist Party
-			popularity = 5
-		}
-		
-		conservative = { #Republican Federation
-			popularity = 13
+		social_liberal = { 
+		popularity = 15
+	        }
+	        national_socialism = {
+		popularity = 0
+	        }		
+	        stalinism = {
+		popularity = 3
+	        }
+	        social_democracy = { 
+		popularity = 10
+	        }
+	        market_liberal = { 
+		popularity = 12
+	        }
+	        conservative = { 
+		popularity = 10
+	        }
+	        progressive = { 
+		popularity = 5
+	        }
+	        democratic_socialism = { 
+		popularity = 10
+	        }
+	        reactionary = { 
+		popularity = 10
+	        }
+	        authoritarian_democracy = { 
+		popularity = 2
+	        }
+	        leninism = { 
+		popularity = 3
+	        }
+	        fascism = { 
+		popularity = 0
+	        }
+	        nationalism = { 
+		popularity = 5
+	        }
+	        democratic_nationalism = { 
+		popularity = 0
+	        }
+	        militarism = { 
+		popularity = 0
+	        }
+	        fascist_monarchy = { 
+		popularity = 0
+	        }
+	        authoritarian = { 
+		popularity = 3
+	        }
+	        absolute_monarchy = { 
+		popularity = 0
+	        }
+	        religious = { 
+		popularity = 0
+	        }
+	        anarchism = { 
+		popularity = 2
+	        }
+	        christian_democracy = { 
+		popularity = 8
+	        }
+	        revisionism = { 
+		popularity = 2
 		}
 		
 	}
 	
-	ruling_party = democratic_socialism
+	ruling_party = conservative
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -212,9 +247,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Louis Marin"
+	name = "Pierre Laval"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Louis_Marin.dds"
+	picture = "Portrait_France_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
