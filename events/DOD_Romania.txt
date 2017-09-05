@@ -1299,7 +1299,7 @@ country_event = {
 					authoritarian < 0.5
 					has_war = no
 					NOT = { has_idea = ROM_mihail_sturdza }
-					NOT = { has_idea = generic_democratic_reformer }
+					#NOT = { has_idea = generic_democratic_reformer }
 				}
 			}
 		}

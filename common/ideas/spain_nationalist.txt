@@ -8,7 +8,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			allowed_civil_war = {
@@ -30,7 +30,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 			traits = { prince_of_terror }
@@ -42,7 +42,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 			traits = { compassionate_gentleman }
@@ -54,7 +54,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 			traits = { war_industrialist }
@@ -68,7 +68,7 @@ ideas = {
 				
 		allowed = {
 			original_tag = SPR
-			has_government = fascism
+			has_fascist_government = yes
 		}
 		
 		picture = generic_army_europe_3
@@ -85,7 +85,7 @@ ideas = {
 				
 		allowed = {
 			original_tag = SPR
-			has_government = fascism
+			has_fascist_government = yes
 		}
 		
 		picture = generic_air_europe_3
@@ -107,7 +107,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -125,7 +125,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -143,7 +143,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -164,7 +164,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -182,7 +182,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -204,7 +204,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -222,7 +222,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -240,7 +240,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -260,7 +260,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -277,7 +277,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -294,7 +294,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 
@@ -311,7 +311,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 

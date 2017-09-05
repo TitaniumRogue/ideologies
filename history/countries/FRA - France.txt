@@ -155,7 +155,7 @@ set_politics = {
 		}
 		
 		market_liberal = { #Democratic Alliance + Independant Radicals
-			popularity = 22
+			popularity = 13
 		}
 
 		nationalism = { #Independents
@@ -179,12 +179,12 @@ set_politics = {
 		}
 		
 		conservative = { #Republican Federation
-			popularity = 13
+			popularity = 22
 		}
 		
 	}
 	
-	ruling_party = democratic_socialism
+	ruling_party = conservative
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -212,7 +212,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Louis Marin"
+	name = "Pierre Laval"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_France_Louis_Marin.dds"
 	expire = "1965.1.1"
@@ -275,6 +275,51 @@ create_country_leader = {
 	traits = {
 		
 	}
+}
+
+1939.1.1 = {
+set_politics = {
+
+	parties = {
+		social_liberal = { #Republican, Radical and Radical-Socialist Party + Popular Democrats
+			popularity = 23
+		}
+		
+		market_liberal = { #Democratic Alliance + Independant Radicals
+			popularity = 13
+		}
+
+		nationalism = { #Independents
+			popularity = 5
+		}
+		
+		leninism = { #Communist Party
+			popularity = 8
+		}
+		
+		revisionism = { #Miscellaneous Left
+			popularity = 1
+		}
+		
+		democratic_socialism = { #French Section of the Workers' International
+			popularity = 23
+		}
+		
+		social_democracy = { #Republican-Socialist Party
+			popularity = 5
+		}
+		
+		conservative = { #Republican Federation
+			popularity = 22
+		}
+		
+	}
+	
+	ruling_party = social_liberal
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
 }
 
 create_corps_commander = {

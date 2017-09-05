@@ -8,7 +8,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 			traits = { ideological_crusader }
@@ -20,7 +20,7 @@ ideas = {
 				
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 			traits = { captain_of_industry }
@@ -32,10 +32,10 @@ ideas = {
 				
 			allowed = {
 				original_tag = SPR				
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 		}
 
 		SPR_diego_martinez_barrio = {
@@ -44,7 +44,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 			traits = { backroom_backstabber }
@@ -61,7 +61,7 @@ ideas = {
 					
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 			picture = generic_army_europe_3
@@ -78,7 +78,7 @@ ideas = {
 					
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 			picture = generic_navy_europe_1
@@ -99,7 +99,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -118,7 +118,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -142,7 +142,7 @@ ideas = {
 				custom_trigger_tooltip = {
 					tooltip = spr_franco_unavailable_tooltip
 					OR = {
-						has_government = fascism
+						has_fascist_government = yes
 						AND = {
 							NOT = { has_government = communism }
 							NOT = {
@@ -151,7 +151,7 @@ ideas = {
 										tag = ROOT
 									}
 									original_tag = SPR
-									has_government = fascism
+									has_fascist_government = yes
 								}
 							}
 						}
@@ -176,7 +176,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -194,7 +194,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -215,7 +215,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -233,7 +233,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 			
@@ -254,7 +254,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -272,7 +272,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -290,7 +290,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 
@@ -308,7 +308,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 			}
 			
 

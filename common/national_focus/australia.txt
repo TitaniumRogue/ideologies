@@ -4181,7 +4181,7 @@ focus_tree = {
 				add_idea = AST_abandon_the_westminster_system_fascism
 			}
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_generic_fascist_demagogue
+			show_ideas_tooltip = AST_generic_fascist_politician
 		}
 	}
 

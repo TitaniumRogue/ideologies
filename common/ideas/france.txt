@@ -372,7 +372,7 @@ ideas = {
 				has_completed_focus = FRA_leftist_rhetoric
 			}
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 	
 			on_add = {
 				country_event = political.1

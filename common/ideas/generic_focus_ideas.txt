@@ -16,7 +16,7 @@ ideas = {
 
 			modifier = {
 				unity_factor = -0.10
-				conscription_factor = -0.05
+				conscription_factor = -0.3
 				production_speed_buildings_factor = 0.35
 				global_building_slots_factor = 0.10
 				drift_defence_factor = 0.50
@@ -181,132 +181,6 @@ ideas = {
  				 production_factory_max_efficiency_factor = 0.20
  				 conscription = 0.03
                        }
-		 
-		theocratic_economy = {
-
-			picture = idea_generic_agrarian_reform
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			has_government = religious
-                        has_government = absolute_monarchy
-                        has_government = fascist_monarchy
-			}
-
-
-			modifier = {
-					research_time_factor = 0.5
-					production_speed_buildings_factor = 0.2
-					consumer_goods_factor = -0.05
-					global_building_slots_factor = 0.10
-			
-		god_soil_church = {
-
-			picture = idea_charles_coughlin
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			has_government = religious
-                        has_government = absolute_monarchy
-                        has_government = fascist_monarchy
-			}
-
-
-			modifier = {
-					research_time_factor = 0.10
-					production_speed_buildings_factor = 0.15
-					consumer_goods_factor = -0.05
-					global_building_slots_factor = 0.05
-                        }
-			
-		manorialism = {
-
-			picture = idea_royal_arsenal
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			has_government = religious
-                        has_government = absolute_monarchy
-                        has_government = fascist_monarchy
-			}
-
-
-			modifier = {
-					research_time_factor = 0.05
-					unity_factor = -0.10
-					production_speed_buildings_factor = 0.15
-					global_building_slots_factor = 0.10
-                        }
-			
-		leninist_economy = {
-
-			picture = socialist_science_focus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			has_government = leninism
-			}
-
-
-			modifier = {
-				unity_factor = 0.10
-				global_building_slots_factor = 0.05
-				conscription = 0.01
-				political_power_factor = -0.5
-				
-                        }
-			
-		nationalized_industry = {
-
-			picture = generic_pp_unity_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			has_government = leninism
-			}
-
-
-			modifier = {
-				global_building_slots_factor = 0.25
-				political_power_factor = -0.5
-				
-                        }
-			
-		foreign_trade_monopoly = {
-
-			picture = socialist_science_focus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			has_government = leninism
-			}
-
-
-			modifier = {
-				global_building_slots_factor = 0.10
-				political_power_factor = -0.5
-				consumer_goods_factor = -0.05
-				
-                        }
-             }
                        
 	}
 	}

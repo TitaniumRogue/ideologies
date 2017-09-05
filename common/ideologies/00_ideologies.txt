@@ -26,8 +26,8 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		rules = {
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = no
 			can_send_volunteers = no
 			can_puppet = no
 			can_lower_tension = no
@@ -121,7 +121,7 @@ ideologies = {
 		ai_communist = yes # uses the commie AI behaviour
 		
 		rules = {
-			can_force_government = no
+			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
 		}
@@ -164,7 +164,7 @@ ideologies = {
 		ai_communist = yes # uses the commie AI behaviour
 		
 		rules = {
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
 		}
@@ -746,14 +746,15 @@ ideologies = {
 		rules = {
 			can_declare_war_on_same_ideology = yes
 			can_force_government = no
-			can_send_volunteers = no
-			can_puppet = no
+			can_send_volunteers = yes
+			can_puppet = yes
 			can_lower_tension = no
 			can_only_justify_war_on_threat_country = no
 			can_guarantee_other_ideologies = no
 		}
 		
 		modifiers = {
+		join_faction_tension = 0.05
 		}
 		
 		faction_modifiers = {
@@ -784,7 +785,7 @@ ideologies = {
 		
 		color = { 0 100 0 }
 		
-		war_impact_on_world_tension = 0.75
+		war_impact_on_world_tension = 0.25
 		faction_impact_on_world_tension = 0.5
 		
 		rules = {
@@ -829,8 +830,8 @@ ideologies = {
 		
 		color = { 45 45 45 }
 		
-		war_impact_on_world_tension = 0.9			#evil!
-		faction_impact_on_world_tension = 0.9
+		war_impact_on_world_tension = 0.5			#evil!
+		faction_impact_on_world_tension = 0.1
 		
 		rules = {
 			can_force_government = no

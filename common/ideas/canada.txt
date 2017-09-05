@@ -647,7 +647,7 @@ ideas = {
 
 			picture = generic_fascist_demagogue_commonwealth_2d
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_politician }
 			
 			on_add = {
 				country_event = political.7
@@ -716,7 +716,7 @@ ideas = {
 
 			picture = generic_communist_revolutionary_commonwealth_2d
 			
-			traits = { communist_revolutionary }
+			traits = { leninist_politician }
 			
 			on_add = {
 				country_event = political.1

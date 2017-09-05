@@ -3,7 +3,7 @@
 #Political Advisors
 
  generic_stalinist_politician:0 "Stalinist Politician"
- generic_revisionist_politician:0 "Revisionist Politician"
+ generic_revisionist_politician:0 "Moderate Communist Politician"
  generic_leninist_politician:0 "Leninist Politician"
  generic_anarchist_politician:0 "Anarchist Politician"
  generic_reactionary_politician:0 "Reactionary Politician"
@@ -26,7 +26,7 @@
  generic_militarist_politician:0 "Militarist Politician"
  
  stalinist_politician:0 "Stalinist Politician"
- revisionist_politician:0 "Revisionist Politician"
+ revisionist_politician:0 "Moderate Communist Politician"
  leninist_politician:0 "Leninist Politician"
  anarchist_politician:0 "Anarchist Politician"
  reactionary_politician:0 "Reactionary Politician"
@@ -52,7 +52,7 @@
 
  stalinism_drift:0 "Daily Stalinism Support"
  leninism_drift:0 "Daily Leninism Support"
- revisionism_drift:0 "Daily Revisionism Support"
+ revisionism_drift:0 "Daily Moderate Communism Support"
  anarchism_drift:0 "Daily Anarchism Support"
  reactionary_drift:0 "Daily Reactionary Support"
  conservative_drift:0 "Daily Conservative Support"
@@ -77,7 +77,7 @@
  
  stalinism_acceptance:0 "Acceptance of Stalinist Diplomacy"
  leninism_acceptance:0 "Acceptance of Leninist Diplomacy"
- revisionism_acceptance:0 "Acceptance of Revisionist Diplomacy"
+ revisionism_acceptance:0 "Acceptance of Moderate Communist Diplomacy"
  anarchism_acceptance:0 "Acceptance of Anarchist Diplomacy"
  reactionary_acceptance:0 "Acceptance of Reactionary Diplomacy"
  conservative_acceptance:0 "Acceptance of Conservative Diplomacy"
@@ -90,7 +90,7 @@
  authoritarian_democracy_acceptance:0 "Acceptance of Authoritarian Democratic Diplomacy"
  democratic_socialism_acceptance:0 "Acceptance of Democratic Socialist Diplomacy"
  fascism_acceptance:0 "Acceptance of Fascist Diplomacy"
- fascist_monarchy_acceptance:0 "Acceptance of Fascist Monarchy Diplomacy"
+ fascist_monarchy_acceptance:0 "Acceptance of Fascist Monarcist Diplomacy"
  national_socialism_acceptance:0 "Acceptance of National Socialist Diplomacy"
  nationalism_acceptance:0 "Acceptance of Ultranationalist Diplomacy"
  absolute_monarchy_acceptance:0 "Acceptance of Monarchist Diplomacy"

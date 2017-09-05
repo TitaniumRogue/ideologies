@@ -602,7 +602,7 @@ ideas = {
 			traits = { compassionate_gentleman }
 		}
 
-		AST_generic_fascist_demagogue = {
+		AST_generic_fascist_politician = {
 			
 			allowed = {
 				original_tag = AST

@@ -873,7 +873,7 @@ ideas = {
 			
 			allowed = {
 				NOT = {
-					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
+					has_available_idea_with_traits = { idea = democratic_nationalist_politician limit = 1 }
 				}
 				
 			}
@@ -1195,7 +1195,7 @@ ideas = {
 			
 			allowed = {
 				NOT = {
-					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
+					has_available_idea_with_traits = { idea = fascist_politician limit = 1 }
 				}
 
 			}
