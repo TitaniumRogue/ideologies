@@ -2505,6 +2505,11 @@
  RAJ_militarism_DEF:0 "The Indian Military Regime"
  RAJ_fascist_monarchy_DEF:0 "The Indian Empire"
  RAJ_authoritarian_DEF:0 "The Indian State"
+ YUN_militarism:0 "Yunnan Clique"
+ YUN_religious:0 "Holy Nanzhao Kingdom"
+ YUN_authoritarian:0 "Kunming Military Organisation"
+ YUN_absolute_monarchy:0 " Imperialist Empire of Dail"
+
 
 # Faction Names (Base Game)
  
