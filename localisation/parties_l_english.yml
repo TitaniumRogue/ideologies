@@ -614,4 +614,22 @@
  BRA_fascist_monarchy_party_long:0 "Casa Imperial de Orleans e Bragança/Ação Integralista Brasileira - Imperialistas"
  BRA_authoritarian_party:0 "OCB"
  BRA_authoritarian_party_long:0 "Ordem Colonial Brasileira"
+ ARG_social_democracy_party:0 "PJ"
+ ARG_social_democracy_party_long:0 "Partido Justicialista"
+ ARG_progressive:0 "Progresistas"
+ ARG_christian_democracy_party:0 "PDC"
+ ARG_christian_democracy_party_long:0 "Partido Demócrata Cristiano"
+ ARG_social_liberal_party:0 "CC-ARI"
+ ARG_social_liberal_party_long:0 "Coalición Cívica ARI"
+ ARG_leninist_party:0 "PRT"
+ ARG_leninist_party_long:0 "Partido Revolucionario de los Trabajadores"
+ ARG_stalinist_party:0 "FIT"
+ ARG_stalinist_party_long:0 "Frente de Izquierda y de los Trabajadores"
+ ARG_conservative_party:0 "PDN"
+ ARG_conservative_party_long:0 "Partido Demócrata Nacional"
+ SPA_conservative_party:0 "AES"
+ SPA_conservative_party_long:0 "Alternativa Española"
+ 
+ 
+ 
 
