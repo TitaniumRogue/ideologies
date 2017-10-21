@@ -200,18 +200,34 @@ create_import = {
 set_politics = {
 
 	parties = {
-		christian_democracy = { #Zentrum
-			popularity = 20
+		christian_democracy = { #Democratic Opposition
+			popularity = 10
 		}
 
-		national_socialism = { #NSDAP
-			popularity = 60
+		national_socialism = { #NSDAP Nazi
+			popularity = 40
 		}
 		
-		stalinism = { #KPD
-			popularity = 20
+		fascism = { #NSDAP Strasser
+		popularity = 10
+	        }
+		
+		democratic_nationalism = { #NSDAP Mahraun
+		popularity = 10
+	        }
+		
+		social_democracy = { #Democratic Opposition
+		popularity = 20
+	        }
+		
+		stalinism = { #Communist Opposition
+			popularity = 0
 			banned = yes #default is no
 		}
+		
+		conservative = { #Democratic Opposition
+		popularity = 10
+	        }
 	}
 	
 	ruling_party = national_socialism
@@ -281,7 +297,7 @@ create_country_leader = {
 	desc = "POLITICS_ARTUR_MAHRAUN_DESC"
 	picture = "Portrait_Germany_Artur_Mahraun.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = democratic_nationalism_ideology
 	traits = {
 	}
 }
