@@ -167,28 +167,45 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		fascism = { 
-			popularity = 20
-		}
-
-		nationalism = {
-			popularity = 18
-		}
-		
-		leninism = {
-			popularity = 2
-		}
-		
-		absolute_monarchy = { 
-			popularity = 35
-		}
-		
-		conservative = { 
-			popularity = 25
-		}
+		social_liberal = { 
+		popularity = 30
+	        }		
+	        stalinism = {
+		popularity = 5
+	        }
+	        social_democracy = { 
+		popularity = 2
+	        }
+	        market_liberal = { 
+		popularity = 10
+	        }
+	        conservative = { 
+		popularity = 6
+	        }
+	        democratic_socialism = { 
+		popularity = 3
+	        }
+	        reactionary = { 
+		popularity = 6
+	        }
+	        authoritarian_democracy = { 
+		popularity = 6
+	        }
+	        leninism = { 
+		popularity = 5
+	        }
+	        fascism = { 
+		popularity = 15
+	        }
+	        democratic_nationalism = { 
+		popularity = 6
+	        }
+	        authoritarian = { 
+		popularity = 6
+	        }
 	}
 	
-	ruling_party = conservative
+	ruling_party = social_liberal
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -227,7 +244,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_liberal
 	traits = {
 		#
 	}
