@@ -280,6 +280,8 @@ ideologies = {
 			}
 			progressive_ideology = {
 			}
+			agrarianism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -377,6 +379,9 @@ ideologies = {
 			
 			anarcho_capitalism = {
 			}
+			
+			democratic_liberalism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -424,6 +429,8 @@ ideologies = {
 		types = {
 			
 			christian_democrat = {
+			}
+			christian_liberalism = {
 			}
 		}
 		
@@ -473,6 +480,10 @@ ideologies = {
 			right_wing_conservative = {
 			}
 			conservatism = {
+			}
+			conservative_liberalism = {
+			}
+			national_conservatism = {
 			}
 		}
 		
@@ -913,6 +924,9 @@ ideologies = {
 			}
 			
 			rexism = {
+			}
+			
+			strasserism = {
 			}
 		}
 		
