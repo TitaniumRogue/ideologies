@@ -1402,7 +1402,7 @@
  CAN_democratic_socialism_DEF:0 "The People's Commonwealth of Canada"
  CAN_democratic_socialism_ADJ:0 "Canadian"
  CAN_social_democracy:0 "Canada"
- CAN_social_democracy_DEF:0 "Canada”
+ CAN_social_democracy_DEF:0 "Canada"
  CAN_social_democracy_ADJ:0 "Canadian"
  CAN_progressive:0 "Canada"
  CAN_progressive_DEF:0 "Canada"
@@ -2903,8 +2903,8 @@
  IRE_stalinism_ADJ:0 "Irish"
  IRE_leninism:0 "People's Republic of Ireland"
  IRE_leninism_DEF:0 "The People's Republic of Ireland"
- IRE_leninism_ADJ:0 "Irish”
- IRE_revisionism :0 "Revolutionary Republic of Ireland"
+ IRE_leninism_ADJ:0 "Irish"
+ IRE_revisionism:0 "Revolutionary Republic of Ireland"
  IRE_revisionism_DEF:0 "The Revolutionary Republic of Ireland"
  IRE_revisionism_ADJ:0 "Irish"
  IRE_anarchism:0 "Free Irish Union"
@@ -2914,7 +2914,7 @@
  IRE_democratic_socialism_DEF:0 "Ireland"
  IRE_democratic_socialism_ADJ:0 "Irish"
  IRE_social_democracy:0 "Ireland"
- IRE_social_democracy_DEF:0 "Ireland”
+ IRE_social_democracy_DEF:0 "Ireland"
  IRE_social_democracy_ADJ:0 "Irish"
  IRE_progressive:0 "Ireland"
  IRE_progressive_DEF:0 "Ireland"
