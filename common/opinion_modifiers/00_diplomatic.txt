@@ -38,4 +38,9 @@ opinion_modifiers = {
 	different_party_types = {
 		value = 0
 	}
+	
+	mod_generic_tree_trade = {
+		trade = yes
+		value = 50
+	}
 }

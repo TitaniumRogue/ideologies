@@ -249,6 +249,8 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
+1936.1.1 = {
+
 create_country_leader = {
 	name = "Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
@@ -297,7 +299,7 @@ create_country_leader = {
 	desc = "POLITICS_ARTUR_MAHRAUN_DESC"
 	picture = "Portrait_Germany_Artur_Mahraun.dds"
 	expire = "1965.1.1"
-	ideology = democratic_nationalism_ideology
+	ideology = democratic_nationalist
 	traits = {
 	}
 }
@@ -460,6 +462,8 @@ create_country_leader = {
 	ideology = despotism
 	traits = {
 	}
+}
+
 }
 
 #create_country_leader = {

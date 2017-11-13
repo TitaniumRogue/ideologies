@@ -98,25 +98,25 @@ ideas = {
 	# Special ones that can be applied on other countries through focus system.
 	country = {
 	
-		nationalism = {
+		#nationalism = {
 			
-			allowed = {
-				always = no
-			}
+			#allowed = {
+			#	always = no
+			#}
 
-			allowed_civil_war = {
-				has_government = fascism
-			}
+			#allowed_civil_war = {
+			#	has_government = fascism
+			#}
 
-			removal_cost = -1
+			#removal_cost = -1
 
-			picture = generic_infantry_bonus
+			#picture = generic_infantry_bonus
 
 			
-			modifier = {
-				fascism_drift = 0.1
-			}
-		}
+			#modifier = {
+			#	fascism_drift = 0.1
+			#}
+		#}
 
 		internationalism = {
 			
