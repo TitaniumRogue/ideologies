@@ -72,7 +72,7 @@ is_socialist = {
 
 has_neutral_government = {
 	custom_trigger_tooltip = {
-	tooltip = TT_communist_form_of_government
+	tooltip = TT_neutral_form_of_government
 	OR = {
 		has_government = absolute_monarchy
 		has_government = militarism
@@ -91,6 +91,7 @@ has_totalitarian_government = {
 		has_government = religious		
 		has_government = fascism
 		has_government = national_socialism
+		has_government = nationalism
 	}
 }
 

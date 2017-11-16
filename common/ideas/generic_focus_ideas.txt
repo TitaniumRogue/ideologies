@@ -1350,10 +1350,10 @@ ideas = {
 			picture = generic_communism_drift_bonus
 	
 			modifier = {
-				revisionism_drift = 0.5
-				leninism_drift = 0.5
-				stalinism_drift = 0.5
-				anarchism_drift = 0.5
+				revisionism_drift = 0.05
+				leninism_drift = 0.05
+				stalinism_drift = 0.05
+				anarchism_drift = 0.05
 				democratic_socialism_drift = -0.1
 				social_democracy_drift = -0.1
 				progressive_drift = -0.1
