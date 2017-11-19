@@ -164,6 +164,7 @@ set_convoys = 10
 	}
 }
 
+1936.1.1 = {
 set_politics = {
 
 	parties = {
@@ -192,6 +193,7 @@ set_politics = {
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
+}
 }
 
 1939.1.1 = {

@@ -1963,8 +1963,10 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			absolute_monarchy > 0.3
-			fascist_monarchy > 0.3
+			OR = {
+			absolute_monarchy > 0.29
+			fascist_monarchy > 0.29
+			}
 		}
 
 		bypass = {
@@ -1980,6 +1982,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		set_politics = { ruling_party = absolute_monarchy elections_allowed = no }
 			add_political_power = 120
 			create_country_leader = {
 				name = "Carol II"

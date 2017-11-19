@@ -280,8 +280,6 @@ ideologies = {
 			}
 			progressive_ideology = {
 			}
-			agrarianism = {
-			}
 		}
 		
 		dynamic_faction_names = {
@@ -379,9 +377,6 @@ ideologies = {
 			
 			anarcho_capitalism = {
 			}
-			
-			democratic_liberalism = {
-			}
 		}
 		
 		dynamic_faction_names = {
@@ -429,8 +424,6 @@ ideologies = {
 		types = {
 			
 			christian_democrat = {
-			}
-			christian_liberalism = {
 			}
 		}
 		
@@ -480,10 +473,6 @@ ideologies = {
 			right_wing_conservative = {
 			}
 			conservatism = {
-			}
-			conservative_liberalism = {
-			}
-			national_conservatism = {
 			}
 		}
 		
@@ -775,6 +764,63 @@ ideologies = {
 
 	}
 	
+	religious = {
+	
+		types = {
+		
+			islamism  = {
+			}
+			
+			catholicism = {
+			}
+			
+			judaism  = {
+			}
+			
+			hinduism  = {
+			}
+			
+			buddhism  = {
+			}
+			
+			orthodox  = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_RELIGIOUS_1"
+			"FACTION_NAME_RELIGIOUS_2"
+			"FACTION_NAME_RELIGIOUS_3"
+			"FACTION_NAME_RELIGIOUS_4"
+			"FACTION_NAME_RELIGIOUS_5"
+		}
+		
+		color = { 255 255 255 }
+		
+		
+		war_impact_on_world_tension = 0.50		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no 
+			can_guarantee_other_ideologies = no
+		}
+		
+		modifiers = {
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_collaborate = yes
+
+	}
+	
 	militarism = {
 	
 		types = {
@@ -855,63 +901,6 @@ ideologies = {
 		}
 
 	}
-	
-	religious = {
-	
-		types = {
-		
-			islamism  = {
-			}
-			
-			catholicism = {
-			}
-			
-			judaism  = {
-			}
-			
-			hinduism  = {
-			}
-			
-			buddhism  = {
-			}
-			
-			orthodox  = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_RELIGIOUS_1"
-			"FACTION_NAME_RELIGIOUS_2"
-			"FACTION_NAME_RELIGIOUS_3"
-			"FACTION_NAME_RELIGIOUS_4"
-			"FACTION_NAME_RELIGIOUS_5"
-		}
-		
-		color = { 255 255 255 }
-		
-		
-		war_impact_on_world_tension = 0.50		#no major danger
-		faction_impact_on_world_tension = 0.1
-		
-		rules = {
-			can_declare_war_on_same_ideology = no
-			can_force_government = no
-			can_send_volunteers = no
-			can_puppet = yes
-			can_lower_tension = no
-			can_only_justify_war_on_threat_country = no 
-			can_guarantee_other_ideologies = no
-		}
-		
-		modifiers = {
-		}
-		
-		faction_modifiers = {
-		}
-
-		can_collaborate = yes
-
-	}
 
 	fascism = {
 	
@@ -924,9 +913,6 @@ ideologies = {
 			}
 			
 			rexism = {
-			}
-			
-			strasserism = {
 			}
 		}
 		

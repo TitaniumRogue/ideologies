@@ -127,11 +127,18 @@ set_politics = {
 
 	parties = {
 		social_democracy = { 
-			popularity = 43
+			popularity = 21
+		}
+		fascist_monarchy = { 
+			popularity = 51
 		}
 
 		absolute_monarchy = {
-			popularity = 54
+			popularity = 22
+		}
+		
+		national_socialism = {
+			popularity = 3
 		}
 		
 		stalinism = {
@@ -229,7 +236,7 @@ create_country_leader = {
 				popularity = 27
 			}
 
-			fascism = {
+			fascist_monarchy = {
 				popularity = 70
 			}
 			

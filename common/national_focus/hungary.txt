@@ -1234,7 +1234,6 @@ focus_tree = {
 			add_popularity = { ideology = fascism popularity = 0.02 }
 			add_popularity = { ideology = fascist_monarchy popularity = 0.03 }
 			add_popularity = { ideology = national_socialism popularity = 0.02 }
-			set_party_name = { ideology = national_socialism long_name = HUN_arrow_cross_party_long name = HUN_arrow_cross_party }
 			hidden_effect = {
 				create_country_leader = {
 					name = "Miklós Horthy"
@@ -1279,10 +1278,10 @@ focus_tree = {
 		available = {
 			OR = {
 				has_fascist_government = yes
-				fascism > 0.35
-				fascist_monarchy > 0.35
-				national_socialism > 0.35
-				nationalism > 0.35
+				fascism > 0.25
+				fascist_monarchy > 0.25
+				national_socialism > 0.25
+				nationalism > 0.25
 			}
 			is_subject = no
 		}
