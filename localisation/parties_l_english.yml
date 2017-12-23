@@ -1068,5 +1068,14 @@
  FIN_militarism_party_long:0 "Maavoimat-Military Commitee"
  FIN_national_socialism_party:0 "IKL-GS"
  FIN_national_socialism_party_long:0 "Isänmaallinen Kansanliike-German Sympathisers"
- 
+ EST_authoritarian_democracy_party:0 "CM-KPG"
+ EST_authoritarian_democracy_party_long:0 "Council of Ministers-Konstantin's Provisional Government"
+ EST_authoritarian_party:0 "CM-SF"
+ EST_authoritarian_party_long:0 "Council of Ministers-Statist Faction"
+ EST_social_liberal_party:0 "EKK"
+ EST_social_liberal_party_long:0 "Eesti Keskerakond"
+ EST_market_liberal_party:0 "ERK"
+ EST_market_liberal_party_long:0 "Eesti Reformierakond"
+ EST_national_socialism_party:0 "EIP"
+ EST_
 
