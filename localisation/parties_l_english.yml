@@ -1112,10 +1112,50 @@
  EST_reactionary_party_long:0 " Eesti Konservatiivne Rahvaerakond-Reactionary's"
  EST_militarism_party:0 "EAJ"
  EST_militarism_party_long:0 "Eesti Armee Fraktsioon"
-
-
-
-
-
-
+ LAT_authoritarian_democracy_party:0 "LZS-KUS"
+ LAT_authoritarian_democracy_party_long:0 "Centriskā Partija Latvijas Zemnieku Savienība-Karlis Ulmanis Supporters"
+ LAT_progressive_party:0 "LZS-GP"
+ LAT_progressive_party_long:0 "Centriskā Partija Latvijas Zemnieku Savienība-Green Progressives"
+ LAT_social_liberal_party:0 "UNITY"
+ LAT_social_liberal_party_long:0 "Vienotība"
+ LAT_conservative_party:0 "LNNK-NC"
+ LAT_conservative_party_long:0 "Nacionālā Apvienība-National Conservatives"
+ LAT_market_liberal_party:0 "LNNK-EL"
+ LAT_market_liberal_party_long:0 "Nacionālā Apvienība-Economic Liberals"
+ LAT_stalinism_party:0 "LKP"
+ LAT_stalinism_party_long:0 "Latvijas Komunistiskā Partija"
+ LAT_leninism_party:0 "LSDSP-AS"
+ LAT_leninism_party_long:0 "Latvijas Sociāldemokrātiskās Strādnieku Partija-Anti Stalinists"
+ LAT_social_democracy_party:0 "SDPS"
+ LAT_social_democracy_party_long:0 "Sociāldemokrātiskā Partija 'Saskaņa'"
+ LAT_democratic_socialism_party:0 "DP
+ LAT_democratic_socialism_party_long:0 "Darba Partija"
+ LAT_revisionism_party:0 "LSP-M"
+ LAT_revisionism_party_long:0 "Latvijas Sociālistiskā Partija-Moderates"
+ LAT_anarchism_party:0 "LSP-A"
+ LAT_anarchism_party_long:0 "Latvijas Sociālistiskā Partija-Anarchists"
+ LAT_christian_democracy_party:0 "KDS"
+ LAT_christian_democracy_party_long:0 "Kristīgi demokrātiskā Savienība"
+ LAT_democratic_nationalism_party:0 "LNNK-LN"
+ LAT_democratic_nationalism_party_long:0 "Nacionālā Apvienība-Latvian Nationalists"
+ LAT_reactionary_party:0 "KPV LV"
+ LAT_reactionary_party_long:0 "Kam Pieder Valsts?"
+ LAT_militarism_party:0 "NBS-MA"
+ LAT_militarism_party_long:0 "Nacionālie Bruņotie Spēki-Military Administration"
+ LAT_absolute_monarchy_party:0 "TO-CK"
+ LAT_absolute_monarchy_party_long:0 "Teutonic Order-Curonian Kings
+ LAT_fascist_monarchy_party:0 "TO-KJ"
+ LAT_fascist_monarchy_party_long:0 "Teutonic Order-Knight Junta"
+ LAT_authoritarian_party:0 "S-A"
+ LAT_authoritarian_party_long:0 "Saeima-Autocrats"
+ LAT_nationalism_party:0 "VL"
+ LAT_nationalism_party_long:0 "Visu Latvijai!"
+ LAT_religious_party:0 "TO-TR"
+ LAT_religious_party:0 "Teutonic Order-Theocratic Republicans"
+ LAT_fascism_party:0 "PK-LL"
+ LAT_fascism_party:0 "Pērkonkrusts-Latvian Loyalists"
+ LAT_national_socialism:0 "PK-GC"
+ LAT_national_socialism:0 "Pērkonkrusts-German Collaboratists"
+ 
+ 
 
