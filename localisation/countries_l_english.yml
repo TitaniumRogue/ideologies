@@ -3913,8 +3913,12 @@
  SYR_national_socialism_DEF:0 "The National Social Syrian Kleptocracy"
  LEB_market_liberal:0 "Bureaucracy of the Lebanon"
  LEB_social_liberal:0 "Lebanonese Democratic Republic"
- LEB_conservative:0 "Centrist
- LEB
+ LEB_conservative:0 "Centrist Amal Republic"
+ LEB_progressive:0 "Eastern Mediterranean Green State"
+ LEB_social_democracy:0 "Democratic Republic of the Levant"
+ LEB_democratic_socialism:0 "Nasserite Demarchy of Lebanon"
+ LEB_christian_democracy:0 "Canaan Christian Republic"
+ LEB_
 
 # Faction Names (Base Game)
  
