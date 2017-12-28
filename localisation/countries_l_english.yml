@@ -3832,7 +3832,7 @@
  KOR_progressive:0 "Green Korean Republic"
  KOR_social_liberal:0 "Minjoo Korea"
  KOR_market_liberal:0 "Corporatist Realm of Korea"
- KOR_conservative:0 "Republic of Korea"
+ KOR_conservative:0 "Free Republic of Korea"
  KOR_christian_democracy:0 "Western Korean Polity"
  KOR_Reactionary:0 "United Republic of Korea"
  KOR_democratic_nationalism:0 "Minjung Korean State"
@@ -3843,8 +3843,8 @@
  KOR_absolute_monarchy:0 "Kingdom of Goryeo"
  KOR_fascist_monarchy:0 "Empire of Korea"
  KOR_nationalism:0 "Grand Korean Nation State"
- KOR_fascism:0 "Holy and Free Korea
- KOR_national_socialism:0 "National Republic of the Korea's"
+ KOR_fascism:0 "Holy and Free Theocracy of Korea
+ KOR_national_socialism:0 "National Social Republic of the Korea's"
 
 # Faction Names (Base Game)
  
