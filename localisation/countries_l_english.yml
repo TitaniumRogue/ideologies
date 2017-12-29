@@ -3918,7 +3918,14 @@
  LEB_social_democracy:0 "Democratic Republic of the Levant"
  LEB_democratic_socialism:0 "Nasserite Demarchy of Lebanon"
  LEB_christian_democracy:0 "Canaan Christian Republic"
- LEB_
+ LEB_reactionary:0 "Lebanonese Mobocracy of the Majority"
+ LEB_democratic_nationalism:0 "National Lebanonese Front"
+ LEB_authoritarian_democracy:0 "Grand Demarchy of Beirut"
+ LEB_authoritarian:0 "Aristocratic Republic of Lebanon"
+ LEB_nationalism:0 "Hezbollahian Collective"
+ LEB_fascism:0 "Particracy of the Lebanon"
+ LEB_militarism:0 "Al-Quwwāt Provisional Junta"
+ LEB_religious:0 "
 
 # Faction Names (Base Game)
  
