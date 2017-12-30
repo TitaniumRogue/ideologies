@@ -55,7 +55,11 @@ set_politics = {
 		authoritarian = {
 			popularity = 35
 		}
-	}
+		}
+	ruling_party = authoritarian
+	last_election = "1934.7.17"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 create_country_leader = {

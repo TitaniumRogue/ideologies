@@ -76,12 +76,12 @@ set_politics = {
 			#banned = no #default is no
 		}
 		
-		authoritarian = { 
+		absolute_monarchy = { 
 			popularity = 50
 		}
 	}
 	
-	ruling_party = authoritarian
+	ruling_party = absolute_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -111,7 +111,7 @@ create_country_leader = {
 	name = "Idris Senussi"
 	desc = ""
 	picture = "Portrait_Arabia_Generic_land_3.dds"
-	ideology = despotism
+	ideology = absolutism
 	traits = {
 		#
 	}

@@ -120,9 +120,9 @@ ideas = {
 				stalinism_drift = -0.01
 				leninism_drift = -0.01
 				revisionism_drift = -0.01
-				fascism_drift = 0.1
-				national_socialism_drift = 0.1
-				national_socialism_drift = 0.1
+				fascism_drift = 0.01
+				national_socialism_drift = 0.01
+				national_socialism_drift = 0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
@@ -182,8 +182,8 @@ ideas = {
 				reactionary_drift = -0.01
 				democratic_nationalism_drift = -0.01
 				authoritarian_democracy_drift = -0.01
-				fascism_drift = 0.1
-				national_socialism_drift = 0.1
+				fascism_drift = 0.01
+				national_socialism_drift = 0.01
 				foreign_subversive_activites = -0.50
 			}
 		}

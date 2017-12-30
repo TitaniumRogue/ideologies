@@ -12,11 +12,11 @@ ideologies = {
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
 		}
 		
 		color = { 150 0 51 } # 100 0 0
@@ -280,6 +280,8 @@ ideologies = {
 			}
 			progressive_ideology = {
 			}
+			agrarianism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -377,6 +379,9 @@ ideologies = {
 			
 			anarcho_capitalism = {
 			}
+			
+			democratic_liberalism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -424,6 +429,8 @@ ideologies = {
 		types = {
 			
 			christian_democrat = {
+			}
+			christian_liberalism = {
 			}
 		}
 		
@@ -473,6 +480,10 @@ ideologies = {
 			right_wing_conservative = {
 			}
 			conservatism = {
+			}
+			conservative_liberalism = {
+			}
+			national_conservatism = {
 			}
 		}
 		
@@ -624,6 +635,9 @@ ideologies = {
 			authoritarian_democracy_ideology = {
 			}
 			
+			estado_novo  = {
+			}
+			
 			oligarchism  = {
 			}
 		}
@@ -735,6 +749,7 @@ ideologies = {
 			"FACTION_NAME_MONARCHIST_3"
 			"FACTION_NAME_MONARCHIST_4"
 			"FACTION_NAME_MONARCHIST_5"
+			"FACTION_NAME_MONARCHIST_6"
 		}
 		
 		color = {  70 0 70  }
@@ -792,7 +807,6 @@ ideologies = {
 			"FACTION_NAME_RELIGIOUS_2"
 			"FACTION_NAME_RELIGIOUS_3"
 			"FACTION_NAME_RELIGIOUS_4"
-			"FACTION_NAME_RELIGIOUS_5"
 		}
 		
 		color = { 255 255 255 }
@@ -833,11 +847,11 @@ ideologies = {
 		}
 		
 		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
 		}
 		
 		color = { 0 100 0 }
@@ -861,9 +875,6 @@ ideologies = {
 		types = {
 			
 			metaxism = {
-			}
-			
-			national_democrat = {
 			}
 			
 			corporatism = {
@@ -913,6 +924,9 @@ ideologies = {
 			}
 			
 			rexism = {
+			}
+			
+			integralism = {
 			}
 		}
 		
@@ -986,6 +1000,8 @@ ideologies = {
 		types = {
 			
 			nazism = {
+			}
+			strasserism = {
 			}
 			
 		}
