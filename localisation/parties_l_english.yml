@@ -1523,11 +1523,20 @@
  ZIM_christian_democracy_party:0 "CDPZ"
  ZIM_christian_democracy_party_long:0 "Christian Democratic Party of Zimbabwe"
  ZIM_nationalism_party:0 "ZANU-NPF"
- ZIM_nationalism_party_loing:0 "Z
-
-
-
-
+ ZIM_nationalism_party_long:0 "Zimbabwe African National Union–Nationalist Patriotic Front"
+ ZIM_fascism_party:0 "ZANU-FA"
+ ZIM_fascism_party_long:0 "Zimbabwe African National Union–Fascist Alliance"
+ ZIM_national_socialism_party:0 "ZANU-SRN"
+ ZIM_national_socialism_party_long:0 "Zimbabwe African National Union–South Rhodesian Ultranationalists"
+ ZIM_revisionism_party:0 "ZLP"
+ ZIM_revisionism_party_long:0 "Zimbabwe Labour Party"
+ ZIM_leninism_party:0 "ISO-Z"
+ ZIM_leninism_party_long:0 "International Socialist Organization-Zimbabwe"
+ ZIM_stalinism_party:0 "MXS"
+ ZIM_stalinism_party_long:0 "Marxian Solidarity"
+ ZIM_anarchism_party:0 "ZACP-ZB"
+ ZIM_anarchism_party_long:0 "Zabalaza Anarchist Communist Front-Zimbabwe Branch"
+ 
 
 
 
