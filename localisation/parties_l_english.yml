@@ -1500,7 +1500,38 @@
  KEN_fascism_party_long:0 "Democratic Fascist Party-Kenyan Extension"
  KEN_national_socialism_party:0 "NSDAP/AO-KC
  KEN_national_socialism_party_long:0 " Nationalsozialistische Deutsche Arbeiterpartei/Auslands-Organisation-Kenyan Coterie"
- 
+ ZIM_authoritarian_party:0 "ZANU–PF"
+ ZIM_authoritarian_party_long:0 "Zimbabwe African National Union – Patriotic Front"
+ ZIM_reactionary_party:0 "ZIMFIRST"
+ ZIM_reactionary_party_long:0 "Zimbabwe First Party"
+ ZIM_progressive_party:0 "MDCZ"
+ ZIM_progressive_party_long:0 "Movement for Democratic Change – Tsvangirai"
+ ZIM_social_liberal_party:0 "UANC"
+ ZIM_social_liberal_party_long:0 "United African National Council"
+ ZIM_social_democracy_party:0 "MDC-N"
+ ZIM_social_democracy_party_long:0 "Movement for Democratic Change – Ncube"
+ ZIM_democratic_socialism_party:0 "ZAPU"
+ ZIM_democratic_socialism_party_long:0 "Zimbabwe African People's Union"
+ ZIM_authoritarian_democracy_party:0 "UPP"
+ ZIM_authoritarian_democracy_party_long:0 "United People's Party"
+ ZIM_market_liberal_party:0 "LD-Z"
+ ZIM_market_liberal_party_long:0 "Liberal Democrats-Zimbabwe"
+ ZIM_democratic_nationalism_party:0 "RF"
+ ZIM_democratic_nationalism_party_long:0 "Rhodesian Front"
+ ZIM_conservative_party:0 "ZUM"
+ ZIM_conservative_party_long:0 "Zimbabwe Unity Movement"
+ ZIM_christian_democracy_party:0 "CDPZ"
+ ZIM_christian_democracy_party_long:0 "Christian Democratic Party of Zimbabwe"
+ ZIM_nationalism_party:0 "ZANU-NPF"
+ ZIM_nationalism_party_loing:0 "Z
+
+
+
+
+
+
+
+
  
 
 
