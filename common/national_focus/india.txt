@@ -119,8 +119,14 @@ focus_tree = {
 			factor = 15
 			modifier = {
 				OR = {
-					communism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
 					fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 				}
 				factor = 3
 			}
@@ -298,15 +304,32 @@ focus_tree = {
 			factor = 25
 			modifier = {
 				AND = {
-					communism > 0.25
+					stalinism > 0.25
+					leninism > 0.25
+					revisionism > 0.25
+					anarchism > 0.25
 					fascism < 0.25
+					fascist_monarchy < 0.25
+					nationalism < 0.25
+					national_socialism < 0.25
 				}
 				factor = 3
 			}
 		}
 
 		available = {
-			compare_autonomy_state < autonomy_dominion
+			if = {
+				limit = {
+					NOT = { has_fascist_government = yes }
+				}
+				compare_autonomy_state < autonomy_dominion
+			}
+			if = {
+				limit = {
+					has_fascist_government = yes
+				}
+				compare_autonomy_state < autonomy_satellite
+			}
 			has_civil_war = no
 			NOT = { has_country_flag = RAJ_seek_help_from_germany_promised }
 			SOV_can_help_against_ENG = yes
@@ -363,7 +386,10 @@ focus_tree = {
 
 		available = {
 			has_civil_war = no
-			#communism > 0.15
+			#anarchism > 0.15
+			#stalinism > 0.15
+			#revisionism > 0.15
+			#leninism > 0.15
 		}
 
 		bypass = {
@@ -405,8 +431,12 @@ focus_tree = {
 					SOV = {
 						add_to_faction = RAJ
 						add_popularity = {
-							ideology = communism
+							ideology = stalinism
 							popularity = 0.35
+						}
+						add_popularity = {
+							ideology = leninism
+							popularity = 0.07
 						}
 					}
 					create_country_leader = {
@@ -414,7 +444,7 @@ focus_tree = {
 						desc = "POLITICS_SUBHAS_CHANDRA_BOSE_DESC"
 						picture = GFX_RAJ_subhas_chandra_bose
 						expire = "1965.1.1"
-						ideology = stalinism
+						ideology = stalinism_ideology
 						traits = {
 							indomitable_perseverance
 						}
@@ -424,10 +454,10 @@ focus_tree = {
 				random_other_country = {
 					limit = {
 						original_tag = RAJ
-						has_government = neutrality
+						has_government = authoritarian
 					}
 					add_popularity = {
-						ideology = neutrality
+						ideology = authoritarian
 						popularity = 0.15
 					}
 					ENG = { add_to_faction = PREV }
@@ -737,20 +767,35 @@ focus_tree = {
 			factor = 25
 			modifier = {
 				AND = {
-					communism < 0.25
+					stalinism < 0.25
+					leninism < 0.25
+					revisionism < 0.25
+					anarchism < 0.25
 					fascism > 0.25
+					fascist_monarchy > 0.25
+					nationalism > 0.25
+					national_socialism > 0.25
 				}
 				factor = 3
 			}
 		}
 
 		available = {
-			compare_autonomy_state < autonomy_dominion
+			if = {
+				limit = { NOT = { has_fascist_government = yes } }
+				compare_autonomy_state < autonomy_dominion
+			}
+			if = {
+				limit = {
+					has_fascist_government = yes
+				}
+				compare_autonomy_state < autonomy_satellite
+			}
 			has_civil_war = no
 			NOT = { has_global_flag = RAJ_seek_help_from_soviet_promised }
 			GER = {				
 				exists = yes
-				has_government = fascism
+				has_fascist_government = yes
 			}
 		}
 
@@ -847,7 +892,11 @@ focus_tree = {
 						add_to_faction = RAJ
 						add_popularity = {
 							ideology = fascism
-							popularity = 0.35
+							popularity = 0.175
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = 0.175
 						}
 					}
 					create_country_leader = {
@@ -864,10 +913,10 @@ focus_tree = {
 				random_other_country = {
 					limit = {
 						original_tag = RAJ
-						has_government = neutrality
+						has_government = authoritarian
 					}
 					add_popularity = {
-						ideology = neutrality
+						ideology = authoritarian
 						popularity = 0.15
 					}
 					ENG = { add_to_faction = PREV }
@@ -894,7 +943,7 @@ focus_tree = {
 			ITA = {
 				has_capitulated = no
 				is_in_faction_with = GER
-				has_government = fascism
+				has_fascist_government = yes
 			}
 		}
 
@@ -928,7 +977,7 @@ focus_tree = {
 			
 		
 			ITA = {
-				country_event = { id = tfv_raj.1 }
+				country_event = { id = tfv_raj.201 }
 			}
 			
 			if = {
@@ -1804,7 +1853,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_fascist_government = yes } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_fascist_government = yes }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {
@@ -2434,7 +2490,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_fascist_government = yes } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_fascist_government = yes }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {
@@ -3500,7 +3563,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_fascist_government = yes } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_fascist_government = yes }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {

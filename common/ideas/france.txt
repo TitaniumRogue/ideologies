@@ -33,15 +33,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-								OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -64,37 +56,21 @@ ideas = {
 				NOT = {
 					OR = {
 						AND = {
-											OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+							has_democratic_government = yes
 							GER = {
-												OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+								has_democratic_government = yes
 							}
 						}
 						AND = {
-							has_government = communism
+							has_communist_government = yes
 							GER = {
-								has_government = communism
+								has_communist_government = yes
 							}
 						}
 						AND = {	
-							has_government = fascism
+							has_fascist_government = yes
 							GER = {
-								has_government = fascism
+								has_fascist_government = yes
 							}
 						}
 					}
@@ -180,12 +156,12 @@ ideas = {
 				allowed_civil_war = {
 					NOT = {
 						OR = {
-							has_government = fascism
+							has_fascist_government = yes
 							AND = {
-								NOT = { has_government = communism }
+								NOT = { has_communist_government = yes }
 								any_other_country = {
 									original_tag = FRA
-									has_government = communism
+									has_communist_government = yes
 								}
 							}
 						}
@@ -193,7 +169,9 @@ ideas = {
 				}
 
 				modifier = {
-					communism_drift = 0.2
+				stalinism_drift = 0.2
+				leninism_drift = 0.2
+				revisionism_drift = 0.2
 				}
 		}
 
@@ -205,7 +183,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 
@@ -221,7 +199,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			modifier = {
@@ -236,19 +214,19 @@ ideas = {
 				}
 
 				allowed_civil_war = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_democratic_government = yes
 				}
 
 				modifier = {
-					democratic_drift = 0.2
+				democratic_socialism_drift = 0.2
+				social_democracy_drift = 0.2
+				social_liberal_drift = 0.2
+				market_liberal_drift = 0.2
+				christian_democracy_drift = 0.2
+				conservative_drift = 0.2
+				reactionary_drift = 0.2
+				democratic_nationalism_drift = 0.2
+				authoritarian_democracy_drift = 0.2
 				}
 		}		
 
@@ -259,15 +237,7 @@ ideas = {
 				}
 
 				allowed_civil_war = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_democratic_government = yes
 				}
 
 				modifier = {
@@ -282,19 +252,20 @@ ideas = {
 				allowed_civil_war = {
 					NOT = {
 						OR = {
-							has_government = communism
+							has_communist_government = yes
 							AND = {
-								NOT = { has_government = fascism }
+								NOT = { has_fascist_government = yes }
 								any_other_country = {
 									original_tag = FRA
-									has_government = fascism
+									has_fascist_government = yes
 								}
 							}
 						}
 					}
 				}
 				modifier = {
-					fascism_drift = 0.2
+				fascism_drift = 0.2
+				national_socialism_drift = 0.2
 				}
 		}
 
@@ -306,7 +277,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 
@@ -322,7 +293,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			modifier = {
@@ -339,7 +310,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 
@@ -358,7 +329,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 
@@ -376,12 +347,14 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 
 			modifier = {
-				communism_drift = -0.05
+				stalinism_drift = -0.05
+				leninism_drift = -0.05
+				revisionism_drift = -0.05
 			}
 		}
 		
@@ -399,7 +372,7 @@ ideas = {
 				has_completed_focus = FRA_leftist_rhetoric
 			}
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 	
 			on_add = {
 				country_event = political.1
@@ -407,7 +380,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 
@@ -425,7 +398,7 @@ ideas = {
 			
 
 			
-			traits = { democratic_reformer }
+			traits = { democratic_socialist_politician }
 	
 			on_add = {
 				country_event = political.13
@@ -433,15 +406,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_government = democratic_socialism
 				}
 			}
 
@@ -460,7 +425,7 @@ ideas = {
 				has_completed_focus = FRA_right_wing_rhetoric
 			}
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_politician }
 	
 			on_add = {
 				country_event = political.7
@@ -468,7 +433,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 

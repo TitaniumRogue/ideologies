@@ -188,10 +188,6 @@ country_event = {
 			base = 0
 		}
 		
-		GER = {
-			add_to_faction = CAN
-		}
-		
 		hidden_effect = {
 			CAN = {
 				country_event = { id = tfv_canada.22 }
@@ -259,16 +255,26 @@ country_event = {
 	trigger = {
 		original_tag = MEX
 		has_defensive_war = no
-		NOT = { has_government = fascism }
+		NOT = { has_fascist_government = yes }
 		has_idea = synarchist_support_surge
+		OR = {
+		national_socialism > 0.3
+		nationalism > 0.3
+		fascist_monarchy > 0.3
 		fascism > 0.3
+		}
 	}
 
 	mean_time_to_happen = {
 		months = 4
 		modifier = {
 			factor = 0.5
-			fascism > 0.5			
+		OR = {
+		national_socialism > 0.5
+		nationalism > 0.5
+		fascist_monarchy > 0.5
+		fascism > 0.5
+		}			
 		}
 	}
 	
@@ -278,28 +284,16 @@ country_event = {
 		hidden_effect = {
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = neutrality
+				ideology = ROOT
 				size = 0.5
 			}
 			random_other_country = {
 				limit = {
 					original_tag = MEX
-									OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_democratic_government = yes
 				}
 				set_equipment_fraction = 0.3
 				set_national_unity = 0.9
-				add_popularity = {
-					ideology = social_liberal
-					popularity = 0.35
-				}
 			}
 			news_event = { hours = 6 id = news.250 }
 			
@@ -319,6 +313,7 @@ country_event = {
 		name = tfv_canada.30.b
 		hidden_effect = {
 			start_civil_war = {
+				ruling_party = social_democracy
 				ideology = fascism
 				size = 0.5
 			}
@@ -333,11 +328,11 @@ country_event = {
 			news_event = { hours = 6 id = news.250 }
 			
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = social_democracy
 				elections_allowed = no
 			}
 			add_popularity = {
-				ideology = neutrality
+				ideology = social_democracy
 				popularity = 0.5
 			}
 			add_popularity = {
@@ -356,7 +351,12 @@ country_event = {
 		name = tfv_canada.30.c # Peacefully let the fascists form the government
 		
 		trigger = {
+			OR = {
 			fascism > 0.5
+			fascist_monarchy > 0.5
+			national_socialism > 0.5
+			nationalism > 0.5
+			}
 		}
 		
 		ai_chance = {
@@ -395,7 +395,7 @@ country_event = {
 				random_country = {
 					limit = {
 						original_tag = MEX
-						has_government = fascism
+						has_fascist_government = yes
 					}
 					CAN = { add_to_faction = PREV }
 				}
@@ -446,7 +446,7 @@ country_event = {
 		random_country = {
 			limit = {
 				original_tag = MEX
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			CAN = { add_to_faction = PREV }
 		}

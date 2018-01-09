@@ -10,15 +10,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_democratic_government = yes
 				}
 			}
 			
@@ -41,15 +33,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_democratic_government = yes
 				}
 			}
 			
@@ -122,7 +106,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -156,7 +140,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			
 			removal_cost = -1
@@ -181,7 +165,7 @@ ideas = {
 			
 
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 	
 			on_add = {
 				country_event = political.1
@@ -189,7 +173,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_government = stalinism
 				}
 			}
 			
@@ -207,7 +191,7 @@ ideas = {
 			
 
 			
-			traits = { democratic_reformer }
+			traits = { social_democratic_politician }
 	
 			on_add = {
 				country_event = political.13
@@ -215,15 +199,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_government = social_democracy
 				}
 			}
 			
@@ -241,7 +217,7 @@ ideas = {
 			
 
 			
-			traits = { fascist_demagogue }
+			traits = { right_wing_monarchist_politician }
 	
 			on_add = {
 				country_event = political.7
@@ -249,7 +225,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = fascist_monarchy
 				}
 			}
 			
@@ -289,6 +265,21 @@ ideas = {
 			}
 			
 			traits = { compassionate_gentleman }
+		}
+
+		takuo_godo = {
+
+			picture = GFX_idea_takuo_godo
+
+			allowed = {
+				original_tag = JAP
+			}
+
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 2
+			}
 		}
 	}
 		
@@ -479,6 +470,12 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 3
+				modifier = {
+					factor = 3
+					NOT = {
+						JAP = { has_war_with = USA }
+					}
+				}
 			}
 		}
 		

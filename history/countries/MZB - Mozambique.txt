@@ -57,7 +57,7 @@ set_politics = {
 			popularity = 0
 		}
 		
-		stalinist = {
+		stalinism = {
 			popularity = 0
 			#banned = no #default is no
 		}
@@ -102,7 +102,7 @@ create_country_leader = {
 			popularity = 0
 		}
 		
-		stalinist = {
+		stalinism = {
 			popularity = 0
 			#banned = no #default is no
 		}
@@ -112,7 +112,7 @@ create_country_leader = {
 		}
 	}
 		
-		ruling_party = neutrality
+		ruling_party = authoritarian
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

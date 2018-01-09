@@ -200,18 +200,34 @@ create_import = {
 set_politics = {
 
 	parties = {
-		christian_democracy = { #Zentrum
-			popularity = 20
+		christian_democracy = { #Democratic Opposition
+			popularity = 10
 		}
 
-		national_socialism = { #NSDAP
-			popularity = 60
+		national_socialism = { #NSDAP Nazi
+			popularity = 40
 		}
 		
-		stalinism = { #KPD
-			popularity = 20
+		fascism = { #NSDAP Strasser
+		popularity = 10
+	        }
+		
+		democratic_nationalism = { #NSDAP Mahraun
+		popularity = 10
+	        }
+		
+		social_democracy = { #Democratic Opposition
+		popularity = 20
+	        }
+		
+		stalinism = { #Communist Opposition
+			popularity = 0
 			banned = yes #default is no
 		}
+		
+		conservative = { #Democratic Opposition
+		popularity = 10
+	        }
 	}
 	
 	ruling_party = national_socialism
@@ -232,6 +248,8 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
+
+1936.1.1 = {
 
 create_country_leader = {
 	name = "Adolf Hitler"
@@ -264,6 +282,188 @@ create_country_leader = {
 		stalins_puppet
 		exiled
 	}
+}
+
+create_country_leader = {
+	name = "Helmut Rüdiger"
+	desc = "POLITICS_HELMUT_RUEDIGER_DESC"
+	picture = "Portrait_Germany_Helmut_Rudiger.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Artur Mahraun"
+	desc = "POLITICS_ARTUR_MAHRAUN_DESC"
+	picture = "Portrait_Germany_Artur_Mahraun.dds"
+	expire = "1965.1.1"
+	ideology = democratic_nationalist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Theodor Heuss"
+	desc = "POLITICS_THEODOR_HEUSS_DESC"
+	picture = "Portrait_Germany_Theodor_Heuss.dds"
+	expire = "1965.1.1"
+	ideology = libertarian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Paul Löbe"
+	desc = "POLITICS_PAUL_LOEBE_DESC"
+	picture = "Portrait_Germany_Paul_Lobe.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Friedrich Sommer"
+	desc = "POLITICS_FRIEDRICH_SOMMER_DESC"
+	picture = "Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Dittmann"
+	desc = "POLITICS_WILHELM_DITTMANN_DESC"
+	picture = "Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hans-Joachim von Merkatz"
+	desc = "POLITICS_JOACHIM_MERKATZ_DESC"
+	picture = "Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = christian_democrat
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Lattmann"
+	desc = "POLITICS_WILHELM_LATTMAN_DESC"
+	picture = "Portrait_Germany_Wilhelm_Lattman.dds"
+	expire = "1965.1.1"
+	ideology = democratic_nationalist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Axel von Freytagh-Loringhoven"
+	desc = "POLITICS_AXEL_FREYTAGH_DESC"
+	picture = "Portrait_Germany_Axel_Freytagh.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democracy_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Georg Escherich"
+	desc = "POLITICS_GEORG_ESCHERICH_DESC"
+	picture = "Portrait_Germany_Georg_Escherich.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Friedrich Strasser"
+	desc = "POLITICS_FRIEDRICH_STRASSER_DESC"
+	picture = "Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Walter Ulbricht"
+	desc = "POLITICS_WALTER_ULBRICHT_DESC"
+	picture = "Portrait_Germany_Walter_Ulbricht.dds"
+	expire = "1965.1.1"
+	ideology = revisionism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Paul von Letzenberg"
+	desc = "POLITICS_PAUL_LETZENBERG_DESC"
+	picture = "Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = leninism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kaiser Wilhelm II"
+	desc = "POLITICS_KAISER_WILHELM_DESC"
+	picture = "Portrait_Germany_Kaiser_Wilhelm.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Walther Lambach"
+	desc = "POLITICS_WALTHER_LAMBACH_DESC"
+	picture = "Portrait_Germany_Walther_Lambach.dds"
+	expire = "1965.1.1"
+	ideology = catholicism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Hugenberg"
+	desc = "POLITICS_ALFRED_HUGENBERG_DESC"
+	picture = "Portrait_Germany_Alfred_Hugenberg.dds"
+	expire = "1965.1.1"
+	ideology = millitary_junta
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kaiser Wilhelm II"
+	desc = "POLITICS_KAISER_WILHELM_DESC"
+	picture = "Portrait_Germany_Kaiser_Wilhelm.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Meinberg"
+	desc = "POLITICS_WILHELM_MEINBERG_DESC"
+	picture = "Portrait_Germany_Wilhelm_Meinberg.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
 }
 
 #create_country_leader = {

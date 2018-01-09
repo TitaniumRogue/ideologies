@@ -13,39 +13,53 @@
 #	}
 #
 
+#Search for: (communism)|(fascism)|(democratic)|(neutrality) in notepad to find the base game's ideologies in files
+
 has_democratic_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_democratic_form_of_government
 		OR = {
 			has_government = reactionary
 			has_government = conservative
 			has_government = market_liberal
 			has_government = social_liberal
-			has_government = social_democrat
+			has_government = social_democracy
 			has_government = progressive
-			has_government = democratic_socialist
+			has_government = democratic_socialism
 			has_government = christian_democracy
 			has_government = democratic_nationalism
+			has_government = authoritarian_democracy
+		}
 		}
 }
 
 has_fascist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_fascist_form_of_government
 	OR = {
 		has_government = fascism
 		has_government = fascist_monarchy
 		has_government = nationalism
 		has_government = national_socialism
 	}
+	}
 }
 
 has_communist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_communist_form_of_government
 	OR = {
 		has_government = leninism
 		has_government = stalinism
 		has_government = revisionism
 		has_government = anarchism
 	}
+	}
 }
 
 is_socialist = {
+	custom_trigger_tooltip = {
+	tooltip = TT_socialist_form_of_government
 	OR = {
 		has_government = leninism
 		has_government = stalinism
@@ -53,14 +67,18 @@ is_socialist = {
 		has_government = revisionism
 		has_government = democratic_socialism
 	}
+	}
 }
 
 has_neutral_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_neutral_form_of_government
 	OR = {
 		has_government = absolute_monarchy
 		has_government = militarism
 		has_government = authoritarian
 		has_government = religious
+	}
 	}
 }
 
@@ -73,6 +91,7 @@ has_totalitarian_government = {
 		has_government = religious		
 		has_government = fascism
 		has_government = national_socialism
+		has_government = nationalism
 	}
 }
 
@@ -113,9 +132,12 @@ is_right_wing_democratic = {
 }
 
 is_monarchy = {
+	custom_trigger_tooltip = {
+	tooltip = TT_monarchist_form_of_government
 	OR = {
 		has_government = fascist_monarchy
 		has_government = absolute_monarchy
+	}
 	}
 }
 
@@ -126,27 +148,159 @@ is_authoritarian = {
 	}
 }
 
+polish_democracy_idea_trigger = { #for Polish ideas
+		OR = {
+			has_government = reactionary
+			has_government = conservative
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_democracy
+			has_government = progressive
+			has_government = democratic_socialism
+			has_government = christian_democracy
+			has_government = democratic_nationalism
+		}
+}
+
+
+has_same_government_as_ROOT = {
+	OR = {
+		AND = {
+			has_government = leninism
+			ROOT = { has_government = leninism }
+		}
+		AND = {
+			has_government = stalinism
+			ROOT = { has_government = stalinism }
+		}
+		AND = {
+			has_government = anarchism
+			ROOT = { has_government = anarchism }
+		}
+		AND = {
+			has_government = revisionism
+			ROOT = { has_government = revisionism }
+		}
+		AND = {
+			has_government = democratic_socialism
+			ROOT = { has_government = democratic_socialism }
+		}
+		AND = {
+			has_government = social_democracy
+			ROOT = { has_government = social_democracy }
+		}
+		AND = {
+			has_government = social_liberal
+			ROOT = { has_government = social_liberal }
+		}
+		AND = {
+			has_government = market_liberal
+			ROOT = { has_government = market_liberal }
+		}
+		AND = {
+			has_government = conservative
+			ROOT = { has_government = conservative }
+		}
+		AND = {
+			has_government = reactionary
+			ROOT = { has_government = reactionary }
+		}
+		AND = {
+			has_government = christian_democracy
+			ROOT = { has_government = christian_democracy }
+		}
+		AND = {
+			has_government = authoritarian_democracy
+			ROOT = { has_government = authoritarian_democracy }
+		}
+		AND = {
+			has_government = progressive
+			ROOT = { has_government = progressive }
+		}
+		AND = {
+			has_government = democratic_nationalism
+			ROOT = { has_government = democratic_nationalism }
+		}
+		AND = {
+			has_government = authoritarian
+			ROOT = { has_government = authoritarian }
+		}
+		AND = {
+			has_government = religious
+			ROOT = { has_government = authoritarian }
+		}
+		AND = {
+			has_government = absolute_monarchy
+			ROOT = { has_government = authoritarian }
+		}
+		AND = {
+			has_government = militarism
+			ROOT = { has_government = authoritarian }
+		}
+		AND = {
+			has_government = fascism
+			ROOT = { has_government = fascism }
+		}
+		AND = {
+			has_government = fascist_monarchy
+			ROOT = { has_government = fascist_monarchy }
+		}
+		AND = {
+			has_government = national_socialism
+			ROOT = { has_government = national_socialism }
+		}
+		AND = {
+			has_government = fascism
+			ROOT = { has_government = national_socialism }
+		}
+	}
+}
 
 has_similar_form_of_government = {
 	OR = {
 		AND = {
-			THIS = { has_democratic_government = yes }
+			has_democratic_government = yes }
 			ROOT = { has_democratic_government = yes }
 		}
 		AND = {
-			THIS = { has_fascist_government = yes }
+			has_fascist_government = yes
 			ROOT = { has_fascist_government = yes }
 		}
 		AND = {
-			THIS = { has_neutral_government = yes }
+			has_neutral_government = yes
 			ROOT = { has_neutral_government = yes }
 		}
 		AND = {
-			THIS = { is_monarchy = yes }
-			ROOT = { is_monarchy = yes }
+			has_communist_government = yes
+			ROOT = { has_communist_government = yes }
 		}
 		AND = {
-			THIS = { is_monarchy = yes }
+			is_monarchy = yes
+			ROOT = { is_monarchy = yes }
+		}
+	}
+
+
+has_similar_form_of_government2 = {
+	OR = {
+		AND = {
+			PREV = { has_democratic_government = yes }
+			ROOT = { has_democratic_government = yes }
+		}
+		AND = {
+			PREV = { has_fascist_government = yes }
+			ROOT = { has_fascist_government = yes }
+		}
+		AND = {
+			PREV = { has_neutral_government = yes }
+			ROOT = { has_neutral_government = yes }
+		}
+		AND = {
+			PREV = { has_communist_government = yes }
+			ROOT = { has_communist_government = yes }
+		}
+		AND = {
+			PREV = { is_monarchy = yes }
 			ROOT = { is_monarchy = yes }
 		}
 	}

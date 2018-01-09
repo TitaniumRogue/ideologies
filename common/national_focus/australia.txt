@@ -2872,48 +2872,160 @@ focus_tree = {
 			add_ideas = AST_classify_aliens
 			if = {
 				limit = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_democratic_government = yes
 				}
 				add_popularity = {
 					ideology = fascism
 					popularity = -0.1
 				}
 				add_popularity = {
-					ideology = communism
+					ideology = nationalism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = national_socialism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = fascist_monarchy
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = leninism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = revisionism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = stalinism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = anarchism
 					popularity = -0.1
 				}
 			}
 			if = {
 				limit = {
-					has_government = fascism
+					has_fascist_government = yes
+				}
+				add_popularity = {
+					ideology = democratic_socialism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = -0.1
 				}
 				add_popularity = {
 					ideology = social_liberal
 					popularity = -0.1
 				}
 				add_popularity = {
-					ideology = communism
+					ideology = market_liberal
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = christian_democracy
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = authoritarian_democracy
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = democratic_nationalism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = progressive
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = leninism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = revisionism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = stalinism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = anarchism
 					popularity = -0.1
 				}
 			}
 			if = {
 				limit = {
-					has_government = communism
+					has_communist_government = yes
+				}
+				add_popularity = {
+					ideology = democratic_socialism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = -0.1
 				}
 				add_popularity = {
 					ideology = social_liberal
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = market_liberal
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = christian_democracy
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = authoritarian_democracy
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = democratic_nationalism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = progressive
 					popularity = -0.1
 				}
 				add_popularity = {
 					ideology = fascism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = national_socialism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = fascist_monarchy
 					popularity = -0.1
 				}
 			}
@@ -2972,21 +3084,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NOT = { ENG = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}  } } #less likely to do if ENG not democratic
+				NOT = { ENG = { has_democratic_government = yes } } #less likely to do if ENG not democratic
 				factor = 0.5
 			}
 			modifier = {
 				OR = {
-					communism > 0.15
+					stalinism > 0.15
+					leninism > 0.15
+					anarchism > 0.15
+					revisionism > 0.15
 					fascism > 0.15
+					fascist_monarchy > 0.15
+					national_socialism > 0.15
+					nationalism > 0.15
 					}
 				factor = 0.2
 			}
@@ -3038,15 +3148,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				ENG = { NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} } }
+				ENG = { NOT = { has_democratic_government = yes } }
 				factor = 0
 			}
 		}
@@ -3442,28 +3544,32 @@ focus_tree = {
 			factor = 0.5 
 			modifier = {
 				OR = {
-						fascism > 0.25
-						communism > 0.25
+					stalinism > 0.25
+					leninism > 0.25
+					anarchism > 0.25
+					revisionism > 0.25
+					fascism > 0.25
+					fascist_monarchy > 0.25
+					national_socialism > 0.25
+					nationalism > 0.25
 					}
 				factor = 20
 			}
 			modifier = {
 				OR = {
-						fascism > 0.45
-						communism > 0.45
+					stalinism > 0.45
+					leninism > 0.45
+					anarchism > 0.45
+					revisionism > 0.45
+					fascism > 0.45
+					fascist_monarchy > 0.45
+					national_socialism > 0.45
+					nationalism > 0.45
 					}
 				factor = 30
 			}
 			modifier = {
-				NOT = { ENG = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} } } 
+				NOT = { ENG = { has_democratic_government = yes } } 
 				factor = 5
 			}
 		}
@@ -3658,7 +3764,14 @@ focus_tree = {
 		}
 
 		available = {
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { NOT = { has_fascist_government = yes } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_fascist_government = yes }
+				has_autonomy_state = autonomy_satellite
+			}
 		}
 		
 		bypass = {
@@ -3820,7 +3933,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = "south_west_pacific_initiative"
+			create_faction = south_west_pacific_initiative
 			if = {
 				limit = {
 					has_completed_focus = AST_protect_the_dutch_colonies
@@ -3953,15 +4066,27 @@ focus_tree = {
 			factor = 0.5
 			modifier = {
 				OR = {
-					communism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					anarchism > 0.2
+					revisionism > 0.2
 					fascism > 0.2
+					fascist_monarchy > 0.2
+					national_socialism > 0.2
+					nationalism > 0.2
 					}
 				factor = 20
 			}
 			modifier = {
 				OR = {
-					communism > 0.4
+					stalinism > 0.4
+					leninism > 0.4
+					anarchism > 0.4
+					revisionism > 0.4
 					fascism > 0.4
+					fascist_monarchy > 0.4
+					national_socialism > 0.4
+					nationalism > 0.4
 					}
 				factor = 20
 			}
@@ -3989,7 +4114,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_popularity = {
-				ideology = communism 
+				ideology = stalinism 
 				popularity = 0.05
 			}
 			add_ideas = AST_abandon_the_westminster_system
@@ -4014,18 +4139,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
-				NOT = { JAP = { has_government = fascism } }
+				NOT = { JAP = { has_fascist_government = yes } }
 				factor = 0 #let's not go fascist if Japan isn't
 			}
 			modifier = {
 				fascism > 0.3
+				fascist_monarchy > 0.3
+				national_socialism > 0.3
+				nationalism > 0.3
 				factor = 20
 			}
 		}
 
 		available = {
 			compare_autonomy_progress_ratio > 0.55
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { not = { has_fascist_government = yes } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_fascist_government = yes } 
+				has_autonomy_state = autonomy_satellite
+			}
 		}
 		
 		bypass = {
@@ -4046,7 +4181,7 @@ focus_tree = {
 				add_idea = AST_abandon_the_westminster_system_fascism
 			}
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_generic_fascist_demagogue
+			show_ideas_tooltip = AST_generic_fascist_politician
 		}
 	}
 
@@ -4067,6 +4202,9 @@ focus_tree = {
 		available = {
 			ROOT = {
 				fascism > 0.15
+				fascist_monarchy > 0.15
+				national_socialism > 0.15
+				nationalism > 0.15
 			}
 			has_equipment = {
 				infantry_equipment > 199
@@ -4123,12 +4261,25 @@ focus_tree = {
 				is_subject = no
 				AND = {
 					compare_autonomy_progress_ratio > 0.75
-					has_autonomy_state = autonomy_dominion
+					if = {
+						limit = { not = { has_fascist_government = yes } }
+						has_autonomy_state = autonomy_dominion
+					}
+					if = {
+						limit = { has_fascist_government = yes } 
+						has_autonomy_state = autonomy_satellite
+					}
 				}
 			}
-			fascism > 0.3
+				fascism > 0.3
+				fascist_monarchy > 0.3
+				national_socialism > 0.3
+				nationalism > 0.3
 			INS = {
 				fascism > 0.3
+				fascist_monarchy > 0.3
+				national_socialism > 0.3
+				nationalism > 0.3
 			}
 		}
 		
@@ -4169,7 +4320,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			has_fascist_government = yes
 			NOT = { has_war_together_with = ENG }
 			NOT = { is_in_faction_with = NZL }
 		}
@@ -4216,7 +4367,14 @@ focus_tree = {
 		}
 
 		available = {
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { not = { has_fascist_government = yes } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_fascist_government = yes } 
+				has_autonomy_state = autonomy_satellite
+			}
 			MAL = {
 				is_puppet_of = ENG
 			}
@@ -4264,13 +4422,20 @@ focus_tree = {
 			OR = {
 				is_subject = no
 				AND = {
-					has_autonomy_state = autonomy_dominion
+					if = {
+						limit = { not = { has_fascist_government = yes } }
+						has_autonomy_state = autonomy_dominion
+					}
+					if = {
+						limit = { has_fascist_government = yes } 
+						has_autonomy_state = autonomy_satellite
+					}
 					compare_autonomy_progress_ratio > 0.8
 				}
 			}
 			NOT = { has_war_together_with = ENG }
 			JAP = {
-				has_government = ROOT
+				has_similar_form_of_government = yes
 				OR = {
 					is_faction_leader = yes
 					is_in_faction = no
@@ -4334,7 +4499,14 @@ focus_tree = {
 			OR = {
 				is_subject = no
 				AND = {
-					has_autonomy_state = autonomy_dominion
+					if = {
+						limit = { not = { has_fascist_government = yes } }
+						has_autonomy_state = autonomy_dominion
+					}
+					if = {
+						limit = { has_fascist_government = yes } 
+						has_autonomy_state = autonomy_satellite
+					}
 					compare_autonomy_progress_ratio > 0.8
 				}
 			}
@@ -4456,14 +4628,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
-				communism > 0.3
+				stalinism > 0.3
+				leninism > 0.3
+				revisionism > 0.3
 				factor = 10
 			}
 		}
 
 		available = {			
 			compare_autonomy_progress_ratio > 0.55
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { not = { has_fascist_government = yes } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_fascist_government = yes } 
+				has_autonomy_state = autonomy_satellite
+			}
 		}
 		
 		bypass = {
@@ -4504,7 +4685,9 @@ focus_tree = {
 
 		available = {
 			ROOT = {
-				communism > 0.3
+				stalinism > 0.3
+				leninism > 0.3
+				revisionism > 0.3
 			}
 			PRC = { exists = yes }
 		}
@@ -4814,15 +4997,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NZL = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} } 
+				NZL = { has_democratic_government = yes } 
 				factor = 10
 			}
 		}
@@ -4863,7 +5038,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				JAP = { has_government = communism }
+				JAP = { has_communist_government = yes }
 				factor = 0
 			}
 		}

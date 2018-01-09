@@ -119,84 +119,85 @@ if = {
 	}
 }
 
+1936.1.1 = {
 set_politics = {
-	
+
 	parties = {
-		social_liberal = { 
-			popularity = 45
-		}
-		national_socialism = {
-			popularity = 1
-		}		
-		stalinism = {
-			popularity = 0
-		}
-		social_democracy = { 
-			popularity = 9
-		}
-		market_liberal = { 
-			popularity = 0
-		}
-		conservative = { 
-			popularity = 44
-		}
-		progressive = { 
-			popularity = 0
-		}
-		democratic_socialism = { 
-			popularity = 0
-		}
-		reactionary = { 
-			popularity = 0
-		}
-		authoritarian_democracy = { 
-			popularity = 0
-		}
-		leninism = { 
-			popularity = 1
-		}
-		fascism = { 
-			popularity = 0
-		}
-		nationalism = { 
-			popularity = 0
-		}
-		fascist_monarchy = { 
-			popularity = 0
-		}
-		militarism = { 
-			popularity = 0
-		}
-		fascist_monarchy = { 
-			popularity = 0
-		}
-		authoritarian = { 
-			popularity = 0
-		}
-		absolute_monarchy = { 
-			popularity = 0
-		}
-		religious = { 
-			popularity = 0
-		}
-		anarchism = { 
-			popularity = 0
-		}
-		revisionism = { 
-			popularity = 0
-		}
-		christian_democracy = { 
-			popularity = 0
-		}
-		democratic_nationalism = { 
-			popularity = 0
-		}
+	
+	social_liberal = { 
+		popularity = 35
 	}
+	national_socialism = {
+		popularity = 1
+	}		
+	stalinism = {
+		popularity = 0
+	}
+	social_democracy = { 
+		popularity = 3
+	}
+	market_liberal = { 
+		popularity = 10
+	}
+	conservative = { 
+		popularity = 35
+	}
+	progressive = { 
+		popularity = 0
+	}
+	democratic_socialism = { 
+		popularity = 6
+	}
+	reactionary = { 
+		popularity = 4
+	}
+	authoritarian_democracy = { 
+		popularity = 0
+	}
+	leninism = { 
+		popularity = 1
+	}
+	fascism = { 
+		popularity = 0
+	}
+	nationalism = { 
+		popularity = 0
+	}
+	democratic_nationalism = { 
+		popularity = 0
+	}
+	militarism = { 
+		popularity = 0
+	}
+	fascist_monarchy = { 
+		popularity = 0
+	}
+	authoritarian = { 
+		popularity = 0
+	}
+	absolute_monarchy = { 
+		popularity = 0
+	}
+	religious = { 
+		popularity = 0
+	}
+	anarchism = { 
+		popularity = 0
+	}
+	christian_democracy = { 
+		popularity = 5
+	}
+	revisionism = { 
+		popularity = 0
+	}
+	}
+
 	
 	ruling_party = social_liberal
 	last_election = "1935.10.14"
-	election_frequency = 60
+	election_frequency = 48
 	elections_allowed = yes
+}
 }
 
 create_country_leader = {
@@ -237,7 +238,7 @@ create_country_leader = {
 	desc = "POLITICS_JS_WOODSWORTH_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = social_democrat
+	ideology = democratic_socialist 
 	traits = {
 		#
 	}
@@ -259,78 +260,80 @@ set_national_unity = 0.9
 
 1939.1.1 = {
 	set_politics = {
+	
+	parties = {
 
-		parties = {
-		social_liberal = { 
-			popularity = 46
-		}
-		national_socialism = {
-			popularity = 0
-		}		
-		stalinism = {
-			popularity = 0
-		}
-		social_democracy = { 
-			popularity = 8
-		}
-		market_liberal = { 
-			popularity = 0
-		}
-		conservative = { 
-			popularity = 45
-		}
-		progressive = { 
-			popularity = 0
-		}
-		democratic_socialism = { 
-			popularity = 0
-		}
-		reactionary = { 
-			popularity = 0
-		}
-		authoritarian_democracy = { 
-			popularity = 0
-		}
-		leninism = { 
-			popularity = 1
-		}
-		fascism = { 
-			popularity = 0
-		}
-		nationalism = { 
-			popularity = 0
-		}
-		fascist_monarchy = { 
-			popularity = 0
-		}
-		militarism = { 
-			popularity = 0
-		}
-		revisionism = { 
-			popularity = 0
-		}
-		authoritarian = { 
-			popularity = 0
-		}
-		absolute_monarchy = { 
-			popularity = 0
-		}
-		religious = { 
-			popularity = 0
-		}
-		anarchism = { 
-			popularity = 0
-		}
-		christian_democracy = { 
-			popularity = 0
-		}
-		democratic_nationalism = { 
-			popularity = 0
-		}
+	social_liberal = { 
+		popularity = 53
+	}
+	national_socialism = {
+		popularity = 1
+	}		
+	stalinism = {
+		popularity = 0
+	}
+	social_democracy = { 
+		popularity = 4
+	}
+	market_liberal = { 
+		popularity = 5
+	}
+	conservative = { 
+		popularity = 25
+	}
+	progressive = { 
+		popularity = 0
+	}
+	democratic_socialism = { 
+		popularity = 5
+	}
+	reactionary = { 
+		popularity = 1
+	}
+	authoritarian_democracy = { 
+		popularity = 1
+	}
+	leninism = { 
+		popularity = 1
+	}
+	fascism = { 
+		popularity = 0
+	}
+	nationalism = { 
+		popularity = 0
+	}
+	democratic_nationalism = { 
+		popularity = 0
+	}
+	militarism = { 
+		popularity = 0
+	}
+	fascist_monarchy = { 
+		popularity = 0
+	}
+	authoritarian = { 
+		popularity = 0
+	}
+	absolute_monarchy = { 
+		popularity = 0
+	}
+	religious = { 
+		popularity = 0
+	}
+	anarchism = { 
+		popularity = 0
+	}
+	christian_democracy = { 
+		popularity = 5
+	}
+	revisionism = { 
+		popularity = 0
+	}
+	}
 		
 		ruling_party = social_liberal
 		last_election = "1935.10.14"
-		election_frequency = 60
+		election_frequency = 48
 		elections_allowed = yes
 	}
 }

@@ -1,4 +1,4 @@
-add_namespace = elect
+﻿add_namespace = elect
 
 #Actual Election
 country_event = {

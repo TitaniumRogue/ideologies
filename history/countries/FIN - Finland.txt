@@ -135,7 +135,7 @@ set_politics = {
 				popularity = 8
 			}
 			
-			communism = {
+			leninism = {
 				popularity = 1
 			}
 

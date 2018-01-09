@@ -1,0 +1,766 @@
+﻿###################################
+# Ideology Opinion Modifier Events
+###################################
+
+add_namespace = mod.opinion
+
+### Setting up Opinion Modifiers at Gamestart ###
+country_event = {
+	id = mod.opinion.1
+	title = mod.opinion.1.t
+	desc = mod.opinion.2.d
+	
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_communist_government = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_fascist_government = yes
+						has_neutral_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_democratic_government = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+						has_democratic_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_fascist_government = yes
+						has_neutral_government = yes
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_fascist_government = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+					has_fascist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_neutral_government = yes
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_neutral_government = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_fascist_government = yes
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		#every_country = {
+			#limit = {
+				#has_same_government_as_ROOT = yes
+			#}
+			#add_opinion_modifier = {
+				#target = ROOT
+				#modifier = mod_same_ideology
+			#}
+		#}
+		if = {
+			limit = {
+				has_government = stalinism
+			}
+			set_country_flag = opinion_set_stalinism
+		}
+		if = {
+			limit = {
+				has_government = leninism
+			}
+			set_country_flag = opinion_set_leninism
+		}
+		if = {
+			limit = {
+				has_government = revisionism
+			}
+			set_country_flag = opinion_set_revisionism
+		}
+		if = {
+			limit = {
+				has_government = anarchism
+			}
+			set_country_flag = opinion_set_anarchism
+		}
+		if = {
+			limit = {
+				has_government = democratic_socialism
+			}
+			set_country_flag = opinion_set_democratic_socialism
+		}
+		if = {
+			limit = {
+				has_government = social_democracy
+			}
+			set_country_flag = opinion_set_social_democracy
+		}
+		if = {
+			limit = {
+				has_government = social_liberal
+			}
+			set_country_flag = opinion_set_social_liberal
+		}
+		if = {
+			limit = {
+				has_government = market_liberal
+			}
+			set_country_flag = opinion_set_market_liberal
+		}
+		if = {
+			limit = {
+				has_government = conservative
+			}
+			set_country_flag = opinion_set_conservative
+		}
+		if = {
+			limit = {
+				has_government = christian_democracy
+			}
+			set_country_flag = opinion_set_christian_democracy
+		}
+		if = {
+			limit = {
+				has_government = progressive
+			}
+			set_country_flag = opinion_set_progressive
+		}
+		if = {
+			limit = {
+				has_government = reactionary
+			}
+			set_country_flag = opinion_set_reactionary
+		}
+		if = {
+			limit = {
+				has_government = democratic_nationalism
+			}
+			set_country_flag = opinion_set_democratic_nationalism
+		}
+		if = {
+			limit = {
+				has_government = authoritarian_democracy
+			}
+			set_country_flag = opinion_set_authoritarian_democracy
+		}
+		if = {
+			limit = {
+				has_government = authoritarian
+			}
+			set_country_flag = opinion_set_authoritarian
+		}
+		if = {
+			limit = {
+				has_government = militarism
+			}
+			set_country_flag = opinion_set_militarism
+		}
+		if = {
+			limit = {
+				has_government = religious
+			}
+			set_country_flag = opinion_set_religious
+		}
+		if = {
+			limit = {
+				has_government = absolute_monarchy
+			}
+			set_country_flag = opinion_set_absolute_monarchy
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			set_country_flag = opinion_set_fascism
+		}
+		if = {
+			limit = {
+				has_government = national_socialism
+			}
+			set_country_flag = opinion_set_national_socialism
+		}
+		if = {
+			limit = {
+				has_government = nationalism
+			}
+			set_country_flag = opinion_set_nationalism
+		}
+		if = {
+			limit = {
+				has_government = fascist_monarchy
+			}
+			set_country_flag = opinion_set_fascist_monarchy
+		}
+		
+	}
+	
+	option = {
+		name = kr.political.1.a
+	}
+
+}
+
+### Setting up Opinion Modifiers on Government Change ###
+country_event = {
+	id = mod.opinion.2
+	title = mod.opinion.2.t
+	desc = mod.opinion.2.d
+	
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_government = stalinism }
+				has_country_flag = opinion_set_stalinism
+			}
+			AND = {
+				NOT = { has_government = leninism }
+				has_country_flag = opinion_set_leninism
+			}
+			AND = {
+				NOT = { has_government = revisionism }
+				has_country_flag = opinion_set_revisionism
+			}
+			AND = {
+				NOT = { has_government = anarchism }
+				has_country_flag = opinion_set_anarchism
+			}
+			AND = {
+				NOT = { has_government = democratic_socialism }
+				has_country_flag = opinion_set_democratic_socialism
+			}
+			AND = {
+				NOT = { has_government = progressive }
+				has_country_flag = opinion_set_progressive
+			}
+			AND = {
+				NOT = { has_government = social_democracy }
+				has_country_flag = opinion_set_social_democracy
+			}
+			AND = {
+				NOT = { has_government = social_liberal }
+				has_country_flag = opinion_set_social_liberal
+			}
+			AND = {
+				NOT = { has_government = market_liberal }
+				has_country_flag = opinion_set_market_liberal
+			}
+			AND = {
+				NOT = { has_government = conservative }
+				has_country_flag = opinion_set_conservative
+			}
+			AND = {
+				NOT = { has_government = democratic_nationalism }
+				has_country_flag = opinion_set_democratic_nationalism
+			}
+			AND = {
+				NOT = { has_government = christian_democracy }
+				has_country_flag = opinion_set_christian_democracy
+			}
+			AND = {
+				NOT = { has_government = reactionary }
+				has_country_flag = opinion_set_reactionary
+			}
+			AND = {
+				NOT = { has_government = authoritarian_democracy }
+				has_country_flag = opinion_set_authoritarian_democracy
+			}
+			AND = {
+				NOT = { has_government = authoritarian }
+				has_country_flag = opinion_set_authoritarian
+			}
+			AND = {
+				NOT = { has_government = militarism }
+				has_country_flag = opinion_set_militarism
+			}
+			AND = {
+				NOT = { has_government = absolute_monarchy }
+				has_country_flag = opinion_set_absolute_monarchy
+			}
+			AND = {
+				NOT = { has_government = religious }
+				has_country_flag = opinion_set_religious
+			}
+			AND = {
+				NOT = { has_government = fascist_monarchy }
+				has_country_flag = opinion_set_fascist_monarchy
+			}
+			AND = {
+				NOT = { has_government = fascism }
+				has_country_flag = opinion_set_fascism
+			}
+			AND = {
+				NOT = { has_government = national_socialism }
+				has_country_flag = opinion_set_national_socialism
+			}
+			AND = {
+				NOT = { has_government = nationalism }
+				has_country_flag = opinion_set_nationalism
+			}
+			AND = {
+				NOT = { has_country_flag = opinion_set_stalinism }
+				NOT = { has_country_flag = opinion_set_leninism }
+				NOT = { has_country_flag = opinion_set_anarchism }
+				NOT = { has_country_flag = opinion_set_revisionism }
+				NOT = { has_country_flag = opinion_set_democratic_socialism }
+				NOT = { has_country_flag = opinion_set_social_democracy }
+				NOT = { has_country_flag = opinion_set_progressive }
+				NOT = { has_country_flag = opinion_set_social_liberal }
+				NOT = { has_country_flag = opinion_set_market_liberal }
+				NOT = { has_country_flag = opinion_set_conservative }
+				NOT = { has_country_flag = opinion_set_christian_democracy }
+				NOT = { has_country_flag = opinion_set_reactionary }
+				NOT = { has_country_flag = opinion_set_democratic_nationalism }
+				NOT = { has_country_flag = opinion_set_authoritarian_democracy }
+				NOT = { has_country_flag = opinion_set_authoritarian }
+				NOT = { has_country_flag = opinion_set_absolute_monarchy }
+				NOT = { has_country_flag = opinion_set_militarism }
+				NOT = { has_country_flag = opinion_set_religious }
+				NOT = { has_country_flag = opinion_set_fascism }
+				NOT = { has_country_flag = opinion_set_fascist_monarchy }
+				NOT = { has_country_flag = opinion_set_national_socialism }
+				NOT = { has_country_flag = opinion_set_nationalism }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+				clr_country_flag = opinion_set_stalinism
+				clr_country_flag = opinion_set_leninism
+				clr_country_flag = opinion_set_anarchism
+				clr_country_flag = opinion_set_revisionism
+				clr_country_flag = opinion_set_democratic_socialism
+				clr_country_flag = opinion_set_social_democracy
+				clr_country_flag = opinion_set_progressive
+				clr_country_flag = opinion_set_social_liberal
+				clr_country_flag = opinion_set_market_liberal
+				clr_country_flag = opinion_set_conservative
+				clr_country_flag = opinion_set_christian_democracy
+				clr_country_flag = opinion_set_reactionary
+				clr_country_flag = opinion_set_democratic_nationalism
+				clr_country_flag = opinion_set_authoritarian_democracy
+				clr_country_flag = opinion_set_authoritarian
+				clr_country_flag = opinion_set_absolute_monarchy
+				clr_country_flag = opinion_set_militarism
+				clr_country_flag = opinion_set_religious
+				clr_country_flag = opinion_set_fascism
+				clr_country_flag = opinion_set_fascist_monarchy
+				clr_country_flag = opinion_set_national_socialism
+				clr_country_flag = opinion_set_nationalism
+		every_country = {
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = mod_similar_ideology
+			}
+			ROOT = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = mod_similar_ideology
+			}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = mod_different_ideology
+			}
+			ROOT = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = mod_different_ideology
+			}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = mod_same_ideology
+			}
+			ROOT = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = mod_same_ideology
+			}
+			}
+		}
+		if = {
+			limit = {
+				has_communist_government = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_fascist_government = yes
+						has_neutral_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_democratic_government = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+						has_democratic_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_fascist_government = yes
+						has_neutral_government = yes
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_fascist_government = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+					has_fascist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_neutral_government = yes
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_neutral_government = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_fascist_government = yes
+						has_communist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = mod_different_ideology
+				}
+			}
+		}
+		#every_country = {
+			#limit = {
+				#has_same_government_as_ROOT = yes
+			#}
+			#add_opinion_modifier = {
+				#target = ROOT
+				#modifier = mod_same_ideology
+			#}
+		#}
+		if = {
+			limit = {
+				has_government = stalinism
+			}
+			set_country_flag = opinion_set_stalinism
+		}
+		if = {
+			limit = {
+				has_government = leninism
+			}
+			set_country_flag = opinion_set_leninism
+		}
+		if = {
+			limit = {
+				has_government = revisionism
+			}
+			set_country_flag = opinion_set_revisionism
+		}
+		if = {
+			limit = {
+				has_government = anarchism
+			}
+			set_country_flag = opinion_set_anarchism
+		}
+		if = {
+			limit = {
+				has_government = democratic_socialism
+			}
+			set_country_flag = opinion_set_democratic_socialism
+		}
+		if = {
+			limit = {
+				has_government = social_democracy
+			}
+			set_country_flag = opinion_set_social_democracy
+		}
+		if = {
+			limit = {
+				has_government = social_liberal
+			}
+			set_country_flag = opinion_set_social_liberal
+		}
+		if = {
+			limit = {
+				has_government = market_liberal
+			}
+			set_country_flag = opinion_set_market_liberal
+		}
+		if = {
+			limit = {
+				has_government = conservative
+			}
+			set_country_flag = opinion_set_conservative
+		}
+		if = {
+			limit = {
+				has_government = christian_democracy
+			}
+			set_country_flag = opinion_set_christian_democracy
+		}
+		if = {
+			limit = {
+				has_government = progressive
+			}
+			set_country_flag = opinion_set_progressive
+		}
+		if = {
+			limit = {
+				has_government = reactionary
+			}
+			set_country_flag = opinion_set_reactionary
+		}
+		if = {
+			limit = {
+				has_government = democratic_nationalism
+			}
+			set_country_flag = opinion_set_democratic_nationalism
+		}
+		if = {
+			limit = {
+				has_government = authoritarian_democracy
+			}
+			set_country_flag = opinion_set_authoritarian_democracy
+		}
+		if = {
+			limit = {
+				has_government = authoritarian
+			}
+			set_country_flag = opinion_set_authoritarian
+		}
+		if = {
+			limit = {
+				has_government = militarism
+			}
+			set_country_flag = opinion_set_militarism
+		}
+		if = {
+			limit = {
+				has_government = religious
+			}
+			set_country_flag = opinion_set_religious
+		}
+		if = {
+			limit = {
+				has_government = absolute_monarchy
+			}
+			set_country_flag = opinion_set_absolute_monarchy
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			set_country_flag = opinion_set_fascism
+		}
+		if = {
+			limit = {
+				has_government = national_socialism
+			}
+			set_country_flag = opinion_set_national_socialism
+		}
+		if = {
+			limit = {
+				has_government = nationalism
+			}
+			set_country_flag = opinion_set_nationalism
+		}
+		if = {
+			limit = {
+				has_government = fascist_monarchy
+			}
+			set_country_flag = opinion_set_fascist_monarchy
+		}
+	}
+	
+	
+	option = {
+		name = kr.political.2.a
+	}
+
+}

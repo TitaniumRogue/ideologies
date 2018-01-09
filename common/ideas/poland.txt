@@ -10,7 +10,7 @@ country = {
 		}
 
 		allowed_civil_war = {
-			has_government = neutrality
+			is_authoritarian = yes
 		}
 		
 		removal_cost = -1
@@ -52,15 +52,7 @@ country = {
 
 		allowed_civil_war = {
 			NOT = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				polish_democracy_idea_trigger = yes
 			}
 		}
 			
@@ -69,8 +61,22 @@ country = {
 		picture = generic_intel_bonus
 		
 		modifier = {
-			democratic_drift = -0.1
-			democratic_acceptance = -100
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				democratic_socialism_acceptance = -100
+				social_democracy_acceptance = -100
+				social_liberal_acceptance = -100
+				market_liberal_acceptance = -100
+				christian_democracy_acceptance = -100
+				conservative_acceptance = -100
+				reactionary_acceptance = -100
+				democratic_nationalism_acceptance = -100
 		}
 	}
 
@@ -127,7 +133,7 @@ political_advisor = {
 			original_tag = POL
 		}
 		
-		traits = { fascist_demagogue }
+		traits = { nationalist_politician }
 
 		ai_will_do = {
 			factor = 0
@@ -142,7 +148,7 @@ political_advisor = {
 			original_tag = POL
 		}
 		
-		traits = { communist_revolutionary }
+		traits = { stalinist_politician }
 
 		ai_will_do = {
 			factor = 0
@@ -157,7 +163,7 @@ political_advisor = {
 			original_tag = POL
 		}
 		
-		traits = { democratic_reformer }
+		traits = { democratic_socialist_politician }
 
 		ai_will_do = {
 			factor = 0

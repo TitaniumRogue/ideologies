@@ -341,15 +341,7 @@ country_event = {
 				limit = {
 					NOT = { has_war_with = ENG }
 					is_in_faction = no
-									OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_democratic_government = yes
 					is_puppet = no
 					OR = {
 						capital_scope = {
@@ -608,7 +600,7 @@ country_event = {
 	trigger = {
 		tag = ENG
 		has_idea = ENG_george_vi
-		has_government = fascism
+		has_fascist_government = yes
 	}
 	
 	fire_only_once = yes
@@ -631,11 +623,12 @@ country_event = {
 			desc = "POLITICS_EDWARD_EDWARD_DESC"
 			picture = "Portrait_Britain_Edward_VIII.dds"
 			expire = "1965.1.1"
-			ideology = fascism_ideology
+			ideology = fascist_monarchy_ideology
 			traits = {
 				inexperienced_imperialist				
 			}
 		}
+			set_politics = { ruling_party = fascist_monarchy elections_allowed = no }
 	}
 
 	option = {
@@ -686,6 +679,8 @@ country_event = {
 		}
 		RAJ = {
 			is_puppet_of = ENG
+			nationalism > 0.3
+			national_socialism > 0.3
 			fascism > 0.3
 			has_civil_war = no
 		}
@@ -709,7 +704,7 @@ country_event = {
 			limit = {
 				NOT = {
 					RAJ = {
-						has_government = fascism
+						has_fascist_government = yes
 					}
 				}
 			}
@@ -721,7 +716,7 @@ country_event = {
 		if = {
 			limit = {
 				RAJ = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			end_puppet = RAJ
@@ -810,13 +805,13 @@ country_event = {
 		ai_chance = {
 			factor = 100
 			modifier = {
-				has_government = fascism
+				has_fascist_government = yes
 				factor = 0
 			}
 		}
 		name = britain.23.a
 		start_civil_war = {
-				ideology = fascism
+				ideology = national_socialism
 				size = 0.5
 		}
 	}
@@ -824,14 +819,14 @@ country_event = {
 	option = {
 		name = britain.23.b
 		start_civil_war = {
-				ruling_party = fascism
-				ideology = neutrality
+				ruling_party = national_socialism
+				ideology = authoritarian
 				size = 0.5
 		}
 		random_other_country = {
 			limit = {
 				original_tag = RAJ
-				has_government = neutrality
+				has_neutral_government = yes
 				is_puppet_of = ENG
 			}
 			set_cosmetic_tag = RAJ_UK

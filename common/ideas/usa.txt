@@ -9,15 +9,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -38,15 +30,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -65,15 +49,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -227,15 +203,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -256,15 +224,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 			removal_cost = -1
 
@@ -381,15 +341,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 			
 			removal_cost = -1
@@ -411,15 +363,7 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -432,36 +376,28 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
 			picture = generic_democratic_drift_bonus
 			modifier = {
-				democratic_drift = 0.05
+				democratic_socialism_drift = 0.05
+				social_democracy_drift = 0.05
+				social_liberal_drift = 0.05
+				market_liberal_drift = 0.05
+				christian_democracy_drift = 0.05
+				conservative_drift = 0.05
+				reactionary_drift = 0.05
+				democratic_nationalism_drift = 0.05
+				authoritarian_democracy_drift = 0.05
 			}
 		} 
 		american_protection_defence_democratic = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -474,21 +410,21 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+				has_democratic_government = yes
 			}
 
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				democratic_drift = 0.05
+				democratic_socialism_drift = 0.05
+				social_democracy_drift = 0.05
+				social_liberal_drift = 0.05
+				market_liberal_drift = 0.05
+				christian_democracy_drift = 0.05
+				conservative_drift = 0.05
+				reactionary_drift = 0.05
+				democratic_nationalism_drift = 0.05
+				authoritarian_democracy_drift = 0.05
 			}			
 		}
 			# idea for the protect Amercians focus - USA communist
@@ -496,7 +432,7 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
@@ -509,20 +445,22 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
 			picture = generic_communism_drift_bonus
 			modifier = {
-				communism_drift = 0.05
+				stalinism_drift = 0.05
+				leninism_drift = 0.05
+				revisionism_drift = 0.05
 			}
 		} 
 		american_protection_defence_communism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
@@ -535,13 +473,15 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				communism_drift = 0.05
+				stalinism_drift = 0.05
+				leninism_drift = 0.05
+				revisionism_drift = 0.05
 			}			
 		}
 			# idea for the protect Amercians focus - USA fascist
@@ -549,7 +489,7 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -562,20 +502,21 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
 			picture = generic_fascism_drift_bonus
 			modifier = {
 				fascism_drift = 0.05
+				national_socialism_drift = 0.05
 			}
 		} 
 		american_protection_defence_fascism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -588,13 +529,14 @@ ideas = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
 				fascism_drift = 0.05
+				national_socialism_drift = 0.05
 			}			
 		}
 		USA_world_police = {
@@ -626,7 +568,7 @@ ideas = {
 			
 
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 	
 			on_add = {
 				country_event = political.1
@@ -634,7 +576,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_government = stalinism
 				}
 			}
 			
@@ -652,7 +594,7 @@ ideas = {
 			
 
 			
-			traits = { democratic_reformer }
+			traits = { social_liberal_politician }
 	
 			on_add = {
 				country_event = political.13
@@ -660,15 +602,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_government = social_liberal
 				}
 			}
 			
@@ -686,7 +620,7 @@ ideas = {
 			
 
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_politician }
 	
 			on_add = {
 				country_event = political.7
@@ -694,7 +628,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			

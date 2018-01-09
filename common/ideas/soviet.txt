@@ -10,15 +10,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_democratic_government = yes
 				}
 			}
 
@@ -38,7 +30,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			picture = generic_production_bonus
@@ -58,15 +50,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_democratic_government = yes
 				}
 			}
 
@@ -85,7 +69,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			modifier = {
@@ -101,7 +85,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			modifier = {
@@ -125,7 +109,9 @@ ideas = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				communism_drift = 0.05
+				stalinism_drift = 0.05
+				leninism_drift = 0.05
+				revisionism_drift = 0.05
 			}
 		}
 
@@ -155,7 +141,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			picture = generic_manpower_bonus
@@ -175,7 +161,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			modifier = {
@@ -210,7 +196,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			modifier = {
@@ -229,7 +215,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			modifier = {
@@ -245,7 +231,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			modifier = {
@@ -261,7 +247,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -285,7 +271,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -308,7 +294,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -331,7 +317,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -354,7 +340,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -377,7 +363,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -400,7 +386,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -423,7 +409,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -446,7 +432,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -469,7 +455,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -493,7 +479,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -517,7 +503,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -541,7 +527,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -565,7 +551,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -589,7 +575,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			research_bonus = {
@@ -614,7 +600,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 		}
@@ -629,7 +615,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 			
 			modifier = {
@@ -750,7 +736,7 @@ ideas = {
 			
 
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 	
 			on_add = {
 				country_event = political.1
@@ -758,7 +744,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_government = stalinism
 				}
 			}
 			
@@ -776,7 +762,7 @@ ideas = {
 			
 
 			
-			traits = { democratic_reformer }
+			traits = { democratic_socialist_politician }
 	
 			on_add = {
 				country_event = political.13
@@ -784,15 +770,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					OR = { 
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-				}
+					has_government = democratic_socialism
 				}
 			}
 			
@@ -814,7 +792,7 @@ ideas = {
 			
 
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_politician }
 	
 			on_add = {
 				country_event = political.7
@@ -822,7 +800,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			

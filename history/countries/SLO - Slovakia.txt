@@ -70,10 +70,22 @@ set_politics = {
 	national_socialism = {
 		popularity = 0
 	}		
+	fascism = {
+		popularity = 95
+	}
 	stalinism = {
 		popularity = 5
 	}
 	social_democracy = { 
+		popularity = 0
+	}
+	fascist_monarchy = { 
+		popularity = 0
+	}
+	democratic_nationalism = { 
+		popularity = 0
+	}
+	christian_democracy = { 
 		popularity = 0
 	}
 	market_liberal = { 
@@ -94,11 +106,8 @@ set_politics = {
 	authoritarian_democracy = { 
 		popularity = 0
 	}
-	leninism = { 
+	leninism = {
 		popularity = 0
-	}
-	fascism = { 
-		popularity = 95
 	}
 	nationalism = { 
 		popularity = 0
@@ -107,9 +116,6 @@ set_politics = {
 		popularity = 0
 	}
 	militarism = { 
-		popularity = 0
-	}
-	fascism = { 
 		popularity = 0
 	}
 	authoritarian = { 

@@ -50,17 +50,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				NOT = { 				
-				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		}
+				NOT = { has_democratic_government = yes }
 			}
 
 			removal_cost = -1
@@ -119,15 +109,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+				 has_democratic_government = yes
 			}
 
 			removal_cost = -1
@@ -135,8 +117,12 @@ ideas = {
 			picture = can_defence_of_canada_regulations_democratic
 			
 			modifier = {
-				communism_drift = -0.01
-				fascism_drift = -0.01
+				stalinism_drift = -0.01
+				leninism_drift = -0.01
+				revisionism_drift = -0.01
+				fascism_drift = 0.01
+				national_socialism_drift = 0.01
+				national_socialism_drift = 0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
@@ -148,7 +134,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -156,8 +142,18 @@ ideas = {
 			picture = can_defence_of_canada_regulations_fascism
 			
 			modifier = {
-				democratic_drift = -0.01
-				communism_drift = -0.01
+				democratic_socialism_drift = -0.01
+				social_democracy_drift = -0.01
+				social_liberal_drift = -0.01
+				market_liberal_drift = -0.01
+				christian_democracy_drift = -0.01
+				conservative_drift = -0.01
+				reactionary_drift = -0.01
+				democratic_nationalism_drift = -0.01
+				authoritarian_democracy_drift = -0.01
+				stalinism_drift = -0.01
+				leninism_drift = -0.01
+				revisionism_drift = -0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
@@ -169,7 +165,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
@@ -177,8 +173,17 @@ ideas = {
 			picture = can_defence_of_canada_regulations_communism
 			
 			modifier = {
-				democratic_drift = -0.01
-				fascism_drift = -0.01
+				democratic_socialism_drift = -0.01
+				social_democracy_drift = -0.01
+				social_liberal_drift = -0.01
+				market_liberal_drift = -0.01
+				christian_democracy_drift = -0.01
+				conservative_drift = -0.01
+				reactionary_drift = -0.01
+				democratic_nationalism_drift = -0.01
+				authoritarian_democracy_drift = -0.01
+				fascism_drift = 0.01
+				national_socialism_drift = 0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
@@ -403,7 +408,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = fascism
+				 has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -411,8 +416,17 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
 				fascism_drift = 0.2
+				national_socialism_drift = 0.2
 			}
 		}
 
@@ -422,7 +436,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -430,8 +444,16 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
 				fascism_drift = 0.2
+				national_socialism_drift = 0.2
 				unity_factor = 0.05
 				conscription = 0.02
 			}
@@ -443,7 +465,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = fascism
+				 has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -451,8 +473,16 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
 				fascism_drift = 0.2
+				national_socialism_drift = 0.2
 				unity_factor = 0.05
 				conscription = 0.02
 				send_volunteer_divisions_required = -1
@@ -466,7 +496,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = communism
+				 has_communist_government = yes
 			}
 
 			removal_cost = -1
@@ -474,8 +504,17 @@ ideas = {
 			picture = generic_communism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
-				communism_drift = 0.2
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				stalinism_drift = 0.2
+				leninism_drift = 0.2
+				revisionism_drift = 0.2
 			}
 		}
 
@@ -485,7 +524,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
@@ -493,8 +532,17 @@ ideas = {
 			picture = generic_communism_drift_bonus
 
 			modifier = {
-				democratic_drift = -0.1
-				communism_drift = 0.2
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				stalinism_drift = 0.2
+				leninism_drift = 0.2
+				revisionism_drift = 0.2
 				industrial_capacity_factory = 0.02
 				industrial_capacity_dockyard = 0.02
 			}
@@ -506,7 +554,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
@@ -516,8 +564,17 @@ ideas = {
 			rule = { can_send_volunteers = yes }
 
 			modifier = {
-				democratic_drift = -0.1
-				communism_drift = 0.2
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				stalinism_drift = 0.2
+				leninism_drift = 0.2
+				revisionism_drift = 0.2
 				industrial_capacity_factory = 0.04
 				industrial_capacity_dockyard = 0.04
 				subversive_activites_upkeep = -0.5
@@ -590,7 +647,7 @@ ideas = {
 
 			picture = generic_fascist_demagogue_commonwealth_2d
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_politician }
 			
 			on_add = {
 				country_event = political.7
@@ -598,7 +655,7 @@ ideas = {
 			
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			
@@ -626,7 +683,7 @@ ideas = {
 			
 			picture = generic_democratic_reformer_commonwealth_2d
 			
-			traits = { democratic_reformer }
+			traits = { conservative_politician }
 			
 			on_add = {
 				country_event = political.13
@@ -634,15 +691,7 @@ ideas = {
 			
 			do_effect = {
 				NOT = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_government = conservative
 				}
 			}
 			
@@ -667,7 +716,7 @@ ideas = {
 
 			picture = generic_communist_revolutionary_commonwealth_2d
 			
-			traits = { communist_revolutionary }
+			traits = { leninist_politician }
 			
 			on_add = {
 				country_event = political.1
@@ -675,7 +724,7 @@ ideas = {
 			
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_communist_government = yes
 				}
 			}
 			
@@ -808,27 +857,12 @@ ideas = {
 			
 			traits = { nuclear_scientist }
 		}
-		CAN_tasker_cook = {
-					
-			picture = generic_air_europe_1
-					
-			allowed = {
-				original_tag = CAN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
 		CAN_robert_leckie = {
 					
 			picture = generic_air_europe_2
 					
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 			research_bonus = {

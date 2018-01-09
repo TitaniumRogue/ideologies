@@ -331,17 +331,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				NOT = { 				
-				OR = {			
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} 
-		}
+				NOT = { has_democratic_government = yes }
 			}
 
 			removal_cost = -1
@@ -350,7 +340,15 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.1
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
 			}
 		}
 
@@ -361,7 +359,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				has_communist_government = yes
 			}
 
 			removal_cost = -1
@@ -370,8 +368,19 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.1
-				communism_drift = 0.2
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				social_democracy_drift = -0.1
+				stalinism_drift = 0.2
+				leninism_drift = 0.2
+				revisionism_drift = 0.2
 			}
 		}
 
@@ -382,7 +391,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_fascist_government = yes
 			}
 
 			removal_cost = -1
@@ -391,8 +400,17 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.1
-				fascism_drift = 0.2
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				fascism_drift = 0.1
+				national_socialism_drift = 0.1
 			}
 		}
 
@@ -412,8 +430,17 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.1
-				fascism_drift = 0.2
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				fascism_drift = 0.1
+				national_socialism_drift = 0.1
 			}
 		}
 
@@ -575,7 +602,7 @@ ideas = {
 			traits = { compassionate_gentleman }
 		}
 
-		AST_generic_fascist_demagogue = {
+		AST_generic_fascist_politician = {
 			
 			allowed = {
 				original_tag = AST
@@ -590,7 +617,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_4
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_politician }
 		
 			on_add = {
 				country_event = political.7
@@ -622,7 +649,7 @@ ideas = {
 
 			picture = generic_communist_revolutionary_western_european_2d
 			
-			traits = { communist_revolutionary }
+			traits = { stalinist_politician }
 		
 			on_add = {
 				country_event = political.1
@@ -630,7 +657,7 @@ ideas = {
 		
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_government = stalinism
 				}
 			}
 		
@@ -657,7 +684,7 @@ ideas = {
 			
 			picture = generic_democratic_reformer_western_european_2d
 			
-			traits = { democratic_reformer }
+			traits = { social_democratic_politician }
 		
 			on_add = {
 				country_event = political.13
@@ -665,15 +692,7 @@ ideas = {
 		
 			do_effect = {
 				NOT = {
-									OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+					has_government = social_democracy
 				}
 			}
 		

@@ -182,7 +182,7 @@ country_event = {
 						}
 					}
 					NZL = { is_in_faction = no }
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			modifier = {
@@ -400,7 +400,7 @@ country_event = {
 		random_country = {
 			limit = {
 				original_tag = INS
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			white_peace = HOL
 		}
@@ -496,7 +496,7 @@ country_event = {
 			base = 50
 			modifier = {
 				factor = 0
-				has_government = fascism
+				has_fascist_government = yes
 			}
 			modifier = {
 				add = -20
@@ -521,9 +521,7 @@ country_event = {
 			base = 50
 			modifier = {
 				factor = 0
-				OR = {
-				has_government = leninism
-				has_government = stalinism
+				has_communist_government = yes
 			}
 		}
 		
@@ -844,39 +842,31 @@ country_event = {
 		name = tfv_australia.96.b
 		if = {
 			limit = {
-								OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+				has_democratic_government = yes
 			}
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = social_democracy
+				ideology = ROOT
 				size = 0.5
 			}
 		}
 		if = {
 			limit = {
-				has_government = leninism
+				has_communist_government = yes
 			}
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = leninism
+				ideology = ROOT
 				size = 0.5
 			}
 		}
 		if = {
 			limit = {
-				has_government = neutrality
+				has_neutral_government = yes
 			}
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = neutrality
+				ideology = ROOT
 				size = 0.5
 			}
 		}

@@ -127,7 +127,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = leninism
+	ideology = leninism_ideology
 	traits = {
 		
 	}
@@ -149,7 +149,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 	expire = "1953.3.1"
-	ideology = luxemburgism
+	ideology = revisionism_ideology
 	traits = {
 		
 	}

@@ -3,16 +3,19 @@ A HOI4 mod that adds in 20 new ideologies
 
 Priorities (In order of highest to lowest):
 
-	History Files (Done!)
+	National Focus Reworks/Event Reworks
 	Localisation
 	Flags	
-	Event/National Focus Files
+	History Files (Done!)
+
+Currently events and national foci need to be fixed to make the game playable. After this is fixed the focus will be shifted back to cosmetics (flags, localisations)
+
 
 For anybody who would like to modify the localization files copy the text below to make things easier. Just replace "XXX" with the country's tag, and "Example" with its name
 
 ----------
- 	XXX_social_liberal:0 "Example"
- 	XXX_market_liberal:0 "Example"
+ 	 XXX_social_liberal:0 "Example"
+ 	 XXX_market_liberal:0 "Example"
 	 XXX_conservative:0 "Example"
 	 XXX_progressive:0 "Example"
 	 XXX_social_democracy:0 "Example"
@@ -25,7 +28,7 @@ For anybody who would like to modify the localization files copy the text below 
 	 XXX_fascism:0 "Example"
 	 XXX_nationalism:0 "Example"
 	 XXX_revisionism:0 "Example"
-	 XXX_leninsm:0 "Example"
+	 XXX_leninism:0 "Example"
 	 XXX_stalinism:0 "Example"
 	 XXX_absolute_monarchy:0 "Example"
 	 XXX_religious:0 "Example"
@@ -47,7 +50,7 @@ For anybody who would like to modify the localization files copy the text below 
 	 XXX_fascism_ADJ:0 "Example"
 	 XXX_nationalism_ADJ:0 "Example"
 	 XXX_revisionism_ADJ:0 "Example"
-	 XXX_leninsm_ADJ:0 "Example"
+	 XXX_leninism_ADJ:0 "Example"
 	 XXX_stalinism_ADJ:0 "Example"
 	 XXX_absolute_monarchy_ADJ:0 "Example"
 	 XXX_religious_ADJ:0 "Example"
@@ -69,7 +72,7 @@ For anybody who would like to modify the localization files copy the text below 
 	 XXX_fascism_DEF:0 "Example"
 	 XXX_nationalism_DEF:0 "Example"
 	 XXX_revisionism_DEF:0 "Example"
-	 XXX_leninsm_DEF:0 "Example"
+	 XXX_leninism_DEF:0 "Example"
 	 XXX_stalinism_DEF:0 "Example"
 	 XXX_absolute_monarchy_DEF:0 "Example"
 	 XXX_religious_DEF:0 "Example"

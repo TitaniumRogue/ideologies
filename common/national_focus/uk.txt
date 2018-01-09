@@ -61,38 +61,14 @@ focus_tree = {
 	focus = {
 		id = tizard_mission_focus
 		available = {				
-							OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+			has_democratic_government = yes
 			any_other_country = {
 				has_war_with = ROOT
-				NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} }
+				NOT = { has_democratic_government = yes }
 				num_of_factories > 30
 			}
 			USA = { 
-								OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+				has_democratic_government = yes
 				NOT = {
 					OR = {
 						has_idea = undisturbed_isolation
@@ -1349,15 +1325,7 @@ focus_tree = {
 	#	}	
 	#	completion_reward = {
 	#		every_other_country = {
-	#			limit = { NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} } }
+	#			limit = { NOT = { has_democratic_government = yes } }
 	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions }
 	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions_relations } 
 	#		}
@@ -1539,22 +1507,40 @@ focus_tree = {
 				SWE = { 
 					exists = yes
 					OR = { 
-						communism > 0.1
+						stalinism > 0.1
+						leninism > 0.1
+						revisionism > 0.1
+						anarchism > 0.1
 				 		fascism > 0.1
+						fascist_monarchy > 0.1
+						nationalism > 0.1
+						national_socialism > 0.1
 				 	} 
 				}
 				NOR = { 
 					exists = yes
 					OR = { 
-						communism > 0.1
+						stalinism > 0.1
+						leninism > 0.1
+						revisionism > 0.1
+						anarchism > 0.1
 				 		fascism > 0.1
+						fascist_monarchy > 0.1
+						nationalism > 0.1
+						national_socialism > 0.1
 				 	} 
 				}
 				DEN = {
 					exists = yes
 					OR = { 
-						communism > 0.1
+						stalinism > 0.1
+						leninism > 0.1
+						revisionism > 0.1
+						anarchism > 0.1
 				 		fascism > 0.1
+						fascist_monarchy > 0.1
+						nationalism > 0.1
+						national_socialism > 0.1
 				 	} 
 				}				
 			}			
@@ -1610,8 +1596,14 @@ focus_tree = {
 			SWE = {
 				exists = yes
 				OR = {
-					communism > 0.2
-					fascism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
+				 	fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 				}
 			}		
 		}
@@ -1641,8 +1633,14 @@ focus_tree = {
 			NOR = {
 				exists = yes
 				OR = {
-					communism > 0.2
-					fascism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
+				 	fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 				}
 			}
 		}	
@@ -1672,8 +1670,14 @@ focus_tree = {
 			DEN = {
 				exists = yes
 				OR = {
-					communism > 0.2
-					fascism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
+				 	fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 				}
 			}
 		}		
@@ -1709,15 +1713,27 @@ focus_tree = {
 				BEL = {
 					exists = yes
 					OR = { 
-						communism > 0.15
-				 		fascism > 0.15
+					stalinism > 0.15
+					leninism > 0.15
+					revisionism > 0.15
+					anarchism > 0.15
+				 	fascism > 0.15
+					fascist_monarchy > 0.15
+					nationalism > 0.15
+					national_socialism > 0.15
 				 	} 
 				}
 				HOL = { 
 					exists = yes
 					OR = { 
-						communism > 0.15
-				 		fascism > 0.15
+					stalinism > 0.15
+					leninism > 0.15
+					revisionism > 0.15
+					anarchism > 0.15
+				 	fascism > 0.15
+					fascist_monarchy > 0.15
+					nationalism > 0.15
+					national_socialism > 0.15
 				 	} 
 				}								
 			}			
@@ -1753,8 +1769,14 @@ focus_tree = {
 			BEL = {
 				exists = yes
 				OR = {
-					communism > 0.2
-					fascism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
+				 	fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 				}
 			}
 		}		
@@ -1783,8 +1805,14 @@ focus_tree = {
 			HOL = {
 				exists = yes
 				OR = {
-					communism > 0.2
-					fascism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
+				 	fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 				}
 			}
 		}		
@@ -1939,15 +1967,7 @@ focus_tree = {
 				country_event = { id = generic.1 }
 				every_other_country = {
 					limit = { 
-						NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} }
+						NOT = { has_democratic_government = yes }
 						num_of_factories > 30
 					}
 					add_opinion_modifier = { target = PREV modifier = democratic_leanings_bad }
@@ -2065,6 +2085,15 @@ focus_tree = {
 					hours = 6 id = news.228
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+				}
+				country_event = {
+					id = DOD_yugoslavia.40
+					days = 5
+				}
+			}
 		}
 	}
 
@@ -2141,15 +2170,7 @@ focus_tree = {
 		completion_reward = {
 			# + relations with TUR - they become more democratic and like fascist/commies less
 			if = {
-				limit = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} }
+				limit = { has_democratic_government = yes }
 				TUR = {
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
 					add_ideas = democratic_influence
@@ -2157,22 +2178,14 @@ focus_tree = {
 				}
 				every_other_country = {
 					limit = { 
-						NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} }
+						NOT = { has_democratic_government = yes }
 						num_of_factories > 30
 					}
 					add_opinion_modifier = { target = TUR modifier = democratic_leanings_bad }
 				}
 			}
 			if = {
-				limit = { has_government = communism }
+				limit = { has_communist_government = yes }
 				TUR = {
 					add_opinion_modifier = { target = ENG modifier = communism_leanings_good }
 					add_ideas = communist_influence
@@ -2180,14 +2193,14 @@ focus_tree = {
 				}
 				every_other_country = {
 					limit = { 
-						NOT = { has_government = communism }
+						NOT = { has_communist_government = yes }
 						num_of_factories > 30
 					}
 					add_opinion_modifier = { target = TUR modifier = communism_leanings_bad }
 				}
 			}
 			if = {
-				limit = { has_government = fascism }
+				limit = { has_fascist_government = yes }
 				TUR = {
 					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
 					add_ideas = fascist_influence
@@ -2195,7 +2208,7 @@ focus_tree = {
 				}
 				every_other_country = {
 					limit = { 
-						NOT = { has_government = fascism }
+						NOT = { has_fascist_government = yes }
 						num_of_factories > 30
 					}
 					add_opinion_modifier = { target = TUR modifier = fascism_leanings_bad }
@@ -2229,15 +2242,7 @@ focus_tree = {
 					}
 			every_other_country = {
 						limit = { 
-							NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}}
+							NOT = { has_democratic_government = yes }
 							num_of_factories > 30
 						}
 						add_opinion_modifier = { target = GRE modifier = democratic_leanings_bad }
@@ -2296,8 +2301,14 @@ focus_tree = {
 		available = {
 			IRQ = {
 				OR = { 
-					communism > 0.2
-			 		fascism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
+				 	fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 			 	} 
 			}
 		} #UK at war with fascist/commie. iraq is fascist/commie
@@ -2329,8 +2340,14 @@ focus_tree = {
 			PER = {
 				exists = yes
 				OR = { 
-					communism > 0.2
-			 		fascism > 0.2
+					stalinism > 0.2
+					leninism > 0.2
+					revisionism > 0.2
+					anarchism > 0.2
+				 	fascism > 0.2
+					fascist_monarchy > 0.2
+					nationalism > 0.2
+					national_socialism > 0.2
 			 	} 
 			}
 		} #UK at war with fascist/commie. iran is fascist/commie
@@ -3018,15 +3035,7 @@ focus_tree = {
 					}
 			every_other_country = {
 						limit = { 
-							NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} }
+							NOT = { has_democratic_government = yes }
 							num_of_factories > 30
 						}
 						add_opinion_modifier = { target = CHI modifier = democratic_leanings_bad }

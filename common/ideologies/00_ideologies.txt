@@ -6,14 +6,17 @@ ideologies = {
 		
 			anarchist_communism = {
 			}
+			
+			anarchism_ideology = {
+			}
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
 		}
 		
 		color = { 150 0 51 } # 100 0 0
@@ -23,8 +26,8 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		rules = {
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = no
 			can_send_volunteers = no
 			can_puppet = no
 			can_lower_tension = no
@@ -118,7 +121,7 @@ ideologies = {
 		ai_communist = yes # uses the commie AI behaviour
 		
 		rules = {
-			can_force_government = no
+			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
 		}
@@ -161,7 +164,7 @@ ideologies = {
 		ai_communist = yes # uses the commie AI behaviour
 		
 		rules = {
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
 		}
@@ -277,6 +280,8 @@ ideologies = {
 			}
 			progressive_ideology = {
 			}
+			agrarianism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -374,6 +379,9 @@ ideologies = {
 			
 			anarcho_capitalism = {
 			}
+			
+			democratic_liberalism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -421,6 +429,8 @@ ideologies = {
 		types = {
 			
 			christian_democrat = {
+			}
+			christian_liberalism = {
 			}
 		}
 		
@@ -470,6 +480,10 @@ ideologies = {
 			right_wing_conservative = {
 			}
 			conservatism = {
+			}
+			conservative_liberalism = {
+			}
+			national_conservatism = {
 			}
 		}
 		
@@ -621,6 +635,9 @@ ideologies = {
 			authoritarian_democracy_ideology = {
 			}
 			
+			estado_novo  = {
+			}
+			
 			oligarchism  = {
 			}
 		}
@@ -732,6 +749,7 @@ ideologies = {
 			"FACTION_NAME_MONARCHIST_3"
 			"FACTION_NAME_MONARCHIST_4"
 			"FACTION_NAME_MONARCHIST_5"
+			"FACTION_NAME_MONARCHIST_6"
 		}
 		
 		color = {  70 0 70  }
@@ -743,101 +761,21 @@ ideologies = {
 		rules = {
 			can_declare_war_on_same_ideology = yes
 			can_force_government = no
-			can_send_volunteers = no
-			can_puppet = no
+			can_send_volunteers = yes
+			can_puppet = yes
 			can_lower_tension = no
 			can_only_justify_war_on_threat_country = no
 			can_guarantee_other_ideologies = no
 		}
 		
 		modifiers = {
+		join_faction_tension = 0.05
 		}
 		
 		faction_modifiers = {
 		}
 
 		can_collaborate = yes
-
-	}
-	
-	militarism = {
-	
-		types = {
-			
-			millitary_junta = {
-			}
-			warlord = {
-			}
-			
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
-		}
-		
-		color = { 0 100 0 }
-		
-		war_impact_on_world_tension = 0.75
-		faction_impact_on_world_tension = 0.5
-		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = no
-			can_puppet = no
-		}
-		
-		modifiers = {
-		}
-
-	}
-	
-	nationalism = {
-	
-		types = {
-			
-			metaxism = {
-			}
-			
-			national_democrat = {
-			}
-			
-			corporatism = {
-			}
-			
-			nationalism_ideology = {
-			}
-			
-			austrofascism = {
-			}
-			
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
-		}
-		
-		color = { 45 45 45 }
-		
-		war_impact_on_world_tension = 0.9			#evil!
-		faction_impact_on_world_tension = 0.9
-		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-		
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.60
-		}
 
 	}
 	
@@ -869,7 +807,6 @@ ideologies = {
 			"FACTION_NAME_RELIGIOUS_2"
 			"FACTION_NAME_RELIGIOUS_3"
 			"FACTION_NAME_RELIGIOUS_4"
-			"FACTION_NAME_RELIGIOUS_5"
 		}
 		
 		color = { 255 255 255 }
@@ -897,6 +834,84 @@ ideologies = {
 		can_collaborate = yes
 
 	}
+	
+	militarism = {
+	
+		types = {
+			
+			millitary_junta = {
+			}
+			warlord = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 0 100 0 }
+		
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.5
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = no
+		}
+		
+		modifiers = {
+		}
+
+	}
+	
+	nationalism = {
+	
+		types = {
+			
+			metaxism = {
+			}
+			
+			corporatism = {
+			}
+			
+			nationalism_ideology = {
+			}
+			
+			austrofascism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 45 45 45 }
+		
+		war_impact_on_world_tension = 0.5			#evil!
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.60
+		}
+
+	}
 
 	fascism = {
 	
@@ -909,6 +924,9 @@ ideologies = {
 			}
 			
 			rexism = {
+			}
+			
+			integralism = {
 			}
 		}
 		
@@ -982,6 +1000,8 @@ ideologies = {
 		types = {
 			
 			nazism = {
+			}
+			strasserism = {
 			}
 			
 		}

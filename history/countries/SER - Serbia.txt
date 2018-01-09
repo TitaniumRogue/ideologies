@@ -86,28 +86,33 @@ set_convoys = 0
 set_politics = {
 
 	parties = {
-		conservative = { 
-			popularity = 20
-		}
+			conservative = { 
+				popularity = 20
+			}
 
-		fascism = {
-			popularity = 30
-		}
-		
-		communism = {
-			popularity = 20
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 30
-		}
+			fascism = {
+				popularity = 30
+			}
+			
+			leninism = {
+				popularity = 10
+				#banned = no #default is no
+			}
+			
+			stalinism = {
+				popularity = 10
+				#banned = no #default is no
+			}
+			
+			absolute_monarchy = { 
+				popularity = 30
+			}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = absolute_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 1939.1.1 = {
@@ -140,7 +145,7 @@ set_politics = {
 		ruling_party = absolute_monarchy
 		last_election = "1938.1.1"
 		election_frequency = 36
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }
 set_national_unity = 0.6
@@ -150,7 +155,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
-	ideology = fascist_monarchy
+	ideology = fascist_monarchy_ideology
 	traits = {
 		#
 	}
@@ -183,7 +188,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = leninism_ideology
 	traits = {
 		#
 	}

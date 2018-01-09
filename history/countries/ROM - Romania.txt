@@ -164,6 +164,7 @@ set_convoys = 10
 	}
 }
 
+1936.1.1 = {
 set_politics = {
 
 	parties = {
@@ -179,15 +180,20 @@ set_politics = {
 			popularity = 2
 		}
 		
-		conservative = { 
-			popularity = 60
+		absolute_monarchy = { 
+			popularity = 35
+		}
+		
+		democratic_nationalism = { 
+			popularity = 25
 		}
 	}
 	
-	ruling_party = conservative
+	ruling_party = democratic_nationalism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
+}
 }
 
 1939.1.1 = {
@@ -206,7 +212,7 @@ set_politics = {
 				popularity = 2
 			}
 			
-			conservative = { 
+			democratic_nationalism = { 
 				popularity = 20
 			}
 		}
@@ -223,7 +229,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = democratic_nationalist
 	traits = {
 		#
 	}
@@ -245,7 +251,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMAND_CALINESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = reactionary_ideology
 	traits = {
 		#
 	}
@@ -256,7 +262,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = democratic_nationalist
 	traits = {
 		#
 	}

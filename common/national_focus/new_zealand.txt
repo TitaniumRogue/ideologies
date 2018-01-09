@@ -2396,7 +2396,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_government = communism
+			has_democratic_government = yes
 			NOT = { has_war_together_with = ENG }
 		}
 
@@ -2444,7 +2444,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_government = communism
+			has_communist_government = yes
 			SOV = {
 				has_capitulated = no
 				is_subject = no
@@ -2483,7 +2483,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = communism
+			has_communist_government = yes
 			is_subject = no
 			is_in_faction_with = SOV
 		}
@@ -2570,7 +2570,7 @@ focus_tree = {
 			NOT = { has_war_with = JAP }
 			JAP = { has_government = ROOT }
 			is_subject = no
-			has_government = fascism			
+			has_fascist_government = yes			
 		}
 
 		bypass = {
@@ -2651,7 +2651,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			has_fascist_government = yes
 			is_in_faction_with = JAP
 		}
 

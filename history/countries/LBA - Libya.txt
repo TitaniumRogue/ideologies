@@ -6,7 +6,6 @@ set_technology = {
 	gwtank = 1
 }
 
-set_cosmetic_tag = LBA_ITA
 
 set_convoys = 20
 
@@ -72,17 +71,17 @@ set_politics = {
 			popularity = 20
 		}
 		
-		stalinist = {
+		stalinism = {
 			popularity = 5
 			#banned = no #default is no
 		}
 		
-		authoritarian = { 
+		absolute_monarchy = { 
 			popularity = 50
 		}
 	}
 	
-	ruling_party = authoritarian
+	ruling_party = absolute_monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -112,7 +111,7 @@ create_country_leader = {
 	name = "Idris Senussi"
 	desc = ""
 	picture = "Portrait_Arabia_Generic_land_3.dds"
-	ideology = despotism
+	ideology = absolutism
 	traits = {
 		#
 	}
@@ -122,7 +121,7 @@ create_country_leader = {
 	name = "Hassan as-Senussi"
 	desc = ""
 	picture = "Portrait_Arabia_Generic_communism1.dds"
-	ideology = stalinist_ideology
+	ideology = stalinism_ideology
 	traits = {
 		#
 	}

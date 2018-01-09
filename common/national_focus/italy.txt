@@ -1488,51 +1488,42 @@ focus_tree = {
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
 				if = {
-					limit = { 
-						ROOT = { has_government = fascism }
-						NOT = { has_government = fascism }
+					limit = {
+						ROOT = { has_fascist_government = yes }
+						NOT = { has_fascist_government = yes }
+						NOT = { has_idea_with_trait = fascist_politician }
+						fascism < 0.3
 					}
 					add_popularity = {
 						ideology = fascism
-						popularity = -0.3
+						popularity = -0.07
 					}
 				}
 				if = {
 					limit = { 
-						ROOT = { has_government = communism }
-						NOT = { has_government = communism }
+						ROOT = { has_communist_government = yes }
+						NOT = { has_communist_government = yes }
+						NOT = { has_idea_with_trait = stalinist_politician }
+						NOT = { has_completed_focus = YUG_recognize_the_soviet_union }
+						stalinism < 0.3
 					}
 					add_popularity = {
-						ideology = communism
-						popularity = -0.3
+						ideology = stalinism
+						popularity = -0.07
 					}
 				}
-				if = {
-					limit = {
-						ROOT = { 				
-						OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		}
-						NOT = { 				
-						OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		}
-					}
-				}
+				#if = {
+					#limit = {
+						#ROOT = { has_government = democratic }
+						#NOT = { has_government = democratic }
+						#NOT = { has_idea_with_trait = democratic_reformer }
+						#democratic < 0.3
+					#}
+					#add_popularity = {
+						#ideology = democratic
+						#popularity = -0.07
+					#}
+				#}
 			}
 
 			hidden_effect = {
@@ -1564,25 +1555,15 @@ focus_tree = {
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
-					limit = { ROOT = { has_government = fascism } }
+					limit = { ROOT = { has_fascist_government = yes } }
 					add_ideas = fascist_influence
 				}
 				if = {
-					limit = { ROOT = { 				
-					OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+					limit = { ROOT = { has_democratic_government = yes } }
 					add_ideas = democratic_influence
 				}
 				if = {
-					limit = { ROOT = { has_government = communism } }
+					limit = { ROOT = { has_communist_government = yes } }
 					add_ideas = communist_influence
 				}
 				country_event = { id = generic.1 }
@@ -1600,7 +1581,7 @@ focus_tree = {
 		available = {
 			any_other_country = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 				has_volunteers_amount_from = {
 					tag = ITA
 					count > 1
@@ -1623,7 +1604,7 @@ focus_tree = {
 			random_other_country = {
 				limit = {
 					original_tag = SPR
-					has_government = fascism
+				 has_fascist_government = yes
 				}
 				add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
 			}
@@ -1638,7 +1619,7 @@ focus_tree = {
 		available = {
 			any_other_country = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 				has_war = no
 				owns_state = 177
 			}
@@ -1647,7 +1628,7 @@ focus_tree = {
 		cancel = {
 			any_other_country = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 				has_war_with = ROOT
 				owns_state = 177
 			}
@@ -1691,25 +1672,15 @@ focus_tree = {
 			BUL = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
-					limit = { ROOT = { has_government = fascism } }
+					limit = { ROOT = { has_fascist_government = yes } }
 					add_ideas = fascist_influence
 				}
 				if = {
-					limit = { ROOT = { 				
-					OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+					limit = { ROOT = { has_democratic_government = yes } }
 					add_ideas = democratic_influence
 				}
 				if = {
-					limit = { ROOT = { has_government = communism } }
+					limit = { ROOT = { has_communist_government = yes } }
 					add_ideas = communist_influence
 				}
 				country_event = { id = generic.1 }
@@ -1748,10 +1719,10 @@ focus_tree = {
 		prerequisite = { focus = ITA_bulgaria_friend }
 		mutually_exclusive = { focus = ITA_italy_first }
 		available = {
-			has_government = fascism
+			has_fascist_government = yes
 			NOT = { has_war_with = GER }
 			GER = { 
-				has_government = fascism 
+				has_fascist_government = yes
 				country_exists = GER
 			}
 		}
@@ -1954,25 +1925,15 @@ focus_tree = {
 			ROM = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
-					limit = { ROOT = { has_government = fascism } }
+					limit = { ROOT = { has_fascist_government = yes } }
 					add_ideas = fascist_influence
 				}
 				if = {
-					limit = { ROOT = { 				
-					OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+					limit = { ROOT = { has_democratic_government = yes } }
 					add_ideas = democratic_influence
 				}
 				if = {
-					limit = { ROOT = { has_government = communism } }
+					limit = { ROOT = { has_communist_government = yes } }
 					add_ideas = communist_influence
 				}
 				country_event = { id = generic.1 }
@@ -2053,7 +2014,7 @@ focus_tree = {
 		available = {
 			any_other_country = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 				has_civil_war = no
 				NOT = { has_war_with = ROOT }
 				OR = {
@@ -2065,14 +2026,14 @@ focus_tree = {
 				OR = {
 					NOT = { country_exists = THIS }
 					has_capitulated = yes
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}			
 		}
 		bypass = {
 			any_other_country = {
 				original_tag = SPR
-				has_government = fascism
+				has_fascist_government = yes
 				is_in_faction_with = ROOT
 			}
 		}
@@ -2086,7 +2047,7 @@ focus_tree = {
 			random_other_country = {
 				limit = {
 					original_tag = SPR
-					has_government = fascism
+					has_fascist_government = yes
 				}
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				add_ideas = fascist_influence 
@@ -2117,25 +2078,15 @@ focus_tree = {
 			POR = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
-					limit = { ROOT = { has_government = fascism } }
+					limit = { ROOT = { has_fascist_government = yes } }
 					add_ideas = fascist_influence
 				}
 				if = {
-					limit = { ROOT = { 				
-					OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+					limit = { ROOT = { has_democratic_government = yes } }
 					add_ideas = democratic_influence
 				}
 				if = {
-					limit = { ROOT = { has_government = communism } }
+					limit = { ROOT = { has_communist_government = yes } }
 					add_ideas = communist_influence
 				}
 				country_event = { id = generic.1 }
@@ -2200,25 +2151,15 @@ focus_tree = {
 			GRE = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
-					limit = { ROOT = { has_government = fascism } }
+					limit = { ROOT = {  has_fascist_government = yes } }
 					add_ideas = fascist_influence
 				}
 				if = {
-					limit = { ROOT = { 				
-					OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+					limit = { ROOT = { has_democratic_government = yes } }
 					add_ideas = democratic_influence
 				}
 				if = {
-					limit = { ROOT = { has_government = communism } }
+					limit = { ROOT = { has_communist_government = yes } }
 					add_ideas = communist_influence
 				}
 				country_event = { id = generic.1 }
@@ -2282,7 +2223,7 @@ focus_tree = {
 			 tooltip = ITA_claims_on_france_tt
 				any_other_country = {
 					original_tag = FRA
-					has_government = fascism
+					has_fascist_government = yes
 					owns_state = 735
 					controls_state = 735
 					owns_state = 1
@@ -2316,7 +2257,7 @@ focus_tree = {
 				limit = { 
 					any_other_country = {
 						original_tag = FRA
-						has_government = fascism
+						has_fascist_government = yes
 						owns_state = 735
 					}
 				}
@@ -2326,7 +2267,7 @@ focus_tree = {
 				limit = { 
 					any_other_country = {
 						original_tag = FRA
-						has_government = fascism
+						has_fascist_government = yes
 						owns_state = 1
 					}
 				}
@@ -2361,25 +2302,15 @@ focus_tree = {
 			TUR = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
-					limit = { ROOT = { has_government = fascism } }
+					limit = { ROOT = { has_fascist_government = yes } }
 					add_ideas = fascist_influence
 				}
 				if = {
-					limit = { ROOT = { 				
-					OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+					limit = { ROOT = { has_democratic_government = yes } }
 					add_ideas = democratic_influence
 				}
 				if = {
-					limit = { ROOT = { has_government = communism } }
+					limit = { ROOT = { has_communist_government = yes } }
 					add_ideas = communist_influence
 				}
 				country_event = { id = generic.1 }

@@ -1,0 +1,46 @@
+opinion_modifiers = {
+	
+	faction_traitor = {
+		value = -75
+	}
+	
+	faction_traitor_trade = {
+		trade = yes
+		value = -40
+	}
+	
+	our_liberators = {
+		value = 40
+		months = 18
+		decay = 1
+	}
+	
+	mod_different_ideology = { 
+		value = -20 
+	}
+	
+	mod_similar_ideology = { 
+		value = 10
+	}
+	
+	mod_same_ideology = { 
+		value = 0 #40 the mod for now will use the base game's same ideology opinion modfier
+	}
+	
+	similar_ruling_party = {
+		value = 20
+	}
+	
+	same_ruling_party = {
+		value = 20
+	}
+	
+	different_party_types = {
+		value = 0
+	}
+	
+	mod_generic_tree_trade = {
+		trade = yes
+		value = 50
+	}
+}

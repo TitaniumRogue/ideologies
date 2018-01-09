@@ -78,17 +78,7 @@ focus_tree = {
 		available = {
 			OR = {
 				threat > 0.2
-				NOT = { 				
-				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} 
-		}
+				NOT = { has_democratic_government = yes }
 			}
 		}
 		
@@ -675,31 +665,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
-				NOT = { ENG = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+				NOT = { ENG = { has_democratic_government = yes } }
 				factor = 10
 			}
 			modifier = {
-				NOT = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		} }
+				NOT = { has_democratic_government = yes }
 				factor = 100
 			}
 			modifier = {	#makes it significantly more likely if player boosts non-democratic
+				OR = {
+				fascism > 0.5
+				nationalism > 0.5
+				national_socialism > 0.5
+				fascist_monarchy > 0.5
+				stalinism > 0.5
+				leninism > 0.5
+				revisionism > 0.5
+				anarchism > 0.5
+				militarism > 0.5
+				absolute_monarchy > 0.5
+				religious > 0.5
+				authoritarian > 0.5
+				}
 				factor = 20
 			}
 		}
@@ -739,11 +726,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
+				OR = {
+				fascist_monarchy > 0.25
 				fascism > 0.25
+				national_socialism > 0.25
+				nationalism > 0.25
+				}
 				factor = 10
 			}
 			modifier = {
+				OR = {
+				fascist_monarchy > 0.45
 				fascism > 0.45
+				national_socialism > 0.45
+				nationalism > 0.45
+				}
 				factor = 10
 			}
 		}
@@ -789,9 +786,19 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.65
+				if = {
+					limit = { NOT = { has_fascist_government = yes } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.65
+					}
+				}
+				if = {
+					limit = { has_fascist_government = yes } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.65
+					}
 				}
 			}
 		}
@@ -907,8 +914,20 @@ focus_tree = {
 		}
 
 		available = {
+			OR = {
+			fascist_monarchy > 0.20
 			fascism > 0.20
-			compare_autonomy_state > autonomy_colony
+			national_socialism > 0.20
+			nationalism > 0.20
+			}
+			if = {
+				limit = { not = { has_fascist_government = yes } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_fascist_government = yes }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 			controls_state = 541
 		}
 		
@@ -998,9 +1017,19 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.75
+				if = {
+					limit = { NOT = { has_fascist_government = yes } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.75
+					}
+				}
+				if = {
+					limit = { has_fascist_government = yes } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.75
+					}
 				}
 			}
 			NOT = { has_war_together_with = ENG }
@@ -1050,19 +1079,34 @@ focus_tree = {
 		}
 
 		available = {
+			OR = {
+			fascist_monarchy > 0.25
 			fascism > 0.25
+			national_socialism > 0.25
+			nationalism > 0.25
+			}
 			controls_state = 541
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.80
+				if = {
+					limit = { NOT = { has_fascist_government = yes } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.80
+					}
+				}
+				if = {
+					limit = { has_fascist_government = yes } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.80
+					}
 				}
 			}
 		}
 		
 		bypass = {
-			has_government = fascism
+			has_fascist_government = yes
 		}
 
 		cancel_if_invalid = yes
@@ -1072,8 +1116,8 @@ focus_tree = {
 		complete_tooltip = {
 			set_capital = 541
 			start_civil_war = {
-				ruling_party = fascism
-				ideology = authoritarian_democracy
+				ruling_party = national_socialism
+				ideology = ROOT
 				size = 0.75
 				capital = 681
 				states = { 681 275 719 }
@@ -1086,8 +1130,8 @@ focus_tree = {
 			hidden_effect = {
 				set_capital = 541
 				start_civil_war = {
-					ruling_party = fascism
-					ideology = authoritarian_democracy
+					ruling_party = national_socialism
+					ideology = ROOT
 					size = 0.45
 					capital = 681
 					states = { 681 275 719 }
@@ -1095,21 +1139,37 @@ focus_tree = {
 				random_other_country = {
 					limit = {
 						original_tag = SAF
-										OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
+						has_democratic_government = yes
 					}
 					load_oob = "SAF_D_civil_war"
 					set_equipment_fraction = 0.7
 					add_popularity = {
-						ideology = authoritarian_democracy
-						popularity = 0.35
+						ideology = conservative
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = democratic_socialism
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = reactionary
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = christian_democracy
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = progressive
+						popularity = 0.05
 					}
 				}
 				news_event = { hours = 6 id = news.262 }
@@ -1118,13 +1178,13 @@ focus_tree = {
 				set_equipment_fraction = 0.8
 				
 				add_popularity = {
-					ideology = fascism
+					ideology = national_socialism
 					popularity = 1
 				}
 				random_country = {
 					limit = {
 						original_tag = GER
-						has_government = fascism
+						has_fascist_government = yes
 					}
 					set_country_flag = saf_fascist_uprising # Affects GER ai_strategy
 				}
@@ -1366,11 +1426,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.5
 			modifier = {	#will make country more likely to go down this path if player boosts communism support
-				communism > 0.1
+				OR = {
+				stalinism > 0.1
+				leninism > 0.1
+				revisionism > 0.1
+				anarchism > 0.1
+				}
 				factor = 10
 			}
 			modifier = {
-				communism > 0.2
+				OR = {
+				stalinism > 0.2
+				leninism > 0.2
+				revisionism > 0.2
+				anarchism > 0.2
+				}
 				factor = 10
 			}
 		}
@@ -1407,7 +1477,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -1422,14 +1492,27 @@ focus_tree = {
 				}
 			}
 			OR = {
-				has_government = communism
-				communism > 0.1
+				has_communist_government = yes
+				stalinism > 0.1
+				leninism > 0.1
+				revisionism > 0.1
+				anarchism > 0.1
 			}
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.60
+				if = {
+					limit = { NOT = { has_fascist_government = yes } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.65
+					}
+				}
+				if = {
+					limit = { has_fascist_government = yes } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.65
+					}
 				}
 			}
 		}
@@ -1467,7 +1550,12 @@ focus_tree = {
 		}
 
 		available = {
-		communism > 0.1
+		OR = {
+		stalinism > 0.1
+		leninism > 0.1
+		revisionism > 0.1
+		anarchism > 0.1
+		}
 		}
 		
 		bypass = {
@@ -1542,7 +1630,10 @@ focus_tree = {
 		}
 
 		available = {
-			communism > 0.35
+		stalinism > 0.35
+		leninism > 0.35
+		revisionism > 0.35
+		anarchism > 0.35
 			OR = {
 				compare_autonomy_progress_ratio > 0.7
 				is_subject = no
@@ -1564,8 +1655,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			add_popularity = {	
-						ideology = communism
+						ideology = leninism
 						popularity = 0.5
+					}
+					add_popularity = {	
+						ideology = stalinism
+						popularity = 0.2
 					}
 			hidden_effect = {
 			news_event = { hours = 6 id = news.263 }
@@ -1662,7 +1757,7 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			create_faction = SAF_faction_uotap
 			hidden_effect = {
-			news_event = { hours = 6 id = news.264 }
+				news_event = { hours = 6 id = news.264 }
 			}
 		}
 	}
@@ -1685,9 +1780,9 @@ focus_tree = {
 		}
 
 		available = {
-		OR = {
-			ANG = { exists = no }
-			MZB = { exists = no }
+			OR = {
+				ANG = { exists = no }
+				MZB = { exists = no }
 			}
 		}
 		
@@ -1705,10 +1800,10 @@ focus_tree = {
 
 		completion_reward = {
 			create_wargoal = {
-					type = take_state_focus
-					target = POR
-					generator = { 540 544 }
-					}
+				type = take_state_focus
+				target = POR
+				generator = { 540 544 }
+			}
 			
 		}
 	}
@@ -1731,7 +1826,7 @@ focus_tree = {
 		}
 
 		available = {
-		COG = { exists = no }
+			COG = { exists = no }
 		}
 		
 		bypass = {
@@ -1748,10 +1843,10 @@ focus_tree = {
 
 		completion_reward = {
 			create_wargoal = {
-					type = take_state_focus
-					target = BEL
-					generator = { 538 718 295 }
-					}
+				type = take_state_focus
+				target = BEL
+				generator = { 538 718 295 }
+			}
 			
 		}
 	}
@@ -1774,9 +1869,9 @@ focus_tree = {
 		}
 
 		available = {
-		OR = {
-			KEN = { exists = no } 
-			ZIM = { exists = no }
+			OR = {
+				KEN = { exists = no } 
+				ZIM = { exists = no }
 			}
 		}
 		
@@ -1794,10 +1889,10 @@ focus_tree = {
 
 		completion_reward = {
 			create_wargoal = {
-					type = take_state_focus
-					target = ENG
-					generator = { 546 547 548 542 545 }
-					}
+				type = take_state_focus
+				target = ENG
+				generator = { 546 547 548 542 545 }
+			}
 			
 		}
 	}
@@ -1948,7 +2043,7 @@ focus_tree = {
 			SOV = { 
 				exists = yes
 				is_puppet = no
-				}
+			}
 		}
 		
 		bypass = {
@@ -1967,8 +2062,8 @@ focus_tree = {
 			SOV = {
 				custom_effect_tooltip = needs_approval
 				country_event = { id = tfv_south_africa.40 } #tech sharing
-					}
 			}
+		}
 
 	}
 	focus = {
@@ -1986,12 +2081,12 @@ focus_tree = {
 		}
 
 		available = {
-		has_global_flag = sov_yes_pact
-		FRA = {
+			has_global_flag = sov_yes_pact
+			FRA = {
 				has_capitulated = yes
 				exists = yes #otherwise Franco-British union might screw things up
-				NOT = { has_government = communism }
-				}
+				NOT = { has_communist_government = yes }
+			}
 		}
 		
 		bypass = {
@@ -2007,12 +2102,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		FRA = {
-		custom_effect_tooltip = needs_approval
-			country_event = { id = tfv_south_africa.30 hours = 12 }
+			FRA = {
+				custom_effect_tooltip = needs_approval
+					country_event = { id = tfv_south_africa.30 hours = 12 }
 			}
 			hidden_effect = {
-			news_event = { id = news.265 }
+				news_event = { id = news.265 }
 			}
 		}
 	}

@@ -62,7 +62,7 @@ set_convoys = 5
 set_politics = {
 
 		parties = {
-			national_socialism = { 
+			democratic_socialism = { 
 				popularity = 25
 			}
 			social_liberal = { 
@@ -76,7 +76,7 @@ set_politics = {
 			}
 		}
 	
-	ruling_party = national_socialism
+	ruling_party = democratic_socialism
 	last_election = "1933.12.15"
 	election_frequency = 84
 	elections_allowed = yes
@@ -87,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	expire = "1913.10.23"
-	ideology = nazism
+	ideology = democratic_socialist
 	traits = {
 		#
 	}

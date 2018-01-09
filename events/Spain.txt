@@ -134,11 +134,11 @@ country_event = {
 			limit = {
 				has_fascist_government = yes
 				NOT = { original_tag = SPR }
-			country_event = { id = spain.4 days = 1 }
 		}
+		country_event = { id = spain.4 days = 1 }
 		if = {
 			limit = {
-				POR = { 
+				POR = {
 				NOT = {
 				has_communist_government = yes
 											} 
@@ -147,13 +147,14 @@ country_event = {
 			POR = { country_event = { id = spain.4 days = 1 } }
 		}
 	}
+	}
 
 	option = {
 		name = spain.2.b
 		add_political_power = 40
 		ai_chance = { factor = 0 }
 	}
-}
+	}
 
 # Republicans: Seek Support
 country_event = {
@@ -433,6 +434,7 @@ country_event = {
 				limit = {
 				original_tag = SPR
 				has_communist_government = yes
+				}
 				load_oob = "SPR_Civil_War"
 				set_equipment_fraction = 0.7
 				set_national_unity = 0.8

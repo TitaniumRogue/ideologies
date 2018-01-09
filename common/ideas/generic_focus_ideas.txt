@@ -1,0 +1,1378 @@
+ideas = {			
+			
+		country = {
+		socialism_in_one_country = {
+
+			picture = generic_communism_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = stalinism
+			}
+
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_infrastructure_factor = 0.3
+             }
+		}
+		
+		economic_anarchy = {
+		        
+			Picture = generic_communism_dift_bonus
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			 has_government = anarchism
+			}
+		
+				modifier = {
+			    unity_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+			}
+                 
+           generic_gulags = {
+                       
+           picture = officers_purged
+                       
+                 allowed = {
+                 always = no
+                  }
+                       
+			allowed_civil_war = {
+			has_government = stalinism
+			}
+		
+			modifier = {
+			    unity_factor = -0.10
+                conscription_factor = -0.2
+				consumer_goods_factor = -0.05
+			    production_factory_start_efficiency_factor = 0.05
+                             
+			}
+			}
+			
+		labour_unions = {
+		        
+			Picture = idea_saf_soviet_advisers
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			 has_government = anarchism
+			}
+		
+			modifier = {
+				production_factory_start_efficiency_factor = 0.15
+				local_resources_factor = 0.15
+			}
+			}
+			
+		one_big_union = {
+		        
+			picture = fourth_international
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			 has_government = anarchism
+			}
+		
+			modifier = {
+			    political_power_gain = -0.005
+			    unity_factor = 0.15
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				
+			}
+			}
+			
+	nazi_economy = {
+		        
+			Picture = idea_saf_ossewabrandwag_2
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			 has_government = national_socialism
+			}
+		
+			modifier = {
+			 local_resources_factor = 0.25
+				industrial_capacity_factory = 0.25 
+				research_time_factor = -0.5
+				 conscription_factor = -0.2
+			}
+			}
+			
+	nazi_warfare = {
+ 			Picture = idea_saf_ossewabrandwag_2
+ 			
+ 			allowed = {
+ 			        always = no
+ 		        }
+ 			
+ 			allowed_civil_war = {
+ 			 has_government = national_socialism
+ 			}
+ 		
+ 			modifier = {
+ 			 
+ 				 conscription = -0.02
+				 local_resources_factor = 0.3
+				 production_factory_start_efficiency_factor = 0.4
+ 			}
+			}
+ 			
+ 		nazi_autarky = {
+ 		        
+ 			Picture = idea_saf_ossewabrandwag_2
+ 			
+ 			allowed = {
+ 			        always = no
+ 		        }
+ 			
+ 			allowed_civil_war = {
+ 			 has_government = national_socialism
+ 			}
+ 		
+ 			modifier = {
+ 			 
+ 				consumer_goods_factor = -0.10
+ 			}
+			}
+ 			
+ 		military_economy = {
+ 		        
+ 			Picture = triumphant_will
+ 			
+ 			allowed = {
+ 			        always = no
+ 		        }
+ 			
+ 			allowed_civil_war = {
+ 			 has_government = militarism
+ 			}
+ 		
+ 			modifier = {
+ 			 
+ 				consumer_goods_factor = -0.15
+ 				 production_factory_max_efficiency_factor = 0.20
+ 				 conscription = 0.03
+                       }
+					   }
+		 
+		theocratic_economy = {
+
+			picture = idea_generic_agrarian_reform
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = religious
+                        has_government = absolute_monarchy
+                        has_government = fascist_monarchy
+			}
+
+
+			modifier = {
+					research_time_factor = 0.05
+					production_speed_buildings_factor = 0.2
+					consumer_goods_factor = -0.05
+					global_building_slots_factor = 0.10
+					}
+					}
+			
+		god_soil_church = {
+
+			picture = idea_charles_coughlin
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = religious
+                        has_government = absolute_monarchy
+                        has_government = fascist_monarchy
+			}
+
+
+			modifier = {
+					research_time_factor = 0.10
+					production_speed_buildings_factor = 0.15
+					consumer_goods_factor = -0.05
+					global_building_slots_factor = 0.05
+                        }
+						}
+			
+		manorialism_idea = {
+
+			picture = idea_royal_arsenal
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = religious
+                        has_government = absolute_monarchy
+                        has_government = fascist_monarchy
+			}
+
+
+			modifier = {
+					research_time_factor = 0.05
+					unity_factor = -0.10
+					production_speed_buildings_factor = 0.15
+					global_building_slots_factor = 0.10
+                        }
+						}
+			
+		leninist_economy = {
+
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = leninism
+			}
+
+
+			modifier = {
+				unity_factor = 0.10
+				production_factory_start_efficiency_factor = 0.2
+				
+                        }
+			}
+			
+		nationalized_industry = {
+
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = leninism
+			}
+
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.30
+				production_speed_industrial_complex_factor = 0.30
+				
+                        }
+						}
+			
+		foreign_trade_monopoly = {
+
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = leninism
+			}
+
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				research_time_factor = -0.05
+				production_factory_start_efficiency_factor = 0.05
+				
+                        }
+             }
+
+			democratic_socialist_economics = {
+
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = democratic_socialism
+                        has_government = revisionism
+
+			}
+
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				unity_factor = 0.10
+				consumer_goods_factor = 0.05
+				
+                        }
+						}
+			
+		workplace_democracy = {
+
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = democratic_socialism
+                        has_government = revisionism
+
+			}
+
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = 0.05
+				political_power_factor = 0.30
+				production_speed_infrastructure_factor = 0.2
+				
+                        }
+						}
+			
+		production_for_use = {
+
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = democratic_socialism
+                        has_government = revisionism
+
+			}
+
+
+			modifier = {
+			        production_speed_buildings_factor = 0.2
+				unity_factor = 0.10
+				political_power_factor = 0.20
+				production_speed_industrial_complex_factor = -0.10
+		
+				
+                        }
+             }
+			 
+			 
+			libertarian_economics = {
+
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = market_liberal
+
+			}
+
+
+			modifier = {
+			        production_speed_buildings_factor = 0.2
+				political_power_factor = -0.01
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.2
+		
+				
+                        }
+             }
+			 
+			conservative_economics = {
+
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			has_government = market_liberal
+
+			}
+
+
+			modifier = {
+			       production_speed_buildings_factor = 0.2
+				political_power_factor = 0.02
+				production_factory_start_efficiency_factor = 0.25
+				production_speed_infrastructure_factor = 0.20
+		
+				
+                        }
+             }
+			 
+			 
+			 
+			democratic_corporatism = {
+		        
+			Picture = idea_saf_ossewabrandwag_2
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			 has_government = national_socialism
+			}
+		
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+			}
+			}
+			
+			
+		ban_labour_unions_focus = {
+		        
+			Picture = idea_saf_ossewabrandwag_2
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			 has_government = fascism
+			}
+		
+			modifier = {
+			 stalinism_drift = -0.05
+			 anarchism_drift = -0.05
+			 leninism_drift = -0.05
+			 revisionism_drift = -0.05
+			 democratic_socialism_drift = -0.05
+			 production_speed_buildings_factor = 0.1
+			 production_factory_start_efficiency_factor = -0.05
+			 conscription_factor = -0.15
+			 decryption_factor = 0.2
+			 consumer_goods_factor = -0.10
+			}
+			}
+			
+		status_quo_economy = {
+		        
+			Picture = idea_saf_ossewabrandwag_2
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			OR = {
+			 has_government = conservative
+			 has_government = authoritarian
+			 has_government = authoritarian_democracy
+			 has_government = reactionary
+			 has_government = democratic_nationalism
+			 has_government = absolute_monarchy
+			 }
+			 }
+		
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			production_speed_industrial_complex_factor = 0.1
+			consumer_goods_factor = 0.05
+			production_speed_infrastructure_factor = 0.25
+			}
+			}
+			
+		status_quo_ante_economy = {
+		        
+			Picture = idea_saf_ossewabrandwag_2
+			
+			allowed = {
+			        always = no
+		        }
+			
+			allowed_civil_war = {
+			OR = {
+			 has_government = absolute_monarchy
+			 has_government = reactionary
+			 }
+			 }
+		
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			production_speed_arms_factory_factor = -0.25
+			consumer_goods_factor = 0.1
+			unity_factor = 0.10
+			global_building_slots_factor = 0.05
+			research_time_factor = -0.05
+			}
+			}
+			
+			social_welfare_programs_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+							OR = {
+			 is_socialist = yes
+			 has_government = social_democracy
+			 }
+			}
+
+			picture = generic_goods_red_bonus
+	
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_cost = -0.2
+				political_power_gain = 0.25
+
+			}
+		}
+		
+		social_liberal_economics_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+							OR = {
+			 is_socialist = yes
+			 has_government = social_liberal
+			 has_government = progressives
+			 has_government = christian_democracy
+			 }
+			}
+
+			picture = generic_goods_red_bonus
+	
+			modifier = {
+				political_power_cost = -0.25
+				political_power_gain = 0.5
+				unity_factor = 0.15
+				political_advisor_cost_factor = -0.2
+
+			}
+		}
+		
+		state_industries_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_goods_red_bonus
+	
+			modifier = {
+			production_factory_efficiency_gain_factor = 0.15
+			production_speed_air_base_factor = 0.15
+			production_speed_anti_air_building_factor = 0.15
+			production_speed_radar_station_factor = 0.15
+			production_speed_synthetic_refinery_factor = 0.15
+			production_speed_arms_factory_factor = 0.15
+
+			}
+		}
+		increased_taxes_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			OR = {
+			 is_socialist = yes
+			 has_government = social_democracy
+			 }
+			}
+
+			picture = generic_foreign_capital
+	
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_cost = -0.2
+				unity_factor = 0.05
+			}
+		}
+		
+		protect_workers_rights_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			OR = {
+			 is_socialist = yes
+			 has_government = social_democracy
+			 }
+			}
+
+			picture = generic_foreign_capital
+	
+			modifier = {
+				consumer_goods_factor = 0.01
+				unity_factor = 0.15
+				production_speed_buildings_factor = 0.25
+				unity_factor = 0.10
+				political_power_factor = 0.25
+			}
+		}
+		corporatism_focus_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+	
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+
+			}
+		}
+		
+		progressives_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+	
+			modifier = {
+				consumer_goods_factor = 0.01
+				unity_factor = 0.05
+				political_power_gain = 0.5
+
+			}
+		}
+		
+		fascist_economy_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+	
+			modifier = {
+				consumer_goods_factor = -0.01
+				political_power_gain = 0.1
+				army_morale_factor = 0.1
+				army_core_attack_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_bunker_factor = 0.15
+
+			}
+		}
+		
+		path_towards_democracy_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				revisionism_drift = -0.1
+				leninism_drift = -0.1
+				stalinism_drift = -0.1
+				anarchism_drift = -0.1
+				national_socialism_drift = -0.1
+				fascism_drift = -0.1
+				fascist_monarchy_drift = -0.1
+				nationalism_drift = -0.1
+				religious_drift = -0.1
+				militarism_drift = -0.1
+				authoritarian_drift = -0.1
+				absolute_monarchy_drift = -0.1
+			}
+		}
+		
+		path_towards_nationalism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				revisionism_drift = -0.1
+				leninism_drift = -0.1
+				stalinism_drift = -0.1
+				anarchism_drift = -0.1
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				progressive_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				democratic_nationalism_drift = -0.1
+			}
+		}
+		
+		totalitarianism_focus_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				nationalism_drift = 0.05
+				fascism_drift = 0.05
+				national_socialism_drift = 0.05
+				fascist_monarchy_drift = 0.05
+			}
+		}
+		
+		authoritarianism_focus_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				authoritarian_drift = 0.05
+				militarism_drift = 0.05
+				absolute_monarchy_drift = 0.05
+				fascist_monarchy_drift = 0.05
+			}
+		}
+		
+		national_socialism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				national_socialism_drift = 0.1
+			}
+		}
+		
+		fascist_monarchy_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				fascist_monarchy_drift = 0.1
+			}
+		}
+		
+		fascism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		
+		ultranationalism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				nationalism_drift = 0.1
+			}
+		}
+		
+		militarism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				militarism_drift = 0.1
+			}
+		}
+		
+		theocracy_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				religious_drift = 0.1
+			}
+		}
+		
+		monarchy_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				absolute_monarchy_drift = 0.1
+			}
+		}
+		
+		despotism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+	
+			modifier = {
+				authoritarian_drift = 0.1
+			}
+		}
+		
+		centrist_path_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				social_liberal_drift = 0.05
+				christian_democracy_drift = 0.05
+				market_liberal_drift = 0.05
+			}
+		}
+		
+		social_liberalism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				social_liberal_drift = 0.1
+			}
+		}
+		
+		market_liberalism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				market_liberal_drift = 0.1
+			}
+		}
+		
+		christian_democracy_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				christian_democracy_drift = 0.1
+			}
+		}
+		
+		leftist_path_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				progressive_drift = 0.05
+				social_democracy_drift = 0.05
+				democratic_socialism_drift = 0.05
+			}
+		}
+		
+		social_democracy_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				social_democracy_drift = 0.1
+			}
+		}
+		
+		progressive_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				progressive_drift = 0.1
+			}
+		}
+		
+		democratic_socialism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				democratic_socialism_drift = 0.1
+			}
+		}
+		
+		rightist_path_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				reactionary_drift = 0.05
+				conservative_drift = 0.05
+				authoritarian_democracy_drift = 0.05
+				democratic_nationalism_drift = 0.05
+			}
+		}
+		
+		reactionary_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				reactionary_drift = 0.1
+			}
+		}
+		
+		conservative_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				conservative_drift = 0.1
+			}
+		}
+		
+		democratic_nationalism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				democratic_nationalism_drift = 0.1
+			}
+		}
+		
+		authoritarian_democracy_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				authoritarian_democracy_drift = 0.1
+			}
+		}
+		
+		revisionism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+	
+			modifier = {
+				revisionism_drift = 0.1
+			}
+		}
+		
+		anarchism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+	
+			modifier = {
+				anarchism_drift = 0.1
+			}
+		}
+		
+		stalinism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+	
+			modifier = {
+				stalinism_drift = 0.1
+			}
+		}
+		
+		leninism_idea_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+	
+			modifier = {
+				leninism_drift = 0.1
+			}
+		}
+		
+		path_towards_socialism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+	
+			modifier = {
+				revisionism_drift = 0.05
+				leninism_drift = 0.05
+				stalinism_drift = 0.05
+				anarchism_drift = 0.05
+				democratic_socialism_drift = -0.1
+				social_democracy_drift = -0.1
+				progressive_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				christian_democracy_drift = -0.1
+				conservative_drift = -0.1
+				reactionary_drift = -0.1
+				authoritarian_democracy_drift = -0.1
+				democratic_nationalism_drift = -0.1
+				national_socialism_drift = -0.1
+				fascism_drift = -0.1
+				fascist_monarchy_drift = -0.1
+				nationalism_drift = -0.1
+				religious_drift = -0.1
+				militarism_drift = -0.1
+				authoritarian_drift = -0.1
+				absolute_monarchy_drift = -0.1
+			}
+		}
+	                  
+	}

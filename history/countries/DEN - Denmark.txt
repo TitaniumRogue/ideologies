@@ -76,16 +76,6 @@ set_technology = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ICE
-		autonomous_state = autonomy_dominion
-	}
-}
-
 set_politics = {
 
 	parties = {

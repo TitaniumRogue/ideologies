@@ -1,4 +1,4 @@
-﻿ ###########################
+﻿###########################
 # South-African TFV events Events
 ###########################
 
@@ -66,17 +66,7 @@ country_event = {
 				factor = 0 #don't do this if we are historical!
 			}
 			modifier = {
-				SAF = { NOT = { 				
-				OR = {		
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		} }
+				SAF = { NOT = { has_democratic_government = yes } }
 				factor = 4
 			}
 		}
@@ -214,16 +204,16 @@ country_event = {
 
 	trigger = {
 		has_completed_focus = SAF_support_the_german_coup
-		has_government = fascism
+		has_fascist_government = yes
 		original_tag = SAF
 		has_civil_war = yes
 		OR = {
 			GER = {
 				NOT = { has_war_with = SAF }
-				has_government = fascism
+				has_fascist_government = yes
 			}		
 			HOL = {
-				has_government = fascism
+				has_fascist_government = yes
 				NOT = { has_war_with = SAF }
 			}		
 		}
@@ -236,14 +226,14 @@ country_event = {
 		trigger = {
 			GER = {
 				NOT = { has_war_with = SAF }
-				has_government = fascism
+				has_fascist_government = yes
 			}			
 		}
 		
 		ai_chance = {
 			base = 100
 			modifier = {
-				GER = { NOT = { has_government = fascism } }
+				GER = { NOT = { has_fascist_government = yes } }
 				factor = 0.1
 			}
 		}
@@ -257,7 +247,7 @@ country_event = {
 		name = tfv_south_africa.10.b # Ask HOL for support
 		trigger = {
 			HOL = {
-				has_government = fascism
+				has_fascist_government = yes
 				NOT = { has_war_with = SAF }
 			}			
 		}
@@ -266,7 +256,7 @@ country_event = {
 			base = 30
 			modifier = {
 				GER = { 
-					has_government = fascism 
+					has_fascist_government = yes
 					has_war = no
 				} 
 				factor = 0
@@ -288,10 +278,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_government = fascism
+		has_fascist_government = yes
 		SAF = {
 			has_civil_war = yes
-			has_government = fascism
+			has_fascist_government = yes
 		}
 		NOT = { has_war_with = SAF }
 	}
@@ -469,10 +459,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_government = fascism
+		has_fascist_government = yes
 		SAF = {
 			has_civil_war = yes
-			has_government = fascism
+			has_fascist_government = yes
 		}
 		NOT = { has_war_with = SAF }
 	}
@@ -661,7 +651,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 			modifier = {
-				NOT = { has_government = fascism }
+				NOT = { has_fascist_government = yes }
 				factor = 0
 			}
 		}
@@ -672,7 +662,10 @@ country_event = {
 			HOL = {
 				OR = {
 					fascism > 0.25
-					has_government = fascism
+					fascist_monarchy > 0.25
+					nationalism > 0.25
+					national_socialism > 0.25
+					has_fascist_government = yes
 				}
 			}
 		}
@@ -711,7 +704,7 @@ country_event = {
 			NOT = { has_country_flag = asked_GER_for_support }			
 			GER = {
 				has_war = no
-				has_government = fascism
+				has_fascist_government = yes
 			}
 		}
 		
@@ -905,7 +898,7 @@ country_event = {
 		ai_chance = {
 			base = 70
 			modifier = {
-				has_government = fascism 
+				has_fascist_government = yes
 				add = -50
 			}
 		}
@@ -1101,7 +1094,7 @@ country_event = {
 				random_other_country = {
 					limit = {
 						original_tag = SPR
-						has_government = communism
+						has_communist_government = yes
 							}
 					country_event = { id = tfv_south_africa.51 hours = 6 }
 				}
@@ -1205,7 +1198,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		ANG = { 
+		ANG = {
 			if = {
 				limit = { 
 					SAF = { controls_state = 540 } 
@@ -1213,13 +1206,40 @@ country_event = {
 				transfer_state = 540
 			}
 			hidden_effect = {
+				if = {
+				limit = {
+				SAF = { has_government = stalinism }
+				}
 				set_politics = {
-					ruling_party = communism
+					ruling_party = stalinism
 					elections_allowed = no
 				}
 				add_popularity = {
-						ideology = communism
+						ideology = stalinism
 						popularity = 0.75
+				}
+				limit = {
+				SAF = { has_government = leninism }
+				}
+				set_politics = {
+					ruling_party = leninism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = leninism
+						popularity = 0.75
+				}
+				limit = {
+				SAF = { has_government = revisionism }
+				}
+				set_politics = {
+					ruling_party = revisionism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = revisionism
+						popularity = 0.75
+				}
 				}
 			}
 		}
@@ -1286,14 +1306,41 @@ country_event = {
 					transfer_state = 544
 				}
 				hidden_effect = {
-					set_politics = {
-						ruling_party = communism
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = communism
+				if = {
+				limit = {
+				SAF = { has_government = stalinism }
+				}
+				set_politics = {
+					ruling_party = stalinism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = stalinism
 						popularity = 0.75
-					}
+				}
+				limit = {
+				SAF = { has_government = leninism }
+				}
+				set_politics = {
+					ruling_party = leninism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = leninism
+						popularity = 0.75
+				}
+				limit = {
+				SAF = { has_government = revisionism }
+				}
+				set_politics = {
+					ruling_party = revisionism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = revisionism
+						popularity = 0.75
+				}
+				}
 				}
 			}
 
@@ -1376,14 +1423,41 @@ country_event = {
 						transfer_state = 718
 					}
 				hidden_effect = {
-					set_politics = {
-						ruling_party = communism
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = communism
+				if = {
+				limit = {
+				SAF = { has_government = stalinism }
+				}
+				set_politics = {
+					ruling_party = stalinism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = stalinism
 						popularity = 0.75
-					}
+				}
+				limit = {
+				SAF = { has_government = leninism }
+				}
+				set_politics = {
+					ruling_party = leninism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = leninism
+						popularity = 0.75
+				}
+				limit = {
+				SAF = { has_government = revisionism }
+				}
+				set_politics = {
+					ruling_party = revisionism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = revisionism
+						popularity = 0.75
+				}
+				}
 				}	
 			}
 						
@@ -1458,14 +1532,41 @@ country_event = {
 						
 					}
 				hidden_effect = {
-					set_politics = {
-						ruling_party = communism
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = communism
+				if = {
+				limit = {
+				SAF = { has_government = stalinism }
+				}
+				set_politics = {
+					ruling_party = stalinism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = stalinism
 						popularity = 0.75
-					}
+				}
+				limit = {
+				SAF = { has_government = leninism }
+				}
+				set_politics = {
+					ruling_party = leninism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = leninism
+						popularity = 0.75
+				}
+				limit = {
+				SAF = { has_government = revisionism }
+				}
+				set_politics = {
+					ruling_party = revisionism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = revisionism
+						popularity = 0.75
+				}
+				}
 				}
 			}
 
@@ -1548,14 +1649,41 @@ country_event = {
 						transfer_state = 548
 					}
 				hidden_effect = {
-					set_politics = {
-						ruling_party = communism
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = communism
+				if = {
+				limit = {
+				SAF = { has_government = stalinism }
+				}
+				set_politics = {
+					ruling_party = stalinism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = stalinism
 						popularity = 0.75
-					}
+				}
+				limit = {
+				SAF = { has_government = leninism }
+				}
+				set_politics = {
+					ruling_party = leninism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = leninism
+						popularity = 0.75
+				}
+				limit = {
+				SAF = { has_government = revisionism }
+				}
+				set_politics = {
+					ruling_party = revisionism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = revisionism
+						popularity = 0.75
+				}
+				}
 				}
 			}			
 			set_country_flag = SAF_released_KEN

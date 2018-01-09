@@ -549,24 +549,15 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { 				OR = {				
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = conservative
-				has_government = progressive
-				has_government = social_democracy
-				has_government = reactionary
-				has_government = democratic_socialism 
-		}
-		}
+				limit = { has_democratic_government = yes }
 				add_ideas = CAN_defence_of_canada_regulations_democratic
 			}
 			if = {
-				limit = { has_government = communism }
+				limit = { has_communist_government = yes }
 				add_ideas = CAN_defence_of_canada_regulations_communism
 			}
 			if = {
-				limit = { has_government = fascism }
+				limit = { has_fascist_government = yes }
 				add_ideas = CAN_defence_of_canada_regulations_fascism
 			}
 		}
@@ -2451,7 +2442,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 			modifier = {
-				democratic < 0.5
+				OR = {
+				fascism > 0.5
+				fascist_monarchy > 0.5
+				nationalism > 0.5
+				national_socialism > 0.5
+				stalinism > 0.5
+				leninism > 0.5
+				revisionism > 0.5
+				anarchism > 0.5
+				militarism > 0.5
+				religious > 0.5
+				authoritarian > 0.5
+				absolute_monarchy > 0.5
+				}
 				factor = 0.5
 			}
 		}
@@ -2893,8 +2897,14 @@ focus_tree = {
 			factor = 5
 			modifier = {
 				OR = {
-					communism > 0.15
+					stalinism > 0.15
+					leninism > 0.15
+					revisionism > 0.15
+					anarchism > 0.15
+					national_socialism > 0.15
 					fascism > 0.15
+					nationalism > 0.15
+					fascist_monarchy > 0.15
 					}
 				factor = 2.5
 			}
@@ -2947,11 +2957,37 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 			modifier = {
-				democratic > 0.6
+				OR = {
+				fascism < 0.4
+				fascist_monarchy < 0.4
+				nationalism < 0.4
+				national_socialism < 0.4
+				stalinism < 0.4
+				leninism < 0.4
+				revisionism < 0.4
+				anarchism < 0.4
+				militarism < 0.4
+				religious < 0.4
+				authoritarian < 0.4
+				absolute_monarchy < 0.4
+				}
 				factor = 2
 			}
 			modifier = {
-				democratic < 0.4
+				OR = {
+				fascism > 0.6
+				fascist_monarchy > 0.6
+				nationalism > 0.5
+				national_socialism > 0.6
+				stalinism > 0.6
+				leninism > 0.6
+				revisionism > 0.6
+				anarchism > 0.6
+				militarism > 0.6
+				religious > 0.6
+				authoritarian > 0.6
+				absolute_monarchy > 0.6
+				}
 				factor = 0.5
 			}
 		}
@@ -3131,11 +3167,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 			modifier = {
+				OR = {
 				fascism > 0.25
+				fascist_monarchy > 0.25
+				nationalism > 0.25
+				national_socialism > 0.25
+				}
 				factor = 2
 			}
 			modifier = {
+				OR = {
 				fascism > 0.35
+				fascist_monarchy > 0.35
+				nationalism > 0.35
+				national_socialism > 0.35
+				}
 				factor = 4
 			}
 		}
@@ -3181,7 +3227,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_government = fascism
+			has_fascist_government = yes
 		}
 		
 		bypass = {
@@ -3224,8 +3270,8 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
-			GER = { has_government = fascism }
+			has_fascist_government = yes
+			GER = { has_fascist_government = yes }
 
 			NOT = {
 				has_war_with = GER
@@ -3235,7 +3281,7 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			is_in_faction_with = GER
 		}
 
 		cancel_if_invalid = yes
@@ -3377,10 +3423,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = fascism
+			has_fascist_government = yes
 			any_country = {
 				original_tag = MEX
-				has_government = fascism
+				has_fascist_government = yes
 				NOT = { has_war_with = ROOT }
 			}
 		}
@@ -3402,7 +3448,7 @@ focus_tree = {
 			random_country = {
 				limit = {
 					original_tag = MEX
-					has_government = fascism
+					has_fascist_government = yes
 				}
 				country_event = { id = tfv_canada.40 }
 			}
@@ -3424,7 +3470,11 @@ focus_tree = {
 		}
 
 		available = {
-
+			is_subject = no
+			USA = {
+				NOT = { is_subject_of = CAN }
+			}
+			NOT = { is_in_faction_with = USA }
 		}
 		
 		bypass = {
@@ -3505,7 +3555,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 			modifier = {
-				communism > 0.2
+				OR = {
+				stalinism > 0.2
+				leninism > 0.2
+				anarchism > 0.2
+				revisionism > 0.2
+				}
 				factor = 2
 			}
 		}
@@ -3551,7 +3606,7 @@ focus_tree = {
 
 		available = {			
 			is_subject = no
-			has_government = communism
+			has_communist_government = yes
 		}
 		
 		bypass = {
@@ -3664,13 +3719,13 @@ focus_tree = {
 			modifier = {
 				SOV = { 
 					has_war = yes 
-					has_government = communism
+					has_communist_government = yes
 				}
 				factor = 3
 			}
 			modifier = {
 				SOV = { 
-					has_government = communism
+					has_communist_government = yes
 					surrender_progress > 0.3
 					 }
 				factor = 10
@@ -3722,7 +3777,7 @@ focus_tree = {
 			}
 			every_country = {
 				limit = {
-					NOT = { has_government = communism }
+					NOT = { has_communist_government = yes }
 				}
 				add_opinion_modifier = {
 					target = PREV
@@ -3782,8 +3837,8 @@ focus_tree = {
 		}
 
 		available = {			
-			has_government = communism
-			SOV = { has_government = communism }
+			has_communist_government = yes
+			SOV = { has_communist_government = yes }
 
 			NOT = {
 				has_war_with = SOV
