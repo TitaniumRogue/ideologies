@@ -30,7 +30,7 @@ set_politics = {
 	parties = {
 	
 		democratic_socialism = { #Popular Front
-			popularity = 45
+			popularity = 42
 		}
 		
 		social_liberal = { #Radical Republican Party
@@ -42,7 +42,7 @@ set_politics = {
 		}
 		
 		conservative = { #Spanish Confederation of the Autonomous Right
-			popularity = 43
+			popularity = 39
 		}
 		
 		progressive = { #Spanish Agrarian Party
@@ -55,6 +55,9 @@ set_politics = {
 
 		fascism = { #Spanish Falange
 			popularity = 3
+		}
+		anarchism = { #National Confederation of Labour-Iberian Anarchist Federation
+			popularity = 7
 		}
 	}
 	
@@ -207,6 +210,17 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Horacio Martínez Prieto"
+	desc = "POLITICS_HORACIO_MARTÍNEZ_PRIETO_DESC"
+	picture = "gfx/leaders/SPR/HORACIO_MARTÍNEZ_PRIETO.dds"
+	expire = "1965.1.1"
+	ideology = anarchism
 	traits = {
 		#
 	}
