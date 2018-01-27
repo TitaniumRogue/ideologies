@@ -27,7 +27,6 @@ set_politics = {
 
 		social_democracy = { #SDP
 			popularity = 41
-			banned = yes
 		}
 		
 		leninism = { #KPOE
