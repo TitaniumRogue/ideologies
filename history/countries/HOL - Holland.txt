@@ -104,7 +104,7 @@ if = {
 set_politics = {
 
 	parties = {
-		conservative = { 
+		christian_democracy = { 
 			popularity = 50
 		}
 		
@@ -117,7 +117,7 @@ set_politics = {
 			popularity = 24
 		}
 		
-		fascism = {
+		national_socialism = {
 			popularity = 4
 		}
 		
@@ -126,7 +126,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = conservative
+	ruling_party = christian_democracy
 	last_election = "1933.4.26"
 	election_frequency = 48
 	elections_allowed = yes
@@ -140,7 +140,7 @@ create_country_leader = {
 	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
 	picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 		#
 	}
@@ -151,7 +151,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nazism
 	traits = {
 		#
 	}
@@ -171,9 +171,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hendrikus Colijn"
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = "gfx/leaders/HOL/portrait_hol_hendrikus_colijn.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = christian_liberalism
 	traits = {
 		#
 	}
