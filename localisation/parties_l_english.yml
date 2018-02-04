@@ -1722,8 +1722,29 @@
  MZB_absolute_monarchy_party_long:0 "House of Braganza-East African Princly Assembly"
  MZB_fascist_monarchy_party:0 "HOB-SS"
  MZB_fascist_monarchy_party_long:0 "Salazar Supporters"
- 
-
+ COG_nationalism_party:0 "PSA-M"
+ COG_nationalism_party_long:0 "Parti Solidaire Africain-Mutualists"
+ COG_democratic_nationalism_party:0 "UNFC"
+ COG_democratic_nationalism_party_long:0 "Union des Nationalistes Fédéralistes du Congo"
+ COG_christian_democracy_party:0 "PDC"
+ COG_christian_democracy_party_long:0 "Parti Démocrate Chrétien"
+ COG_social_democracy_party:0 "MSR" 
+ COG_social_democracy_party_long:0 "Mouvement Social pour le Renouveau"
+ COG_progressive_party:0 "UNPS"
+ COG_progressive_party_long:0 "Union pour la Démocratie et le Progrès Social"
+ COG_social_liberal_party:0 "RCD"
+ COG_social_liberal_party_long:0 "Rassemblement Congolais pour la Démocratie"
+ COG_market_liberal_party:0 "FR"
+ COG_market_liberal_party_long:0 "Forces du Renouveau"
+ COG_conservative_party:0 "MNC-L"
+ COG_conservative_party_long:0 "Mouvement National Congolais-Lumanists"
+ COG_authoritarian_democracy_party:0 "RCDN"
+ COG_authoritarian_democracy_party_long:0 "Rassemblement des Congolais Démocrates et Nationalistes"
+ COG_reactionary_party:0 "UN"
+ COG_reactionary_party_long:0 "Union pour la Nation"
+ COG_authoritarian_party:0 "UNIR-NM"
+ COG_authoritarian_party_long:0 "Union pour la République - Mouvement National"
+ COG_democratic_socialism_party:0 "
 
 
 
