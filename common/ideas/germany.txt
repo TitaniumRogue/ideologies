@@ -364,6 +364,31 @@ ideas = {
 
 			cost = 200
 		}
+
+		GER_Papen_hog_rwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = conservative
+				has_government = market_liberal
+				has_government = nationalism
+				has_government = democratic_nationalism
+				has_government = absolute_monarchy
+				has_government = fascist_monarchy
+				has_government = national_socialism
+				has_government = fascism
+				has_government = religious
+				has_government = authoritarian
+				has_government = authoritarian_democracy
+				has_government = militarism
+			}
+			traits = {
+				right_wing
+				happy_amateur
+			}
+			cancel_if_invalid = no
+
+			cost = 200
+		}
 	}
 
 	foreign_minister = {
