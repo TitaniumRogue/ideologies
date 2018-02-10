@@ -103,4 +103,9 @@ spriteTypes = {
 		name = "GFX_idea_GER_Franz_cos_fas"
 		texturefile = "gfx/interface/ministers/GER/GER_Franz.png"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Papen_hog_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Papen.png"
+	}
 }
