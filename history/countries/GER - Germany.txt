@@ -247,6 +247,15 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	GER_Rudolf_Hess_hog_ns
+	GER_Von_Neurath_fm_fas
+	GER_Bloomberg_fm_ns
+	GER_Frick_sm_ns
+	GER_Canaris_im_fas
+	GER_Beck_cos_rwp 
+	GER_Fritsch_ac_rwp
+	GER_Goring_ac_ns
+	GER_Raedar_con_ns
 }
 
 1936.1.1 = {
