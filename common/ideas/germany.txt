@@ -306,6 +306,335 @@ ideas = {
 		}
 	}
 
+	head_of_government = {
+		GER_Rudolf_Hess_hog_ns = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+				NOT = { has_country_flag = flight_of_hess }
+			}
+			traits = {
+				national_socialist
+				silent_workhorse
+			}
+			cancel_if_invalid = no
+
+			cost = 200
+		}
+
+		GER_Wilhelm_III_hog_rwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = conservative
+				has_government = market_liberal
+				has_government = nationalism
+				has_government = democratic_nationalism
+				has_government = absolute_monarchy
+				has_government = fascist_monarchy
+				has_government = national_socialism
+				has_government = fascism
+				has_government = religious
+				has_government = authoritarian
+				has_government = authoritarian_democracy
+				has_government = militarism
+			}
+			traits = {
+				right_wing
+				benevolent_gentleman
+			}
+			cancel_if_invalid = no
+
+			cost = 200
+		}
+
+		GER_Renn_hog_sta = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = stalinism
+				has_government = revisionism
+				has_government = democratic_socialism
+				has_government = social_democracy
+			}
+			traits = {
+				stalinist
+				insignificant_layman
+			}
+			cancel_if_invalid = no
+
+			cost = 200
+		}
+	}
+
+	foreign_minister = {
+		GER_Von_Neurath_fm_fas = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+				has_government = fascist_monarchy
+			}
+			traits = {
+				fascist
+				great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		GER_Messinar_fm_rwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = conservative
+				has_government = market_liberal
+				has_government = nationalism
+				has_government = democratic_nationalism
+				has_government = absolute_monarchy
+				has_government = fascist_monarchy
+				has_government = national_socialism
+				has_government = fascism
+				has_government = religious
+				has_government = authoritarian
+				has_government = authoritarian_democracy
+				has_government = militarism
+			}
+			traits = {
+				right_wing
+				the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+
+		GER_Albert_fm_rwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = conservative
+				has_government = market_liberal
+				has_government = nationalism
+				has_government = democratic_nationalism
+				has_government = absolute_monarchy
+				has_government = fascist_monarchy
+				has_government = national_socialism
+				has_government = fascism
+				has_government = religious
+				has_government = authoritarian
+				has_government = authoritarian_democracy
+				has_government = militarism
+			}
+			traits = {
+				right_wing
+				great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	armament_minister = {
+		GER_Bloomberg_fm_ns = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+			}
+			traits = {
+				national_socialist
+				infantry_proponent
+			}
+			cancel_if_invalid = no
+
+			research_bonus = {
+				infantry_weapons = 0.25
+			}
+		}
+
+		GER_Schacht_fm_fas = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+				has_government = fascist_monarchy
+			}
+			traits = {
+				fascist
+				administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+		GER_Carl_fm_rwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = conservative
+				has_government = market_liberal
+				has_government = nationalism
+				has_government = democratic_nationalism
+				has_government = absolute_monarchy
+				has_government = fascist_monarchy
+				has_government = national_socialism
+				has_government = fascism
+				has_government = religious
+				has_government = authoritarian
+				has_government = authoritarian_democracy
+				has_government = militarism
+			}
+			traits = {
+				right_wing
+				military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	security_minister = {
+		GER_Frick_sm_ns = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+
+			}
+			traits = {
+				national_socialist
+				prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+
+		GER_Goebbels_sm_ns = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+
+			}
+			traits = {
+				national_socialist
+				man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		GER_Toller_sm_sta = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = stalinism
+				has_government = revisionism
+				has_government = democratic_socialism
+				has_government = social_democracy
+
+			}
+			traits = {
+				stalinist
+				man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	intel_minister = {
+		GER_Canaris_im_fas = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+				has_government = fascist_monarchy
+			}
+			traits = {
+				fascist
+				dismal_enigma
+			}
+			cancel_if_invalid = no
+		}
+
+		GER_Hindenburg_im_fas = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+				has_government = fascist_monarchy
+			}
+			traits = {
+				fascist
+				political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		GER_Hans_im_ns = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+			}
+			traits = {
+				national_socialist
+				naval_intelligence_specialist
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	chief_of_staff = {
+		GER_Beck_cos_rwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = conservative
+				has_government = marekt_liberal
+				has_government = nationalist
+				has_government = democratic_nationalist
+				has_government = absolute_monarchy
+				has_government = fascist_monarchy
+				has_government = national_socialism
+				has_government = fascism
+				has_government = religious
+				has_government = authoritarian
+				has_government = authoritarian_democracy
+				has_government = militarism
+			}
+			traits = {
+				right_wing
+				school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+
+		}
+
+		GER_Erich_cos_lwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = anarchism
+				has_government = stalinism
+				has_government = leninism
+				has_government = revisionism
+				has_government = democratic_socialism
+				has_government = social_democracy
+				has_government = progressive
+				has_government = social_liberal
+				has_government = market_liberal
+			}
+			traits = {
+				left_wing
+				school_of_psychology
+			}
+			cancel_if_invalid = no
+
+		}
+
+		GER_Franz_cos_fas = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
+				has_government = fascist_monarchy
+			}
+			traits = {
+				fascist
+				school_of_fire_support
+			}
+			cancel_if_invalid = no
+
+		}
+	}
+
 	
 	# TECHNOLOGY
 	tank_manufacturer = { 
@@ -755,17 +1084,27 @@ ideas = {
 	# MILITARY
 	army_chief = {
 
-		ludwig_beck = {
+		GER_Fritsch_ac_rwp = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = conservative
+				has_government = marekt_liberal
+				has_government = nationalist
+				has_government = democratic_nationalist
+				has_government = absolute_monarchy
+				has_government = fascist_monarchy
+				has_government = national_socialism
+				has_government = fascism
+				has_government = religious
+				has_government = authoritarian
+				has_government = authoritarian_democracy
+			}
+			traits = {
+				right_wing
+				armored_spearhead_doctrine
+			}
+			cancel_if_invalid = no
 
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { army_chief_organizational_2 }			
-			ai_will_do = {
-				factor = 1
-			}
 		}
 
 		wilhelm_keitel  = {
@@ -817,18 +1156,17 @@ ideas = {
 	
 	air_chief = {
 		
-		goering = {
-
-			
-			allowed = {
-				original_tag = GER
+		GER_Goring_ac_ns = { #Auto-Generated
+			allowed = {original_tag = GER}
+			available = {
+				has_government = national_socialism
+				has_government = fascism
 			}
-						
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 2
+			traits = {
+				national_socialist
+				army_aviation_doctrine
 			}
+			cancel_if_invalid = no
 		}
 		
 		ritter_von_greim = {
@@ -865,20 +1203,7 @@ ideas = {
 	
 	navy_chief = { #CHIEF OF NAVY
 		
-		raeder = {
 
-			
-			allowed = {
-				original_tag = GER
-			}
-						
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 0.1
-			}
-		}
-		
 		donitz = {
 
 			
@@ -887,6 +1212,20 @@ ideas = {
 			}
 						
 			traits = { navy_chief_commerce_raiding_3 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+
+		GER_Raedar_con_ns = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+						
+			traits = { decisive_naval_battle_doctrine }
 			
 			ai_will_do = {
 				factor = 0.1
