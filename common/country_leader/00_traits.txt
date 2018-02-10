@@ -2541,4 +2541,14 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	happy_amateur = {
+		random = no
+		consumer_goods_factor = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
 }
