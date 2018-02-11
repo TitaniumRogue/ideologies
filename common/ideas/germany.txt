@@ -310,8 +310,10 @@ ideas = {
 		GER_Rudolf_Hess_hog_ns = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
+				}
 				NOT = { has_country_flag = flight_of_hess }
 			}
 			traits = {
@@ -326,6 +328,7 @@ ideas = {
 		GER_Wilhelm_III_hog_rwp = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+				OR = {
 				has_government = conservative
 				has_government = market_liberal
 				has_government = nationalism
@@ -338,6 +341,7 @@ ideas = {
 				has_government = authoritarian
 				has_government = authoritarian_democracy
 				has_government = militarism
+				}
 			}
 			traits = {
 				right_wing
@@ -351,10 +355,12 @@ ideas = {
 		GER_Renn_hog_sta = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = stalinism
 				has_government = revisionism
 				has_government = democratic_socialism
 				has_government = social_democracy
+				}
 			}
 			traits = {
 				stalinist
@@ -368,6 +374,7 @@ ideas = {
 		GER_Papen_hog_rwp = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = conservative
 				has_government = market_liberal
 				has_government = nationalism
@@ -380,6 +387,7 @@ ideas = {
 				has_government = authoritarian
 				has_government = authoritarian_democracy
 				has_government = militarism
+				}
 			}
 			traits = {
 				right_wing
@@ -395,9 +403,11 @@ ideas = {
 		GER_Von_Neurath_fm_fas = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
 				has_government = fascist_monarchy
+				}
 			}
 			traits = {
 				fascist
@@ -409,6 +419,7 @@ ideas = {
 		GER_Messinar_fm_rwp = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = conservative
 				has_government = market_liberal
 				has_government = nationalism
@@ -421,6 +432,7 @@ ideas = {
 				has_government = authoritarian
 				has_government = authoritarian_democracy
 				has_government = militarism
+				}
 			}
 			traits = {
 				right_wing
@@ -432,6 +444,7 @@ ideas = {
 		GER_Albert_fm_rwp = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = conservative
 				has_government = market_liberal
 				has_government = nationalism
@@ -444,6 +457,7 @@ ideas = {
 				has_government = authoritarian
 				has_government = authoritarian_democracy
 				has_government = militarism
+				}
 			}
 			traits = {
 				right_wing
@@ -457,8 +471,10 @@ ideas = {
 		GER_Bloomberg_fm_ns = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
+				}
 			}
 			traits = {
 				national_socialist
@@ -474,9 +490,11 @@ ideas = {
 		GER_Schacht_fm_fas = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
 				has_government = fascist_monarchy
+				}
 			}
 			traits = {
 				fascist
@@ -488,6 +506,7 @@ ideas = {
 		GER_Carl_fm_rwp = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = conservative
 				has_government = market_liberal
 				has_government = nationalism
@@ -500,6 +519,7 @@ ideas = {
 				has_government = authoritarian
 				has_government = authoritarian_democracy
 				has_government = militarism
+				}
 			}
 			traits = {
 				right_wing
@@ -513,8 +533,10 @@ ideas = {
 		GER_Frick_sm_ns = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
+				}
 
 			}
 			traits = {
@@ -526,9 +548,11 @@ ideas = {
 
 		GER_Goebbels_sm_ns = { #Auto-Generated
 			allowed = {original_tag = GER}
-			available = {
+			available = {		
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
+				}
 
 			}
 			traits = {
@@ -541,10 +565,12 @@ ideas = {
 		GER_Toller_sm_sta = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = stalinism
 				has_government = revisionism
 				has_government = democratic_socialism
 				has_government = social_democracy
+				}
 
 			}
 			traits = {
@@ -559,9 +585,11 @@ ideas = {
 		GER_Canaris_im_fas = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
 				has_government = fascist_monarchy
+				}
 			}
 			traits = {
 				fascist
@@ -573,9 +601,11 @@ ideas = {
 		GER_Hindenburg_im_fas = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
 				has_government = fascist_monarchy
+				}
 			}
 			traits = {
 				fascist
@@ -587,8 +617,10 @@ ideas = {
 		GER_Hans_im_ns = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
+				}
 			}
 			traits = {
 				national_socialist
@@ -602,6 +634,7 @@ ideas = {
 		GER_Beck_cos_rwp = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = conservative
 				has_government = marekt_liberal
 				has_government = nationalist
@@ -614,6 +647,7 @@ ideas = {
 				has_government = authoritarian
 				has_government = authoritarian_democracy
 				has_government = militarism
+				}
 			}
 			traits = {
 				right_wing
@@ -626,6 +660,7 @@ ideas = {
 		GER_Erich_cos_lwp = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = anarchism
 				has_government = stalinism
 				has_government = leninism
@@ -635,6 +670,7 @@ ideas = {
 				has_government = progressive
 				has_government = social_liberal
 				has_government = market_liberal
+				}
 			}
 			traits = {
 				left_wing
@@ -647,9 +683,11 @@ ideas = {
 		GER_Franz_cos_fas = { #Auto-Generated
 			allowed = {original_tag = GER}
 			available = {
+			OR = {
 				has_government = national_socialism
 				has_government = fascism
 				has_government = fascist_monarchy
+				}
 			}
 			traits = {
 				fascist
