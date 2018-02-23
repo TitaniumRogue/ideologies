@@ -1984,5 +1984,26 @@
  BEL_anarchism_party_long:0 "Anarcho Syndicalistische Werking"
  BEL_authoritarian_democracy_party:0 "CS-PC"
  BEL_authoritarian_democracy_party_long:0 "Council of State-Presidental Congress"
+ LUX_conservative_party:0 "PD-CF"
+ LUX_conservative_party_long:0 "Rietspartei-Conservative Faction"
+ LUX_reactionary_party:0 "PD-AR"
+ LUX_reactionary_party_long:0 "Rietspartei-Anti Revolutionary's"
+ LUX_christian_democracy_party:0 "CSV"
+ LUX_christian_democracy_party_long:0 "Chrëschtlech Sozial Vollekspartei"
+ LUX_nationalism_party:0 "PNI-LP"
+ LUX_nationalism_party_long:0 "Onofhängeg Nationalpartei-Luxembourgian Patriots"
+ LUX_fascism_party:0 "PNI-IF"
+ LUX_fascism_party_long:0 "Onofhängeg Nationalpartei-Integal Fascists"
+ LUX_national_socialism_party:0 "VDB"
+ LUX_national_socialism_party_long:0 "Volksdeutsche Bewegung"
+ LUX_absolute_monarchy_party:0 "HOLN-R"
+ LUX_absolute_monarchy_party_long:0 "House of Luxembourg-Nassau-Royalists"
+ LUX_fascist_monarchy_party:0 "HOLN-PNIC"
+ LUX_fascist_monarchy_party_long:0 "House of Luxembourg-Nassau-Onofhängeg Nationalpartei Coalition"
+ LUX_militarism_party:0 "DLA-GJ"
+ LUX_militarism_party_long:0 "Der Lëtzebuerger Arméi-General Junta"
+ LUX_religious_party:0 "AL-AC"
+ LUX_religious_party_long:0 "Archidioecesis Luxemburgensis-Archbishop Council"
+ LUX_
  
- 
+
