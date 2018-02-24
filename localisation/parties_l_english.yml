@@ -2035,7 +2035,15 @@
  SER_fascist_monarchy_party:0 "HOK-C"
  SER_fascist_monarchy_party_long:0 "House of Karađorđević-Chetniks"
  SER_nationalism_party:0 "SRS"
- 
+ SER_nationalism_party_long:0 "Srpska Radikalna Stranka"
+ SER_national_socialism_party:0 "TVKS"
+ SER_national_socialism_party_long:0 "Teritorija Vojnog Komandanta u Srbiji"
+ SER_market_liberal_party:0 "DJB"
+ SER_market_liberal_party_long:0 "Udruženje „Dosta je bilo”"
+ SER_social_liberal_party:0 "DS"
+ SER_social_liberal_party_long:0 "Demokratska Stranka"
+ SER_social_democracy_party:0 "SPS"
+ SER_social_democracy_party_long:0 "Socijaldemokratska Partija Srbije"
  
  
  
