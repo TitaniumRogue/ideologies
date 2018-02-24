@@ -2028,4 +2028,14 @@
  LUX_stalinism_party_long:0 "Kommunistesch Partei Lëtzebuerg"
  LUX_anarchism_party:0 "AFL"
  LUX_anarchism_party_long:0 "Anarchist Federatioun vu Lëtzebuerg"
+ SER_absolute_monarchy_party:0 "HOK-SR"
+ SER_absolute_monarchy_party_long:0 "House of Karađorđević-Serbian Loyalists"
+ SER_fascism_party:0 "C"
+ SER_fascism_party_long:0 "Chetniks"
+ SER_fascist_monarchy_party:0 "HOK-C"
+ SER_fascist_monarchy_party_long:0 "House of Karađorđević-Chetniks"
+ SER_nationalism_party:0 "SRS"
+ 
+ 
+ 
  
