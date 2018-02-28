@@ -1,0 +1,111 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_GER_Rudolf_Hess_hog_ns"
+		texturefile = "gfx/interface/ministers/GER/GER_Hess.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Von_Neurath_fm_fas"
+		texturefile = "gfx/interface/ministers/GER/GER_Neurath.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Bloomberg_fm_ns"
+		texturefile = "gfx/interface/ministers/GER/GER_Bloomberg.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Frick_sm_ns"
+		texturefile = "gfx/interface/ministers/GER/GER_Frick.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Canaris_im_fas"
+		texturefile = "gfx/interface/ministers/GER/GER_Canaris.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Beck_cos_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Beck.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Fritsch_ac_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Fritsch.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Raedar_con_ns"
+		texturefile = "gfx/interface/ministers/GER/GER_Raeder.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Goring_ac_ns"
+		texturefile = "gfx/interface/ministers/GER/GER_Goring.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Goebbels_sm_ns"
+		texturefile = "gfx/interface/ministers/GER/GER_Goebbels.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Hindenburg_im_fas"
+		texturefile = "gfx/interface/ministers/GER/GER_Hindenburg.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Schacht_fm_fas"
+		texturefile = "gfx/interface/ministers/GER/GER_Schacht.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Wilhelm_III_hog_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Wilhelm3.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Messinar_fm_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Messinar.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Erich_cos_lwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Erich.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Renn_hog_sta"
+		texturefile = "gfx/interface/ministers/GER/GER_Renn.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Albert_fm_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Albert.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Carl_fm_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Carl.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Toller_sm_sta"
+		texturefile = "gfx/interface/ministers/GER/GER_Toller.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Hans_im_ns"
+		texturefile = "gfx/interface/ministers/GER/GER_Hans.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Franz_cos_fas"
+		texturefile = "gfx/interface/ministers/GER/GER_Franz.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_Papen_hog_rwp"
+		texturefile = "gfx/interface/ministers/GER/GER_Papen.png"
+	}
+}

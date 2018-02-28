@@ -2382,4 +2382,173 @@ leader_traits = {
 			factor = 3
 		}
 	}
+
+	head_of_government = {}
+	national_socialist = {}
+	foreign_minister = {}
+	fascist = {}
+
+	great_compromiser = {
+		fascism_acceptance = 50
+		national_socialism_acceptance = 50
+		fascist_monarchy_acceptance = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	infantry_proponent = {}
+
+	dismal_enigma = {
+		random = no
+		decryption = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	school_of_manoeuvre = {
+		random = no
+		army_speed_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_spearhead_doctrine = {
+		random = no
+		army_armor_attack_factor = 0.25
+	    army_armor_defence_factor = 0.25
+
+	    ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	decisive_naval_battle_doctrine = {
+		random = no
+		navy_capital_ship_attack_factor = 0.25
+		navy_capital_ship_defence_factor = 0.25
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	army_aviation_doctrine = {
+		random = no
+		air_strategic_bomber_attack_factor = 0.25
+		air_strategic_bomber_defence_factor = 0.25
+		air_strategic_bomber_agility_factor = 0.25
+		air_strategic_bomber_bombing_factor = 0.25
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	man_of_the_people = {
+		random = no
+		unity_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	political_specialist = {
+		random = no
+		political_power_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	administrative_genius = {
+		random = no
+		production_speed_buildings_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	benevolent_gentleman = {
+		random = no
+		army_morale_factor = 0.05
+		increased_influence_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_cloak_n_dagger_schemer = {
+		random = no
+		social_liberal_acceptance = 50
+		market_liberal_acceptance = 50
+		conservative_acceptance = 50
+		reactionary_acceptance = 50
+		progressive_acceptance = 50
+		christian_democracy_acceptance = 50
+		social_democracy_acceptance = 50
+		democratic_socialism_acceptance = 50
+		democratic_nationalism_acceptance = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	school_of_psychology = {
+		random = no
+		army_morale_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	insignificant_layman = {}
+	stalinist = {}
+	military_entrepreneur = {}
+
+	naval_intelligence_specialist = {
+		random = no
+		navy_max_range_factor = 0.2
+		navy_submarine_detection_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	school_of_fire_support = {
+		random = no
+		army_artillery_attack_factor = 0.1
+		army_artillery_defence_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	happy_amateur = {
+		random = no
+		consumer_goods_factor = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
 }

@@ -96,7 +96,7 @@
  GER_reactionary_party_long:0 "Deutsche Volkspartei"
  GER_democratic_socialism_party:0 "USPD"
  GER_democratic_socialism_party_long:0 "Unabhängige Sozialdemokratische Partei Deutschlands"
- GER_christian_democracy_party:0 "Zentrum"	
+ GER_christian_democracy_party:0 "Zentrum"  
  GER_christian_democracy_party_long:0 "Deutsche Zentrumspartei"
  GER_democratic_nationalism_party:0 "DNVP"
  GER_democratic_nationalism_party_long:0 "Deutschnationale Volkspartei"
@@ -126,6 +126,8 @@
  GER_fascist_monarchy_party_long:0 "Hohenzollern aus Nationalsozialistische Deutsche Arbeiterpatei"
  GER_authoritarian_party:0 "Landbund"
  GER_authoritarian_party_long:0 "Landbund Gegenüberstellung"
+ 
+ 
  POL_anarchism_party:0 "KPP-R"
  POL_anarchism_party_long:0 "Komunistyczna Partia Polski-Radykałowie"
  POL_stalinism_party:0 "KPP-T"
@@ -1608,7 +1610,7 @@
  SWI_christian_democracy_party_long:0 "Christian Democratic People's Party of Switzerland"
  SWI_authoritarian_democracy_party:0 "FCS-DC"
  SWI_authoritarian_democracy_party_long:0 "Federal Council of Switzerland-Democratic Coalition"
- SWI_authoritarian_party:0 FCS-AA"
+ SWI_authoritarian_party:0 "FCS-AA"
  SWI_authoritarian_party_long:0 "Federal Council of Switzerland-Autocratic Assembly"
  SWI_democratic_socialism_party:0 "POP-DS"
  SWI_democratic_socialism_party_long:0 "Swiss Labour Party-Democratic Socialists"
@@ -1624,7 +1626,7 @@
  SWI_militarism_party_long:0 "Federal Department of Defence and Civil Protection-Militia Committee"
  SWI_religious_party:0 "UHCS"
  SWI_religious_party_long:0 "United Holy Cantons of Switzerland"
- SWI_absolute_monarchy_party;0 "SCCP"
+ SWI_absolute_monarchy_party:0 "SCCP"
  SWI_absolute_monarchy_party_long:0 "Swiss Canton Confederation Party"
  SWI_fascist_monarchy_party:0 "UFCS"
  SWI_fascist_monarchy_party_long:0 "United Federal Council of Switzerland"
@@ -2160,5 +2162,3 @@
  CRO_stalinism_party_long:0 "Komunisticka Partije Hrvatske-Stalinists"
  CRO_anarchism_party:0 "ASK"
  CRO_anarchism_party_long:0 "Anarho-Sindikalisticka Konfederacija"
- 
- 

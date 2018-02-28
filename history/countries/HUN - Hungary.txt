@@ -245,7 +245,7 @@ create_country_leader = {
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = fascist_monarchy
 		last_election = "1939.5.29"
 		election_frequency = 48
 		elections_allowed = yes

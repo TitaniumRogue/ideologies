@@ -1910,7 +1910,6 @@ country_event = {
 			annex_country = { target = CZE }
 		}
 		puppet = SLO
-		SLO = { add_popularity = { ideology = fascism popularity = 1 } set_political_party = { ideology = fascism } }
 		if = {
 			limit = {
 				72 = {
@@ -1950,6 +1949,7 @@ country_event = {
 				}
 				add_core_of = SLO
 			}
+			SLO = { add_popularity = { ideology = fascism popularity = 1 } set_political_party = { ideology = fascism } }
 			SLO = {
 				load_oob = SLO_1939
 				add_manpower = 9876
