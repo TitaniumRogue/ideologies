@@ -2188,8 +2188,8 @@
  BOS_christian_democracy_party_long:0 "Hrvatska Demokratska Zajednica Bosne i Hercegovine-Croatian Christians"
  BOS_fascism_party:0 "UHRP-BA"
  BOS_fascism_party_long:0 "Ustaša Hrvatski Revolucionarni Pokret-Bosnian Agency"
- BOS_national_socialist_party:0 "SNUBIH"
- BOS_national_socialist_party_long:0 "Schutzstaffel Nemačka Uprava Bosne i Hercegovine"
+ BOS_national_socialist_party:0 "BPNP"
+ BOS_national_socialist_party_long:0 "Bosanski Pokret Nacionalnog Ponosa"
  BOS_social_liberal_party:0 "NS"
  BOS_social_liberal_party_long:0 "Naša Stranka"
  BOS_market_liberal_party:0 "LDSBIH"
@@ -2206,7 +2206,3 @@
  BOS_stalinism_party_long:0 "Radnicko Komunisticka Partija Bosne i Hercegovine"
  BOS_leninism_party:0 "SKBIH"
  BOS_leninism_party_long:0 "Savez Komunista Bosne i Hercegovine"
-
-
- 
- 
