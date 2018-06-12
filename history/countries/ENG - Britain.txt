@@ -120,6 +120,37 @@ if = {
 
 		ENG_george_vi
 	}
+	
+	
+	create_country_leader = {
+	name = "Archibald Sinclair"
+	desc = "POLITICS_ARCHIBALD_SINCLAIR_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_liberalism
+	traits = {
+	
+	
+	create_country_leader = {
+	name = "Aneurin Bevan"
+	desc = "POLITICS_ANEURIN_BEVAN_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = democratic_socialism
+	traits = {
+		
+        }
+	
+	
+	create_country_leader = {
+	name = "Clement Attlee"
+	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+		
+        }
 
 	
 create_country_leader = {
